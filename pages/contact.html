@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Alice Tran Psychiatric Care</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Alice Tran Psychiatric Care</a>
+  <div class="nav-links">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="rates.html">Rates & Insurance</a>
+    <a href="resources.html">Resources</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav-cta">Book Now</a>
+  </div>
+  <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="rates.html">Rates & Insurance</a>
+  <a href="resources.html">Resources</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://alicetran.intakeq.com/booking" target="_blank">Book Now</a>
+</div>
+
+<div class="page-hero">
+  <div class="section-tag">Get in Touch</div>
+  <h1>I'd be honored<br>to hear from you.</h1>
+  <p>Reach out with questions, or book directly online. We respond within 24 to 72 business hours.</p>
+</div>
+
+<section style="background: var(--cream); padding: 64px 48px;">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <h3 class="section-title" style="font-size:26px; margin-bottom:28px;">Contact Information</h3>
+
+      <div class="contact-row">
+        <span class="contact-label">Phone (call or text)</span>
+        <a href="tel:2027435213" class="contact-val">202-743-5213</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Email</span>
+        <a href="mailto:info@alicetrannp.com" class="contact-val">info@alicetrannp.com</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Office Hours</span>
+        <span class="contact-val">Monday to Thursday: 10:00am – 4:00pm<br>Friday, Saturday, Sunday: Closed</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Telehealth Appointments</span>
+        <a href="https://doxy.me/alicetran" target="_blank" class="contact-val">doxy.me/alicetran</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Mailing Address</span>
+        <span class="contact-val">3060 Williams Drive, Suite 300<br>Fairfax, VA 22031</span>
+      </div>
+
+      <div style="margin-top: 32px; padding: 20px; background: var(--sage-lt); border-radius: 10px; border: 0.5px solid var(--border);">
+        <p style="font-size: 13px; color: var(--green-md); line-height: 1.75;">
+          <strong style="font-weight: 500; color: var(--forest);">Please note:</strong> Alice Tran Psychiatric Care does not operate 24/7 and does not provide crisis services. Outside of office hours, you may leave a message and we will respond during business hours.
+        </p>
+        <p style="font-size: 13px; color: var(--green-md); line-height: 1.75; margin-top: 10px;">
+          If you are in crisis, please call or text <strong style="color: var(--forest);">988</strong> or go to your nearest emergency room.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="section-title" style="font-size:26px; margin-bottom:28px;">Send a Message</h3>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="First and last name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" />
+        </div>
+        <div class="form-group">
+          <label for="reason">Reason for Reaching Out</label>
+          <select id="reason" name="reason">
+            <option value="">Select one...</option>
+            <option>New patient inquiry</option>
+            <option>Insurance / billing question</option>
+            <option>Existing patient question</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Share a little about what brings you here..." required></textarea>
+        </div>
+        <button type="submit" class="btn" style="border: none; cursor: pointer; width: 100%; text-align: center;">Send Message</button>
+        <p id="form-success" style="display:none; color: var(--green); font-size: 13px; text-align: center; margin-top: 8px;">Thank you! We'll be in touch within 24–72 business hours.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2 class="section-title">Prefer to book directly?</h2>
+  <p>Schedule your first appointment online — it only takes a few minutes.</p>
+  <a href="https://alicetran.intakeq.com/booking" target="_blank" class="btn btn-light">Book Online Now</a>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">Alice Tran Psychiatric Care</div>
+      <p class="footer-tagline">Telehealth psychiatric care across Virginia.<br>English & Tiếng Việt welcome.</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="rates.html">Rates & Insurance</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:2027435213">202-743-5213</a>
+      <a href="mailto:info@alicetrannp.com">info@alicetrannp.com</a>
+      <p>Mon–Thu 10am–4pm</p>
+    </div>
+    <div>
+      <h4>Telehealth</h4>
+      <a href="https://doxy.me/alicetran" target="_blank">Join appointment</a>
+      <a href="https://alicetran.intakeq.com/booking" target="_blank">Book online</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 Alice Tran Psychiatric Care LLC. All rights reserved.</div>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+function handleSubmit(e){
+  e.preventDefault();
+  document.getElementById('form-success').style.display = 'block';
+  e.target.reset();
+}
+</script>
+</body>
+</html>
