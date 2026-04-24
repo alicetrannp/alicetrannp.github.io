@@ -4,22 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alice Tran Psychiatric Care | Telehealth Virginia</title>
-  <meta name="description" content="Thoughtful psychiatric care for adults across Virginia. Telehealth appointments in English and Vietnamese. Book with Alice Tran, PMHNP." />
+  <meta name="description" content="Thoughtful psychiatric care for adults across Virginia. Telehealth appointments in English and Vietnamese. Book with Alice Tran, PMHNP-BC." />
   <link rel="stylesheet" href="css/styles.css" />
-  <!-- SEO: Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Alice Tran Psychiatric Care | Telehealth Virginia" />
-  <meta property="og:description" content="Thoughtful psychiatric care for adults across Virginia. Telehealth in English and Vietnamese. Book with Alice Tran, PMHNP." />
-  <meta property="og:url" content="https://alicetrannp.github.io/" />
-  <meta property="og:image" content="https://alicetrannp.github.io/hero.jpg" />
-  <!-- SEO: Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Alice Tran Psychiatric Care" />
-  <meta name="twitter:description" content="Telehealth psychiatric care in Virginia. English & Vietnamese." />
-  <meta name="twitter:image" content="https://alicetrannp.github.io/hero.jpg" />
-  <!-- SEO: Canonical -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="canonical" href="https://alicetrannp.github.io/" />
-  <!-- SEO: Schema Markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -28,7 +18,7 @@
     "url": "https://alicetrannp.github.io",
     "telephone": "202-743-5213",
     "email": "info@alicetrannp.com",
-    "description": "Telehealth psychiatric care for adults across Virginia in English and Vietnamese. Specializing in anxiety, depression, ADHD, trauma, and medication management.",
+    "description": "Telehealth psychiatric care for adults across Virginia in English and Vietnamese.",
     "medicalSpecialty": "Psychiatry",
     "address": {
       "@type": "PostalAddress",
@@ -38,122 +28,94 @@
       "postalCode": "22031",
       "addressCountry": "US"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 38.8462,
-      "longitude": -77.3064
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
-        "opens": "10:00",
-        "closes": "16:00"
-      }
-    ],
-    "priceRange": "$$",
-    "availableLanguage": ["English", "Vietnamese"],
-    "hasMap": "https://maps.google.com/?q=3060+Williams+Drive+Suite+300+Fairfax+VA+22031",
-    "sameAs": []
+    "availableLanguage": ["English", "Vietnamese"]
   }
   </script>
 </head>
 <body>
 
-<nav>
-  <a href="index.html" class="nav-logo">Alice Tran Psychiatric Care</a>
-  <div class="nav-links">
-    <a href="pages/about.html">About</a>
-    <a href="pages/services.html">Services</a>
-    <a href="pages/rates.html">Rates & Insurance</a>
-    <a href="pages/conditions.html">Conditions</a>
-    <a href="pages/resources.html">Resources</a>
-    <a href="pages/contact.html">Contact</a>
-    <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav-cta">Book Now</a>
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__name">
+        <span class="nav__first">Alice Tran Psychiatric Care</span>
+      </span>
+    </a>
+    <div class="nav__links">
+      <a href="pages/about.html">About</a>
+      <a href="pages/services.html">Services</a>
+      <a href="pages/rates.html">Rates &amp; Insurance</a>
+      <a href="pages/conditions.html">Conditions</a>
+      <a href="pages/resources.html">Resources</a>
+      <a href="pages/contact.html">Contact</a>
+    </div>
+    <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav__cta">Book Now</a>
+    <button class="nav__toggle" onclick="toggleNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-  <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
 </nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="pages/about.html">About</a>
-  <a href="pages/services.html">Services</a>
-  <a href="pages/rates.html">Rates & Insurance</a>
-  <a href="pages/conditions.html">Conditions</a>
-  <a href="pages/resources.html">Resources</a>
-  <a href="pages/contact.html">Contact</a>
-  <a href="https://alicetran.intakeq.com/booking" target="_blank">Book Now</a>
-</div>
 
-  
-  <!-- HERO -->
+<!-- HERO -->
 <div class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-content">
-    <div class="hero-tag">A PLACE TO BE HEARD</div>
-    <h1>Alice Tran<br>Psychiatric Care</h1>
-    <p>Thoughtful, whole person mental health care for the quiet struggles and the loud ones.</p>
-    <div class="hero-btns">
-      <a href="https://alicetran.intakeq.com/booking" target="_blank" class="btn">Book a Consultation</a>
-      <a href="#approach" class="btn btn--ghost">How I practice →</a>
+  <div class="hero__bg"></div>
+  <div class="hero__inner">
+    <p class="eyebrow hero__eyebrow">A place to be heard</p>
+    <h1 class="hero__title">Alice Tran<br>Psychiatric Care</h1>
+    <p class="hero__lede">Thoughtful, whole-person mental health care for the quiet struggles and the loud ones.</p>
+    <div class="hero__actions">
+      <a href="https://alicetran.intakeq.com/booking" target="_blank" class="btn btn--primary">Book a Consultation</a>
+      <a href="#approach" class="btn btn--ghost hero__ghost">How I practice →</a>
     </div>
-    <div class="hero-sub">Accepting new patients &nbsp;·&nbsp; Telehealth across Virginia &nbsp;·&nbsp; English &amp; Tiếng Việt</div>
+    <p class="hero__pills">Accepting new patients &nbsp;·&nbsp; Telehealth across Virginia &nbsp;·&nbsp; English &amp; Tiếng Việt</p>
   </div>
 </div>
 
-<!-- FEELS -->
-<section class="feels">
-  <div class="section-tag">A safe place to begin again</div>
-  <h2 class="section-title">Does any of this sound familiar?</h2>
-  <p style="color: var(--green-md); font-size: 14px;">Life does not have to keep feeling this heavy.</p>
-  <div class="pills">
-    <span class="pill">Feeling anxious and overwhelmed</span>
-    <span class="pill">Struggling to get through the day</span>
-    <span class="pill">Feeling drained and unmotivated</span>
-    <span class="pill">Feeling stuck and unsure how to move forward</span>
-    <span class="pill">Carrying something you can't quite name</span>
-    <span class="pill">Exhausted by relationships or family pressure</span>
-    <span class="pill">Disconnected from yourself</span>
-    <span class="pill">Hard to sleep or slow down</span>
-  </div>
-</section>
-
-<!-- ABOUT PREVIEW -->
+<!-- ABOUT -->
 <section class="about">
-  <div class="about-inner">
-    <div class="about-img-wrap">
-      <img src="img/alice-portrait.jpg" alt="Alice Tran, PMHNP-BC, psychiatric nurse practitioner in Fairfax, Virginia." class="about-img" onerror="this.src='img/pexels-eduraw-34933961.jpg'" />
+  <div class="about__grid">
+    <div class="portrait">
+      <div class="portrait__frame">
+        <img src="img/alice-portrait.jpg"
+             alt="Alice Tran, PMHNP-BC, psychiatric nurse practitioner in Fairfax, Virginia."
+             class="portrait__art"
+             onerror="this.src='img/pexels-eduraw-34933961.jpg'" />
+      </div>
+      <div class="portrait__caption">Hello, it's Alice</div>
     </div>
-    <div class="about-body">
-      <div class="section-tag">Hello, it's Alice</div>
-      <h2 class="section-title">Care that begins<br>with listening.</h2>
+    <div class="about__copy">
+      <p class="eyebrow">About Alice</p>
+      <h2 class="h2">Care that begins<br><em class="serif-i">with listening.</em></h2>
       <p>I'm Alice Tran, a dual board-certified Family and Psychiatric Nurse Practitioner (PMHNP-BC, FNP-BC). I provide psychiatric care to adults ages 18–60 across Virginia through telehealth, with appointments available in both English and Tiếng Việt.</p>
-      <p>I grew up between two worlds — Vietnamese at home, American everywhere else. That experience shaped how I practice. I understand what it means to carry something that doesn't have an easy name in either language, and to need a space where your whole story is welcome, not just the parts that translate neatly.</p>
+      <p>I grew up between two worlds — Vietnamese at home, American everywhere else. That experience shaped how I practice. I understand what it means to carry something that doesn't have an easy name in either language, and to need a space where your whole story is welcome.</p>
       <p>My approach is integrative and unhurried. I believe that good psychiatric care isn't just about the right medication — it's about understanding who you are, what you've been through, and what kind of life you're trying to build. Our first appointment is a full hour because your story deserves that kind of time.</p>
       <p>I work with adults navigating anxiety, depression, trauma, ADHD, burnout, identity, and more. I have a particular passion for serving immigrant communities, first-generation Americans, and anyone who has ever felt like the mental health system wasn't quite built for them.</p>
       <br>
-      <a href="pages/about.html" class="btn btn-outline">Learn more about Alice</a>
+      <a href="pages/about.html" class="btn btn--ghost">Learn more about Alice</a>
     </div>
   </div>
 </section>
 
-<!-- PROMISES -->
-<section class="promises" id="approach">
-  <div class="section-tag" style="text-align:center;">The approach</div>
-  <h2 class="section-title" style="text-align:center;">Three quiet promises I make<br>to every person I see.</h2>
-  <div class="promise-grid">
-    <div class="promise-card">
-      <div class="promise-num">01</div>
+<!-- APPROACH / PROMISES -->
+<section class="approach" id="approach">
+  <div class="section__head">
+    <p class="eyebrow">The approach</p>
+    <h2 class="h2">Three quiet promises I make<br><em class="serif-i">to every person I see.</em></h2>
+  </div>
+  <div class="approach__grid">
+    <div class="promise" data-reveal>
+      <div class="promise__num">01</div>
       <h3>I will listen, fully.</h3>
       <p>No rushed intakes. No one-size-fits-all checklists. Your first visit is a full hour because your story deserves the time.</p>
     </div>
-    <div class="promise-card">
-      <div class="promise-num">02</div>
+    <div class="promise" data-reveal style="--delay:100ms">
+      <div class="promise__num">02</div>
       <h3>I will care for the whole of you.</h3>
       <p>Sleep, family, faith, food, work, loneliness, purpose. Mental health lives within a life, and we will make space for all of it.</p>
     </div>
-    <div class="promise-card">
-      <div class="promise-num">03</div>
+    <div class="promise" data-reveal style="--delay:200ms">
+      <div class="promise__num">03</div>
       <h3>I will honor where you come from.</h3>
       <p>Culture, language, background, and belonging shape how we heal. Tiếng Việt is welcome here, along with all that you carry.</p>
     </div>
@@ -162,117 +124,134 @@
 
 <!-- CONDITIONS -->
 <section class="conditions">
-  <div class="section-tag">Who we help</div>
-  <h2 class="section-title">You don't have to name it perfectly<br>to be welcome here.</h2>
-  <p style="color: var(--green-md); font-size: 14px; margin-bottom: 28px;">These are some of the experiences people bring to a first visit.</p>
-  <ul class="chips">
-    <li><a href="pages/condition-anxiety.html">Anxiety</a></li>
-    <li><a href="pages/condition-depression.html">Depression</a></li>
-    <li><a href="pages/condition-trauma-ptsd.html">Trauma & PTSD</a></li>
-    <li><a href="pages/condition-burnout.html">Burnout</a></li>
-    <li><a href="pages/condition-adhd.html">ADHD</a></li>
-    <li><a href="pages/condition-panic.html">Panic</a></li>
-    <li><a href="pages/condition-grief.html">Grief & Loss</a></li>
-    <li><a href="pages/condition-life-transitions.html">Life Transitions</a></li>
-    <li><a href="pages/condition-identity.html">Identity & Belonging</a></li>
-    <li><a href="pages/condition-postpartum.html">Postpartum Depression</a></li>
-    <li><a href="pages/condition-insomnia.html">Insomnia</a></li>
-    <li><a href="pages/condition-ocd.html">OCD</a></li>
-    <li><a href="pages/condition-perinatal.html">Perinatal Mood</a></li>
-    <li><a href="pages/condition-bipolar.html">Bipolar</a></li>
-    <li><a href="pages/condition-anger.html">Anger</a></li>
-    <li><a href="pages/condition-self-esteem.html">Self-Esteem</a></li>
-    <li><a href="pages/condition-cultural.html">Cultural & Intergenerational Pressure</a></li>
-    <li><a href="pages/condition-international.html">International Students</a></li>
-  </ul>
-  <div style="text-align:center;margin-top:28px;">
-    <a href="pages/conditions.html" class="btn btn--ghost">Learn more about all the conditions we treat →</a>
+  <div class="conditions__inner">
+    <div>
+      <p class="eyebrow">Who we help</p>
+      <h2 class="h2">You don't have to name it perfectly<br><em class="serif-i">to be welcome here.</em></h2>
+      <p class="lede">These are some of the experiences people bring to a first visit. Click any to learn more.</p>
+      <br>
+      <a href="pages/conditions.html" class="btn btn--ghost" style="border-color:rgba(255,255,255,.3);color:#fff;">Learn more about all the conditions we treat →</a>
+    </div>
+    <ul class="chips">
+      <li><a href="pages/condition-anxiety.html">Anxiety</a></li>
+      <li><a href="pages/condition-depression.html">Depression</a></li>
+      <li><a href="pages/condition-trauma-ptsd.html">Trauma &amp; PTSD</a></li>
+      <li><a href="pages/condition-burnout.html">Burnout</a></li>
+      <li><a href="pages/condition-adhd.html">ADHD</a></li>
+      <li><a href="pages/condition-panic.html">Panic</a></li>
+      <li><a href="pages/condition-grief.html">Grief &amp; Loss</a></li>
+      <li><a href="pages/condition-life-transitions.html">Life Transitions</a></li>
+      <li><a href="pages/condition-identity.html">Identity &amp; Belonging</a></li>
+      <li><a href="pages/condition-postpartum.html">Postpartum Depression</a></li>
+      <li><a href="pages/condition-insomnia.html">Insomnia</a></li>
+      <li><a href="pages/condition-ocd.html">OCD</a></li>
+      <li><a href="pages/condition-perinatal.html">Perinatal Mood</a></li>
+      <li><a href="pages/condition-bipolar.html">Bipolar</a></li>
+      <li><a href="pages/condition-anger.html">Anger</a></li>
+      <li><a href="pages/condition-self-esteem.html">Self-Esteem</a></li>
+      <li><a href="pages/condition-cultural.html">Cultural &amp; Intergenerational Pressure</a></li>
+      <li><a href="pages/condition-international.html">International Students</a></li>
+    </ul>
   </div>
-  <p class="pull-quote">"You are a person with a story, a past, and a future.<br>And sometimes, the bravest thing you do all week<br>is consider asking for help."</p>
 </section>
 
-<!-- SERVICES PREVIEW -->
+<!-- SERVICES -->
 <section class="services">
-  <div class="section-tag" style="text-align:center;">Services</div>
-  <h2 class="section-title" style="text-align:center;">A small, intentional practice.</h2>
-  <p class="section-lead" style="text-align:center;">Built for depth, not volume.</p>
-  <div class="svc-grid">
-    <div class="svc-card">
-      <div class="svc-tag">Initial Visit</div>
+  <div class="section__head">
+    <p class="eyebrow">Services</p>
+    <h2 class="h2">A small, intentional practice.</h2>
+    <p class="lede">Built for depth, not volume.</p>
+  </div>
+  <div class="services__grid">
+    <div class="service">
+      <span class="service__tag">Initial Visit</span>
       <h3>Comprehensive Psychiatric Evaluation</h3>
-      <div class="svc-detail">60 minutes · Telehealth</div>
+      <p class="service__meta">60 minutes · Telehealth</p>
       <p>A spacious first appointment to understand your history, symptoms, relationships, and goals. We'll co-create a plan that respects your pace and values.</p>
     </div>
-    <div class="svc-card">
-      <div class="svc-tag">Follow-Up</div>
+    <div class="service">
+      <span class="service__tag">Follow-Up</span>
       <h3>Medication Management</h3>
-      <div class="svc-detail">30 minutes · Telehealth</div>
+      <p class="service__meta">Up to 30 min · Telehealth</p>
       <p>Ongoing, thoughtful medication management with close attention to how you are actually feeling — not just what the chart says.</p>
+      <ul class="service__list">
+        <li>Psychiatric evaluation and diagnosis</li>
+        <li>Medication initiation, adjustment, and monitoring</li>
+        <li>Treatment planning and coordination</li>
+      </ul>
     </div>
-    <div class="svc-card">
-      <div class="svc-tag">Integrated</div>
+    <div class="service">
+      <span class="service__tag">Integrated</span>
       <h3>Supportive Psychotherapy</h3>
-      <div class="svc-detail">Woven into care</div>
-      <p>Brief, focused conversations alongside medication because a prescription without context rarely leads to meaningful healing.</p>
+      <p class="service__meta">Woven into every visit</p>
+      <p>Brief, focused conversations alongside medication — because a prescription without context rarely leads to meaningful healing.</p>
+      <ul class="service__list">
+        <li>Supportive listening and guidance</li>
+        <li>Psychoeducation about your condition</li>
+        <li>Coping strategies and skill-building</li>
+      </ul>
     </div>
-    <div class="svc-card service--accent">
-      <div class="svc-tag">Culturally Attuned</div>
+    <div class="service service--accent">
+      <span class="service__tag">Culturally Attuned</span>
       <h3>Care in Tiếng Việt</h3>
-      <div class="svc-detail">For you & your family</div>
+      <p class="service__meta">For you &amp; your family</p>
       <p>Mental health support in Vietnamese so your parents, elders, and loved ones can be part of the conversation too.</p>
     </div>
   </div>
-  <div style="text-align:center; margin-top:32px;">
-    <a href="pages/services.html" class="btn btn-outline">View all services</a>
+  <div style="text-align:center;margin-top:2.5rem;">
+    <a href="pages/services.html" class="btn btn--ghost">View all services</a>
   </div>
 </section>
 
 <!-- REVIEWS -->
 <section class="reviews">
-  <div class="section-tag" style="text-align:center;">What patients say</div>
-  <h2 class="section-title" style="text-align:center;">Real words from real people.</h2>
-  <div class="review-grid">
-    <div class="review-card">
-      <div class="stars">★★★★★</div>
+  <div class="section__head">
+    <p class="eyebrow">What patients say</p>
+    <h2 class="h2">Real words from real people.</h2>
+  </div>
+  <div class="reviews__grid">
+    <div class="review" data-reveal>
+      <div class="review__stars">★★★★★</div>
       <blockquote>"Alice is an incredibly compassionate, thoughtful, and thorough provider. I feel so lucky to have had her help guide me through the care I needed. Her cultural competency and understanding of nuances is remarkable."</blockquote>
-      <div class="reviewer">Jules P., Virginia</div>
+      <div class="review__who">Jules P., Virginia</div>
     </div>
-    <div class="review-card">
-      <div class="stars">★★★★★</div>
+    <div class="review" data-reveal style="--delay:100ms">
+      <div class="review__stars">★★★★★</div>
       <blockquote>"Extremely blessed to have had Dr. Tran as part of my rehabilitation process. She truly listened to my struggles while providing the best plan. A very open, comfortable, no judgment environment."</blockquote>
-      <div class="reviewer">Brandon D., Virginia</div>
+      <div class="review__who">Brandon D., Virginia</div>
     </div>
-    <div class="review-card">
-      <div class="stars">★★★★★</div>
+    <div class="review" data-reveal style="--delay:200ms">
+      <div class="review__stars">★★★★★</div>
       <blockquote>"Alice has been so helpful in my journey of coping with depression and anxiety, and personal struggles with cultural values. She understands well as a fellow Asian American. She listens and gives great advice."</blockquote>
-      <div class="reviewer">Cassidy T., Virginia</div>
+      <div class="review__who">Cassidy T., Virginia</div>
     </div>
   </div>
 </section>
 
 <!-- STEPS -->
 <section class="steps">
-  <div class="section-tag">Process to progress</div>
-  <h2 class="section-title">If you're ready, or almost ready,<br>I'd be honored to hear from you.</h2>
-  <p class="section-lead">Here's what it looks like to begin care.</p>
-  <div class="steps-row">
-    <div class="step">
-      <div class="step-num">1</div>
+  <div class="section__head">
+    <p class="eyebrow">Process to progress</p>
+    <h2 class="h2">Here's what it looks like<br><em class="serif-i">to begin care.</em></h2>
+  </div>
+  <div class="steps__grid">
+    <div class="step" data-reveal>
+      <div class="step__num">1</div>
       <h3>Get in touch</h3>
       <p>Book online or give a quick call</p>
     </div>
-    <div class="step">
-      <div class="step-num">2</div>
+    <div class="step" data-reveal style="--delay:100ms">
+      <div class="step__num">2</div>
       <h3>First evaluation</h3>
       <p>60 min via secure telehealth in Virginia</p>
     </div>
-    <div class="step">
-      <div class="step-num">3</div>
+    <div class="step" data-reveal style="--delay:200ms">
+      <div class="step__num">3</div>
       <h3>Build a plan together</h3>
       <p>Collaborative care tailored to your needs</p>
     </div>
-    <div class="step">
-      <div class="step-num">4</div>
+    <div class="step" data-reveal style="--delay:300ms">
+      <div class="step__num">4</div>
       <h3>Ongoing care</h3>
       <p>Medication management and supportive therapy</p>
     </div>
@@ -280,56 +259,85 @@
 </section>
 
 <!-- URGENCY BAND -->
-<section class="urgency-band">
-  <h3>A note on urgency</h3>
-  <p>If you are in crisis right now, please do not wait for an appointment.<br>
-  Call or text <strong>988</strong> — the Suicide &amp; Crisis Lifeline. Free, confidential, 24/7.<br>
-  For emergencies, call <strong>911</strong> or go to your nearest emergency room.</p>
-</section>
+<div class="urgency-band">
+  <div class="urgency__inner">
+    <div class="urgency__label">A note on urgency</div>
+    <div class="urgency__body">
+      <p>If you are in crisis right now, please do not wait for an appointment.</p>
+      <p>Call or text <strong>988</strong> — the Suicide &amp; Crisis Lifeline. Free, confidential, available 24/7.<br>
+      For emergencies, call <strong>911</strong> or go to your nearest emergency room.</p>
+      <p class="urgency__disclaimer">Alice Tran Psychiatric Care does not provide crisis services. If you are in immediate danger, please contact emergency services.</p>
+    </div>
+  </div>
+</div>
 
 <!-- CTA BAND -->
 <section class="cta-band">
-  <h2 class="section-title">The first step is usually <em>the hardest.</em></h2>
+  <h2 class="h2">The first step is usually <em class="serif-i">the hardest.</em></h2>
   <p class="cta-band__sub">You don't have to do it alone.</p>
-  <a href="https://alicetran.intakeq.com/booking" target="_blank" class="btn btn-light">Book an Appointment with Alice</a>
+  <a href="https://alicetran.intakeq.com/booking" target="_blank" class="btn btn--primary">Book an Appointment with Alice</a>
 </section>
 
 <!-- FOOTER -->
-<footer>
-  <div class="footer-grid">
-    <div>
-      <div class="footer-brand">Alice Tran Psychiatric Care</div>
-      <p class="footer-tagline">Telehealth psychiatric care across Virginia.<br>English & Tiếng Việt welcome.</p>
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <div>
+        <strong>Alice Tran Psychiatric Care</strong>
+        <span>Telehealth psychiatric care across Virginia.<br>English &amp; Tiếng Việt welcome.</span>
+      </div>
     </div>
-    <div>
+    <div class="footer__col">
       <h4>Pages</h4>
       <a href="pages/about.html">About</a>
       <a href="pages/services.html">Services</a>
-      <a href="pages/rates.html">Rates & Insurance</a>
+      <a href="pages/rates.html">Rates &amp; Insurance</a>
       <a href="pages/conditions.html">Conditions</a>
       <a href="pages/resources.html">Resources</a>
       <a href="pages/contact.html">Contact</a>
     </div>
-    <div>
+    <div class="footer__col">
       <h4>Contact</h4>
       <a href="tel:2027435213">202-743-5213</a>
       <a href="mailto:info@alicetrannp.com">info@alicetrannp.com</a>
-      <p style="line-height:2;"><b>Monday</b> 10am – 4pm<br><b>Tuesday</b> 10am – 4pm<br><b>Wednesday</b> 10am – 4pm<br><b>Thursday</b> 10am – 4pm<br><b>Friday</b> Closed<br><b>Saturday</b> Closed<br><b>Sunday</b> Closed</p>
+      <p>3060 Williams Dr, Suite 300<br>Fairfax, VA 22031</p>
     </div>
-    <div>
+    <div class="footer__col">
+      <h4>Hours</h4>
+      <ul class="footer__hours">
+        <li><span><b>Monday</b> <span>10am – 4pm</span></span></li>
+        <li><span><b>Tuesday</b> <span>10am – 4pm</span></span></li>
+        <li><span><b>Wednesday</b> <span>10am – 4pm</span></span></li>
+        <li><span><b>Thursday</b> <span>10am – 4pm</span></span></li>
+        <li><span><b>Friday</b> <span>Closed</span></span></li>
+        <li><span><b>Saturday</b> <span>Closed</span></span></li>
+        <li><span><b>Sunday</b> <span>Closed</span></span></li>
+      </ul>
+      <br>
       <h4>Telehealth</h4>
       <a href="https://doxy.me/alicetran" target="_blank">Join appointment</a>
       <a href="https://alicetran.intakeq.com/booking" target="_blank">Book online</a>
-      <p>3060 Williams Dr, Suite 300<br>Fairfax, VA 22031</p>
+    </div>
+    <div class="footer__fine">
+      © 2026 Alice Tran Psychiatric Care LLC. All rights reserved.
     </div>
   </div>
-  <div class="footer-copy">© 2026 Alice Tran Psychiatric Care LLC. All rights reserved.</div>
 </footer>
 
 <script>
-function toggleMenu() {
-  document.getElementById('mobileMenu').classList.toggle('open');
+function toggleNav() {
+  document.getElementById('nav').classList.toggle('is-open');
 }
+// Scroll reveal
+const reveals = document.querySelectorAll('[data-reveal]');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); observer.unobserve(e.target); } });
+}, { threshold: 0.1 });
+reveals.forEach(el => observer.observe(el));
+// Nav scroll state
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('is-scrolled', window.scrollY > 40);
+});
 </script>
 </body>
 </html>
