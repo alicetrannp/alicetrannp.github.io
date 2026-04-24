@@ -61,25 +61,34 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
 .hero-bg {
-  position: absolute; inset: 0;
+  position: absolute;
+  inset: 0;
   background: url('../hero.jpg') center center / cover no-repeat;
   transform: scale(1.04);
   transition: transform 8s ease;
 }
-.hero:hover .hero-bg { transform: scale(1); }
+
+.hero:hover .hero-bg {
+  transform: scale(1);
+}
+
 .hero-bg::after {
   content: '';
-  position: absolute; inset: 0;
+  position: absolute;
+  inset: 0;
   background: linear-gradient(160deg, rgba(15,26,13,0.75) 0%, rgba(15,26,13,0.55) 60%, rgba(15,26,13,0.78) 100%);
 }
+
 .hero-content {
   position: relative;
   text-align: center;
   padding: 80px 48px;
   z-index: 1;
-  max-width: 700px;
+  max-width: 1000px;
 }
+
 .hero-tag {
   font-size: 16px;
   font-weight: 700;
@@ -105,7 +114,7 @@ nav {
   color: rgba(235,242,232,0.95);
   line-height: 1.75;
   max-width: 1200px;
-  margin: 0 auto 26px;
+  margin: 0 auto 18px;
 }
 
 .btn {
@@ -121,9 +130,21 @@ nav {
   transition: background 0.2s, transform 0.15s;
 }
 
-.btn:hover { background: #2d3d2a; transform: translateY(-1px); }
-.btn-outline { background: transparent; color: var(--green); border: 1px solid var(--green); }
-.btn-outline:hover { background: var(--green); color: var(--cream); }
+.btn:hover {
+  background: #2d3d2a;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+.btn-outline:hover {
+  background: var(--green);
+  color: var(--cream);
+}
 
 .hero-sub {
   font-family: var(--sans);
@@ -131,11 +152,9 @@ nav {
   font-weight: 700;
   font-style: normal;
   color: rgba(235,242,232,0.95);
-  margin-top: 10px;
+  margin-top: 18px;
   letter-spacing: 0.04em;
 }
-
-
 /* ── SECTIONS ── */
 section { padding: 72px 48px; }
 .section-tag { font-size: 10px; letter-spacing: 0.18em; color: var(--green-lt); text-transform: uppercase; margin-bottom: 14px; }
@@ -274,136 +293,3 @@ footer a:hover { color: var(--sage-lt); }
   .page-hero h1 { font-size: 32px; }
 }
 
-
- @media (min-width: 900px) {
-  body {
-    font-size: 18px;
-    line-height: 1.75;
-  }
-
-  nav {
-    padding: 22px 64px;
-  }
-
-  .nav-logo {
-    font-size: 20px;
-  }
-
-  .nav-links a {
-    font-size: 13px;
-  }
-
-  .nav-cta {
-    font-size: 12px !important;
-  }
-
-  .hero-content {
-    max-width: 860px;
-  }
-
-  .hero-tag,
-  .section-tag,
-  .svc-tag,
-  .contact-label,
-  footer h4 {
-    font-size: 12px;
-  }
-
-  .hero h1 {
-    font-size: 76px;
-    line-height: 1.08;
-  }
-
-  .hero p {
-    font-size: 19px;
-    max-width: 620px;
-    line-height: 1.85;
-  }
-
-  .btn {
-    font-size: 13px;
-    padding: 15px 36px;
-  }
-
-  .section-title {
-    font-size: 48px;
-    line-height: 1.2;
-  }
-
-  .section-lead {
-    font-size: 18px;
-  }
-
-  .about-inner,
-  .contact-inner {
-    max-width: 1040px;
-  }
-
-  .about-body p,
-  .conditions-body,
-  .svc-card p,
-  .promise-card p,
-  .review-card blockquote,
-  .step p,
-  .rate-card p,
-  .resource-card p,
-  .cta-band p,
-  .page-hero p,
-  .contact-val,
-  footer a,
-  footer p,
-  .footer-tagline {
-    font-size: 17px;
-    line-height: 1.8;
-  }
-
-  .pill,
-  .ins-pill {
-    font-size: 15px;
-  }
-
-  .promise-card h3,
-  .resource-card h3 {
-    font-size: 23px;
-  }
-
-  .svc-card h3,
-  .rate-card h3 {
-    font-size: 26px;
-  }
-
-  .step h3 {
-    font-size: 21px;
-  }
-
-  .pull-quote {
-    font-size: 30px;
-    max-width: 720px;
-  }
-
-  .rate-price {
-    font-size: 36px;
-  }
-
-  .svc-detail,
-  .rate-detail,
-  .svc-list li,
-  .crisis-note,
-  .resource-card a,
-  .reviewer {
-    font-size: 15px;
-  }
-
-  .page-hero h1 {
-    font-size: 56px;
-  }
-
-  .footer-brand {
-    font-size: 24px;
-  }
-
-  .footer-copy {
-    font-size: 13px;
-  }
-}
- 
