@@ -1027,6 +1027,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 .step h3 {
   font-size: 1.25rem;
+  font-weight: 600;
   margin: 0 0 .5rem;
 }
 .step p {
