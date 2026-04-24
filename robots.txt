@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alicetrannp.github.io/sitemap.xml
