@@ -127,12 +127,14 @@ nav {
 .btn-outline:hover { background: var(--green); color: var(--cream); }
 
 .hero-sub {
-  font-family: var(--serif);
-  font-size: 18px;
-  font-style: italic;
-  color: rgba(235,242,232,0.9);
+  font-family: var(--sans);
+  font-size: 19px;
+  font-weight: 700;
+  font-style: normal;
+  color: rgba(235,242,232,0.95);
   margin-top: 10px;
   letter-spacing: 0.04em;
+}
 }
 
 /* ── SECTIONS ── */
