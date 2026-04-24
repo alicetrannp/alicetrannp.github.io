@@ -226,3 +226,44 @@ footer a:hover { color: var(--sage-lt); }
   .page-hero { padding: 48px 24px 36px; }
   .page-hero h1 { font-size: 32px; }
 }
+
+
+@media (min-width: 900px) {
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  p,
+  li {
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  h1 {
+    font-size: clamp(3.8rem, 6vw, 6rem);
+    line-height: 1.05;
+  }
+
+  h2 {
+    font-size: clamp(2.4rem, 4vw, 4rem);
+    line-height: 1.1;
+  }
+
+  h3 {
+    font-size: 1.45rem;
+    line-height: 1.25;
+  }
+
+  a,
+  button,
+  .btn,
+  .button {
+    font-size: 1rem;
+  }
+}
+
