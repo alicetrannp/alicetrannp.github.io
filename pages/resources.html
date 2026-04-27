@@ -165,5 +165,20 @@
 </footer>
 
 <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>
-</body>
+
+<!-- Translate button -->
+<div id="google_translate_element" style="display:none;visibility:hidden;"></div>
+<a id="gtBtn" onclick="gtSwitch();return false;" href="#" style="position:fixed;bottom:24px;right:24px;background:#2E4A3C;color:#fff;border-radius:50px;padding:10px 20px;font-size:13px;font-weight:500;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,.2);letter-spacing:.02em;z-index:9998;display:inline-flex;align-items:center;gap:7px;">🌐 Tiếng Việt</a>
+<style>.goog-te-banner-frame{display:none!important;}.goog-te-gadget{display:none!important;}body{top:0!important;}</style>
+<script>
+var _gtOn=false;
+function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'vi',autoDisplay:false},'google_translate_element');}
+function gtSwitch(){
+  var s=document.querySelector('.goog-te-combo'),b=document.getElementById('gtBtn');
+  if(!s)return;
+  if(!_gtOn){s.value='vi';s.dispatchEvent(new Event('change'));b.innerHTML='🌐 English';_gtOn=true;}
+  else{s.value='en';s.dispatchEvent(new Event('change'));b.innerHTML='🌐 Tiếng Việt';_gtOn=false;}
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></body>
 </html>

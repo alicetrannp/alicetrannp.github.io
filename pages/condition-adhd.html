@@ -58,4 +58,19 @@
 
 <footer><div class="footer-grid"><div><div class="footer-brand">Alice Tran Psychiatric Care</div><p class="footer-tagline">Telehealth psychiatric care across Virginia.<br>English &amp; Tiếng Việt welcome.</p></div><div><h4>Pages</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="rates.html">Rates &amp; Insurance</a><a href="conditions.html">Conditions</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a></div><div><h4>Contact</h4><a href="tel:7038295227">(703) 829-5227 (Call or Text)</a><p style="font-size:0.88rem;color:var(--muted,#7A8078);margin:0 0 0.5rem;">Fax: (703) 970-1541</p><a href="mailto:info@alicetrannp.com">info@alicetrannp.com</a><p style="line-height:2;"><b>Monday</b> 10am – 4pm<br><b>Tuesday</b> 10am – 4pm<br><b>Wednesday</b> 10am – 4pm<br><b>Thursday</b> 10am – 4pm<br><b>Friday</b> Closed<br><b>Saturday</b> Closed<br><b>Sunday</b> Closed</p></div><div><h4>Telehealth</h4><a href="https://doxy.me/alicetran" target="_blank">Join appointment</a><a href="https://alicetran.intakeq.com/booking" target="_blank">Book online</a></div></div><div class="footer-copy">© 2026 Alice Tran Psychiatric Care LLC. All rights reserved.</div></footer>
 <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>
-</body></html>
+
+<!-- Translate button -->
+<div id="google_translate_element" style="display:none;visibility:hidden;"></div>
+<a id="gtBtn" onclick="gtSwitch();return false;" href="#" style="position:fixed;bottom:24px;right:24px;background:#2E4A3C;color:#fff;border-radius:50px;padding:10px 20px;font-size:13px;font-weight:500;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,.2);letter-spacing:.02em;z-index:9998;display:inline-flex;align-items:center;gap:7px;">🌐 Tiếng Việt</a>
+<style>.goog-te-banner-frame{display:none!important;}.goog-te-gadget{display:none!important;}body{top:0!important;}</style>
+<script>
+var _gtOn=false;
+function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'vi',autoDisplay:false},'google_translate_element');}
+function gtSwitch(){
+  var s=document.querySelector('.goog-te-combo'),b=document.getElementById('gtBtn');
+  if(!s)return;
+  if(!_gtOn){s.value='vi';s.dispatchEvent(new Event('change'));b.innerHTML='🌐 English';_gtOn=true;}
+  else{s.value='en';s.dispatchEvent(new Event('change'));b.innerHTML='🌐 Tiếng Việt';_gtOn=false;}
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></body></html>
