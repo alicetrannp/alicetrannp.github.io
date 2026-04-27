@@ -1,17 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <title>Alice Tran Psychiatric Care</title>
-  <!-- Cream circle with forest green ring -->
-  <circle cx="50" cy="50" r="46" fill="#F5F2EC" stroke="#2E4A3C" stroke-width="3.5"/>
-  <!-- Leaf tilted 22° clockwise: pointed tip upper-right, short stem lower-left -->
+  <circle cx="50" cy="50" r="46" fill="#F5F2EC" stroke="#2E4A3C" stroke-width="2.8"/>
   <g transform="rotate(22, 50, 50)">
-    <!-- Leaf body: round belly, clearly pointed tip, no long tail -->
-    <path d="M50,71 C38,66 24,55 24,43 C24,29 37,20 50,13 C63,20 76,29 76,43 C76,55 62,66 50,71 Z"
+    <!-- Leaf: rounded tip at top, tapers to pointed stem at bottom -->
+    <path d="M50,13 C72,13 80,32 80,46 C80,63 65,77 50,83 C35,77 20,63 20,46 C20,32 28,13 50,13 Z"
           fill="#8FAD8A"/>
-    <!-- Midrib: subtle centre vein -->
-    <path d="M50,69 Q50,42 50,15"
-          stroke="#5A7A5A" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.42"/>
-    <!-- Short stem — just a hint -->
-    <path d="M50,71 Q49,77 48,82"
-          stroke="#8FAD8A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Midrib: prominent dark curved vein -->
+    <path d="M50,15 Q45,49 50,81"
+          stroke="#2E4A3C" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.68"/>
+    <!-- Short stem -->
+    <path d="M50,83 Q49,88 47,92"
+          stroke="#6B8A6B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
   </g>
 </svg>
