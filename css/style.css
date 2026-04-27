@@ -365,10 +365,10 @@ footer a:hover { color: var(--sage-lt); }
 .footer-copy { border-top: 0.5px solid #3d5038; padding-top: 24px; font-size: 11px; color: #4a5e44; }
 
 /* ── PAGE HERO (inner pages) ── */
-.page-hero { padding: 64px 48px 52px; background: var(--sage-lt); border-bottom: 0.5px solid var(--border); }
+.page-hero { padding: 64px 48px 52px; background: var(--sage-lt); border-bottom: 0.5px solid var(--border); text-align: center; }
 .page-hero .section-tag { margin-bottom: 10px; }
 .page-hero h1 { font-family: var(--serif); font-size: 42px; font-weight: 300; color: var(--forest); line-height: 1.25; }
-.page-hero p { font-size: 15px; color: var(--green-md); margin-top: 14px; max-width: 520px; line-height: 1.8; }
+.page-hero p { font-size: 15px; color: var(--green-md); margin-top: 14px; max-width: 520px; line-height: 1.8; margin-left: auto; margin-right: auto; }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {

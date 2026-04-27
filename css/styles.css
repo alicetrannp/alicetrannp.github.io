@@ -1130,12 +1130,13 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 .cta-band .btn--primary:hover { background: var(--cream); }
 /* urgency band */
 .urgency-band {
-  background: #111;
+  background: var(--cream);
   padding: 3rem clamp(1.25rem, 4vw, 3rem);
 }
 .urgency__inner {
   max-width: 760px;
   margin: 0 auto;
+  background: #111;
   border: 2px solid #E05C00;
   border-radius: var(--radius);
   padding: 2rem 2.5rem;
