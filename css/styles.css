@@ -288,7 +288,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   background: rgba(255,255,255,0.55) !important;
 }
 .hero__title {
-  font-size: clamp(3.8rem, 10vw, 9rem);
+  font-size: clamp(2.8rem, 7vw, 6rem);
   line-height: 1.02;
   margin: 2rem 0 2.2rem;
   letter-spacing: -0.02em;
