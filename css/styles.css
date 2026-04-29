@@ -1162,15 +1162,22 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 .cta-band__sub {
   margin-top: 0.75rem !important;
   margin-bottom: 0 !important;
-  font-family: var(--sans);
-  font-size: 1rem;
-  font-style: normal;
-  color: var(--forest-deep) !important;
-  font-weight: 400;
-  line-height: 1.8;
-  letter-spacing: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 2.2vw, 1.75rem);
+  line-height: 1.7;
+  color: var(--blush) !important;
 }
-.cta-band__sub em { font-style: normal; }
+.cta-sub__alone {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+}
+.cta-sub__ready {
+  display: block;
+  margin-top: 0.3rem;
+  font-style: italic;
+  font-weight: 600;
+}
 .cta-band .btn--primary { background: var(--ivory-soft); color: var(--forest-deep); }
 .cta-band .btn--primary:hover { background: var(--cream); }
 /* urgency band */
