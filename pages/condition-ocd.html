@@ -18,10 +18,7 @@
   <p>OCD is one of the most misunderstood - and most treatable - mental health conditions. The right care can quiet the noise.</p>
 </div>
 <div style="text-align:center;padding:14px 0;background:var(--cream,#F5F2EC);">
-  <div style="display:inline-flex;border-radius:999px;border:1.5px solid #2E4A3C;overflow:hidden;">
-    <button id="btnEn" onclick="setLang('en')" style="padding:9px 24px;background:#2E4A3C;color:#fff;border:none;font-size:13px;font-weight:500;cursor:pointer;letter-spacing:.02em;">English</button>
-    <button id="btnVi" onclick="setLang('vi')" style="padding:9px 24px;background:transparent;color:#2E4A3C;border:none;font-size:13px;font-weight:500;cursor:pointer;letter-spacing:.02em;">Ti&#7871;ng Vi&#7879;t</button>
-  </div>
+  <a href="condition-ocd-vi.html" style="font-size:14px;color:#2E4A3C;text-decoration:none;border-bottom:1px solid rgba(46,74,60,0.4);padding-bottom:1px;">&#127758; Xem b&#7843;n d&#7883;ch ti&#7871;ng Vi&#7879;t</a>
 </div>
 
 <section style="background:var(--ivory);padding:56px clamp(1.5rem,5vw,4rem);">
@@ -113,22 +110,4 @@
 </footer>
 <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>
 
-<!-- Translate button -->
-<div id="google_translate_element" style="display:none;visibility:hidden;"></div>
-
-<style>.goog-te-banner-frame{display:none!important;}.goog-te-gadget{display:none!important;}body{top:0!important;}</style>
-<script>
-var _gtOn=false;
-function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'vi',autoDisplay:false},'google_translate_element');}
-function setLang(l){
-  var s=document.querySelector('.goog-te-combo'),e=document.getElementById('btnEn'),v=document.getElementById('btnVi');
-  if(!s)return;
-  if(l==='vi'&&!_gtOn){s.value='vi';s.dispatchEvent(new Event('change'));_gtOn=true;}
-  else if(l==='en'&&_gtOn){s.value='en';s.dispatchEvent(new Event('change'));_gtOn=false;}
-  e.style.background=_gtOn?'transparent':'#2E4A3C';
-  e.style.color=_gtOn?'#2E4A3C':'#fff';
-  v.style.background=_gtOn?'#2E4A3C':'transparent';
-  v.style.color=_gtOn?'#fff':'#2E4A3C';
-}
-</script>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></body></html>
+</body></html>

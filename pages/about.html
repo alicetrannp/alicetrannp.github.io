@@ -101,10 +101,7 @@
   <p>A little about who I am and why this work matters to me.</p>
 </div>
 <div style="text-align:center;padding:14px 0;background:var(--cream,#F5F2EC);">
-  <div style="display:inline-flex;border-radius:999px;border:1.5px solid #2E4A3C;overflow:hidden;">
-    <button id="btnEn" onclick="setLang('en')" style="padding:9px 24px;background:#2E4A3C;color:#fff;border:none;font-size:13px;font-weight:500;cursor:pointer;letter-spacing:.02em;">English</button>
-    <button id="btnVi" onclick="setLang('vi')" style="padding:9px 24px;background:transparent;color:#2E4A3C;border:none;font-size:13px;font-weight:500;cursor:pointer;letter-spacing:.02em;">Ti&#7871;ng Vi&#7879;t</button>
-  </div>
+  <a href="about-vi.html" style="font-size:14px;color:#2E4A3C;text-decoration:none;border-bottom:1px solid rgba(46,74,60,0.4);padding-bottom:1px;">&#127758; Xem b&#7843;n d&#7883;ch ti&#7871;ng Vi&#7879;t</a>
 </div>
 
 <section class="about" style="padding-top: 64px;">
@@ -181,6 +178,15 @@
   </div>
 </section>
 
+<section style="background: var(--sage-lt); padding: 64px 48px;">
+  <div style="max-width: 680px; margin: 0 auto; text-align: center;">
+    <div class="section-tag">My Values</div>
+    <h2 class="section-title">Strength begins with seeking help.</h2>
+    <p style="color: var(--green-md); font-size: 15px; line-height: 1.9;">Reaching out takes courage, and you do not have to do this alone. My goal is to create a safe, supportive space where you feel heard, understood, and treated with kindness and respect. Care here is centered on helping you move toward healing, resilience, and lasting mental wellness, while supporting healthy boundaries, emotional balance, and personal growth.</p>
+    <p style="color: var(--green-md); font-size: 15px; line-height: 1.9; margin-top: 1rem;">If this is your first time seeing a psychiatric provider, the process may feel more familiar than you expect. Together, we build a care plan that is personalized, collaborative, and aligned with your needs. My approach is thoughtful and unhurried, with the goal of helping you feel more supported, more informed, and more confident in your own care.</p>
+  </div>
+</section>
+
 <div style="background:var(--cream,#F5F2EC);padding:2.5rem clamp(1rem,4vw,3rem);">
   <div style="max-width:760px;margin:0 auto;background:#111;border:2px solid #E05C00;border-radius:16px;padding:1.75rem 2rem;">
     <div style="font-family:sans-serif;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#E05C00;font-weight:700;margin-bottom:.85rem;">A note on urgency</div>
@@ -235,23 +241,5 @@
 
 <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>
 
-<!-- Translate button -->
-<div id="google_translate_element" style="display:none;visibility:hidden;"></div>
-
-<style>.goog-te-banner-frame{display:none!important;}.goog-te-gadget{display:none!important;}body{top:0!important;}</style>
-<script>
-var _gtOn=false;
-function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'vi',autoDisplay:false},'google_translate_element');}
-function setLang(l){
-  var s=document.querySelector('.goog-te-combo'),e=document.getElementById('btnEn'),v=document.getElementById('btnVi');
-  if(!s)return;
-  if(l==='vi'&&!_gtOn){s.value='vi';s.dispatchEvent(new Event('change'));_gtOn=true;}
-  else if(l==='en'&&_gtOn){s.value='en';s.dispatchEvent(new Event('change'));_gtOn=false;}
-  e.style.background=_gtOn?'transparent':'#2E4A3C';
-  e.style.color=_gtOn?'#2E4A3C':'#fff';
-  v.style.background=_gtOn?'#2E4A3C':'transparent';
-  v.style.color=_gtOn?'#fff':'#2E4A3C';
-}
-</script>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></body>
+</body>
 </html>
