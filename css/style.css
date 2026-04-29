@@ -355,7 +355,7 @@ section { padding: 72px clamp(1.5rem, 5vw, 3rem); }
 }
 
 /* ── FOOTER ── */
-footer { background: var(--forest); padding: 56px 48px 32px; }
+footer { background: #2E4A3C; padding: 56px 48px 32px; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1.5fr; gap: 32px; margin-bottom: 40px; }
 .footer-brand { font-family: var(--serif); font-size: 18px; font-weight: 300; color: var(--sage-lt); margin-bottom: 12px; }
 .footer-tagline { font-size: 13px; color: #6a7d62; line-height: 1.7; }

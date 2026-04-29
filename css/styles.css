@@ -1235,7 +1235,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
    Footer
    ========================================================= */
 .footer {
-  background: var(--forest-deep);
+  background: #2E4A3C;
   color: rgba(251, 247, 240, .8);
   padding: 4rem clamp(1.25rem, 4vw, 3rem) 2rem;
 }
