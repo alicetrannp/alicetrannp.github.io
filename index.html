@@ -179,7 +179,7 @@
     <div>
       <p class="eyebrow">Who we help</p>
       <h2 class="h2">You don't have to name it perfectly<br><em class="serif-i">to be welcome here.</em></h2>
-      <p class="lede">These are some of the experiences people bring to a first visit. Click any to learn more.</p>
+      <p class="lede">These are some of the experiences people bring to a first visit.<br>You are welcome here whether you see yourself in one of them, many of them, or none at all. Click any to learn more.</p>
     </div>
     <ul class="chips">
       <li><a href="pages/condition-anxiety.html">Anxiety</a></li>
@@ -248,7 +248,7 @@
         <li>Coping strategies and skill-building</li>
       </ul>
     </div>
-    <div class="service service--accent">
+    <div class="service service--accent" style="grid-column:2;">
       <span class="service__tag">Culturally Attuned</span>
       <h3>Care in Tiếng Việt</h3>
       <p class="service__meta">For you &amp; your family</p>
@@ -256,7 +256,7 @@
     </div>
   </div>
   <div style="text-align:center;margin-top:2.5rem;">
-    <a href="pages/services.html" class="btn btn--ghost">View all services</a>
+    <a href="pages/services.html" class="btn btn--ghost">Learn more about services we offer</a>
   </div>
 </section>
 
@@ -266,30 +266,63 @@
     <p class="eyebrow">What patients say</p>
     <h2 class="h2">Real words from real people.</h2>
   </div>
-  <div class="reviews__grid">
-    <div class="review" data-reveal>
-      <div class="review__stars">★★★★★</div>
-      <blockquote>"Alice is an incredibly compassionate, thoughtful, and thorough provider. I feel so lucky to have had her help guide me through the care I needed. Her cultural competency and understanding of nuances is remarkable."</blockquote>
-      <div class="review__who">Jules P., Virginia</div>
+  <div class="reviews__carousel-wrap">
+    <button class="carousel__btn carousel__btn--prev" onclick="moveCarousel(-1)" aria-label="Previous review">&#8592;</button>
+    <div class="reviews__overflow" id="reviewsOverflow">
+      <div class="carousel__track" id="carouselTrack">
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"Alice Tran is an absolutely fantastic provider. She is kind, warm, patient, understanding, and incredibly focused on getting the best possible outcome for her patients. I'm confident that she will continue to greatly improve the lives of every single one of her patients."</blockquote>
+          <div class="review__who">Jake L., Virginia</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"Alice is great. She is easy to talk to, very understanding, and makes you feel like you are actually being heard. The appointment felt comfortable and not rushed at all. I would definitely recommend her to anyone looking for psychiatric care. Also, she speaks Vietnamese — which is a plus for me."</blockquote>
+          <div class="review__who">Annie N., Virginia</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"Dr. Tran is a therapist who listens. A session with her is like sipping a warm cup of tea — soothing, relaxing, and comfortable. If you're looking for someone who will see you as a whole person, nurture your growth, and respect your story, you'll want to see Dr. Tran."</blockquote>
+          <div class="review__who">R.P., Virginia</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"Alice is an incredibly compassionate, thoughtful, and thorough provider. Her knowledge is coupled with cultural competency and understanding of nuances. I can not recommend her enough — thank you so much for your support."</blockquote>
+          <div class="review__who">Jules P., Virginia</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"Highly recommend Dr. Tran! Her approach is both compassionate and insightful, striking the perfect balance between professionalism and warmth. Thank you for helping me become a better version of myself."</blockquote>
+          <div class="review__who">Jamie H., Virginia</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"She radiates kindness and goodwill. I felt safe to tell her when something wasn't working because she always had ideas for maximizing my treatment. I was struggling to keep my head above water for years, and she helped me turn my entire life around."</blockquote>
+          <div class="review__who">Helix M., Virginia</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"Extremely blessed to have had Dr. Tran as part of my rehabilitation. She truly listened to my struggles while providing the best plan. A very open, comfortable, no-judgment environment."</blockquote>
+          <div class="review__who">Brandon D., Virginia</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"Alice has been so helpful in my journey of coping with depression, anxiety, and personal struggles with cultural values. She understands well as a fellow Asian American. She listens and gives great, understanding advice."</blockquote>
+          <div class="review__who">Cassidy T., Virginia</div>
+        </div>
+      </div>
     </div>
-    <div class="review" data-reveal style="--delay:100ms">
-      <div class="review__stars">★★★★★</div>
-      <blockquote>"Extremely blessed to have had Dr. Tran as part of my rehabilitation process. She truly listened to my struggles while providing the best plan. A very open, comfortable, no judgment environment."</blockquote>
-      <div class="review__who">Brandon D., Virginia</div>
-    </div>
-    <div class="review" data-reveal style="--delay:200ms">
-      <div class="review__stars">★★★★★</div>
-      <blockquote>"Alice has been so helpful in my journey of coping with depression and anxiety, and personal struggles with cultural values. She understands well as a fellow Asian American. She listens and gives great advice."</blockquote>
-      <div class="review__who">Cassidy T., Virginia</div>
-    </div>
+    <button class="carousel__btn carousel__btn--next" onclick="moveCarousel(1)" aria-label="Next review">&#8594;</button>
   </div>
+  <div class="carousel__dots" id="carouselDots"></div>
 </section>
 
 <!-- STEPS -->
 <section class="steps">
   <div class="section__head">
     <p class="eyebrow">Process to progress</p>
-    <h2 class="h2">Here's what it looks like<br><em class="serif-i">to begin care.</em></h2>
+    <h2 class="h2">If you're ready, or almost ready,<br><em class="serif-i">I'd be honored to hear from you.</em></h2>
+    <p class="lede">Here's what it looks like to begin care.</p>
   </div>
   <div class="steps__grid">
     <div class="step" data-reveal>
@@ -343,6 +376,18 @@
         <strong>Alice Tran Psychiatric Care</strong>
         <span>Telehealth psychiatric care across Virginia.<br>English &amp; Tiếng Việt welcome.</span>
       </div>
+      <div style="margin-top:1.5rem;">
+        <h4 class="footer__col" style="font-family:var(--sans);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(251,247,240,.45);font-weight:500;margin:0 0 .75rem;">Contact</h4>
+        <a href="tel:7038295227" style="display:block;font-size:.92rem;color:rgba(251,247,240,.8);margin:0 0 .35rem;">(703) 829-5227 (Call or Text)</a>
+        <span style="display:block;font-size:.82rem;color:rgba(251,247,240,.4);margin:0 0 .35rem;">Fax: (703) 970-1541</span>
+        <a href="mailto:info@alicetrannp.com" style="display:block;font-size:.92rem;color:rgba(251,247,240,.8);margin:0 0 .35rem;">info@alicetrannp.com</a>
+        <span style="display:block;font-size:.88rem;color:rgba(251,247,240,.5);line-height:1.6;">3060 Williams Drive, Suite 300<br>Fairfax, VA 22031</span>
+      </div>
+      <div style="margin-top:1.25rem;">
+        <h4 class="footer__col" style="font-family:var(--sans);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(251,247,240,.45);font-weight:500;margin:0 0 .75rem;">Telehealth</h4>
+        <a href="https://doxy.me/alicetran" target="_blank" style="display:block;font-size:.92rem;color:rgba(251,247,240,.8);margin:0 0 .35rem;">Join appointment</a>
+        <a href="https://alicetran.intakeq.com/booking" target="_blank" style="display:block;font-size:.92rem;color:rgba(251,247,240,.8);">Book online</a>
+      </div>
     </div>
     <div class="footer__col">
       <h4>Pages</h4>
@@ -351,13 +396,6 @@
       <a href="pages/rates.html">Rates &amp; Insurance</a>
       <a href="pages/conditions.html">Conditions</a>
       <a href="pages/contact.html">Contact</a>
-    </div>
-    <div class="footer__col">
-      <h4>Contact</h4>
-      <a href="tel:7038295227">(703) 829-5227 (Call or Text)</a>
-      <p style="font-size:0.88rem;margin:0 0 0.5rem;opacity:0.7;">Fax: (703) 970-1541</p>
-      <a href="mailto:info@alicetrannp.com">info@alicetrannp.com</a>
-      <p>3060 Williams Drive, Suite 300<br>Fairfax, VA 22031</p>
     </div>
     <div class="footer__col">
       <h4>Hours</h4>
@@ -370,10 +408,6 @@
         <li><span><b>Saturday</b> <span>Closed</span></span></li>
         <li><span><b>Sunday</b> <span>Closed</span></span></li>
       </ul>
-      <br>
-      <h4>Telehealth</h4>
-      <a href="https://doxy.me/alicetran" target="_blank">Join appointment</a>
-      <a href="https://alicetran.intakeq.com/booking" target="_blank">Book online</a>
     </div>
     <div class="footer__fine">
       © 2026 Alice Tran Psychiatric Care LLC. All rights reserved.
@@ -386,6 +420,33 @@
 function toggleNav() {
   document.getElementById('nav').classList.toggle('is-open');
 }
+
+// Reviews carousel
+(function(){
+  var N = 8, perView = window.innerWidth >= 900 ? 3 : 1;
+  var idx = 0, maxIdx = N - perView;
+  var track = document.getElementById('carouselTrack');
+  var cards = track.querySelectorAll('.review');
+  // Set track + card widths
+  track.style.width = (N * 100 / perView) + '%';
+  cards.forEach(function(c){ c.style.flex = '0 0 ' + (100/N) + '%'; c.style.padding = '0 .625rem'; });
+  // Build dots
+  var dotsEl = document.getElementById('carouselDots');
+  for(var i = 0; i <= maxIdx; i++){
+    var d = document.createElement('button');
+    d.className = 'carousel__dot' + (i===0?' is-active':'');
+    d.dataset.i = i;
+    d.addEventListener('click', function(){ goTo(+this.dataset.i); });
+    dotsEl.appendChild(d);
+  }
+  function goTo(n){
+    idx = (n + maxIdx + 1) % (maxIdx + 1);
+    track.style.transform = 'translateX(-' + (idx / N * 100) + '%)';
+    document.querySelectorAll('.carousel__dot').forEach(function(d,i){ d.classList.toggle('is-active', i===idx); });
+  }
+  window.moveCarousel = function(dir){ goTo(idx + dir); };
+  setInterval(function(){ goTo(idx + 1); }, 5500);
+})();
 // Scroll reveal
 const reveals = document.querySelectorAll('[data-reveal]');
 const observer = new IntersectionObserver((entries) => {

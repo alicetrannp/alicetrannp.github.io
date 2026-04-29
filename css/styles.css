@@ -531,6 +531,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 .promise h3 {
   font-size: 1.5rem;
+  font-weight: 600;
   margin: 0 0 .8rem;
 }
 .promise p { color: var(--ink-soft); margin: 0; }
@@ -593,12 +594,12 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   margin: 0 0 1rem;
   font-style: italic;
 }
-.service p { color: var(--ink-soft); margin: 0 0 1rem; }
+.service p { color: var(--ink-soft); margin: 0 0 .5rem; }
 .service__list {
-  margin-top: auto;
+  margin-top: 0;
   display: grid;
   gap: .5rem;
-  padding-top: 1rem;
+  padding-top: .5rem;
 }
 .service__list li {
   position: relative;
@@ -710,6 +711,48 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
    Testimonials
    ========================================================= */
 .reviews { background: var(--cream); }
+/* Carousel wrapper */
+.reviews__carousel-wrap {
+  position: relative;
+  max-width: calc(var(--container) + 60px);
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.reviews__overflow { overflow: hidden; }
+.carousel__track {
+  display: flex;
+  transition: transform .5s cubic-bezier(.4,0,.2,1);
+  will-change: transform;
+}
+.carousel__btn {
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  z-index: 3;
+  background: var(--ivory-soft);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+  color: var(--forest);
+  cursor: pointer;
+  transition: background .2s, box-shadow .2s;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+}
+.carousel__btn:hover { background: var(--cream); box-shadow: 0 8px 20px rgba(0,0,0,.12); }
+.carousel__btn--prev { left: 0; }
+.carousel__btn--next { right: 0; }
+.carousel__dots {
+  display: flex; justify-content: center; gap: .5rem;
+  margin-top: 2.5rem;
+}
+.carousel__dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--sage); border: none; cursor: pointer; padding: 0;
+  transition: background .25s, transform .25s;
+}
+.carousel__dot.is-active { background: var(--forest); transform: scale(1.45); }
+/* Legacy grid (kept for safety) */
 .reviews__grid {
   max-width: var(--container);
   margin: 0 auto;
@@ -1109,7 +1152,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
    CTA band
    ========================================================= */
 .cta-band {
-  background: var(--forest);
+  background: radial-gradient(ellipse at 60% 35%, #3d6352 0%, #1e3128 75%);
   color: var(--ivory-soft);
   text-align: center;
 }
@@ -1190,7 +1233,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   max-width: var(--container);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  grid-template-columns: 1.7fr 1fr 1.3fr;
   gap: 2.5rem;
   align-items: start;
 }
