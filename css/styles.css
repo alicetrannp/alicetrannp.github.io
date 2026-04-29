@@ -32,7 +32,7 @@
 
 /* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   margin: 0;
   font-family: var(--sans);
@@ -570,6 +570,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   background: linear-gradient(140deg, var(--forest) 0%, var(--forest-deep) 100%);
   color: #fff;
   border-color: transparent;
+  grid-column: 2;
 }
 .service--accent h3, .service--accent .service__tag { color: #fff !important; }
 .service--accent .service__meta, .service--accent p { color: rgba(255,255,255,0.85) !important; }
@@ -1335,6 +1336,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   .policies,
   .steps__grid { grid-template-columns: 1fr; }
   .service--lg { grid-column: auto; padding: 2.25rem 1.9rem; }
+  .service--accent { grid-column: 1; }
 
   .footer__inner { grid-template-columns: 1fr 1fr; }
   .footer__brand { grid-column: 1 / -1; }
