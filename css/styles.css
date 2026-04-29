@@ -1170,14 +1170,8 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   display: block;
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(2rem, 4.2vw, 3.4rem);
-}
-.cta-sub__ready {
-  display: block;
-  margin-top: 0.6rem;
-  font-style: italic;
-  font-weight: 600;
-  font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+  font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+  white-space: nowrap;
 }
 .cta-band .btn--primary { background: var(--ivory-soft); color: var(--forest-deep); }
 .cta-band .btn--primary:hover { background: var(--cream); }
