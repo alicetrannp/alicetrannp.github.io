@@ -222,7 +222,7 @@ section { padding: 72px 48px; }
 /* ── CTA BAND ── */
 .cta-band { background: #4A7060; text-align: center; padding: 80px clamp(1.25rem,5vw,4rem); }
 .cta-band .section-title { color: #F7F2EA; margin-bottom: 14px; }
-.cta-band p { color: rgba(247,242,234,.75); margin-top: 1.5rem; margin-bottom: 0; font-size: 14px; }
+.cta-band p { color: var(--forest,#2d3d2a); margin-top: 0.6rem; margin-bottom: 0; font-size: 14px; line-height: 1.8; font-style: normal; }
 .btn-light { background: #F7F2EA; color: #2E4A3C; }
 .btn-light:hover { background: #fff; }
 .crisis-note { font-size: 12px; color: #6a7d62; margin-top: 28px; line-height: 1.8; }
