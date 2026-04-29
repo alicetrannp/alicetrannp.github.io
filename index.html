@@ -256,7 +256,7 @@
     </div>
   </div>
   <div style="text-align:center;margin-top:2.5rem;">
-    <a href="pages/services.html" class="btn btn--ghost">Learn more about services we offer</a>
+    <a href="pages/services.html" class="btn" style="background:#fff;color:#2E4A3C;border:1.5px solid #2E4A3C;">Learn more about services we offer</a>
   </div>
 </section>
 
@@ -423,29 +423,56 @@ function toggleNav() {
 
 // Reviews carousel
 (function(){
-  var N = 8, perView = window.innerWidth >= 900 ? 3 : 1;
-  var idx = 0, maxIdx = N - perView;
+  var N = 8;
+  var GAP = 20;
+  var overflow = document.getElementById('reviewsOverflow');
   var track = document.getElementById('carouselTrack');
   var cards = track.querySelectorAll('.review');
-  // Set track + card widths
-  track.style.width = (N * 100 / perView) + '%';
-  cards.forEach(function(c){ c.style.flex = '0 0 ' + (100/N) + '%'; c.style.padding = '0 .625rem'; });
-  // Build dots
-  var dotsEl = document.getElementById('carouselDots');
-  for(var i = 0; i <= maxIdx; i++){
-    var d = document.createElement('button');
-    d.className = 'carousel__dot' + (i===0?' is-active':'');
-    d.dataset.i = i;
-    d.addEventListener('click', function(){ goTo(+this.dataset.i); });
-    dotsEl.appendChild(d);
+  var idx = 0, perView, maxIdx, cardW;
+
+  function getPerView(){ return window.innerWidth >= 900 ? 3 : 1; }
+
+  function layout(){
+    perView = getPerView();
+    maxIdx = N - perView;
+    if(idx > maxIdx) idx = maxIdx;
+    cardW = (overflow.offsetWidth - GAP * (perView - 1)) / perView;
+    track.style.width = (cardW * N + GAP * N) + 'px';
+    cards.forEach(function(c){
+      c.style.flex = '0 0 ' + cardW + 'px';
+      c.style.marginRight = GAP + 'px';
+    });
+    buildDots();
+    render();
   }
-  function goTo(n){
-    idx = (n + maxIdx + 1) % (maxIdx + 1);
-    track.style.transform = 'translateX(-' + (idx / N * 100) + '%)';
+
+  function render(){
+    track.style.transform = 'translateX(-' + (idx * (cardW + GAP)) + 'px)';
     document.querySelectorAll('.carousel__dot').forEach(function(d,i){ d.classList.toggle('is-active', i===idx); });
   }
+
+  // Build dots (one per stopping position, rebuilt on resize if needed)
+  var dotsEl = document.getElementById('carouselDots');
+  function buildDots(){
+    dotsEl.innerHTML = '';
+    for(var i = 0; i <= maxIdx; i++){
+      var d = document.createElement('button');
+      d.className = 'carousel__dot' + (i===0?' is-active':'');
+      d.dataset.i = i;
+      d.addEventListener('click', function(){ goTo(+this.dataset.i); });
+      dotsEl.appendChild(d);
+    }
+  }
+
+  function goTo(n){
+    idx = Math.max(0, Math.min(n, maxIdx));
+    render();
+  }
   window.moveCarousel = function(dir){ goTo(idx + dir); };
-  setInterval(function(){ goTo(idx + 1); }, 5500);
+
+  layout();
+  window.addEventListener('resize', layout);
+  setInterval(function(){ goTo(idx + 1 > maxIdx ? 0 : idx + 1); }, 5500);
 })();
 // Scroll reveal
 const reveals = document.querySelectorAll('[data-reveal]');

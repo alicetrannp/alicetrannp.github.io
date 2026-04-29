@@ -743,15 +743,15 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 .carousel__btn--prev { left: 0; }
 .carousel__btn--next { right: 0; }
 .carousel__dots {
-  display: flex; justify-content: center; gap: .5rem;
+  display: flex; justify-content: center; gap: .9rem;
   margin-top: 2.5rem;
 }
 .carousel__dot {
-  width: 7px; height: 7px; border-radius: 50%;
+  width: 10px; height: 10px; border-radius: 50%;
   background: var(--sage); border: none; cursor: pointer; padding: 0;
   transition: background .25s, transform .25s;
 }
-.carousel__dot.is-active { background: var(--forest); transform: scale(1.45); }
+.carousel__dot.is-active { background: var(--forest); transform: scale(1.4); }
 /* Legacy grid (kept for safety) */
 .reviews__grid {
   max-width: var(--container);
@@ -1152,7 +1152,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
    CTA band
    ========================================================= */
 .cta-band {
-  background: radial-gradient(ellipse at 60% 35%, #3d6352 0%, #1e3128 75%);
+  background: radial-gradient(ellipse at 60% 40%, #6b9080 0%, #4a7060 55%, #3a5a4d 100%);
   color: var(--ivory-soft);
   text-align: center;
 }
@@ -1239,6 +1239,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 .footer__brand {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
 }
