@@ -777,14 +777,13 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   font-size: 1.5rem;
 }
 .review blockquote {
-  margin: 0 0 1.25rem;
+  margin: 0 0 .75rem;
   font-family: var(--serif);
   font-size: 1.15rem;
   line-height: 1.45;
   color: var(--forest-deep);
   font-style: italic;
   font-weight: 400;
-  flex: 1;
 }
 .review__who {
   font-size: .82rem;
@@ -1152,7 +1151,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
    CTA band
    ========================================================= */
 .cta-band {
-  background: radial-gradient(ellipse at 60% 40%, #6b9080 0%, #4a7060 55%, #3a5a4d 100%);
+  background: #4A7060;
   color: var(--ivory-soft);
   text-align: center;
 }
