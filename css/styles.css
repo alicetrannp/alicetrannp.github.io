@@ -1290,7 +1290,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   gap: .25rem;
   margin: 0;
 }
-.footer__hours span { display: flex; justify-content: space-between; gap: 1rem; font-size: .88rem; }
+.footer__hours span { display: flex; justify-content: flex-start; gap: .75rem; font-size: .88rem; }
 .footer__hours b { color: rgba(251, 247, 240, .75); font-weight: 500; }
 .footer__fine {
   grid-column: 1 / -1;
