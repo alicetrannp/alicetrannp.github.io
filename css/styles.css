@@ -207,6 +207,8 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   transition: background .3s var(--ease), transform .3s var(--ease);
 }
 .nav__cta:hover { background: var(--forest-deep); transform: translateY(-2px); }
+.nav__visit { padding:.65rem 1.2rem; border-radius:999px; background:transparent; color:var(--forest); font-size:.88rem; font-weight:500; border:1.5px solid var(--forest); transition:background .3s,color .3s,transform .3s; }
+.nav__visit:hover { background:var(--forest); color:var(--ivory); transform:translateY(-2px); }
 
 .nav__toggle {
   display: none;
