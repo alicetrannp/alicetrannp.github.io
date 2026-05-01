@@ -123,19 +123,39 @@
   <a href="about-vi.html" style="display:inline-flex;align-items:center;gap:.5rem;background:#2E4A3C;color:#fff;border-radius:999px;padding:.6rem 1.4rem;font-size:.9rem;font-weight:500;text-decoration:none;letter-spacing:.01em;">🌐 Xem bản dịch tiếng Việt</a>
 </div>
 
-<!-- FEATURE ROW: photo left, bio right -->
-<div class="feature-row">
-  <div class="feature-row__img">
-    <img src="../img/alice-portrait.jpg" alt="Alice Tran, PMHNP-BC, psychiatric nurse practitioner in Fairfax, Virginia." />
+<!-- ABOUT: portrait bubble + bio -->
+<section style="background:var(--cream);padding:72px clamp(1.5rem,5vw,5rem);">
+  <div style="max-width:1000px;margin:0 auto;display:grid;grid-template-columns:340px 1fr;gap:5rem;align-items:center;">
+
+    <!-- Portrait bubble (matches homepage style) -->
+    <div style="position:relative;padding:1rem;flex-shrink:0;">
+      <div style="position:relative;aspect-ratio:4/5;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(46,74,60,.35),0 0 0 1px rgba(34,39,31,.05);transform:rotate(-1.2deg);transition:transform .8s ease;" onmouseenter="this.style.transform='rotate(0deg)'" onmouseleave="this.style.transform='rotate(-1.2deg)'">
+        <img src="../img/alice-portrait.jpg" alt="Alice Tran, PMHNP-BC, psychiatric nurse practitioner in Fairfax, Virginia." style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <!-- decorative backing -->
+      <div style="position:absolute;inset:2rem -1rem -1rem 2rem;border-radius:28px;background:var(--sage-md);z-index:-1;opacity:.5;"></div>
+      <!-- caption pill -->
+      <div style="position:absolute;bottom:-0.8rem;right:0.5rem;background:var(--cream);padding:.55rem 1rem;border-radius:999px;font-size:.78rem;color:var(--green-lt);letter-spacing:.05em;box-shadow:0 4px 16px -6px rgba(46,74,60,.2);white-space:nowrap;">Hello, it's Alice &nbsp;·&nbsp; Xin chào, tôi là Alice</div>
+    </div>
+
+    <!-- Bio -->
+    <div data-reveal>
+      <span class="eyebrow">Who I am</span>
+      <h2 class="h2-hero">Alice Tran,<br><em class="serif-i">PMHNP-BC, FNP-BC</em></h2>
+      <p style="color:var(--green-md);font-size:1rem;line-height:1.85;margin-bottom:1rem;">Alice Tran, PMHNP-BC, FNP-BC, is a dual board-certified Family and Psychiatric Mental Health Nurse Practitioner. With years of clinical experience and specialized training in psychiatric care, Alice evaluates and manages a wide range of psychiatric conditions for adults ages 18 to 60, including anxiety, depression, ADHD, sleep disorders, and mood disorders.</p>
+      <p style="color:var(--green-md);font-size:1rem;line-height:1.85;margin-bottom:1rem;">Alice also provides evidence-based psychotherapy to address anxious and depressed thoughts, emotional dysregulation, trauma, multicultural issues, and relational concerns, including boundary issues, unhealthy relationship patterns, and LGBTQ+ issues.</p>
+      <p style="color:var(--green-md);font-size:1rem;line-height:1.85;">Alice is a proud product of immigration and fluent in Vietnamese. She has a deep passion for working with international students, immigrants, and minorities — people who have often felt that the mental health system wasn't quite built for them.</p>
+    </div>
+
   </div>
-  <div class="feature-row__copy" data-reveal>
-    <span class="eyebrow">Who I am</span>
-    <h2 class="h2-hero">Alice Tran,<br><em class="serif-i">PMHNP-BC, FNP-BC</em></h2>
-    <p style="color:var(--green-md);font-size:1rem;line-height:1.85;margin-bottom:1rem;">Alice Tran, PMHNP-BC, FNP-BC, is a dual board-certified Family and Psychiatric Mental Health Nurse Practitioner. With years of clinical experience and specialized training in psychiatric care, Alice evaluates and manages a wide range of psychiatric conditions for adults ages 18 to 60, including anxiety, depression, ADHD, sleep disorders, and mood disorders.</p>
-    <p style="color:var(--green-md);font-size:1rem;line-height:1.85;margin-bottom:1rem;">Alice also provides evidence-based psychotherapy to address anxious and depressed thoughts, emotional dysregulation, trauma, multicultural issues, and relational concerns, including boundary issues, unhealthy relationship patterns, and LGBTQ+ issues.</p>
-    <p style="color:var(--green-md);font-size:1rem;line-height:1.85;">Alice is a proud product of immigration and fluent in Vietnamese. She has a deep passion for working with international students, immigrants, and minorities, people who have often felt that the mental health system wasn't quite built for them.</p>
-  </div>
-</div>
+</section>
+
+<style>
+@media(max-width:768px){
+  .about-portrait-grid{grid-template-columns:1fr!important;gap:2.5rem!important;}
+  .about-portrait-grid>div:first-child{max-width:280px;margin:0 auto;}
+}
+</style>
 
 <!-- EDUCATION & TRAINING with h-cards -->
 <section style="background: var(--sage-lt); padding: 64px 48px;">
