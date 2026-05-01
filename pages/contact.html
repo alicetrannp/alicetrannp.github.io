@@ -107,12 +107,21 @@
   <a href="contact-vi.html" style="display:inline-flex;align-items:center;gap:.5rem;background:#C17B4E;color:#fff;border-radius:999px;padding:.6rem 1.4rem;font-size:.9rem;font-weight:500;text-decoration:none;letter-spacing:.01em;">🌐 Xem bản dịch tiếng Việt</a>
 </div>
 
+<style>
+@media(max-width:700px){
+  .contact-grid { grid-template-columns:1fr!important; }
+  .contact-cta { order:-1; border-radius:16px 16px 0 0!important; }
+  .contact-info { border-radius:0 0 16px 16px!important; }
+  .contact-section { padding:32px 1.25rem!important; }
+}
+</style>
+
 <!-- 2-COLUMN CONTACT LAYOUT -->
-<section style="background: var(--cream); padding: 64px clamp(1.5rem,5vw,3rem);">
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;max-width:1000px;margin:0 auto;align-items:stretch;border-radius:20px;overflow:hidden;border:1px solid var(--border);">
+<section class="contact-section" style="background: var(--cream); padding: 64px clamp(1.5rem,5vw,3rem);">
+  <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:0;max-width:1000px;margin:0 auto;align-items:stretch;border-radius:20px;overflow:hidden;border:1px solid var(--border);">
 
     <!-- Left: contact info -->
-    <div style="padding:3.5rem clamp(1.5rem,4vw,3rem);background:var(--cream);" data-reveal>
+    <div class="contact-info" style="padding:3.5rem clamp(1.5rem,4vw,3rem);background:var(--cream);" data-reveal>
       <span class="eyebrow">Contact Information</span>
       <p style="color:var(--green-md);font-size:0.95rem;line-height:1.75;margin-bottom:2rem;">Reach out below and we'll find a time that feels right.</p>
 
@@ -143,7 +152,7 @@
     </div>
 
     <!-- Right: dark-section CTA sidebar -->
-    <div class="dark-section" style="border-radius:0;display:flex;flex-direction:column;justify-content:center;padding:3.5rem clamp(1.5rem,4vw,3rem);" data-reveal>
+    <div class="dark-section contact-cta" style="border-radius:0;display:flex;flex-direction:column;justify-content:center;padding:3.5rem clamp(1.5rem,4vw,3rem);" data-reveal>
       <span class="eyebrow">Ready to begin?</span>
       <h2 style="font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:300;color:#fff;line-height:1.2;margin:1rem 0 1.5rem;">Book your first<br><em>appointment online.</em></h2>
       <p style="color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.75;margin-bottom:2rem;">New patients are welcome.</p>
