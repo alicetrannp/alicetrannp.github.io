@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -83,42 +83,71 @@
   <h1>I'd be honored<br>to hear from you.</h1>
   <p>Reach out with questions, or book directly online. We respond within 24 to 72 business hours.</p>
 </div>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Mon–Thu 10am–4pm</span><span>·</span>
+    <span>(703) 829-5227</span><span>·</span>
+    <span>Telehealth</span><span>·</span>
+    <span>info@alicetrannp.com</span><span>·</span>
+    <span>Fairfax, VA</span><span>·</span>
+    <span>Mon–Thu 10am–4pm</span><span>·</span>
+    <span>(703) 829-5227</span><span>·</span>
+    <span>Telehealth</span><span>·</span>
+    <span>info@alicetrannp.com</span><span>·</span>
+    <span>Fairfax, VA</span><span>·</span>
+  </div>
+</div>
+
 <div style="text-align:center;padding:14px 0;background:var(--cream,#F5F2EC);">
   <a href="contact-vi.html" style="display:inline-flex;align-items:center;gap:.5rem;background:#2E4A3C;color:#fff;border-radius:999px;padding:.6rem 1.4rem;font-size:.9rem;font-weight:500;text-decoration:none;letter-spacing:.01em;">🌐 Xem bản dịch tiếng Việt</a>
 </div>
 
+<!-- 2-COLUMN CONTACT LAYOUT -->
 <section style="background: var(--cream); padding: 64px clamp(1.5rem,5vw,3rem);">
-  <div style="max-width: 600px; margin: 0 auto;">
-    <h3 class="section-title" style="margin-bottom:36px;">Contact Information</h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;max-width:1000px;margin:0 auto;align-items:stretch;border-radius:20px;overflow:hidden;border:1px solid var(--border);">
 
-    <div class="contact-row">
-      <span class="contact-label">Phone (Call or Text)</span>
-      <a href="tel:7038295227" class="contact-val">(703) 829-5227</a>
-    </div>
-    <div class="contact-row">
-      <span class="contact-label">Fax</span>
-      <span class="contact-val">(703) 970-1541</span>
-    </div>
-    <div class="contact-row">
-      <span class="contact-label">Email</span>
-      <a href="mailto:info@alicetrannp.com" class="contact-val">info@alicetrannp.com</a>
-    </div>
-    <div class="contact-row">
-      <span class="contact-label">Office Hours</span>
-      <span class="contact-val">Monday – Thursday: 10:00am – 4:00pm<br>Friday, Saturday, Sunday: Closed</span>
-    </div>
-    <div class="contact-row">
-      <span class="contact-label">Telehealth</span>
-      <a href="https://doxy.me/alicetran" target="_blank" class="contact-val">Join appointment</a>
-    </div>
-    <div class="contact-row">
-      <span class="contact-label">Address</span>
-      <span class="contact-val">3060 Williams Drive, Suite 300<br>Fairfax, VA 22031</span>
+    <!-- Left: contact info -->
+    <div style="padding:3.5rem clamp(1.5rem,4vw,3rem);background:var(--cream);" data-reveal>
+      <span class="eyebrow">Contact Information</span>
+      <h2 class="h2-hero" style="font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:2rem;">Reach out<br><em class="serif-i">any way you like.</em></h2>
+
+      <div class="contact-row" style="margin-bottom:1.5rem;">
+        <span class="contact-label">Phone (Call or Text)</span>
+        <a href="tel:7038295227" class="contact-val" style="font-size:1.1rem;font-weight:500;color:var(--forest);">(703) 829-5227</a>
+      </div>
+      <div class="contact-row" style="margin-bottom:1.5rem;">
+        <span class="contact-label">Fax</span>
+        <span class="contact-val">(703) 970-1541</span>
+      </div>
+      <div class="contact-row" style="margin-bottom:1.5rem;">
+        <span class="contact-label">Email</span>
+        <a href="mailto:info@alicetrannp.com" class="contact-val" style="color:var(--green);">info@alicetrannp.com</a>
+      </div>
+      <div class="contact-row" style="margin-bottom:1.5rem;">
+        <span class="contact-label">Office Hours</span>
+        <span class="contact-val">Monday – Thursday: 10:00am – 4:00pm<br>Friday, Saturday, Sunday: Closed</span>
+      </div>
+      <div class="contact-row" style="margin-bottom:1.5rem;">
+        <span class="contact-label">Telehealth</span>
+        <a href="https://doxy.me/alicetran" target="_blank" class="contact-val" style="color:var(--green);">Join appointment</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Address</span>
+        <span class="contact-val">3060 Williams Drive, Suite 300<br>Fairfax, VA 22031</span>
+      </div>
     </div>
 
-    <div style="margin-top: 40px; text-align: center;">
-      <a href="https://alicetran.intakeq.com/booking" target="_blank" class="btn">Book an Appointment</a>
+    <!-- Right: dark-section CTA sidebar -->
+    <div class="dark-section" style="border-radius:0;display:flex;flex-direction:column;justify-content:center;padding:3.5rem clamp(1.5rem,4vw,3rem);" data-reveal>
+      <span class="eyebrow">Ready to begin?</span>
+      <h2 style="font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:300;color:#fff;line-height:1.2;margin:1rem 0 1.5rem;">Book your first<br><em>appointment online.</em></h2>
+      <p style="color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.75;margin-bottom:2rem;">New patients are welcome. Choose a time that works for you and Alice will confirm within one business day.</p>
+      <a href="https://alicetran.intakeq.com/booking" target="_blank" class="btn-primary-inner" style="align-self:flex-start;">Book Now &rarr;</a>
+      <p style="color:rgba(255,255,255,0.4);font-size:0.8rem;margin-top:2rem;line-height:1.7;">Responses within 24–72 business hours.<br>Not for crisis or emergencies — call 988.</p>
     </div>
+
   </div>
 </section>
 
@@ -174,6 +203,11 @@
   <div class="footer-copy">&#169; 2026 Alice Tran Psychiatric Care LLC. All rights reserved.</div>
 </footer>
 
+<script>
+const _rev = document.querySelectorAll('[data-reveal]');
+const _obs = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){e.target.classList.add('is-in');_obs.unobserve(e.target);} }), {threshold:0.1});
+_rev.forEach(el => _obs.observe(el));
+</script>
 <script>
 function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
 </script>

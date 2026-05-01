@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -66,66 +66,107 @@
   <h1>A small, intentional practice.<br><em>Built for depth, not volume.</em></h1>
   <p>Every service is offered through telehealth across Northern Virginia, Fairfax, and the DMV - so you can receive care from a place that already feels like yours.</p>
 </div>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Initial Evaluation</span><span>·</span>
+    <span>Medication Management</span><span>·</span>
+    <span>Supportive Therapy</span><span>·</span>
+    <span>Care in Vietnamese</span><span>·</span>
+    <span>Telehealth</span><span>·</span>
+    <span>Personalized Plans</span><span>·</span>
+    <span>Initial Evaluation</span><span>·</span>
+    <span>Medication Management</span><span>·</span>
+    <span>Supportive Therapy</span><span>·</span>
+    <span>Care in Vietnamese</span><span>·</span>
+    <span>Telehealth</span><span>·</span>
+    <span>Personalized Plans</span><span>·</span>
+  </div>
+</div>
+
 <div style="text-align:center;padding:14px 0;background:var(--cream,#F5F2EC);">
   <a href="services-vi.html" style="display:inline-flex;align-items:center;gap:.5rem;background:#2E4A3C;color:#fff;border-radius:999px;padding:.6rem 1.4rem;font-size:.9rem;font-weight:500;text-decoration:none;letter-spacing:.01em;">🌐 Xem bản dịch tiếng Việt</a>
 </div>
 
-<section class="services" style="padding-top: 64px;">
-  <div class="svc-grid" style="margin-top:0;">
-    <div class="svc-card">
-      <div class="svc-tag">Initial Visit</div>
-      <h3>Comprehensive Psychiatric Evaluation</h3>
-      <div class="svc-detail">60 minutes · Telehealth</div>
-      <p>A spacious first appointment to understand your history, symptoms, relationships, and goals. We'll map out what's been happening and co-create a plan that respects your pace and values.</p>
-      <ul class="svc-list">
+<!-- SERVICE CARDS (h-card style) -->
+<section class="services" style="padding-top: 64px; background: var(--cream);">
+  <span class="eyebrow" style="display:block;">What I offer</span>
+  <h2 class="h2-hero" style="max-width:560px;">Every visit is<br><em class="serif-i">built around you.</em></h2>
+  <div class="svc-grid" style="margin-top:2.5rem;">
+
+    <div class="h-card" data-reveal style="--delay:0ms">
+      <div class="h-card__num">01</div>
+      <div class="h-card__title">Comprehensive Psychiatric Evaluation</div>
+      <p style="font-size:0.8rem;color:var(--green-lt);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.75rem;">Initial Visit &nbsp;·&nbsp; 60 minutes &nbsp;·&nbsp; Telehealth</p>
+      <p class="h-card__body">A spacious first appointment to understand your history, symptoms, relationships, and goals. We'll map out what's been happening and co-create a plan that respects your pace and values.</p>
+      <ul class="svc-list" style="margin-top:1rem;">
         <li>Diagnostic assessment</li>
         <li>Personalized treatment plan</li>
-        <li>Psychoeducation & collaborative goal-setting</li>
+        <li>Psychoeducation &amp; collaborative goal-setting</li>
       </ul>
     </div>
-    <div class="svc-card">
-      <div class="svc-tag">Follow-Up</div>
-      <h3>Psychiatric Medication Management</h3>
-      <div class="svc-detail">Up to 30 or 50 min · Telehealth</div>
-      <p>Ongoing, thoughtful medication management with close attention to how you are actually feeling - not just what the chart says.</p>
-      <ul class="svc-list">
+
+    <div class="h-card" data-reveal style="--delay:100ms">
+      <div class="h-card__num">02</div>
+      <div class="h-card__title">Psychiatric Medication Management</div>
+      <p style="font-size:0.8rem;color:var(--green-lt);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.75rem;">Follow-Up &nbsp;·&nbsp; Up to 30 or 50 min &nbsp;·&nbsp; Telehealth</p>
+      <p class="h-card__body">Ongoing, thoughtful medication management with close attention to how you are actually feeling - not just what the chart says.</p>
+      <ul class="svc-list" style="margin-top:1rem;">
         <li>Medication adjustments</li>
         <li>Symptom monitoring</li>
         <li>Care plan reassessment</li>
       </ul>
     </div>
-    <div class="svc-card">
-      <div class="svc-tag">Integrated</div>
-      <h3>Supportive Psychotherapy</h3>
-      <div class="svc-detail">Woven into care</div>
-      <p>Brief, focused conversations that sit alongside medication management - because a prescription without context rarely leads to meaningful healing.</p>
-      <ul class="svc-list">
+
+    <div class="h-card" data-reveal style="--delay:200ms">
+      <div class="h-card__num">03</div>
+      <div class="h-card__title">Supportive Psychotherapy</div>
+      <p style="font-size:0.8rem;color:var(--green-lt);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.75rem;">Integrated &nbsp;·&nbsp; Woven into care</p>
+      <p class="h-card__body">Brief, focused conversations that sit alongside medication management - because a prescription without context rarely leads to meaningful healing.</p>
+      <ul class="svc-list" style="margin-top:1rem;">
         <li>Psychoeducation</li>
         <li>Behavioral activation</li>
         <li>Emotional processing</li>
         <li>Coping skills support</li>
       </ul>
     </div>
-    <div class="svc-card">
-      <div class="svc-tag">Culturally Attuned</div>
-      <h3>Care in Tiếng Việt</h3>
-      <div class="svc-detail">For you & your family</div>
-      <p>Mental health support in Vietnamese so your parents, elders, and loved ones can be part of the conversation too. Culture and language matter in healing.</p>
-      <ul class="svc-list">
+
+    <div class="h-card" data-reveal style="--delay:300ms">
+      <div class="h-card__num">04</div>
+      <div class="h-card__title">Care in Tiếng Việt</div>
+      <p style="font-size:0.8rem;color:var(--green-lt);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.75rem;">Culturally Attuned &nbsp;·&nbsp; For you &amp; your family</p>
+      <p class="h-card__body">Mental health support in Vietnamese so your parents, elders, and loved ones can be part of the conversation too. Culture and language matter in healing.</p>
+      <ul class="svc-list" style="margin-top:1rem;">
         <li>Full sessions in Vietnamese</li>
         <li>Family-inclusive approach</li>
         <li>Culturally informed care</li>
       </ul>
     </div>
+
   </div>
 </section>
 
+<!-- DARK SECTION: philosophy quote -->
+<div class="dark-section" data-reveal>
+  <div style="max-width:700px;margin:0 auto;text-align:center;">
+    <span class="eyebrow">A note on how I work</span>
+    <p style="font-family:var(--serif);font-size:clamp(1.6rem,3.5vw,2.6rem);font-weight:300;font-style:italic;color:#fff;line-height:1.35;margin:1.5rem 0;">"Medication can open a door. But it's the conversation — the relationship, the context, the trust — that helps you walk through it."</p>
+    <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;letter-spacing:0.08em;text-transform:uppercase;">— Alice Tran, PMHNP-BC</p>
+    <div class="cta-row" style="justify-content:center;margin-top:2.5rem;">
+      <a href="https://alicetran.intakeq.com/booking" target="_blank" class="btn-primary-inner">Book a Visit</a>
+      <a href="rates.html" class="btn-ghost-inner" style="color:#fff;border-color:rgba(255,255,255,0.4);">See Rates</a>
+    </div>
+  </div>
+</div>
+
+<!-- CONDITIONS -->
 <section class="conditions">
   <div class="section-tag">Conditions Treated</div>
   <h2 class="section-title">You don't have to name it perfectly<br>to be welcome here.</h2>
   <p style="color: var(--green-md); font-size:14px; margin-bottom: 28px;">These are some of the experiences people bring to a first visit. You are welcome whether you see yourself in one, many, or none.</p>
   <div class="conditions-body">
-    Anxiety · Depression · Trauma & PTSD · Burnout & Stress · ADHD · Panic Disorder · Grief & Loss · Life Transitions · Identity & Belonging · Postpartum Depression · Insomnia · OCD · Perinatal Mood Disorders · Bipolar Disorder · Anger Management · Emotional Dysregulation · Unhealthy Relationships · Self-Esteem · Boundary Issues · Cultural & Intergenerational Pressure · International Students · Generational Trauma · PMDD/PMS · Body Image · Eating Disorders
+    Anxiety · Depression · Trauma &amp; PTSD · Burnout &amp; Stress · ADHD · Panic Disorder · Grief &amp; Loss · Life Transitions · Identity &amp; Belonging · Postpartum Depression · Insomnia · OCD · Perinatal Mood Disorders · Bipolar Disorder · Anger Management · Emotional Dysregulation · Unhealthy Relationships · Self-Esteem · Boundary Issues · Cultural &amp; Intergenerational Pressure · International Students · Generational Trauma · PMDD/PMS · Body Image · Eating Disorders
   </div>
 </section>
 
@@ -181,6 +222,11 @@
   <div class="footer-copy">&#169; 2026 Alice Tran Psychiatric Care LLC. All rights reserved.</div>
 </footer>
 
+<script>
+const _rev = document.querySelectorAll('[data-reveal]');
+const _obs = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){e.target.classList.add('is-in');_obs.unobserve(e.target);} }), {threshold:0.1});
+_rev.forEach(el => _obs.observe(el));
+</script>
 <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>
 
 </body>
