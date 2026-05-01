@@ -408,8 +408,8 @@ footer a:hover { color: var(--sage-lt); }
 
 /* ── STAT STRIP ── */
 .stat-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0; background: var(--forest); }
-.stat-strip__item { padding: 2.5rem 2rem; text-align: center; border-right: 0.5px solid rgba(255,255,255,0.12); }
-.stat-strip__item:last-child { border-right: none; }
+.stat-strip__item { padding: 2.5rem 2rem; text-align: center; }
+
 .stat-strip__num { font-family: var(--serif); font-size: 3rem; font-weight: 300; color: #fff; line-height: 1; }
 .stat-strip__label { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-top: 0.5rem; }
 
@@ -449,6 +449,6 @@ footer a:hover { color: var(--sage-lt); }
   .feature-row { grid-template-columns: 1fr; }
   .feature-row__img { min-height: 240px; }
   .stat-strip { grid-template-columns: 1fr 1fr; }
-  .stat-strip__item { border-right: none; border-bottom: 0.5px solid rgba(255,255,255,0.12); }
+  .stat-strip__item { border-right: none; border-bottom: none; }
 }
 
