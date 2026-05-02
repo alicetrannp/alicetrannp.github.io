@@ -1315,7 +1315,9 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
    Responsive
    ========================================================= */
 @media (max-width: 960px) {
-  .nav__links, .nav__cta { display: none; }
+  .nav__links { display: none; }
+  .nav__visit { display: none; }
+  .nav__cta { display: inline-flex; }
   .nav__toggle { display: inline-flex; }
   .nav.is-open .nav__links {
     display: flex;
