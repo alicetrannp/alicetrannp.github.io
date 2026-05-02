@@ -147,11 +147,11 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   max-width: var(--container);
   margin: 0 auto;
   padding: 1rem clamp(1.25rem, 4vw, 3rem);
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 2rem;
+  display: flex;
   align-items: center;
+  gap: 2rem;
 }
+.nav__links { flex: 1; }
 .nav__brand {
   display: inline-flex;
   align-items: center;
