@@ -1296,6 +1296,8 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   font-size: .82rem;
   color: rgba(251, 247, 240, .5);
 }
+.footer__fine a { color: rgba(251,247,240,.5); text-decoration: none; display: inline; transition: color 0.2s; }
+.footer__fine a:hover { color: rgba(251,247,240,.8); }
 
 /* =========================================================
    Reveal animation
