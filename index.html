@@ -7,6 +7,7 @@
   <meta name="description" content="Board-certified psychiatric nurse practitioner (PMHNP-BC) serving Northern Virginia, Fairfax, and the DMV via telehealth. Psychiatric evaluations, ADHD diagnosis, anxiety and depression treatment. English &amp; Vietnamese." />
   <meta name="keywords" content="psychiatrist Northern Virginia, psychiatric evaluation Fairfax VA, ADHD diagnosis Northern Virginia, anxiety treatment Virginia, depression treatment Northern Virginia, Vietnamese psychiatrist DMV, telehealth mental health Virginia, PMHNP Northern Virginia, psychiatric nurse practitioner Fairfax, mental health provider NoVA" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preload" as="image" href="img/alice-portrait.webp" type="image/webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
@@ -131,10 +132,14 @@
   <div class="about__grid">
     <div class="portrait">
       <div class="portrait__frame">
-        <img src="img/alice-portrait.jpg"
-             alt="Alice Tran, PMHNP-BC, psychiatric nurse practitioner in Fairfax, Virginia."
-             class="portrait__art"
-             onerror="this.src='img/pexels-eduraw-34933961.jpg'" />
+        <picture>
+          <source srcset="img/alice-portrait.webp" type="image/webp">
+          <img src="img/alice-portrait.jpg"
+               alt="Alice Tran, PMHNP-BC, psychiatric nurse practitioner in Fairfax, Virginia."
+               class="portrait__art"
+               fetchpriority="high"
+               width="900" height="900" />
+        </picture>
       </div>
       <div class="portrait__caption">Hello, it's Alice. Everyone is welcome here 🏳️‍🌈</div>
     </div>
