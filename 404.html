@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting... | Alice Tran Psychiatric Care</title>
+  <script>
+    var path = window.location.pathname.replace(/\/$/, '').toLowerCase();
+
+    var redirects = {
+      '/about':                                                    '/pages/about.html',
+      '/services':                                                 '/pages/services.html',
+      '/contact':                                                  '/pages/contact.html',
+      '/rates-insurances':                                         '/pages/rates.html',
+      '/rates':                                                    '/pages/rates.html',
+      '/insurance':                                                '/pages/rates.html',
+      '/mental-health-conditions-treated':                         '/pages/conditions.html',
+      '/conditions':                                               '/pages/conditions.html',
+      '/mental-health-conditions-treated/anxiety':                 '/pages/condition-anxiety.html',
+      '/mental-health-conditions-treated/depression':              '/pages/condition-depression.html',
+      '/mental-health-conditions-treated/adhd':                    '/pages/condition-adhd.html',
+      '/mental-health-conditions-treated/trauma':                  '/pages/condition-trauma-ptsd.html',
+      '/mental-health-conditions-treated/trauma-ptsd':             '/pages/condition-trauma-ptsd.html',
+      '/mental-health-conditions-treated/burnout-stress':          '/pages/condition-burnout.html',
+      '/mental-health-conditions-treated/burnout':                 '/pages/condition-burnout.html',
+      '/mental-health-conditions-treated/bipolar':                 '/pages/condition-bipolar.html',
+      '/mental-health-conditions-treated/panic':                   '/pages/condition-panic.html',
+      '/mental-health-conditions-treated/grief':                   '/pages/condition-grief.html',
+      '/mental-health-conditions-treated/ocd':                     '/pages/condition-ocd.html',
+      '/mental-health-conditions-treated/insomnia':                '/pages/condition-insomnia.html',
+      '/mental-health-conditions-treated/postpartum':              '/pages/condition-postpartum.html',
+      '/mental-health-conditions-treated/perinatal':               '/pages/condition-perinatal.html',
+      '/mental-health-conditions-treated/identity':                '/pages/condition-identity.html',
+      '/mental-health-conditions-treated/cultural-stress':         '/pages/condition-cultural.html',
+      '/mental-health-conditions-treated/life-transitions':        '/pages/condition-life-transitions.html',
+      '/mental-health-conditions-treated/anger':                   '/pages/condition-anger.html',
+      '/mental-health-conditions-treated/self-esteem':             '/pages/condition-self-esteem.html',
+      '/mental-health-conditions-treated/international-students':  '/pages/condition-international.html',
+    };
+
+    var dest = redirects[path];
+    if (dest) {
+      window.location.replace('https://alicetrannp.com' + dest);
+    } else {
+      window.location.replace('https://alicetrannp.com/');
+    }
+  </script>
+  <meta http-equiv="refresh" content="2;url=https://alicetrannp.com/">
+</head>
+<body>
+  <p style="font-family:sans-serif;text-align:center;padding:4rem;color:#4a6741;">
+    Redirecting you to Alice Tran Psychiatric Care...
+  </p>
+</body>
+</html>
