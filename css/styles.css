@@ -247,6 +247,16 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     linear-gradient(rgba(15, 30, 20, 0.38), rgba(15, 30, 20, 0.38)),
     url('../img/pexels-eduraw-34933961.jpg') center/cover no-repeat;
 }
+@supports (background-image: image-set(url('x.webp') type('image/webp'))) {
+  .hero__bg {
+    background-image:
+      linear-gradient(rgba(15, 30, 20, 0.38), rgba(15, 30, 20, 0.38)),
+      image-set(
+        url('../img/pexels-eduraw-34933961.webp') type('image/webp'),
+        url('../img/pexels-eduraw-34933961.jpg') type('image/jpeg')
+      );
+  }
+}
 .hero__blob {
   position: absolute;
   border-radius: 50%;
