@@ -69,7 +69,7 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 400; letter-spacing: -0
   font-size: .92rem;
   letter-spacing: .22em;
   text-transform: uppercase;
-  color: var(--sage-deep);
+  color: var(--forest);
   margin: 0 0 1.2rem;
   display: inline-flex;
   align-items: center;
@@ -78,7 +78,7 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 400; letter-spacing: -0
 .eyebrow::before {
   content: "";
   width: 22px; height: 1px;
-  background: var(--sage-deep);
+  background: var(--forest);
   display: inline-block;
 }
 .lede {
@@ -583,7 +583,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   font-size: .7rem;
   letter-spacing: .2em;
   text-transform: uppercase;
-  color: var(--sage-deep);
+  color: var(--forest);
   margin-bottom: 1rem;
 }
 .service h3 {
@@ -1261,7 +1261,8 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   color: var(--ivory-soft);
 }
 .footer__brand span { font-size: .85rem; line-height: 1.5; }
-.footer__col h4 {
+.footer__col h4,
+.footer__label {
   font-family: var(--sans);
   font-size: .72rem;
   letter-spacing: .22em;
