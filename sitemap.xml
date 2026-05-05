@@ -195,6 +195,50 @@
     <priority>0.80</priority>
   </url>
 
+  <!-- Regional landing pages -->
+  <url>
+    <loc>https://alicetrannp.com/pages/psychiatric-care-richmond-va.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/mental-health-care-hampton-roads-va.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/psychiatric-visits-charlottesville-va.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/mental-health-roanoke-lynchburg-va.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/telehealth-mental-health-shenandoah-valley-va.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/psychiatric-care-loudoun-county-va.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/telehealth-psychiatry-prince-william-va.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
   <!-- Legal pages -->
   <url>
     <loc>https://alicetrannp.com/pages/privacy.html</loc>
