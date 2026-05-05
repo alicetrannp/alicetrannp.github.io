@@ -195,6 +195,34 @@
     <priority>0.80</priority>
   </url>
 
+  <!-- FAQ page -->
+  <url>
+    <loc>https://alicetrannp.com/pages/faq.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Small city pages -->
+  <url>
+    <loc>https://alicetrannp.com/pages/psychiatric-care-falls-church-va.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/psychiatric-care-tysons-va.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/psychiatric-care-vienna-va.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
   <!-- Regional landing pages -->
   <url>
     <loc>https://alicetrannp.com/pages/psychiatric-care-richmond-va.html</loc>

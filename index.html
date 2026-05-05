@@ -59,7 +59,26 @@
           {"@type": "City", "name": "Sterling"},
           {"@type": "City", "name": "Ashburn"}
         ],
-        "availableLanguage": ["English", "Vietnamese"]
+        "availableLanguage": ["English", "Vietnamese"],
+        "faxNumber": "(703) 970-1541",
+        "image": "https://alicetrannp.com/img/alice-portrait.jpg",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+            "opens": "10:00",
+            "closes": "16:00"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Psychiatric Services",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Psychiatric Evaluation"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Medication Management"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Supportive Therapy"}}
+          ]
+        }
       },
       {
         "@type": "Person",
