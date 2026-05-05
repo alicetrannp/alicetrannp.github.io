@@ -1,152 +1,178 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Main pages -->
   <url>
-    <loc>https://alicetrannp.github.io/</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/about.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/about.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/services.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/services.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/conditions.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/rates.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/rates.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/conditions.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/contact.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/contact.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
   <!-- Condition pages -->
   <url>
-    <loc>https://alicetrannp.github.io/pages/condition-anxiety.html</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alicetrannp.github.io/pages/condition-depression.html</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alicetrannp.github.io/pages/condition-adhd.html</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alicetrannp.github.io/pages/condition-trauma-ptsd.html</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alicetrannp.github.io/pages/condition-burnout.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/condition-anxiety.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/condition-panic.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/condition-depression.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/condition-grief.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/condition-adhd.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/condition-life-transitions.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/condition-trauma-ptsd.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/condition-identity.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/condition-bipolar.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/condition-postpartum.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/condition-burnout.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/condition-insomnia.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/condition-panic.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/condition-ocd.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/condition-grief.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/condition-perinatal.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/condition-ocd.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/condition-bipolar.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/condition-insomnia.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/condition-anger.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/condition-postpartum.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/condition-self-esteem.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/condition-perinatal.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/condition-cultural.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/condition-identity.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alicetrannp.github.io/pages/condition-international.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://alicetrannp.com/pages/condition-cultural.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/condition-life-transitions.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/condition-anger.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/condition-self-esteem.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/condition-international.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Legal pages -->
+  <url>
+    <loc>https://alicetrannp.com/pages/privacy.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/terms.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/disclaimer.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/accessibility.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>
