@@ -21,14 +21,19 @@
     a.h-card .h-card__body { font-size: 0.9rem; color: var(--green-md); line-height: 1.7; }
     a.h-card .cond-link { font-size: 0.85rem; font-weight: 600; color: var(--forest); letter-spacing: 0.03em; margin-top: 1.1rem; display: block; }
 
-    /* Alternating card colours — cream / forest / sage */
-    .cond-grid a:nth-child(3n+1) { background: var(--cream); }
-    .cond-grid a:nth-child(3n+2) { background: var(--forest); border-color: var(--forest); }
-    .cond-grid a:nth-child(3n+2) .h-card__title { color: #fff; }
-    .cond-grid a:nth-child(3n+2) .h-card__body  { color: rgba(255,255,255,0.72); }
-    .cond-grid a:nth-child(3n+2) .cond-link      { color: rgba(255,255,255,0.85); }
-    .cond-grid a:nth-child(3n+2):hover           { background: #3a5036; }
-    .cond-grid a:nth-child(3n)   { background: var(--sage-lt); border-color: var(--sage-md); }
+    /* Alternating card colours — 4-cycle: cream / forest / sage-md / forest */
+    .cond-grid a:nth-child(4n+1) { background: var(--cream); }
+    .cond-grid a:nth-child(4n+2) { background: var(--forest); border-color: var(--forest); }
+    .cond-grid a:nth-child(4n+2) .h-card__title { color: #fff; }
+    .cond-grid a:nth-child(4n+2) .h-card__body  { color: rgba(255,255,255,0.72); }
+    .cond-grid a:nth-child(4n+2) .cond-link      { color: rgba(255,255,255,0.85); }
+    .cond-grid a:nth-child(4n+2):hover           { background: #3a5036; }
+    .cond-grid a:nth-child(4n+3) { background: var(--sage-md); border-color: var(--sage-dk); }
+    .cond-grid a:nth-child(4n)   { background: var(--forest); border-color: var(--forest); }
+    .cond-grid a:nth-child(4n) .h-card__title { color: #fff; }
+    .cond-grid a:nth-child(4n) .h-card__body  { color: rgba(255,255,255,0.72); }
+    .cond-grid a:nth-child(4n) .cond-link      { color: rgba(255,255,255,0.85); }
+    .cond-grid a:nth-child(4n):hover           { background: #3a5036; }
   </style>
 <link rel="icon" href="../img/logo.png" type="image/png" />
 </head>
