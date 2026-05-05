@@ -542,7 +542,10 @@ function toggleNav() {
 
   function render(){
     track.style.transform = 'translateX(-' + (idx * (cardW + GAP)) + 'px)';
-    document.querySelectorAll('.carousel__dot').forEach(function(d,i){ d.classList.toggle('is-active', i===idx); });
+    document.querySelectorAll('.carousel__dot').forEach(function(d,i){
+      d.classList.toggle('is-active', i===idx);
+      d.setAttribute('aria-current', i===idx ? 'true' : 'false');
+    });
   }
 
   // Build dots (one per stopping position, rebuilt on resize if needed)
@@ -553,6 +556,7 @@ function toggleNav() {
       var d = document.createElement('button');
       d.className = 'carousel__dot' + (i===0?' is-active':'');
       d.dataset.i = i;
+      d.setAttribute('aria-label', 'Go to review ' + (i+1));
       d.addEventListener('click', function(){ goTo(+this.dataset.i); });
       dotsEl.appendChild(d);
     }
