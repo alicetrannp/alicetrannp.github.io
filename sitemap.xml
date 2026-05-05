@@ -157,6 +157,44 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- City/location landing pages -->
+  <url>
+    <loc>https://alicetrannp.com/pages/psychiatric-care-fairfax-va.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/medication-management-fairfax-va.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/telehealth-psychiatry-northern-virginia.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/psychiatric-care-arlington-va.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/psychiatric-care-alexandria-va.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/vietnamese-psychiatric-care-fairfax-va.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
   <!-- Legal pages -->
   <url>
     <loc>https://alicetrannp.com/pages/privacy.html</loc>
