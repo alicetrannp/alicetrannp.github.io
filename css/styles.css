@@ -1172,13 +1172,15 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
    CTA band
    ========================================================= */
 .cta-band {
-  background: #4A7060;
+  background: #1e3329;
+  background-image: radial-gradient(ellipse at 60% 50%, rgba(74,112,96,0.35) 0%, transparent 70%);
   color: var(--ivory-soft);
   text-align: center;
+  padding: 96px clamp(2rem, 8vw, 6rem);
 }
 .cta-band .h2 { color: var(--ivory-soft); }
-.cta-band .serif-i { color: var(--blush); }
-.cta-band p { color: rgba(251, 247, 240, .82); max-width: 56ch; margin: 0 auto 2rem; }
+.cta-band .serif-i { color: rgba(210, 195, 175, 0.85); }
+.cta-band p { color: rgba(251, 247, 240, .6); max-width: 56ch; margin: 0 auto 2rem; }
 .cta-band__sub {
   margin-top: 0.75rem !important;
   margin-bottom: 0 !important;
@@ -1193,8 +1195,16 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   font-size: clamp(1.4rem, 2.8vw, 2.2rem);
   white-space: nowrap;
 }
-.cta-band .btn--primary { background: var(--ivory-soft); color: var(--forest-deep); }
-.cta-band .btn--primary:hover { background: var(--cream); }
+.cta-band .btn--primary {
+  background: transparent;
+  color: var(--ivory-soft);
+  border: 1.5px solid rgba(251,247,240,0.45);
+  letter-spacing: .06em;
+}
+.cta-band .btn--primary:hover {
+  background: rgba(251,247,240,0.1);
+  border-color: rgba(251,247,240,0.75);
+}
 /* urgency band */
 .urgency-band {
   background: var(--cream);
