@@ -293,4 +293,42 @@
     <priority>0.3</priority>
   </url>
 
+  <!-- Blog -->
+  <url>
+    <loc>https://alicetrannp.com/pages/blog/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/blog/what-is-a-pmhnp.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/blog/adhd-adults-virginia.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/blog/what-is-medication-management.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/blog/telehealth-psychiatry-how-it-works.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/blog/anxiety-when-to-see-a-psychiatrist.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
 </urlset>
