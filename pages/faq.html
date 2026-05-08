@@ -189,6 +189,21 @@
       margin: 0;
     }
     .faq-item p + p { margin-top: .75rem; }
+    html { scroll-behavior: smooth; }
+    .faq-section { scroll-margin-top: 72px; }
+    .faq-jump {
+      display: inline-block;
+      background: #fff;
+      border: 1.5px solid var(--border);
+      color: var(--forest);
+      font-size: .85rem;
+      font-weight: 500;
+      padding: .5rem 1.15rem;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: background .15s, border-color .15s, color .15s;
+    }
+    .faq-jump:hover { background: var(--sage-md); border-color: var(--sage-dk); }
     .faq-cta {
       background: var(--forest);
       text-align: center;
@@ -240,8 +255,18 @@
   <p>No jargon. No condescension. Just the things people actually want to know before they pick up the phone.</p>
 </div>
 
+<!-- JUMP NAV -->
+<div style="background:var(--cream);padding:1.25rem clamp(1.5rem,5vw,3.5rem);border-bottom:1px solid var(--border);">
+  <div style="max-width:800px;margin:0 auto;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;">
+    <a href="#providers" class="faq-jump">Understanding providers</a>
+    <a href="#getting-started" class="faq-jump">Getting started</a>
+    <a href="#treatment" class="faq-jump">Treatment &amp; telehealth</a>
+    <a href="#insurance" class="faq-jump">Insurance &amp; practicalities</a>
+  </div>
+</div>
+
 <!-- GROUP 1: Understanding providers -->
-<section class="faq-section">
+<section id="providers" class="faq-section">
   <div class="faq-inner">
     <span class="faq-group-label">Understanding providers</span>
     <h2 class="faq-group-title" style="font-size:clamp(1.4rem,2.8vw,2rem);font-family:var(--serif);font-weight:300;color:var(--forest);margin:0 0 2rem;">Who does what, and who do you actually need?</h2>
@@ -277,7 +302,7 @@
 </section>
 
 <!-- GROUP 2: Getting started -->
-<section class="faq-section faq-section--alt">
+<section id="getting-started" class="faq-section faq-section--alt">
   <div class="faq-inner">
     <span class="faq-group-label">Getting started</span>
     <h2 class="faq-group-title" style="font-size:clamp(1.4rem,2.8vw,2rem);font-family:var(--serif);font-weight:300;color:var(--forest);margin:0 0 2rem;">What to expect when you first reach out</h2>
@@ -308,7 +333,7 @@
 </section>
 
 <!-- GROUP 3: Treatment and telehealth -->
-<section class="faq-section">
+<section id="treatment" class="faq-section">
   <div class="faq-inner">
     <span class="faq-group-label">Treatment &amp; telehealth</span>
     <h2 class="faq-group-title" style="font-size:clamp(1.4rem,2.8vw,2rem);font-family:var(--serif);font-weight:300;color:var(--forest);margin:0 0 2rem;">How care actually works</h2>
@@ -343,7 +368,7 @@
 </section>
 
 <!-- GROUP 4: Insurance and practicalities -->
-<section class="faq-section faq-section--alt">
+<section id="insurance" class="faq-section faq-section--alt">
   <div class="faq-inner">
     <span class="faq-group-label">Insurance &amp; practicalities</span>
     <h2 class="faq-group-title" style="font-size:clamp(1.4rem,2.8vw,2rem);font-family:var(--serif);font-weight:300;color:var(--forest);margin:0 0 2rem;">The practical stuff</h2>
