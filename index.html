@@ -101,6 +101,24 @@
 </head>
 <body>
 
+<!-- OOO BANNER -->
+<div id="ooo-banner" style="display:none;background:#7A4F2E;color:#fff;text-align:center;padding:.65rem 3rem;font-size:.875rem;line-height:1.6;position:relative;">
+  Alice is currently out of the country and will return to work on <strong>June 8, 2026</strong>. Online booking is still available. All calls and messages will be responded to in the order received starting June 8.
+  <button onclick="dismissBanner()" aria-label="Dismiss notice" style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);background:none;border:none;color:rgba(255,255,255,.7);font-size:1.4rem;line-height:1;cursor:pointer;padding:0;">&#x2715;</button>
+</div>
+
+<!-- OOO MODAL -->
+<div id="ooo-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9999;align-items:center;justify-content:center;padding:1.25rem;">
+  <div style="background:#fff;border-radius:16px;max-width:440px;width:100%;padding:2.25rem 2rem 2rem;position:relative;box-shadow:0 24px 64px rgba(0,0,0,.22);">
+    <button onclick="closeModal()" aria-label="Close" style="position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.5rem;color:#aaa;cursor:pointer;line-height:1;padding:0;">&#x2715;</button>
+    <div style="font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:#C17B4E;font-weight:700;margin-bottom:.9rem;">A note before you continue</div>
+    <h2 style="font-family:Georgia,'Times New Roman',serif;font-size:1.45rem;font-weight:400;color:#2E4A3C;margin:0 0 1rem;line-height:1.3;">Alice is currently out of the country</h2>
+    <p style="color:#4a5e44;font-size:.95rem;line-height:1.8;margin:0 0 .65rem;">She will return to work on <strong>June 8, 2026</strong>. All calls and messages will be responded to in the order received starting June 8.</p>
+    <p style="color:#4a5e44;font-size:.95rem;line-height:1.8;margin:0 0 1.75rem;">Online booking is still available. You are welcome to book an appointment now and she will be in touch upon her return.</p>
+    <button onclick="closeModal()" style="width:100%;background:#2E4A3C;color:#fff;border:none;border-radius:10px;padding:.9rem 1rem;font-size:.95rem;font-weight:500;cursor:pointer;letter-spacing:.01em;">Got it</button>
+  </div>
+</div>
+
 <!-- NAV -->
 <nav class="nav" id="nav">
   <div class="nav__inner">
@@ -598,6 +616,24 @@
 
 
 <script>
+// OOO notice — banner always shows unless dismissed this session; modal shows once per session
+(function(){
+  if (!sessionStorage.getItem('ooo_banner_dismissed')) {
+    document.getElementById('ooo-banner').style.display = 'block';
+  }
+  if (!sessionStorage.getItem('ooo_modal_seen')) {
+    document.getElementById('ooo-overlay').style.display = 'flex';
+  }
+})();
+function closeModal() {
+  document.getElementById('ooo-overlay').style.display = 'none';
+  sessionStorage.setItem('ooo_modal_seen', '1');
+}
+function dismissBanner() {
+  document.getElementById('ooo-banner').style.display = 'none';
+  sessionStorage.setItem('ooo_banner_dismissed', '1');
+}
+
 function toggleNav() {
   document.getElementById('nav').classList.toggle('is-open');
 }
