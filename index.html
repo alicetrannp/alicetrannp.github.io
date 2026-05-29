@@ -140,12 +140,6 @@
   </div>
 </nav>
 
-<!-- OOO BANNER -->
-<div id="ooo-banner" style="display:none;background:#7A4F2E;color:#fff;text-align:center;padding:.65rem 3rem;font-size:.875rem;line-height:1.6;position:relative;">
-  Alice is currently out of the country and will return to work on <strong>June 8, 2026</strong>. Online booking is still available. All calls and messages will be responded to in the order received starting June 8.
-  <button onclick="dismissBanner()" aria-label="Dismiss notice" style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);background:none;border:none;color:rgba(255,255,255,.7);font-size:1.4rem;line-height:1;cursor:pointer;padding:0;">&#x2715;</button>
-</div>
-
 <!-- HERO -->
 <div class="hero">
   <div class="hero__bg"></div>
@@ -616,11 +610,8 @@
 
 
 <script>
-// OOO notice — banner always shows unless dismissed this session; modal shows once per session
+// OOO notice — modal shows once per session
 (function(){
-  if (!sessionStorage.getItem('ooo_banner_dismissed')) {
-    document.getElementById('ooo-banner').style.display = 'block';
-  }
   if (!sessionStorage.getItem('ooo_modal_seen')) {
     document.getElementById('ooo-overlay').style.display = 'flex';
   }
@@ -628,10 +619,6 @@
 function closeModal() {
   document.getElementById('ooo-overlay').style.display = 'none';
   sessionStorage.setItem('ooo_modal_seen', '1');
-}
-function dismissBanner() {
-  document.getElementById('ooo-banner').style.display = 'none';
-  sessionStorage.setItem('ooo_banner_dismissed', '1');
 }
 
 function toggleNav() {
