@@ -81,6 +81,30 @@
       },
       {
         "@type": "Question",
+        "name": "Can you treat my ADHD with medications?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. This practice provides evidence-based treatment for ADHD, including stimulant and non-stimulant medications when clinically appropriate. Stimulant medications cannot be prescribed to patients currently prescribed benzodiazepines, buprenorphine, or opioid pain medications. Long-acting stimulants are trialed first. Monthly telehealth visits are required for controlled medication refills. PDMP checks are performed at every visit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there medications you do not prescribe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This practice does not prescribe benzodiazepines, immediate-release stimulants as a first-line treatment, or medications for substance use disorder treatment such as buprenorphine, methadone, or naltrexone. Tapering and detoxification services are not provided."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is your controlled substances policy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Controlled substances will not be prescribed or refilled on weekends or holidays; 72-hour notice is required for refills. Patients must be seen at least every 3 months to continue receiving controlled medications. Lost or stolen prescriptions may result in discharge. Early refills are not permitted. Opioid pain medications are not prescribed."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Can I get a superbill for out-of-network reimbursement?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -242,7 +266,7 @@
       transition: max-height .35s ease;
     }
     .faq-item.is-open .faq-a {
-      max-height: 800px;
+      max-height: 9999px;
     }
     .faq-a-inner {
       padding-bottom: 1.5rem;
@@ -520,6 +544,66 @@
       </button>
       <div class="faq-a"><div class="faq-a-inner">
         <p>Anxiety is a normal human emotion, the stress response that helps you prepare for a presentation or respond to a difficult situation. An anxiety disorder is when that response becomes persistent, disproportionate, or disruptive enough to interfere with daily life. Generalized anxiety disorder, panic disorder, social anxiety disorder, and specific phobias are all clinical conditions that respond well to treatment. The distinction matters because anxiety disorders benefit from psychiatric care in a way that normal situational stress may not.</p>
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Can you treat my ADHD with medications?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">
+        <p>Yes. Our practice provides evidence-based treatment for ADHD, which may include both stimulant and non-stimulant medications when clinically appropriate.</p>
+        <p>In accordance with current telemedicine regulations and safety guidelines, this practice is unable to prescribe stimulant medications to individuals who are currently prescribed benzodiazepines, buprenorphine, or opioid pain medications.</p>
+        <p>The following policies apply to ADHD medication management:</p>
+        <ul>
+          <li>If you are transferring care from another provider, new controlled medication prescriptions may only be issued after the State Prescription Drug Monitoring Program confirms that at least 30 days have passed since your last controlled medication fill.</li>
+          <li>Early refills for controlled medications are not permitted. Appointments must be scheduled 5 to 7 days before you run out.</li>
+          <li>A urine drug screen may be required as part of the initial evaluation and during ongoing treatment.</li>
+          <li>Monthly telehealth visits are required for the continuation and refill of controlled medications.</li>
+          <li>The Prescription Drug Monitoring Program (PDMP) will be checked at every visit.</li>
+          <li>Medications will not be prescribed above FDA-approved dosing guidelines.</li>
+          <li>Long-acting stimulants will be trialed first. Extended-release and prodrug formulations are preferred because they produce a less rapid onset of effect and maintain steadier levels, reducing misuse risk.</li>
+          <li>Patients must participate in regular cardiovascular monitoring, including monthly blood pressure checks. In some cases an EKG may be required.</li>
+        </ul>
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Are there medications you do not prescribe?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">
+        <p>Yes. The following medications are outside the scope of this practice:</p>
+        <ul>
+          <li><strong>Benzodiazepines</strong> are not prescribed. Examples include Klonopin (clonazepam), Xanax (alprazolam), Valium (diazepam), Ativan (lorazepam), Halcion (triazolam), and others.</li>
+          <li><strong>Immediate-release stimulants</strong> are not prescribed as a first-line treatment. If ADHD medication is indicated, long-acting formulations will be trialed first.</li>
+          <li><strong>Medications for substance use disorder or addiction treatment</strong> are not prescribed. Examples include Acamprosate, Disulfiram, Naltrexone, Buprenorphine, Methadone, Naloxone, Nalmefene, Modafinil, Baclofen, and Vigabatrin.</li>
+        </ul>
+        <p>This practice does not provide tapering, detoxification support, or ongoing supervision for the medications listed above. Patients who need these services must work with an outside provider who specializes in this type of care.</p>
+        <p>This practice may review the Virginia Prescription Monitoring Program (PMP), a statewide database that tracks dispensed controlled substances and cannabis products. By establishing care with this practice, you consent to your prescription history being accessed through the Virginia PMP when clinically appropriate.</p>
+        <p>All prescribing decisions are made according to the provider's professional clinical judgment. Patients may seek a second opinion from another provider at any time.</p>
+        <p>Medication refills will not be provided if a patient has not completed a follow-up appointment within the past three months, or within the timeframe outlined in their treatment plan.</p>
+        <p>Patients are expected to follow the agreed-upon treatment plan, including taking medications as prescribed, attending scheduled follow-up appointments, and avoiding duplicate prescriptions from other providers. Failure to follow treatment recommendations may result in discontinuation of care.</p>
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        What is your controlled substances policy?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">
+        <p>Sleep, anxiety, and difficulty concentrating are sometimes treated with medications that, when misused, carry risks including accidents, seizures, accidental overdose, and dangerous interactions with alcohol, cannabis, or other medications. The following policies are in place to support patient safety and responsible prescribing:</p>
+        <ol>
+          <li>Controlled substances will not be prescribed or refilled on weekends or holidays. A 72-hour notice is required for all refill requests.</li>
+          <li>A patient must be seen at minimum every 3 months to continue receiving controlled medications. Any request for controlled medications following a canceled or no-show appointment will be denied.</li>
+          <li>If a controlled prescription is lost or stolen, the patient may be discharged from the practice. Evidence of abuse, misuse, or inability to control use will result in no further controlled substance prescriptions. Repeated requests for early refills may result in discharge from the practice.</li>
+          <li>Controlled medications are clearly labeled as such. Please ask your pharmacist if you have any questions about your medications.</li>
+          <li>This practice does not prescribe opiate or opioid pain medications. Patients needing these should contact their primary care physician or a pain management specialist.</li>
+        </ol>
+        <p>These policies are in place to support patient safety and promote effective, appropriate treatment.</p>
       </div></div>
     </div>
   </div>
