@@ -127,6 +127,10 @@
   border-radius:6px; transition:background .15s;
 }
 .nav__dropdown a:hover { background:#F5F2EC; color:#2E4A3C; }
+@media (max-width: 900px) {
+  .nav__dropdown { display:none !important; }
+  .nav__dropdown-wrap > a { pointer-events:auto; }
+}
 </style>
 </head>
 <body>
