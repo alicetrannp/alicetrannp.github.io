@@ -137,12 +137,10 @@
 <!-- OOO MODAL -->
 <div id="ooo-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9999;align-items:center;justify-content:center;padding:1.25rem;">
   <div style="background:#fff;border-radius:16px;max-width:440px;width:100%;padding:2.25rem 2rem 2rem;position:relative;box-shadow:0 24px 64px rgba(0,0,0,.22);">
-    <button onclick="closeModal()" aria-label="Close" style="position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.5rem;color:#aaa;cursor:pointer;line-height:1;padding:0;">&#x2715;</button>
-    <div style="font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:#C17B4E;font-weight:700;margin-bottom:.9rem;">A note before you continue</div>
-    <h2 style="font-family:Georgia,'Times New Roman',serif;font-size:1.45rem;font-weight:400;color:#2E4A3C;margin:0 0 1rem;line-height:1.3;">Alice is currently out of the office</h2>
-    <p style="color:#4a5e44;font-size:.95rem;line-height:1.8;margin:0 0 .65rem;">She will return to work on <strong>June 8, 2026</strong>. All calls and messages will be responded to in the order received starting June 8.</p>
-    <p style="color:#4a5e44;font-size:.95rem;line-height:1.8;margin:0 0 1.75rem;">Online booking is still available. You are welcome to book an appointment now and she will be in touch upon her return.</p>
-    <button onclick="closeModal()" style="width:100%;background:#2E4A3C;color:#fff;border:none;border-radius:10px;padding:.9rem 1rem;font-size:.95rem;font-weight:500;cursor:pointer;letter-spacing:.01em;">Got it</button>
+    <div style="font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:#C17B4E;font-weight:700;margin-bottom:.9rem;">A Note Before You Continue</div>
+    <p style="color:#2E4A3C;font-size:.95rem;line-height:1.8;margin:0 0 1rem;">This practice does not prescribe long term benzodiazepine therapy, opioid pain medications, multiple controlled substances, addiction treatment medications, or provide tapering/detoxification services.</p>
+    <p style="color:#4a5e44;font-size:.9rem;line-height:1.8;margin:0 0 1.75rem;">If you are currently prescribed these medications, please continue care with your current provider or <a href="pages/contact.html" style="color:#2E4A3C;font-weight:600;">contact us</a> to discuss whether we may be a good fit.</p>
+    <button onclick="closeModal()" style="width:100%;background:#2E4A3C;color:#fff;border:none;border-radius:10px;padding:.9rem 1rem;font-size:.95rem;font-weight:500;cursor:pointer;letter-spacing:.01em;">I Acknowledge</button>
   </div>
 </div>
 
@@ -735,13 +733,13 @@
 <script>
 // OOO notice — modal shows once per session
 (function(){
-  if (!sessionStorage.getItem('ooo_modal_seen')) {
+  if (!sessionStorage.getItem('policy_modal_seen')) {
     document.getElementById('ooo-overlay').style.display = 'flex';
   }
 })();
 function closeModal() {
   document.getElementById('ooo-overlay').style.display = 'none';
-  sessionStorage.setItem('ooo_modal_seen', '1');
+  sessionStorage.setItem('policy_modal_seen', '1');
 }
 
 function toggleNav() {
