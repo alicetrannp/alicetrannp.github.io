@@ -102,13 +102,15 @@
 .nav__dropdown-wrap { position:relative; display:inline-flex; align-items:center; }
 .nav__dropdown-wrap > a { display:flex; align-items:center; gap:.25rem; }
 .nav__dropdown {
-  display:none; position:absolute; top:calc(100% + 12px); left:50%; transform:translateX(-50%);
-  background:#fff; border-radius:16px; box-shadow:0 12px 40px rgba(0,0,0,.13);
-  padding:1.5rem; min-width:580px; z-index:9000;
-  display:none; grid-template-columns:repeat(3,1fr); gap:0 1.5rem;
-  border:1px solid rgba(0,0,0,.06);
+  display:none; position:absolute; top:100%; left:50%; transform:translateX(-50%);
+  padding-top:12px; min-width:580px; z-index:9000;
 }
-.nav__dropdown::before {
+.nav__dropdown-inner {
+  background:#fff; border-radius:16px; box-shadow:0 12px 40px rgba(0,0,0,.13);
+  padding:1.5rem; display:grid; grid-template-columns:repeat(3,1fr); gap:0 1.5rem;
+  border:1px solid rgba(0,0,0,.06); position:relative;
+}
+.nav__dropdown-inner::before {
   content:''; position:absolute; top:-6px; left:50%; transform:translateX(-50%);
   border-left:6px solid transparent; border-right:6px solid transparent;
   border-bottom:6px solid #fff;
@@ -157,6 +159,7 @@
         <div class="nav__dropdown-wrap">
         <a href="pages/conditions.html">Conditions ▾</a>
         <div class="nav__dropdown">
+          <div class="nav__dropdown-inner">
           <div class="nav__dropdown-col">
             <p class="nav__dropdown-label">Mood</p>
             <a href="pages/condition-depression.html">Depression</a>
@@ -184,6 +187,7 @@
             <a href="pages/condition-life-transitions.html">Life Transitions</a>
             <a href="pages/condition-cultural.html">Cultural Pressure</a>
             <a href="pages/condition-international.html">International Students</a>
+          </div>
           </div>
         </div>
       </div>
