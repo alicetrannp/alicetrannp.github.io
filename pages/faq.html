@@ -338,6 +338,14 @@
   <span class="section-tag">Plain-language answers</span>
   <h1>Mental Health Questions,<br>Answered Honestly</h1>
   <p>No jargon. No condescension. Just the things people actually want to know before they pick up the phone.</p>
+  <div style="max-width:520px;margin:2rem auto 0;position:relative;">
+    <span style="position:absolute;left:1.1rem;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.5);pointer-events:none;">
+      <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path stroke-linecap="round" d="M21 21l-4.35-4.35"/></svg>
+    </span>
+    <input id="faq-search" type="text" placeholder="Search questions — e.g. insurance, ADHD, telehealth…"
+      style="width:100%;box-sizing:border-box;padding:.85rem 1.1rem .85rem 2.75rem;border-radius:999px;border:none;font-size:.95rem;font-family:inherit;color:var(--forest);background:rgba(255,255,255,.95);outline:none;box-shadow:0 4px 24px rgba(0,0,0,.15);" />
+  </div>
+  <p id="faq-no-results" style="display:none;color:rgba(255,255,255,.7);margin-top:1.25rem;font-size:.9rem;">No questions matched. Try different words or <a href="contact.html" style="color:#fff;font-weight:600;">contact us directly</a>.</p>
 </div>
 
 <!-- INTRO -->
@@ -898,12 +906,46 @@
 function toggleFaq(btn) {
   const item = btn.closest('.faq-item');
   const isOpen = item.classList.contains('is-open');
-  // Close all open items
   document.querySelectorAll('.faq-item.is-open').forEach(el => el.classList.remove('is-open'));
-  // Open this one if it was closed
   if (!isOpen) item.classList.add('is-open');
 }
 function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+
+// FAQ search
+document.getElementById('faq-search').addEventListener('input', function () {
+  const query = this.value.trim().toLowerCase();
+  const items = document.querySelectorAll('.faq-item');
+  const sections = document.querySelectorAll('.faq-section');
+  const jumpBar = document.querySelector('.faq-jump-bar');
+  const intro = document.querySelector('.faq-intro');
+  const noResults = document.getElementById('faq-no-results');
+  let totalVisible = 0;
+
+  items.forEach(function (item) {
+    const questionText = (item.querySelector('.faq-q') || {}).textContent || '';
+    const answerText = (item.querySelector('.faq-a-inner') || {}).textContent || '';
+    const matches = !query || questionText.toLowerCase().includes(query) || answerText.toLowerCase().includes(query);
+    item.style.display = matches ? '' : 'none';
+    if (matches) {
+      totalVisible++;
+      if (query) item.classList.add('is-open');
+    } else {
+      item.classList.remove('is-open');
+    }
+  });
+
+  // Hide section headers if all items in that section are hidden
+  sections.forEach(function (section) {
+    const visibleItems = section.querySelectorAll('.faq-item:not([style*="display: none"])');
+    section.style.display = visibleItems.length ? '' : 'none';
+  });
+
+  // Hide jump bar and intro when searching
+  if (jumpBar) jumpBar.style.display = query ? 'none' : '';
+  if (intro) intro.style.display = query ? 'none' : '';
+
+  noResults.style.display = totalVisible === 0 && query ? 'block' : 'none';
+});
 </script>
 <script src="../js/chat-widget.js" data-base="../"></script>
 </body>
