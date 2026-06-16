@@ -122,7 +122,8 @@
       '#atpc-hdr{background:#2E4A3C;color:#fff;padding:14px 16px;display:flex;align-items:center;gap:11px;flex-shrink:0;}',
       '#atpc-hdr img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.3);flex-shrink:0;}',
       '#atpc-hdr-txt strong{display:block;font-size:.88rem;}',
-      '#atpc-hdr-txt span{font-size:.72rem;opacity:.7;}',
+      '#atpc-hdr-txt span{display:block;font-size:.72rem;opacity:.7;margin-top:1px;}',
+      '#atpc-hdr-txt em{display:block;font-size:.68rem;opacity:.55;font-style:italic;margin-top:1px;}',
       '#atpc-x{background:none;border:none;color:rgba(255,255,255,.7);cursor:pointer;font-size:18px;margin-left:auto;flex-shrink:0;padding:2px 4px;line-height:1;}',
       '#atpc-x:hover{color:#fff;}',
       '#atpc-msgs{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:8px;}',
@@ -155,7 +156,7 @@
     win.id = 'atpc-win';
     win.setAttribute('role', 'dialog');
     win.setAttribute('aria-label', 'Chat with Alice Tran Psychiatric Care');
-    win.innerHTML = '<div id="atpc-hdr"><img src="' + imgSrc + '" alt="Alice Tran" /><div id="atpc-hdr-txt"><strong>Alice Tran Psychiatric Care</strong><span>Ask me anything about the practice</span></div><button id="atpc-x" aria-label="Close">✕</button></div><div id="atpc-msgs"></div><div id="atpc-qr"></div><div id="atpc-row"><input id="atpc-inp" type="text" placeholder="Type your question..." autocomplete="off" /><button id="atpc-send" aria-label="Send"><svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg></button></div>';
+    win.innerHTML = '<div id="atpc-hdr"><img src="' + imgSrc + '" alt="Alice Tran" /><div id="atpc-hdr-txt"><strong>Alice Tran Psychiatric Care</strong><span>You\'re not alone. I\'m here to help.</span></div><button id="atpc-x" aria-label="Close">✕</button></div><div id="atpc-msgs"></div><div id="atpc-qr"></div><div id="atpc-row"><input id="atpc-inp" type="text" placeholder="Type your question..." autocomplete="off" /><button id="atpc-send" aria-label="Send"><svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg></button></div>';
     document.body.appendChild(win);
 
     var msgs = document.getElementById('atpc-msgs');
@@ -183,6 +184,26 @@
       });
     }
 
+    function showFollowUp() {
+      clearQR();
+      var followUps = [
+        { label: '📅 Schedule a consultation', href: 'https://alicetran.intakeq.com/booking', external: true },
+        { label: '🔍 Verify insurance coverage', href: base + 'pages/rates.html', external: false },
+        { label: '💬 Ask another question', focus: true }
+      ];
+      followUps.forEach(function (f) {
+        var b = document.createElement('button');
+        b.className = 'aqb';
+        b.textContent = f.label;
+        if (f.focus) {
+          b.onclick = function () { clearQR(); inp.focus(); };
+        } else {
+          b.onclick = function () { window.open(f.href, f.external ? '_blank' : '_self'); };
+        }
+        qrEl.appendChild(b);
+      });
+    }
+
     function send(text) {
       if (!text.trim()) return;
       addMsg(text, 'user');
@@ -199,6 +220,7 @@
         } else {
           addMsg(FALLBACK, 'bot');
         }
+        showFollowUp();
       }, 380);
     }
 
