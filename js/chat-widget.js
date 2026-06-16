@@ -3,6 +3,10 @@
 
   var KB = [
     {
+      keywords: ['i need help', 'need help', 'help me', 'i\'m sad', 'im sad', 'feeling sad', 'i\'m anxious', 'im anxious', 'feeling anxious', 'i\'m depressed', 'im depressed', 'feeling depressed', 'i\'m struggling', 'im struggling', 'struggling', 'i\'m not okay', 'not okay', 'not doing well', 'i\'m overwhelmed', 'overwhelmed', 'i\'m scared', 'i\'m stressed', 'im stressed', 'so stressed', 'stressed out', 'i\'m lost', 'feeling lost', 'hard time', 'having a hard time', 'don\'t know where to start', 'where do i start', 'i don\'t know', 'not feeling well', 'not feeling good', 'feeling low', 'i\'m not well'],
+      answer: 'You\'re not alone — and reaching out, even here, takes courage. 💚<br><br>Alice\'s practice is built for exactly this moment. Whether you\'re struggling with something you can name or something you\'re still trying to find words for, you are welcome here. Alice would be honored to listen.'
+    },
+    {
       keywords: ['new patient', 'accepting', 'taking new', 'take new', 'are you taking', 'are you accepting'],
       answer: 'Yes! Alice is currently accepting new patients. No referral needed — you can book directly online.',
       action: { label: 'Book a consultation →', href: 'https://alicetran.intakeq.com/booking' }
