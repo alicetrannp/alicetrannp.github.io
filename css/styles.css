@@ -126,6 +126,9 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 .btn--ghost:hover { background: var(--cream); }
 .btn--full { width: 100%; justify-content: center; }
 
+/* ── Topbar (fixed, always pinned above nav) ── */
+.site-topbar { position: fixed !important; top: 0; left: 0; right: 0; width: 100%; }
+
 /* =========================================================
    Navigation
    ========================================================= */
