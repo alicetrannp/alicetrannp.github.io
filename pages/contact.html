@@ -133,70 +133,61 @@
 </div>
 
 <style>
-@media(max-width:700px){
-  .contact-grid { grid-template-columns:1fr!important; }
-  .contact-cta { order:-1; border-radius:16px 16px 0 0!important; }
-  .contact-info { border-radius:0 0 16px 16px!important; }
-  .contact-section { padding:32px 1.25rem!important; }
+@media(max-width:780px){
+  .contact-split { grid-template-columns: 1fr !important; }
+  .contact-split-left { order: 2; }
+  .contact-split-right { order: 1; }
 }
 </style>
 
-<!-- 2-COLUMN CONTACT LAYOUT -->
-<section class="contact-section" style="background: var(--cream); padding: 64px clamp(1.5rem,5vw,3rem);">
-  <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:0;max-width:1000px;margin:0 auto;align-items:stretch;border-radius:20px;overflow:hidden;border:1px solid var(--border);">
+<!-- CONTACT + BOOKING SIDE BY SIDE -->
+<section style="background:var(--cream);padding:56px clamp(1.5rem,5vw,3rem) 64px;">
+  <div class="contact-split" style="display:grid;grid-template-columns:340px 1fr;gap:3rem;max-width:1100px;margin:0 auto;align-items:start;">
 
     <!-- Left: contact info -->
-    <div class="contact-info" style="padding:3.5rem clamp(1.5rem,4vw,3rem);background:var(--cream);" data-reveal>
-      <span class="eyebrow">Contact Information</span>
-      <p style="color:var(--green-md);font-size:0.95rem;line-height:1.75;margin-bottom:2rem;">Book online or reach out with questions. New patients are welcome.</p>
+    <div class="contact-split-left" data-reveal>
+      <span class="eyebrow" style="margin-bottom:1.25rem;display:block;">Contact Information</span>
 
-      <div class="contact-row" style="margin-bottom:1.5rem;">
-        <span class="contact-label">Phone (Call or Text)</span>
-        <a href="tel:7037919099" class="contact-val" style="font-size:1.1rem;font-weight:500;color:var(--forest);">(703) 791-9099</a>
+      <div style="display:flex;flex-direction:column;gap:1.5rem;">
+        <div>
+          <div style="font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green-lt);margin-bottom:.3rem;">Phone (Call or Text)</div>
+          <a href="tel:7037919099" style="font-size:1.15rem;font-weight:600;color:var(--forest);text-decoration:none;">(703) 791-9099</a>
+        </div>
+        <div>
+          <div style="font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green-lt);margin-bottom:.3rem;">Email</div>
+          <a href="mailto:info@alicetrannp.com" style="color:var(--green);text-decoration:none;">info@alicetrannp.com</a>
+        </div>
+        <div>
+          <div style="font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green-lt);margin-bottom:.3rem;">Office Hours</div>
+          <span style="color:var(--forest);font-size:.95rem;line-height:1.8;">Mon – Thu: 10:00am – 4:00pm<br>Fri – Sun: Closed</span>
+        </div>
+        <div>
+          <div style="font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green-lt);margin-bottom:.3rem;">Telehealth</div>
+          <a href="https://doxy.me/alicetran" target="_blank" style="color:var(--green);text-decoration:none;">Join appointment via doxy.me</a>
+        </div>
+        <div>
+          <div style="font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green-lt);margin-bottom:.3rem;">Fax</div>
+          <span style="color:var(--forest);font-size:.95rem;">(703) 970-1541</span>
+        </div>
+        <div>
+          <div style="font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green-lt);margin-bottom:.3rem;">Mailing Address</div>
+          <span style="color:var(--forest);font-size:.95rem;line-height:1.8;">3060 Williams Drive, Suite 300<br>Fairfax, VA 22031</span>
+        </div>
       </div>
-      <div class="contact-row" style="margin-bottom:1.5rem;">
-        <span class="contact-label">Fax</span>
-        <span class="contact-val">(703) 970-1541</span>
-      </div>
-      <div class="contact-row" style="margin-bottom:1.5rem;">
-        <span class="contact-label">Email</span>
-        <a href="mailto:info@alicetrannp.com" class="contact-val" style="color:var(--green);">info@alicetrannp.com</a>
-      </div>
-      <div class="contact-row" style="margin-bottom:1.5rem;">
-        <span class="contact-label">Office Hours</span>
-        <span class="contact-val">Monday – Thursday: 10:00am – 4:00pm<br>Friday, Saturday, Sunday: Closed</span>
-      </div>
-      <div class="contact-row" style="margin-bottom:1.5rem;">
-        <span class="contact-label">Telehealth</span>
-        <a href="https://doxy.me/alicetran" target="_blank" class="contact-val" style="color:var(--green);">Join appointment</a>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">Address</span>
-        <span class="contact-val">3060 Williams Drive, Suite 300<br>Fairfax, VA 22031</span>
+
+      <div style="margin-top:2.5rem;background:var(--sage-lt);border-radius:12px;padding:1.25rem 1.5rem;border-left:3px solid var(--border);">
+        <p style="font-size:.82rem;color:var(--green-md);line-height:1.65;margin:0;"><strong style="color:var(--forest);">Please note:</strong> This practice does not prescribe long-term benzodiazepines, opioids, multiple controlled substances, or addiction treatment medications. Please discuss before booking if applicable.</p>
       </div>
     </div>
 
-    <!-- Right: dark-section CTA sidebar -->
-    <div class="dark-section contact-cta" style="border-radius:0;display:flex;flex-direction:column;justify-content:center;padding:3.5rem clamp(1.5rem,4vw,3rem);" data-reveal>
-      <span class="eyebrow">Ready to begin?</span>
-      <h2 style="font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:300;color:#fff;line-height:1.2;margin:1rem 0 1.5rem;">Book your first<br><em>appointment online.</em></h2>
-      <p style="color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.75;margin-bottom:1.25rem;">New patients are welcome. Typically seen within 1–2 weeks.</p>
-      <a href="https://alicetran.intakeq.com/booking" target="_blank" class="btn-primary-inner" style="align-self:flex-start;background:#fff;color:var(--forest);margin-bottom:1.25rem;">Book Now &rarr;</a>
-      <div style="background:rgba(255,255,255,.08);border-left:3px solid rgba(255,255,255,.3);border-radius:8px;padding:.85rem 1rem;">
-        <p style="color:rgba(255,255,255,.6);font-size:.82rem;line-height:1.65;margin:0;"><strong style="color:rgba(255,255,255,.85);">Please note:</strong> This practice does not prescribe long-term benzodiazepine therapy, opioid pain medications, multiple controlled substances, or addiction treatment medications. If you are currently prescribed these, please discuss with us before booking.</p>
-      </div>
+    <!-- Right: booking widget -->
+    <div class="contact-split-right" data-reveal>
+      <span class="eyebrow" style="margin-bottom:1.25rem;display:block;">Book Online</span>
+      <h2 style="font-family:var(--serif);font-size:clamp(1.5rem,2.5vw,2rem);font-weight:300;color:var(--forest);margin:0 0 .4rem;">Schedule your appointment.</h2>
+      <p style="color:var(--green-md);font-size:.9rem;margin:0 0 1.75rem;">New patients welcome &middot; Typically seen within 1–2 weeks &middot; No referral needed</p>
+      <div id="intakeq" style="width:100%;"></div>
     </div>
 
-  </div>
-</section>
-
-<!-- BOOKING WIDGET -->
-<section style="background:var(--cream);padding:48px clamp(1.5rem,5vw,3rem) 56px;">
-  <div style="max-width:760px;margin:0 auto;">
-    <div class="section-tag" style="margin-bottom:1rem;">Book Online</div>
-    <h2 style="font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:300;color:var(--forest);margin:0 0 .5rem;">Schedule your appointment below.</h2>
-    <p style="color:var(--green-md);font-size:.95rem;margin:0 0 2rem;">New patients welcome. Typically seen within 1–2 weeks.</p>
-    <div id="intakeq" style="max-width:720px;width:100%;"></div>
   </div>
 </section>
 
