@@ -58,6 +58,18 @@ nav {
 .mobile-menu a:last-child { border-bottom: none; }
 .mobile-menu.open { display: flex; }
 
+/* ── FLOATING BOOK BUTTON ── */
+.float-book {
+  position: fixed; bottom: 1.75rem; right: 1.75rem; z-index: 500;
+  background: var(--forest); color: #fff !important;
+  font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  padding: .75rem 1.5rem; border-radius: 50px; text-decoration: none;
+  box-shadow: 0 4px 18px rgba(0,0,0,.22);
+  transition: background .2s, transform .15s, box-shadow .2s;
+}
+.float-book:hover { background: var(--green); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,.28); }
+@media(max-width:600px){ .float-book { bottom: 1.25rem; right: 1.25rem; font-size:.72rem; padding:.65rem 1.2rem; } }
+
 /* ── HERO ── */
 .hero {
   position: relative;
