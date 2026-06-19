@@ -1258,19 +1258,6 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 .crisis-note strong { color: var(--ivory-soft); }
 
-/* ── FLOATING BOOK BUTTON ── */
-.float-book {
-  position: fixed; bottom: 1.75rem; left: 1.75rem; z-index: 500;
-  width: fit-content; display: inline-block;
-  background: var(--forest-deep,#1e3328); color: #fff !important;
-  font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
-  padding: .75rem 1.5rem; border-radius: 50px; text-decoration: none;
-  box-shadow: 0 4px 18px rgba(0,0,0,.22);
-  transition: background .2s, transform .15s, box-shadow .2s;
-}
-.float-book:hover { background: var(--green,#4a6741); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,.28); }
-@media(max-width:600px){ .float-book { bottom: 1.25rem; left: 1.25rem; font-size:.72rem; padding:.65rem 1.2rem; } }
-
 /* =========================================================
    Footer
    ========================================================= */

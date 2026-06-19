@@ -56,23 +56,11 @@ nav {
 /* hamburger */
 .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
 .nav-toggle span { display: block; width: 22px; height: 1px; background: var(--forest); transition: all 0.3s; }
+.nav-book-mobile { display: none; }
 .mobile-menu { display: none; flex-direction: column; gap: 0; background: var(--cream); border-bottom: 0.5px solid var(--border); }
 .mobile-menu a { padding: 14px 28px; font-size: 13px; color: var(--green-md); letter-spacing: 0.05em; border-bottom: 0.5px solid var(--border); }
 .mobile-menu a:last-child { border-bottom: none; }
 .mobile-menu.open { display: flex; }
-
-/* ── FLOATING BOOK BUTTON ── */
-.float-book {
-  position: fixed; bottom: 1.75rem; left: 1.75rem; z-index: 500;
-  width: fit-content; display: inline-block;
-  background: var(--forest); color: #fff !important;
-  font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
-  padding: .75rem 1.5rem; border-radius: 50px; text-decoration: none;
-  box-shadow: 0 4px 18px rgba(0,0,0,.22);
-  transition: background .2s, transform .15s, box-shadow .2s;
-}
-.float-book:hover { background: var(--green); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,.28); }
-@media(max-width:600px){ .float-book { bottom: 1.25rem; left: 1.25rem; font-size:.72rem; padding:.65rem 1.2rem; } }
 
 /* ── HERO ── */
 .hero {
@@ -399,6 +387,7 @@ footer a:hover { color: var(--sage-lt); }
   nav { padding: 16px 20px; }
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
+  .nav-book-mobile { display: inline-flex; margin-right: .5rem; }
   section { padding: 52px 20px; }
   .hero { padding: 60px 20px 52px; }
   .hero h1 { font-size: 2.2rem; }
