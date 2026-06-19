@@ -26,9 +26,12 @@ img { max-width: 100%; display: block; }
 .site-topbar { position: fixed !important; top: 0; left: 0; right: 0; width: 100%; }
 
 /* ── NAV ── */
-nav {
+.nav-wrapper {
   position: sticky; top: 36px; z-index: 100;
   margin-top: 36px;
+}
+nav {
+  position: static; top: auto; z-index: auto; margin-top: 0;
   display: flex; align-items: center; justify-content: space-between;
   padding: 18px 48px;
   background: var(--cream);
