@@ -63,7 +63,7 @@ nav {
 
 /* ── FLOATING BOOK BUTTON ── */
 .float-book {
-  position: fixed; bottom: 1.75rem; right: 1.75rem; z-index: 500;
+  position: fixed; bottom: 1.75rem; left: 1.75rem; z-index: 500;
   background: var(--forest); color: #fff !important;
   font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
   padding: .75rem 1.5rem; border-radius: 50px; text-decoration: none;
