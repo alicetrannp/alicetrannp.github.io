@@ -64,6 +64,7 @@ nav {
 /* ── FLOATING BOOK BUTTON ── */
 .float-book {
   position: fixed; bottom: 1.75rem; left: 1.75rem; z-index: 500;
+  width: fit-content; display: inline-block;
   background: var(--forest); color: #fff !important;
   font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
   padding: .75rem 1.5rem; border-radius: 50px; text-decoration: none;
@@ -71,7 +72,7 @@ nav {
   transition: background .2s, transform .15s, box-shadow .2s;
 }
 .float-book:hover { background: var(--green); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,.28); }
-@media(max-width:600px){ .float-book { bottom: 1.25rem; right: 1.25rem; font-size:.72rem; padding:.65rem 1.2rem; } }
+@media(max-width:600px){ .float-book { bottom: 1.25rem; left: 1.25rem; font-size:.72rem; padding:.65rem 1.2rem; } }
 
 /* ── HERO ── */
 .hero {
