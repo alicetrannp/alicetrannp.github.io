@@ -24,6 +24,7 @@ img { max-width: 100%; display: block; }
 
 /* ── Topbar (fixed, always pinned) ── */
 .site-topbar { position: fixed !important; top: 0; left: 0; right: 0; width: 100%; }
+.site-topbar a { font-size: .875rem !important; }
 
 /* ── NAV ── */
 .nav-wrapper {
