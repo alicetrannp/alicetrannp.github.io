@@ -739,21 +739,6 @@ function toggleNav() {
   document.getElementById('nav').classList.toggle('is-open');
 }
 
-// Dropdown click-toggle (works on both touch and click)
-document.querySelectorAll('.nav__dropdown-wrap > a').forEach(function(trigger) {
-  trigger.addEventListener('click', function(e) {
-    e.preventDefault();
-    var wrap = this.closest('.nav__dropdown-wrap');
-    var wasOpen = wrap.classList.contains('is-open');
-    document.querySelectorAll('.nav__dropdown-wrap.is-open').forEach(function(el) { el.classList.remove('is-open'); });
-    if (!wasOpen) wrap.classList.add('is-open');
-  });
-});
-document.addEventListener('click', function(e) {
-  if (!e.target.closest('.nav__dropdown-wrap')) {
-    document.querySelectorAll('.nav__dropdown-wrap.is-open').forEach(function(el) { el.classList.remove('is-open'); });
-  }
-});
 
 // Reviews carousel
 (function(){
