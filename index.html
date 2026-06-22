@@ -124,8 +124,16 @@
   border-left:6px solid transparent; border-right:6px solid transparent;
   border-bottom:6px solid #fff;
 }
-.nav__dropdown-wrap:hover .nav__dropdown { display:grid; }
+.nav__dropdown-wrap:hover .nav__dropdown,
+.nav__dropdown-wrap.is-open .nav__dropdown { display:grid; }
 .nav__dropdown-col { display:flex; flex-direction:column; gap:.1rem; }
+.nav__dropdown-see-all {
+  grid-column:1/-1; border-top:1px solid rgba(0,0,0,.07);
+  margin-top:.75rem; padding-top:.75rem;
+}
+.nav__dropdown-see-all a {
+  font-size:.8rem; color:#7A9E7E; font-weight:600;
+}
 .nav__dropdown-label {
   font-size:.68rem; letter-spacing:.16em; text-transform:uppercase;
   color:#7A9E7E; font-weight:700; margin:0 0 .5rem; padding-bottom:.4rem;
@@ -213,6 +221,9 @@
             <a href="pages/condition-life-transitions.html">Life Transitions</a>
             <a href="pages/condition-cultural.html">Cultural Pressure</a>
             <a href="pages/condition-international.html">International Students</a>
+          </div>
+          <div class="nav__dropdown-see-all">
+            <a href="pages/conditions.html">See all conditions →</a>
           </div>
           </div>
         </div>
@@ -727,6 +738,22 @@
 function toggleNav() {
   document.getElementById('nav').classList.toggle('is-open');
 }
+
+// Dropdown click-toggle (works on both touch and click)
+document.querySelectorAll('.nav__dropdown-wrap > a').forEach(function(trigger) {
+  trigger.addEventListener('click', function(e) {
+    e.preventDefault();
+    var wrap = this.closest('.nav__dropdown-wrap');
+    var wasOpen = wrap.classList.contains('is-open');
+    document.querySelectorAll('.nav__dropdown-wrap.is-open').forEach(function(el) { el.classList.remove('is-open'); });
+    if (!wasOpen) wrap.classList.add('is-open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav__dropdown-wrap')) {
+    document.querySelectorAll('.nav__dropdown-wrap.is-open').forEach(function(el) { el.classList.remove('is-open'); });
+  }
+});
 
 // Reviews carousel
 (function(){
