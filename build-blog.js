@@ -1,4 +1,4 @@
-// build-blog.js  — generates blog post pages + index
+﻿// build-blog.js  — generates blog post pages + index
 const fs = require('fs');
 const path = require('path');
 
@@ -59,7 +59,7 @@ const FOOTER = `
     <div>
       <h4>Hours</h4>
       <p style="line-height:2.2;">
-        <b>Mon &ndash; Thu</b> 10am &ndash; 4pm<br>
+        <b>Mon &ndash; Thu</b> 9am &ndash; 4pm<br>
         <b>Fri &ndash; Sun</b> Closed
       </p>
     </div>

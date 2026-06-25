@@ -1,4 +1,4 @@
-// build-condition-pages.js — high-intent condition/service landing pages
+﻿// build-condition-pages.js — high-intent condition/service landing pages
 const fs = require('fs');
 
 const NAV = `<nav>
@@ -25,7 +25,7 @@ const NAV = `<nav>
 </div>`;
 
 const FOOTER = `<section class="cta-band"><h2 class="section-title">The first step is usually the hardest.</h2><a href="https://alicetran.intakeq.com/booking" target="_blank" class="btn btn-light">Book an Appointment</a><p>No referral needed. Accepting new patients across Virginia.</p></section>
-<footer><div class="footer-grid"><div><div class="footer-brand">Alice Tran Psychiatric Care</div><p class="footer-tagline">Telehealth psychiatric care across Virginia.<br>English &amp; Ti&#7871;ng Vi&#7879;t welcome.</p><br><h4>Contact</h4><a href="tel:7038295227">Phone: (703) 829-5227</a><a href="mailto:info@alicetrannp.com">Email: info@alicetrannp.com</a></div><div><h4>Pages</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="rates.html">Rates &amp; Insurance</a><a href="conditions.html">Conditions</a><a href="blog/index.html">Blog</a><a href="contact.html">Contact</a></div><div><h4>Hours</h4><p style="line-height:2.2;"><b>Mon &ndash; Thu</b> 10am &ndash; 4pm<br><b>Fri &ndash; Sun</b> Closed</p></div></div><div class="footer-copy">&copy; 2026 Alice Tran Psychiatric Care LLC. All rights reserved. &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="disclaimer.html">Disclaimer</a></div></footer>
+<footer><div class="footer-grid"><div><div class="footer-brand">Alice Tran Psychiatric Care</div><p class="footer-tagline">Telehealth psychiatric care across Virginia.<br>English &amp; Ti&#7871;ng Vi&#7879;t welcome.</p><br><h4>Contact</h4><a href="tel:7038295227">Phone: (703) 829-5227</a><a href="mailto:info@alicetrannp.com">Email: info@alicetrannp.com</a></div><div><h4>Pages</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="rates.html">Rates &amp; Insurance</a><a href="conditions.html">Conditions</a><a href="blog/index.html">Blog</a><a href="contact.html">Contact</a></div><div><h4>Hours</h4><p style="line-height:2.2;"><b>Mon &ndash; Thu</b> 9am &ndash; 4pm<br><b>Fri &ndash; Sun</b> Closed</p></div></div><div class="footer-copy">&copy; 2026 Alice Tran Psychiatric Care LLC. All rights reserved. &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="disclaimer.html">Disclaimer</a></div></footer>
 <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>`;
 
 function head(slug, title, desc) {

@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const NAV = `<nav>
@@ -51,10 +51,10 @@ const FOOTER = `<footer>
     <div>
       <h4>Hours</h4>
       <p style="line-height:2.2;">
-        <b>Monday</b> 10am &ndash; 4pm<br>
-        <b>Tuesday</b> 10am &ndash; 4pm<br>
-        <b>Wednesday</b> 10am &ndash; 4pm<br>
-        <b>Thursday</b> 10am &ndash; 4pm<br>
+        <b>Monday</b> 9am &ndash; 4pm<br>
+        <b>Tuesday</b> 9am &ndash; 4pm<br>
+        <b>Wednesday</b> 9am &ndash; 4pm<br>
+        <b>Thursday</b> 9am &ndash; 4pm<br>
         <b>Friday</b> Closed<br>
         <b>Saturday</b> Closed<br>
         <b>Sunday</b> Closed

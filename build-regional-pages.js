@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const NAV = `<nav>
@@ -51,10 +51,10 @@ const FOOTER = `<footer>
     <div>
       <h4>Hours</h4>
       <p style="line-height:2.2;">
-        <b>Monday</b> 10am &ndash; 4pm<br>
-        <b>Tuesday</b> 10am &ndash; 4pm<br>
-        <b>Wednesday</b> 10am &ndash; 4pm<br>
-        <b>Thursday</b> 10am &ndash; 4pm<br>
+        <b>Monday</b> 9am &ndash; 4pm<br>
+        <b>Tuesday</b> 9am &ndash; 4pm<br>
+        <b>Wednesday</b> 9am &ndash; 4pm<br>
+        <b>Thursday</b> 9am &ndash; 4pm<br>
         <b>Friday</b> Closed<br>
         <b>Saturday</b> Closed<br>
         <b>Sunday</b> Closed
@@ -708,7 +708,7 @@ const pages = [
     <div style="margin-top:1.75rem;">
       <div class="loc-faq">
         <h3>Do you offer evening or early morning appointments?</h3>
-        <p>Alice's current hours are Monday through Thursday, 10am to 4pm. If those hours are a barrier, reach out directly — there may be options, or she can recommend next steps for finding care that fits your schedule.</p>
+        <p>Alice's current hours are Monday through Thursday, 9am to 4pm. If those hours are a barrier, reach out directly — there may be options, or she can recommend next steps for finding care that fits your schedule.</p>
       </div>
       <div class="loc-faq">
         <h3>What insurance do you accept?</h3>
@@ -825,7 +825,7 @@ const pages = [
       </div>
       <div class="loc-faq">
         <h3>I work long hours. Are appointments flexible?</h3>
-        <p>Alice's current hours are Monday through Thursday, 10am to 4pm. If that does not work with your schedule, reach out directly — there are sometimes options, and she is glad to discuss what might be possible.</p>
+        <p>Alice's current hours are Monday through Thursday, 9am to 4pm. If that does not work with your schedule, reach out directly — there are sometimes options, and she is glad to discuss what might be possible.</p>
       </div>
       <div class="loc-faq">
         <h3>Can I be seen quickly if I am struggling right now?</h3>

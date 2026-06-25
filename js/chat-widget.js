@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   var base = (document.currentScript || {}).getAttribute('data-base') || '';
 
   var KB = [
@@ -61,7 +61,7 @@
     },
     {
       keywords: ['hours', 'open', 'when are you', 'schedule', 'available', 'monday', 'tuesday', 'wednesday', 'thursday', 'days'],
-      answer: 'Office hours are Monday–Thursday, 10am–4pm. New patients are typically seen within 1–2 weeks.'
+      answer: 'Office hours are Monday–Thursday, 9am–4pm. New patients are typically seen within 1–2 weeks.'
     },
     {
       keywords: ['book', 'booking', 'schedule appointment', 'make appointment', 'sign up', 'get started', 'how do i start', 'how to start'],

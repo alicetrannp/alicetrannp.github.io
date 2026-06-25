@@ -1,4 +1,4 @@
-"""
+﻿"""
 Generates all SEO landing pages:
   - 11 condition+city pages (adhd/anxiety/depression x fairfax/arlington/alexandria/reston/northern-va)
   - 5 insurance pages (Aetna, Medicaid, Medicare, Carelon, Anthem BCBS)
@@ -88,7 +88,7 @@ FOOTER = """\
     <div>
       <h4>Hours</h4>
       <p style="line-height:2.2;">
-        <b>Mon &ndash; Thu</b> 10am &ndash; 4pm<br>
+        <b>Mon &ndash; Thu</b> 9am &ndash; 4pm<br>
         <b>Fri &ndash; Sun</b> Closed
       </p>
     </div>
