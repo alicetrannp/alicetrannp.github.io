@@ -103,10 +103,23 @@
 </div>
 
 <section style="background:var(--cream,#F5F2EC);padding:64px clamp(1.5rem,5vw,4rem);">
-  <div style="max-width:960px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;">
+  <div style="max-width:960px;margin:0 auto 2rem;">
+    <div style="display:flex;flex-wrap:wrap;gap:.5rem;">
+      <button class="cat-btn active" data-cat="all" onclick="filterBlog(this)">All Posts</button>
+      <button class="cat-btn" data-cat="adhd" onclick="filterBlog(this)">ADHD</button>
+      <button class="cat-btn" data-cat="anxiety" onclick="filterBlog(this)">Anxiety</button>
+      <button class="cat-btn" data-cat="depression" onclick="filterBlog(this)">Depression</button>
+      <button class="cat-btn" data-cat="sleep" onclick="filterBlog(this)">Sleep</button>
+      <button class="cat-btn" data-cat="postpartum" onclick="filterBlog(this)">Postpartum</button>
+      <button class="cat-btn" data-cat="trauma" onclick="filterBlog(this)">Trauma &amp; PTSD</button>
+      <button class="cat-btn" data-cat="culture" onclick="filterBlog(this)">Culture &amp; Identity</button>
+      <button class="cat-btn" data-cat="care" onclick="filterBlog(this)">Getting Care</button>
+    </div>
+  </div>
+  <div id="blog-grid" style="max-width:960px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;">
 
     <!-- JUNE 2026 -->
-    <a href="insomnia-why-brain-wont-sleep.html" class="blog-card">
+    <a href="insomnia-why-brain-wont-sleep.html" class="blog-card" data-cat="sleep">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">You&rsquo;re Exhausted, But Your Brain Won&rsquo;t Let You Sleep. Here&rsquo;s Why.</h2>
@@ -115,7 +128,43 @@
       </div>
     </a>
 
-    <a href="adhd-treatment-adults.html" class="blog-card">
+    <a href="adhd-burnout.html" class="blog-card" data-cat="adhd">
+      <div class="blog-card__body">
+        <p class="blog-card__date">June 2026</p>
+        <h2 class="blog-card__title">ADHD and Burnout: Why It Happens and What to Do</h2>
+        <p class="blog-card__desc">ADHD burnout is different from ordinary burnout. Learn why adults with ADHD are particularly vulnerable, what it looks like, and how to recover.</p>
+        <span class="blog-card__cta">Read more &rarr;</span>
+      </div>
+    </a>
+
+    <a href="adhd-high-functioning-professionals.html" class="blog-card" data-cat="adhd">
+      <div class="blog-card__body">
+        <p class="blog-card__date">June 2026</p>
+        <h2 class="blog-card__title">High-Functioning ADHD in Professionals</h2>
+        <p class="blog-card__desc">Many high-achieving professionals have undiagnosed ADHD. Learn what high-functioning ADHD looks like in adults, why coping strategies eventually fail, and when to seek an evaluation.</p>
+        <span class="blog-card__cta">Read more &rarr;</span>
+      </div>
+    </a>
+
+    <a href="adhd-vs-anxiety.html" class="blog-card" data-cat="adhd">
+      <div class="blog-card__body">
+        <p class="blog-card__date">June 2026</p>
+        <h2 class="blog-card__title">ADHD vs. Anxiety: How to Tell the Difference</h2>
+        <p class="blog-card__desc">ADHD and anxiety share many symptoms. Learn how to tell them apart, why having both is common, and why the distinction matters for treatment.</p>
+        <span class="blog-card__cta">Read more &rarr;</span>
+      </div>
+    </a>
+
+    <a href="why-adults-miss-adhd-diagnosis.html" class="blog-card" data-cat="adhd">
+      <div class="blog-card__body">
+        <p class="blog-card__date">June 2026</p>
+        <h2 class="blog-card__title">Why Smart Adults Miss an ADHD Diagnosis</h2>
+        <p class="blog-card__desc">Many intelligent adults go decades without an ADHD diagnosis. Learn why ADHD is so frequently missed in adults, especially women and high achievers, and what to do about it.</p>
+        <span class="blog-card__cta">Read more &rarr;</span>
+      </div>
+    </a>
+
+    <a href="adhd-treatment-adults.html" class="blog-card" data-cat="adhd">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">You&rsquo;re Not Lazy, Broken, or Stupid. You Have ADHD. Here&rsquo;s What Actually Works for Adults.</h2>
@@ -124,7 +173,7 @@
       </div>
     </a>
 
-    <a href="panic-disorder.html" class="blog-card">
+    <a href="panic-disorder.html" class="blog-card" data-cat="anxiety">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Your Heart Is Racing and You Think You&rsquo;re Dying. Understanding Panic Disorder.</h2>
@@ -133,7 +182,7 @@
       </div>
     </a>
 
-    <a href="postpartum-mental-health.html" class="blog-card">
+    <a href="postpartum-mental-health.html" class="blog-card" data-cat="postpartum">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Mental Health After Having a Baby: What Every New Parent Should Know</h2>
@@ -142,7 +191,7 @@
       </div>
     </a>
 
-    <a href="wellbutrin-adhd.html" class="blog-card">
+    <a href="wellbutrin-adhd.html" class="blog-card" data-cat="adhd">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Does Wellbutrin (Bupropion) Help ADHD? What the Research Actually Shows</h2>
@@ -151,7 +200,7 @@
       </div>
     </a>
 
-    <a href="sleep-hygiene-tips.html" class="blog-card">
+    <a href="sleep-hygiene-tips.html" class="blog-card" data-cat="sleep">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Sleep Hygiene Tips That Actually Work: Backed by Science</h2>
@@ -160,7 +209,7 @@
       </div>
     </a>
 
-    <a href="high-functioning-depression.html" class="blog-card">
+    <a href="high-functioning-depression.html" class="blog-card" data-cat="depression">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">High-Functioning Depression: What It Looks Like and Why It&rsquo;s Easy to Miss</h2>
@@ -169,7 +218,7 @@
       </div>
     </a>
 
-    <a href="bipolar-i-vs-bipolar-ii.html" class="blog-card">
+    <a href="bipolar-i-vs-bipolar-ii.html" class="blog-card" data-cat="depression">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Bipolar I vs. Bipolar II: Why Being Moody Does Not Mean You Are Bipolar</h2>
@@ -178,7 +227,7 @@
       </div>
     </a>
 
-    <a href="depression-warning-signs.html" class="blog-card">
+    <a href="depression-warning-signs.html" class="blog-card" data-cat="depression">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">10 Warning Signs You Might Be Depressed (That You Might Not Recognize)</h2>
@@ -187,7 +236,7 @@
       </div>
     </a>
 
-    <a href="marijuana-anxiety-calm.html" class="blog-card">
+    <a href="marijuana-anxiety-calm.html" class="blog-card" data-cat="anxiety">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">&ldquo;Marijuana Calms Me Down&rdquo;: Why That May Not Be True</h2>
@@ -196,7 +245,7 @@
       </div>
     </a>
 
-    <a href="marijuana-adhd-focus.html" class="blog-card">
+    <a href="marijuana-adhd-focus.html" class="blog-card" data-cat="adhd">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Does Marijuana Make It Harder to Focus? Cannabis, ADHD, and What the Research Actually Shows</h2>
@@ -205,7 +254,7 @@
       </div>
     </a>
 
-    <a href="high-functioning-anxiety.html" class="blog-card">
+    <a href="high-functioning-anxiety.html" class="blog-card" data-cat="anxiety">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">High-Functioning Anxiety: The Hidden Signs Behind the Perfect Surface</h2>
@@ -214,7 +263,7 @@
       </div>
     </a>
 
-    <a href="perfectionism-asian-families.html" class="blog-card">
+    <a href="perfectionism-asian-families.html" class="blog-card" data-cat="culture">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Perfectionism in Asian Families: The Weight of Expectations You Were Never Meant to Carry Alone</h2>
@@ -223,7 +272,7 @@
       </div>
     </a>
 
-    <a href="rejection-sensitive-dysphoria.html" class="blog-card">
+    <a href="rejection-sensitive-dysphoria.html" class="blog-card" data-cat="adhd">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Rejection Sensitive Dysphoria: Why Rejection Hurts So Much More for Some People</h2>
@@ -232,7 +281,7 @@
       </div>
     </a>
 
-    <a href="overthinking-anxiety-adhd.html" class="blog-card">
+    <a href="overthinking-anxiety-adhd.html" class="blog-card" data-cat="anxiety">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Why Do I Overthink Every Conversation? The Science Behind the Spiral</h2>
@@ -241,7 +290,7 @@
       </div>
     </a>
 
-    <a href="pmdd-vs-pms.html" class="blog-card">
+    <a href="pmdd-vs-pms.html" class="blog-card" data-cat="postpartum">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">PMDD vs PMS: Why Do I Feel Depressed Before My Period?</h2>
@@ -250,7 +299,7 @@
       </div>
     </a>
 
-    <a href="burnout-high-performing-professionals.html" class="blog-card">
+    <a href="burnout-high-performing-professionals.html" class="blog-card" data-cat="depression">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Burnout in High-Performing Professionals: Attorneys, Tech Workers, Executives, and Nurses</h2>
@@ -259,7 +308,7 @@
       </div>
     </a>
 
-    <a href="adhd-late-diagnosis-adults.html" class="blog-card">
+    <a href="adhd-late-diagnosis-adults.html" class="blog-card" data-cat="adhd">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Why So Many Adults Discover They Have ADHD at 30, 40, or 50</h2>
@@ -268,7 +317,7 @@
       </div>
     </a>
 
-    <a href="lab-testing-psychiatry.html" class="blog-card">
+    <a href="lab-testing-psychiatry.html" class="blog-card" data-cat="care">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Lab Testing in Psychiatry: What to Expect and Why It Matters</h2>
@@ -277,7 +326,7 @@
       </div>
     </a>
 
-    <a href="what-is-a-psychiatric-evaluation.html" class="blog-card">
+    <a href="what-is-a-psychiatric-evaluation.html" class="blog-card" data-cat="care">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">What Is a Psychiatric Evaluation? What to Expect at Your First Appointment</h2>
@@ -286,7 +335,7 @@
       </div>
     </a>
 
-    <a href="adhd-women-signs.html" class="blog-card">
+    <a href="adhd-women-signs.html" class="blog-card" data-cat="adhd">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Signs of Adult ADHD in Women: The Disorder That Hides in Plain Sight</h2>
@@ -295,7 +344,7 @@
       </div>
     </a>
 
-    <a href="vietnamese-mental-health.html" class="blog-card">
+    <a href="vietnamese-mental-health.html" class="blog-card" data-cat="culture">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Vietnamese and Mental Health: Breaking the Silence on a Community's Hidden Struggle</h2>
@@ -304,7 +353,7 @@
       </div>
     </a>
 
-    <a href="generational-trauma-asian-american.html" class="blog-card">
+    <a href="generational-trauma-asian-american.html" class="blog-card" data-cat="culture">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Generational Trauma in Asian American Families: What Gets Carried and What Gets Passed Down</h2>
@@ -313,7 +362,7 @@
       </div>
     </a>
 
-    <a href="asian-mental-health-cultural-care-gap.html" class="blog-card">
+    <a href="asian-mental-health-cultural-care-gap.html" class="blog-card" data-cat="culture">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">The Cultural Care Gap: Understanding Asian Mental Health</h2>
@@ -322,7 +371,7 @@
       </div>
     </a>
 
-    <a href="postpartum-depression-facts.html" class="blog-card">
+    <a href="postpartum-depression-facts.html" class="blog-card" data-cat="postpartum">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Understanding Postpartum Depression: Facts, Misconceptions, and Hope</h2>
@@ -331,7 +380,7 @@
       </div>
     </a>
 
-    <a href="relationships-and-mental-health.html" class="blog-card">
+    <a href="relationships-and-mental-health.html" class="blog-card" data-cat="depression">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Relationships and Mental Health: Common Struggles and How They Affect You</h2>
@@ -340,7 +389,7 @@
       </div>
     </a>
 
-    <a href="mental-health-equity.html" class="blog-card">
+    <a href="mental-health-equity.html" class="blog-card" data-cat="culture">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Mental Health Equity: Why Access to Care Still Depends on Who You Are</h2>
@@ -349,7 +398,7 @@
       </div>
     </a>
 
-    <a href="youth-mental-health-crisis.html" class="blog-card">
+    <a href="youth-mental-health-crisis.html" class="blog-card" data-cat="care">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">The Youth Mental Health Crisis: Why Young People Are Struggling and What We Can Do</h2>
@@ -358,7 +407,7 @@
       </div>
     </a>
 
-    <a href="ptsd-trauma-overview.html" class="blog-card">
+    <a href="ptsd-trauma-overview.html" class="blog-card" data-cat="trauma">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">PTSD and Trauma: Understanding the Lasting Impact of Difficult Experiences</h2>
@@ -367,7 +416,7 @@
       </div>
     </a>
 
-    <a href="major-depressive-disorder.html" class="blog-card">
+    <a href="major-depressive-disorder.html" class="blog-card" data-cat="depression">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Major Depressive Disorder: Still Undertreated Despite Growing Awareness</h2>
@@ -376,7 +425,7 @@
       </div>
     </a>
 
-    <a href="anxiety-disorders-overview.html" class="blog-card">
+    <a href="anxiety-disorders-overview.html" class="blog-card" data-cat="anxiety">
       <div class="blog-card__body">
         <p class="blog-card__date">June 2026</p>
         <h2 class="blog-card__title">Anxiety Disorders: The World's Most Common Mental Health Condition</h2>
@@ -386,7 +435,7 @@
     </a>
 
     <!-- MAY 2026 -->
-    <a href="medication-vs-therapy.html" class="blog-card">
+    <a href="medication-vs-therapy.html" class="blog-card" data-cat="care">
       <div class="blog-card__body">
         <p class="blog-card__date">May 2026</p>
         <h2 class="blog-card__title">Medication vs. Therapy: Do You Need Both?</h2>
@@ -395,7 +444,7 @@
       </div>
     </a>
 
-    <a href="postpartum-depression-vs-baby-blues.html" class="blog-card">
+    <a href="postpartum-depression-vs-baby-blues.html" class="blog-card" data-cat="postpartum">
       <div class="blog-card__body">
         <p class="blog-card__date">May 2026</p>
         <h2 class="blog-card__title">Postpartum Depression vs. the Baby Blues: What Every New Parent Should Know</h2>
@@ -404,7 +453,7 @@
       </div>
     </a>
 
-    <a href="what-ocd-actually-is.html" class="blog-card">
+    <a href="what-ocd-actually-is.html" class="blog-card" data-cat="anxiety">
       <div class="blog-card__body">
         <p class="blog-card__date">May 2026</p>
         <h2 class="blog-card__title">What OCD Actually Is (And What It Is Not)</h2>
@@ -413,7 +462,7 @@
       </div>
     </a>
 
-    <a href="sleep-and-mental-health.html" class="blog-card">
+    <a href="sleep-and-mental-health.html" class="blog-card" data-cat="sleep">
       <div class="blog-card__body">
         <p class="blog-card__date">May 2026</p>
         <h2 class="blog-card__title">Sleep and Mental Health: Why Rest Is a Clinical Priority</h2>
@@ -422,7 +471,7 @@
       </div>
     </a>
 
-    <a href="burnout-vs-depression.html" class="blog-card">
+    <a href="burnout-vs-depression.html" class="blog-card" data-cat="depression">
       <div class="blog-card__body">
         <p class="blog-card__date">May 2026</p>
         <h2 class="blog-card__title">Burnout vs. Depression: How to Tell Them Apart</h2>
@@ -431,7 +480,7 @@
       </div>
     </a>
 
-    <a href="ptsd-vs-anxiety-whats-the-difference.html" class="blog-card">
+    <a href="ptsd-vs-anxiety-whats-the-difference.html" class="blog-card" data-cat="trauma">
       <div class="blog-card__body">
         <p class="blog-card__date">May 2026</p>
         <h2 class="blog-card__title">PTSD vs. Anxiety: What Is the Difference?</h2>
@@ -440,7 +489,7 @@
       </div>
     </a>
 
-    <a href="depression-vs-bipolar-disorder.html" class="blog-card">
+    <a href="depression-vs-bipolar-disorder.html" class="blog-card" data-cat="depression">
       <div class="blog-card__body">
         <p class="blog-card__date">May 2026</p>
         <h2 class="blog-card__title">Depression vs. Bipolar Disorder: How to Tell the Difference</h2>
@@ -449,7 +498,7 @@
       </div>
     </a>
 
-    <a href="whole-person-approach-mental-health.html" class="blog-card">
+    <a href="whole-person-approach-mental-health.html" class="blog-card" data-cat="care">
       <div class="blog-card__body">
         <p class="blog-card__date">May 2026</p>
         <h2 class="blog-card__title">The Whole Person Approach: Food, Movement, Sunlight, and Rest</h2>
@@ -458,7 +507,7 @@
       </div>
     </a>
 
-    <a href="exercise-and-mental-health.html" class="blog-card">
+    <a href="exercise-and-mental-health.html" class="blog-card" data-cat="care">
       <div class="blog-card__body">
         <p class="blog-card__date">May 2026</p>
         <h2 class="blog-card__title">Exercise and Mental Health: What the Research Actually Says</h2>
@@ -467,7 +516,7 @@
       </div>
     </a>
 
-    <a href="benzodiazepines-what-you-should-know.html" class="blog-card">
+    <a href="benzodiazepines-what-you-should-know.html" class="blog-card" data-cat="care">
       <div class="blog-card__body">
         <p class="blog-card__date">May 2026</p>
         <h2 class="blog-card__title">Benzodiazepines: What You Should Know Before Taking Them</h2>
@@ -476,7 +525,7 @@
       </div>
     </a>
 
-    <a href="anxiety-when-to-see-a-psychiatrist.html" class="blog-card">
+    <a href="anxiety-when-to-see-a-psychiatrist.html" class="blog-card" data-cat="anxiety">
       <div class="blog-card__body">
         <p class="blog-card__date">May 2026</p>
         <h2 class="blog-card__title">Anxiety vs. Stress: When Should You See a Psychiatrist?</h2>
@@ -485,7 +534,7 @@
       </div>
     </a>
 
-    <a href="telehealth-psychiatry-how-it-works.html" class="blog-card">
+    <a href="telehealth-psychiatry-how-it-works.html" class="blog-card" data-cat="care">
       <div class="blog-card__body">
         <p class="blog-card__date">May 2026</p>
         <h2 class="blog-card__title">How Telehealth Psychiatry Works (And Whether It Is Right for You)</h2>
@@ -495,7 +544,7 @@
     </a>
 
     <!-- APRIL 2026 -->
-    <a href="what-is-a-pmhnp.html" class="blog-card">
+    <a href="what-is-a-pmhnp.html" class="blog-card" data-cat="care">
       <div class="blog-card__body">
         <p class="blog-card__date">April 2026</p>
         <h2 class="blog-card__title">What Is a PMHNP? A Plain-Language Guide to Psychiatric Nurse Practitioners</h2>
@@ -504,7 +553,7 @@
       </div>
     </a>
 
-    <a href="adhd-adults-virginia.html" class="blog-card">
+    <a href="adhd-adults-virginia.html" class="blog-card" data-cat="adhd">
       <div class="blog-card__body">
         <p class="blog-card__date">April 2026</p>
         <h2 class="blog-card__title">ADHD in Adults: Signs, Diagnosis, and Treatment in Virginia</h2>
@@ -513,7 +562,7 @@
       </div>
     </a>
 
-    <a href="what-is-medication-management.html" class="blog-card">
+    <a href="what-is-medication-management.html" class="blog-card" data-cat="care">
       <div class="blog-card__body">
         <p class="blog-card__date">April 2026</p>
         <h2 class="blog-card__title">What Is Medication Management in Psychiatry? What to Expect</h2>
@@ -577,7 +626,20 @@
 </footer>
 <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>
 
+<script>
+function filterBlog(btn) {
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  var cat = btn.dataset.cat;
+  document.querySelectorAll('#blog-grid .blog-card').forEach(function(card) {
+    card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+  });
+}
+</script>
 <style>
+.cat-btn { background:rgba(46,74,60,.08);border:1px solid rgba(46,74,60,.18);color:#2E4A3C;padding:.4rem 1rem;border-radius:50px;font-size:.8rem;font-weight:600;cursor:pointer;transition:all .18s;font-family:inherit; }
+.cat-btn:hover { background:rgba(46,74,60,.16); }
+.cat-btn.active { background:#2E4A3C;color:#fff;border-color:#2E4A3C; }
 .blog-card {
   display:flex;flex-direction:column;background:#fff;border-radius:16px;
   border:1px solid rgba(0,0,0,.07);text-decoration:none;color:inherit;
