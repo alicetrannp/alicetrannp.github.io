@@ -140,6 +140,31 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <!-- High-intent landing pages -->
+  <url>
+    <loc>https://alicetrannp.com/pages/online-psychiatric-provider-virginia.html</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/accepting-new-patients-virginia.html</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/adhd-diagnosis-virginia-guide.html</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://alicetrannp.com/pages/how-to-prepare-psychiatric-evaluation.html</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
   <url>
     <loc>https://alicetrannp.com/pages/about.html</loc>
     <lastmod>2026-06-09</lastmod>
