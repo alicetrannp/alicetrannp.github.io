@@ -87,12 +87,12 @@
     },
     {
       keywords: ['service', 'what do you offer', 'what do you do', 'therapy', 'psychotherapy', 'medication'],
-      answer: 'Alice offers comprehensive psychiatric evaluations, medication management, and supportive therapy for adults ages 18–60.',
+      answer: 'Alice offers comprehensive psychiatric evaluations, medication management, and supportive therapy for adults ages 18–65.',
       action: { label: 'View all services →', href: base + 'pages/services.html' }
     },
     {
       keywords: ['ages', 'age', 'how old', 'adult', 'teenager', 'teen', 'child', 'senior', 'elderly'],
-      answer: 'Alice currently sees adults ages 18 to 60.'
+      answer: 'Alice currently sees adults ages 18 to 65.'
     }
   ];
 

@@ -215,7 +215,7 @@ const pages = [
     <h2 class="sm-h2">Tysons runs on performance. That has a cost.</h2>
     <p class="sm-p">Tysons Corner and Tysons Galleria sit at the center of one of the largest concentrations of corporate offices, consulting firms, government contractors, and financial services companies in Northern Virginia. The people who work here are driven, capable, and often quietly overwhelmed. The culture rewards output and does not leave much space for the conversation that actually needs to happen.</p>
     <p class="sm-p">Alice Tran, PMHNP-BC provides telehealth psychiatric care for adults in Tysons and the surrounding area — McLean, Vienna, and the Beltway corridor. Because her practice is fully telehealth, Tysons workers can join an appointment from their office, their car, or anywhere private — without blocking out half a day for the drive and waiting room.</p>
-    <p class="sm-p">She treats anxiety, burnout, depression, ADHD, and more — in English and Vietnamese — for adults ages 18 to 60.</p>
+    <p class="sm-p">She treats anxiety, burnout, depression, ADHD, and more — in English and Vietnamese — for adults ages 18 to 65.</p>
 
     <div class="sm-grid" style="margin-top:1.5rem;">
       <div class="sm-item">
@@ -324,7 +324,7 @@ const pages = [
     </div>
     <div class="sm-faq">
       <h3>Do you treat children or teenagers?</h3>
-      <p>Alice's practice is for adults ages 18 to 60. For younger patients, she is happy to provide a referral recommendation if you reach out directly.</p>
+      <p>Alice's practice is for adults ages 18 to 65. For younger patients, she is happy to provide a referral recommendation if you reach out directly.</p>
     </div>
     <div class="sm-faq">
       <h3>Can I use the Metro to get to your office?</h3>
