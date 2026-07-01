@@ -435,7 +435,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   max-width: var(--container);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
+  grid-template-columns: 340px 1fr;
   gap: clamp(2rem, 6vw, 5rem);
   align-items: center;
 }
@@ -1369,7 +1369,8 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   .conditions__inner,
   .contact__card { grid-template-columns: 1fr; }
 
-  .about__portrait { max-width: 480px; margin: 0 auto; }
+  .about__portrait { max-width: 340px; margin: 0 auto; }
+  .about .portrait { max-width: 340px; margin: 0 auto; }
 
   .approach__grid,
   .services__grid,
