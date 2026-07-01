@@ -195,7 +195,7 @@ section { padding: 72px clamp(1.5rem, 5vw, 3rem); }
 .promise-card p { font-size: 15px; color: var(--green-md); line-height: 1.7; }
 
 /* ── CONDITIONS ── */
-.conditions { background: var(--sage-lt); text-align: center; }
+.conditions { background: var(--sage-lt); text-align: center; padding: 48px clamp(1.5rem, 5vw, 3rem); }
 .conditions-body { font-size: 14px; color: var(--green-md); line-height: 2.2; max-width: 680px; margin: 0 auto; }
 .conditions-body a { color: var(--green); border-bottom: 1px solid var(--border); transition: border-color 0.2s; }
 .conditions-body a:hover { border-color: var(--green); }
