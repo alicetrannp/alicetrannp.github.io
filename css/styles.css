@@ -455,7 +455,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   transition: transform .8s var(--ease);
 }
 .portrait:hover .portrait__frame { transform: rotate(0deg); }
-.portrait__art { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; transform: scale(1.35); transform-origin: center 25%; }
+.portrait__art { width: 100%; height: 100%; object-fit: cover; }
 .portrait::before {
   content: "";
   position: absolute;
