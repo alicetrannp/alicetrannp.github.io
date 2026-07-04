@@ -322,7 +322,20 @@
   </div>
   <div class="footer-copy">&#169; 2026 Alice Tran Psychiatric Care LLC. All rights reserved.</div>
 </footer>
-<script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>
+<script>
+function toggleMenu(){
+  var nav=document.querySelector('.nav-wrapper');
+  document.getElementById('mobileMenu').classList.toggle('open');
+  if(nav) nav.classList.toggle('is-open');
+}
+(function(){
+  var nav=document.querySelector('.nav-wrapper');
+  if(!nav) return;
+  window.addEventListener('scroll',function(){
+    nav.classList.toggle('is-scrolled', window.scrollY > 10);
+  },{passive:true});
+})();
+</script>
 
 <script src="../js/chat-widget.js" data-base="../"></script>
 </body>

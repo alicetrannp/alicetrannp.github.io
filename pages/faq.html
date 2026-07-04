@@ -975,7 +975,18 @@ function toggleFaq(btn) {
   document.querySelectorAll('.faq-item.is-open').forEach(el => el.classList.remove('is-open'));
   if (!isOpen) item.classList.add('is-open');
 }
-function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+function toggleMenu(){
+  var nav=document.querySelector('.nav-wrapper');
+  document.getElementById('mobileMenu').classList.toggle('open');
+  if(nav) nav.classList.toggle('is-open');
+}
+(function(){
+  var nav=document.querySelector('.nav-wrapper');
+  if(!nav) return;
+  window.addEventListener('scroll',function(){
+    nav.classList.toggle('is-scrolled', window.scrollY > 10);
+  },{passive:true});
+})();
 
 // FAQ search
 document.getElementById('faq-search').addEventListener('input', function () {
