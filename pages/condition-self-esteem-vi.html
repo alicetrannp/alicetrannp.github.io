@@ -34,21 +34,80 @@
   </a>
 </div>
 
-<div class="nav-wrapper">
-<nav>
-  <a href="../index.html" class="nav-logo"><img src="../img/logo.png" alt="" width="28" height="28" style="border-radius:50%;vertical-align:middle;margin-right:8px;">Phòng khám tâm lý Alice Tran</a>
-  <div class="nav-links">
-    <a href="about-vi.html">Giới thiệu</a><a href="services-vi.html">Dịch vụ</a><a href="rates-vi.html">Phí &amp; Bảo hiểm</a><a href="conditions-vi.html">Các vấn đề</a><a href="contact-vi.html">Liên hệ</a>
-    <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav-cta">Đặt lịch</a>
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__brand">
+      <img src="../img/logo.png" alt="" width="32" height="32" style="border-radius:50%;flex-shrink:0;">
+      <span class="nav__name">
+        <span class="nav__first">Alice Tran Psychiatric Care</span>
+      </span>
+    </a>
+    <div class="nav__links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="nav__dropdown-wrap">
+        <a href="rates.html">Rates &#9660;</a>
+        <div class="nav__dropdown">
+          <div class="nav__dropdown-inner" style="grid-template-columns:1fr;min-width:220px;">
+            <div class="nav__dropdown-col">
+              <a href="rates.html#insurance">Insurance We Accept</a>
+              <a href="rates.html#self-pay">Self-Pay Rates</a>
+              <a href="rates.html#cancellation">Cancellation Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav__dropdown-wrap">
+        <a href="conditions.html">Conditions &#9660;</a>
+        <div class="nav__dropdown">
+          <div class="nav__dropdown-inner">
+            <div class="nav__dropdown-col">
+              <p class="nav__dropdown-label">Mood</p>
+              <a href="condition-depression.html">Depression</a>
+              <a href="condition-bipolar.html">Bipolar Disorder</a>
+              <a href="condition-postpartum.html">Postpartum Depression</a>
+              <a href="condition-perinatal.html">Perinatal Mood</a>
+              <a href="condition-grief.html">Grief &amp; Loss</a>
+            </div>
+            <div class="nav__dropdown-col">
+              <p class="nav__dropdown-label">Anxiety &amp; Stress</p>
+              <a href="condition-anxiety.html">Anxiety</a>
+              <a href="condition-panic.html">Panic Disorder</a>
+              <a href="condition-ocd.html">OCD</a>
+              <a href="condition-trauma-ptsd.html">Trauma &amp; PTSD</a>
+              <a href="condition-burnout.html">Burnout</a>
+            </div>
+            <div class="nav__dropdown-col">
+              <p class="nav__dropdown-label">Attention &amp; Focus</p>
+              <a href="condition-adhd.html">ADHD</a>
+              <a href="condition-insomnia.html">Insomnia</a>
+              <p class="nav__dropdown-label" style="margin-top:1rem;">Identity &amp; Life</p>
+              <a href="condition-identity.html">Identity &amp; Belonging</a>
+              <a href="condition-self-esteem.html">Self-Esteem</a>
+              <a href="condition-anger.html">Anger</a>
+              <a href="condition-life-transitions.html">Life Transitions</a>
+              <a href="condition-cultural.html">Cultural Pressure</a>
+              <a href="condition-international.html">International Students</a>
+            </div>
+            <div class="nav__dropdown-see-all">
+              <a href="conditions.html">See all conditions &#8594;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="blog/index.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:0.5rem;flex-shrink:0;">
+      <a href="https://doxy.me/alicetran" target="_blank" class="nav__visit">Join Visit</a>
+      <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav__cta">Book Now</a>
+    </div>
+    <button class="nav__toggle" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-  <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav-cta nav-book-mobile">Book Now</a>
-  <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="about-vi.html">Giới thiệu</a><a href="services-vi.html">Dịch vụ</a><a href="rates-vi.html">Phí &amp; Bảo hiểm</a><a href="conditions-vi.html">Các vấn đề</a><a href="contact-vi.html">Liên hệ</a>
-  <a href="https://alicetran.intakeq.com/booking" target="_blank">Đặt lịch</a>
-</div>
-</div>
 
 <div class="page-hero">
   <div class="section-tag">Lòng tự trọng &amp; Sự tự tin</div>
@@ -148,12 +207,11 @@
 </footer>
 <script>
 function toggleMenu(){
-  var nav=document.querySelector('.nav-wrapper');
-  document.getElementById('mobileMenu').classList.toggle('open');
+  var nav=document.getElementById('nav');
   if(nav) nav.classList.toggle('is-open');
 }
 (function(){
-  var nav=document.querySelector('.nav-wrapper');
+  var nav=document.getElementById('nav');
   if(!nav) return;
   window.addEventListener('scroll',function(){
     nav.classList.toggle('is-scrolled', window.scrollY > 10);
