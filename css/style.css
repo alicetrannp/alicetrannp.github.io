@@ -123,6 +123,7 @@ img { max-width: 100%; display: block; }
   .nav__visit { display: none; }
   .nav__cta { display: inline-flex; }
   .nav__toggle { display: inline-flex; }
+  .nav__first { max-width: 140px; }
   .nav.is-open .nav__links {
     display: flex;
     flex-direction: column;
