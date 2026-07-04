@@ -119,6 +119,7 @@ img { max-width: 100%; display: block; }
 .nav.is-open .nav__toggle span:nth-child(2) { opacity: 0; }
 .nav.is-open .nav__toggle span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 @media (max-width: 960px) {
+  .nav__inner { gap: 0.75rem; justify-content: space-between; }
   .nav__links { display: none; }
   .nav__visit { display: none; }
   .nav__cta { display: inline-flex; }
@@ -132,7 +133,9 @@ img { max-width: 100%; display: block; }
     background: rgba(251, 247, 240, 0.97);
     padding: 2rem;
     border-top: 1px solid rgba(34, 39, 31, 0.12);
+    z-index: 200;
   }
+  .nav.is-open .nav__links a { font-size: 1rem; color: #1F332A; }
 }
 
 /* ── Nav dropdown menus ── */
@@ -495,10 +498,6 @@ footer a:hover { color: var(--sage-lt); }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
-  nav { padding: 16px 20px; }
-  .nav-links { display: none; }
-  .nav-toggle { display: flex; }
-  .nav-book-mobile { display: inline-flex; margin-right: .5rem; }
   section { padding: 52px 20px; }
   .hero { padding: 60px 20px 52px; }
   .hero h1 { font-size: 2.2rem; }
