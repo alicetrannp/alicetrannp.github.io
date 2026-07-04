@@ -487,10 +487,11 @@ footer a:hover { color: var(--sage-lt); }
 .footer-copy a:hover { opacity: 1; text-decoration: underline; }
 
 /* ── PAGE HERO (inner pages) ── */
-.page-hero { padding: 64px 48px 52px; background: var(--sage-lt); border-bottom: 0.5px solid var(--border); text-align: center; }
-.page-hero .section-tag { margin-bottom: 10px; font-size: 14px; font-weight: 700; letter-spacing: 0.2em; }
-.page-hero h1 { font-family: var(--serif); font-size: clamp(2rem, 5.5vw, 3.2rem); font-weight: 300; color: var(--forest); line-height: 1.2; }
-.page-hero p { font-size: 16px; color: var(--green-md); margin-top: 14px; max-width: 520px; line-height: 1.85; margin-left: auto; margin-right: auto; }
+.page-hero { padding: 64px 48px 52px; background: #5C6B48; border-bottom: none; text-align: center; }
+.page-hero .section-tag { margin-bottom: 10px; font-size: 14px; font-weight: 700; letter-spacing: 0.2em; color: rgba(245,240,230,0.65); }
+.page-hero h1 { font-family: var(--serif); font-size: clamp(2rem, 5.5vw, 3.2rem); font-weight: 300; color: #F5F0E8; line-height: 1.2; }
+.page-hero h1 em { color: rgba(245,240,230,0.85); }
+.page-hero p { font-size: 16px; color: rgba(245,240,230,0.75); margin-top: 14px; max-width: 520px; line-height: 1.85; margin-left: auto; margin-right: auto; }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
