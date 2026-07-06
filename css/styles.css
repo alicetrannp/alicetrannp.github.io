@@ -129,6 +129,9 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 /* ── Topbar (fixed, always pinned above nav) ── */
 .site-topbar { position: fixed !important; top: 0; left: 0; right: 0; width: 100%; }
 .site-topbar a { font-size: .875rem !important; }
+@media (max-width: 480px) {
+  .site-topbar { gap: 0.55rem !important; padding-left: 0.75rem !important; padding-right: 0.75rem !important; }
+}
 
 /* =========================================================
    Navigation
