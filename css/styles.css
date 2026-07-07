@@ -468,17 +468,23 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   z-index: -1;
   opacity: .55;
 }
+@keyframes caption-shimmer {
+  0%   { background-position: 0% 50%; box-shadow: 0 10px 30px -10px rgba(0,0,0,.15); }
+  50%  { background-position: 100% 50%; box-shadow: 0 10px 30px -4px rgba(180,140,230,.45); }
+  100% { background-position: 0% 50%; box-shadow: 0 10px 30px -10px rgba(0,0,0,.15); }
+}
 .portrait__caption {
   position: absolute;
   bottom: -1.2rem; right: -.5rem;
   background: linear-gradient(90deg,
-    rgba(255,182,193,0.6) 0%,
-    rgba(255,210,160,0.6) 20%,
-    rgba(255,245,160,0.55) 38%,
-    rgba(180,235,185,0.55) 54%,
-    rgba(155,210,255,0.6) 72%,
-    rgba(210,180,240,0.6) 100%),
-    var(--ivory-soft);
+    rgba(255,182,193,0.7) 0%,
+    rgba(255,210,160,0.7) 15%,
+    rgba(255,245,160,0.65) 30%,
+    rgba(180,235,185,0.65) 45%,
+    rgba(155,210,255,0.7) 60%,
+    rgba(210,180,240,0.7) 75%,
+    rgba(255,182,193,0.7) 100%);
+  background-size: 200% 200%;
   padding: .6rem 1rem;
   border-radius: 999px;
   font-size: .8rem;
@@ -487,6 +493,14 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   letter-spacing: .05em;
   box-shadow: 0 10px 30px -10px rgba(0,0,0,.15);
   border: 1px solid rgba(0,0,0,.06);
+  text-decoration: none;
+  display: inline-block;
+  transition: transform .2s ease;
+}
+.portrait__caption:hover {
+  animation: caption-shimmer 1.2s ease infinite;
+  transform: scale(1.04);
+  cursor: pointer;
 }
 
 .about__copy .h2 { margin-top: .4rem; }
