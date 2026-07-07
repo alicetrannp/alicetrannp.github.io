@@ -134,56 +134,63 @@
 
 
 <style>
-@media(max-width:700px){
-  .contact-grid { grid-template-columns:1fr!important; }
-  .contact-cta { order:-1; border-radius:16px 16px 0 0!important; }
-  .contact-info { border-radius:0 0 16px 16px!important; }
-  .contact-section { padding:32px 1.25rem!important; }
+@media(max-width:800px){
+  .contact-card { grid-template-columns: 1fr !important; border-radius: 16px !important; }
+  .contact-card-left { border-radius: 16px 16px 0 0 !important; }
+  .contact-card-right { order: -1; border-radius: 16px 16px 0 0 !important; }
+  .contact-card-left { border-radius: 0 0 16px 16px !important; }
 }
 </style>
 
-<!-- 2-COLUMN CONTACT LAYOUT -->
-<section class="contact-section" style="background: var(--cream); padding: 64px clamp(1.5rem,5vw,3rem);">
-  <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:0;max-width:1000px;margin:0 auto;align-items:stretch;border-radius:20px;overflow:hidden;border:1px solid var(--border);">
+<section style="background:var(--cream);padding:48px clamp(1.5rem,5vw,3rem) 64px;">
+  <div class="contact-card" style="display:grid;grid-template-columns:1fr 1.6fr;max-width:1080px;margin:0 auto;border-radius:20px;overflow:hidden;box-shadow:0 4px 40px rgba(0,0,0,.09);">
 
-    <!-- Left: contact info -->
-    <div class="contact-info" style="padding:3.5rem clamp(1.5rem,4vw,3rem);background:var(--cream);" data-reveal>
-      <span class="eyebrow">Thông tin liên hệ</span>
-      <p style="color:var(--green-md);font-size:0.95rem;line-height:1.75;margin-bottom:2rem;">Liên hệ bên dưới và chúng ta sẽ tìm thời gian phù hợp.</p>
+    <!-- Left: green panel -->
+    <div class="contact-card-left" style="background:#1e3328;padding:3rem clamp(1.5rem,3vw,2.5rem);display:flex;flex-direction:column;justify-content:space-between;">
+      <div>
+        <div style="font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:1.75rem;">Thông tin liên hệ</div>
 
-      <div class="contact-row" style="margin-bottom:1.5rem;">
-        <span class="contact-label">Điện thoại (Gọi hoặc Nhắn tin)</span>
-        <a href="tel:7037919099" class="contact-val" style="font-size:1.1rem;font-weight:500;color:var(--forest);">(703) 791-9099</a>
-      </div>
-      <div class="contact-row" style="margin-bottom:1.5rem;">
-        <span class="contact-label">Fax</span>
-        <span class="contact-val">(804) 807-9399</span>
-      </div>
-      <div class="contact-row" style="margin-bottom:1.5rem;">
-        <span class="contact-label">Email</span>
-        <a href="mailto:info@alicetrannp.com" class="contact-val" style="color:var(--green);">info@alicetrannp.com</a>
-      </div>
-      <div class="contact-row" style="margin-bottom:1.5rem;">
-        <span class="contact-label">Giờ làm việc</span>
-        <span class="contact-val">Thứ Hai – Thứ Năm: 9:00am – 4:00pm<br>Thứ Sáu, Thứ Bảy, Chủ Nhật: Đóng cửa</span>
-      </div>
-      <div class="contact-row" style="margin-bottom:1.5rem;">
-        <span class="contact-label">Telehealth</span>
-        <a href="https://doxy.me/alicetran" target="_blank" class="contact-val" style="color:var(--green);">Tham gia buổi hẹn</a>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">Địa chỉ</span>
-        <span class="contact-val">3060 Williams Drive, Suite 300<br>Fairfax, VA 22031</span>
+        <div style="display:flex;flex-direction:column;gap:1.75rem;">
+          <div>
+            <div style="font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.35rem;">Điện thoại (Gọi hoặc Nhắn tin)</div>
+            <a href="tel:7037919099" style="font-size:1.2rem;font-weight:600;color:#fff;text-decoration:none;">(703) 791-9099</a>
+          </div>
+          <div>
+            <div style="font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.35rem;">Email</div>
+            <a href="mailto:info@alicetrannp.com" style="color:rgba(255,255,255,.8);text-decoration:none;font-size:.95rem;">info@alicetrannp.com</a>
+          </div>
+          <div>
+            <div style="font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.35rem;">Giờ làm việc</div>
+            <span style="color:rgba(255,255,255,.8);font-size:.95rem;line-height:1.9;">Thứ Hai &ndash; Thứ Năm: 9:00am &ndash; 4:00pm<br>Thứ Sáu &ndash; Chủ Nhật: Đóng cửa</span>
+          </div>
+          <div>
+            <div style="font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.35rem;">Telehealth</div>
+            <a href="https://doxy.me/alicetran" target="_blank" style="color:rgba(255,255,255,.8);text-decoration:none;font-size:.95rem;">Tham gia buổi hẹn qua doxy.me</a>
+          </div>
+          <div>
+            <div style="font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.35rem;">Fax</div>
+            <span style="color:rgba(255,255,255,.8);font-size:.95rem;">(804) 807-9399</span>
+          </div>
+          <div>
+            <div style="font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.35rem;">Địa chỉ</div>
+            <span style="color:rgba(255,255,255,.8);font-size:.95rem;line-height:1.9;">3060 Williams Drive, Suite 300<br>Fairfax, VA 22031</span>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Right: dark-section CTA sidebar -->
-    <div class="dark-section contact-cta" style="border-radius:0;display:flex;flex-direction:column;justify-content:center;padding:3.5rem clamp(1.5rem,4vw,3rem);" data-reveal>
-      <span class="eyebrow">Sẵn sàng bắt đầu?</span>
-      <h2 style="font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:300;color:#fff;line-height:1.2;margin:1rem 0 1.5rem;">Đặt lịch hẹn đầu tiên<br><em>trực tuyến.</em></h2>
-      <p style="color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.75;margin-bottom:2rem;">Chào đón bệnh nhân mới.</p>
-      <a href="https://alicetran.intakeq.com/booking" target="_blank" class="btn-primary-inner" style="align-self:flex-start;background:#fff;color:var(--forest);">Đặt lịch ngay &rarr;</a>
-      <p style="margin:1.25rem 0 0;font-size:.85rem;color:rgba(255,255,255,.6);">Bệnh nhân cũ? <a href="https://alicetran.intakeq.com/portal" target="_blank" style="color:#fff;font-weight:600;border-bottom:1px solid rgba(255,255,255,.35);">Đăng nhập cổng thông tin &rarr;</a></p>
+    <!-- Right: white panel -->
+    <div class="contact-card-right" style="background:#fff;padding:3rem clamp(1.5rem,3vw,2.5rem);">
+      <div style="font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green-lt);margin-bottom:.75rem;">Đặt lịch trực tuyến</div>
+      <h2 style="font-family:var(--serif);font-size:clamp(1.5rem,2.5vw,2rem);font-weight:300;color:var(--forest);margin:0 0 .35rem;">Đặt lịch hẹn của bạn.</h2>
+      <p style="color:var(--green-md);font-size:.85rem;margin:0 0 1.75rem;">Chào đón bệnh nhân mới &middot; Thường được gặp trong 1&ndash;2 tuần &middot; Không cần giấy giới thiệu</p>
+      <a href="https://alicetran.intakeq.com/booking" target="_blank" style="display:inline-flex;align-items:center;gap:.5rem;background:var(--forest);color:#fff;border-radius:999px;padding:1rem 2rem;font-size:1rem;font-weight:600;text-decoration:none;letter-spacing:.01em;">Đặt lịch ngay &rarr;</a>
+      <div style="margin-top:2rem;padding-top:2rem;border-top:1px solid var(--border);">
+        <h3 style="font-family:var(--serif);font-size:clamp(1.5rem,2.5vw,2rem);font-weight:300;color:var(--forest);margin:0 0 .35rem;">Bệnh nhân cũ?</h3>
+        <p style="color:var(--green-md);font-size:.85rem;margin:0 0 1.75rem;">Xem hồ sơ, tin nhắn và biểu mẫu của bạn.</p>
+        <a href="https://alicetran.intakeq.com/portal" target="_blank" style="display:inline-flex;align-items:center;gap:.5rem;background:var(--forest);color:#fff;border-radius:999px;padding:1rem 2rem;font-size:1rem;font-weight:600;text-decoration:none;letter-spacing:.01em;">Đăng nhập cổng bệnh nhân &rarr;</a>
+        <p style="font-size:.78rem;color:var(--green-md);line-height:1.65;margin:1.5rem 0 0;"><strong style="color:var(--forest);">Lưu ý:</strong> Phòng khám không kê đơn benzodiazepin dài hạn, opioid, nhiều chất kiểm soát, hoặc thuốc điều trị nghiện. Vui lòng thảo luận trước khi đặt lịch nếu có liên quan.</p>
+      </div>
     </div>
 
   </div>
@@ -197,6 +204,22 @@
     <p style="color:rgba(255,255,255,.45);font-size:.85rem;border-top:1px solid rgba(255,255,255,.12);padding-top:.85rem;margin:0;">Alice Tran Psychiatric Care không hoạt động 24/7 và không cung cấp dịch vụ khủng hoảng. Email, tin nhắn thoại, tin nhắn văn bản hoặc tin nhắn qua cổng thông tin thường được phản hồi trong vòng 24 đến 72 giờ làm việc.</p>
   </div>
 </div>
+
+<section style="background:#EEF3EE;padding:4rem clamp(1.5rem,5vw,3rem);">
+  <div style="max-width:700px;margin:0 auto;text-align:center;">
+    <span style="font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);font-weight:700;">Đánh giá</span>
+    <h2 style="font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:300;color:var(--forest);margin:.75rem 0 .5rem;">Bạn hài lòng với Alice?</h2>
+    <p style="color:#555;font-size:.95rem;line-height:1.75;margin:0 auto 2rem;max-width:520px;">Đánh giá giúp những bệnh nhân khác tìm được sự chăm sóc họ cần. Nếu bạn đã có trải nghiệm tốt, chúng tôi rất biết ơn nếu bạn dành chút thời gian chia sẻ.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;">
+      <a href="https://g.page/r/CVb69w2xWBNAEAI/review" target="_blank" rel="noopener"
+        style="display:inline-flex;align-items:center;gap:.6rem;background:var(--forest);color:#fff;text-decoration:none;padding:.85rem 1.6rem;border-radius:50px;font-size:.95rem;font-weight:600;transition:opacity .2s;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 488 512" fill="#fff"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+        Để lại đánh giá trên Google
+      </a>
+    </div>
+    <p style="margin-top:1.5rem;font-size:.8rem;color:#999;">Chúng tôi đọc từng đánh giá và trân trọng mọi lời chia sẻ tốt đẹp.</p>
+  </div>
+</section>
 
 <section class="cta-band">
   <h2 class="section-title">Bước đầu tiên thường là khó nhất.</h2>
