@@ -477,13 +477,13 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   position: absolute;
   bottom: -1.2rem; right: -.5rem;
   background: linear-gradient(90deg,
-    rgba(255,182,193,0.7) 0%,
-    rgba(255,210,160,0.7) 15%,
-    rgba(255,245,160,0.65) 30%,
-    rgba(180,235,185,0.65) 45%,
-    rgba(155,210,255,0.7) 60%,
-    rgba(210,180,240,0.7) 75%,
-    rgba(255,182,193,0.7) 100%);
+    rgb(255,182,193) 0%,
+    rgb(255,210,160) 15%,
+    rgb(255,245,160) 30%,
+    rgb(180,235,185) 45%,
+    rgb(155,210,255) 60%,
+    rgb(210,180,240) 75%,
+    rgb(255,182,193) 100%);
   background-size: 200% 200%;
   padding: .6rem 1rem;
   border-radius: 999px;
