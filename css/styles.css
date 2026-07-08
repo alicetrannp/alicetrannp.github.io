@@ -1394,10 +1394,15 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   .resources__grid,
   .reviews__grid,
   .rates__grid,
-  .policies,
-  .steps__grid { grid-template-columns: 1fr; }
+  .policies { grid-template-columns: 1fr; }
   .service--lg { grid-column: auto; padding: 2.25rem 1.9rem; }
   .service--accent { grid-column: 1; }
+
+  .steps__grid { grid-template-columns: 1fr 1fr; gap: .85rem; }
+  .step { padding: 1.5rem 1rem; }
+  .step__num { font-size: 1.75rem; margin-bottom: .5rem; }
+  .step h3 { font-size: 1rem; margin: 0 0 .3rem; }
+  .step p { font-size: .82rem; line-height: 1.4; }
 
   .footer__inner { grid-template-columns: 1fr 1fr; }
   .footer__brand { grid-column: 1 / -1; }
