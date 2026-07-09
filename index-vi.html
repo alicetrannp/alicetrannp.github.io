@@ -20,7 +20,57 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="preload" href="css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="css/fonts.css"></noscript>
-  <style>:root{--sans:"Be Vietnam Pro",system-ui,sans-serif;}</style>
+  <style>
+  :root{--sans:"Be Vietnam Pro",system-ui,sans-serif;}
+  .nav__dropdown-wrap { position:relative; display:inline-flex; align-items:center; }
+  .nav__dropdown-wrap > a { display:flex; align-items:center; gap:.25rem; }
+  .nav__dropdown {
+    display:none; position:absolute; top:100%; left:50%; transform:translateX(-50%);
+    padding-top:12px; min-width:220px; z-index:9000;
+  }
+  .nav__dropdown-inner {
+    background:#fff; border-radius:16px; box-shadow:0 12px 40px rgba(0,0,0,.13);
+    padding:1.5rem; display:grid; gap:0 1.5rem;
+    border:1px solid rgba(0,0,0,.06); position:relative;
+  }
+  .nav__dropdown-inner::before {
+    content:''; position:absolute; top:-6px; left:50%; transform:translateX(-50%);
+    border-left:6px solid transparent; border-right:6px solid transparent;
+    border-bottom:6px solid #fff;
+  }
+  .nav__dropdown-wrap:hover .nav__dropdown,
+  .nav__dropdown-wrap.is-open .nav__dropdown { display:grid; }
+  .nav__dropdown-col { display:flex; flex-direction:column; gap:.1rem; }
+  .nav__dropdown a {
+    font-size:.875rem; color:#2E4A3C; text-decoration:none; padding:.3rem .5rem;
+    border-radius:6px; transition:background .15s;
+  }
+  .nav__dropdown a:hover { background:#F5F2EC; color:#2E4A3C; }
+  @media (max-width: 900px) {
+    .nav__dropdown-wrap { display:flex; flex-direction:column; align-items:flex-start; width:100%; }
+    .nav__dropdown {
+      display:block !important;
+      position:static;
+      transform:none;
+      padding-top:.5rem;
+      min-width:0;
+      width:100%;
+      z-index:auto;
+    }
+    .nav__dropdown-inner {
+      display:flex !important;
+      flex-direction:column;
+      box-shadow:none;
+      border:none;
+      border-radius:0;
+      background:transparent;
+      padding:0 0 0 1rem;
+    }
+    .nav__dropdown-inner::before { display:none; }
+    .nav__dropdown-col { gap:.4rem; margin-bottom:.75rem; }
+    .nav__dropdown a { font-size:.92rem; color:#1F332A; padding:.25rem 0; }
+  }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -70,8 +120,17 @@
       </span>
     </a>
     <div class="nav__links">
-      <a href="pages/about-vi.html">Giới thiệu</a>
-      <a href="pages/team-vi.html">Đội ngũ</a>
+      <div class="nav__dropdown-wrap">
+        <a href="pages/about-vi.html">Giới thiệu &#9660;</a>
+        <div class="nav__dropdown">
+          <div class="nav__dropdown-inner" style="grid-template-columns:1fr;min-width:180px;">
+            <div class="nav__dropdown-col">
+              <a href="pages/about-vi.html">Giới thiệu Alice Tran</a>
+              <a href="pages/team-vi.html">Đội ngũ</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <a href="pages/services-vi.html">Dịch vụ</a>
       <a href="pages/rates-vi.html">Gói khám</a>
       <a href="pages/conditions-vi.html">Bệnh tâm thần</a>
