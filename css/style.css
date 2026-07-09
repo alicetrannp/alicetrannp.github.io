@@ -145,6 +145,7 @@ img { max-width: 100%; display: block; }
   .nav.is-open .nav__links {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 1.25rem;
     position: absolute;
     top: 100%; left: 0; right: 0;
@@ -154,6 +155,8 @@ img { max-width: 100%; display: block; }
     z-index: 200;
   }
   .nav.is-open .nav__links a { font-size: 1rem; color: #1F332A; }
+  .nav.is-open .nav__links > a,
+  .nav.is-open .nav__links > .nav__dropdown-wrap { width: 100%; }
 }
 
 /* ── Nav dropdown menus ── */

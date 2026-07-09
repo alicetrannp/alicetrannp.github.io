@@ -1375,6 +1375,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   .nav.is-open .nav__links {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 1.25rem;
     position: absolute;
     top: 100%; left: 0; right: 0;
@@ -1382,6 +1383,8 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     padding: 2rem;
     border-top: 1px solid var(--line);
   }
+  .nav.is-open .nav__links > a,
+  .nav.is-open .nav__links > .nav__dropdown-wrap { width: 100%; }
 
   .about__grid,
   .conditions__inner,
