@@ -185,6 +185,19 @@
   .nav__dropdown a { font-size:.92rem; color:#1F332A; padding:.25rem 0; }
   .nav__dropdown-label { color:rgba(31,51,42,.6); }
   .nav__dropdown-see-all { border-top:1px solid rgba(0,0,0,.08); }
+
+  /* Only expand the About dropdown on mobile; Rates and Conditions
+     collapse back to a single tappable link (too many items to list) */
+  .nav__links > .nav__dropdown-wrap:nth-of-type(2),
+  .nav__links > .nav__dropdown-wrap:nth-of-type(3) {
+    display: inline-flex;
+    flex-direction: row;
+    width: auto;
+  }
+  .nav__links > .nav__dropdown-wrap:nth-of-type(2) .nav__dropdown,
+  .nav__links > .nav__dropdown-wrap:nth-of-type(3) .nav__dropdown {
+    display: none !important;
+  }
 }
 </style>
 </head>
