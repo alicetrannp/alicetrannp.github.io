@@ -153,7 +153,8 @@
 <section style="background:var(--cream,#F5F2EC);padding:64px clamp(1.5rem,5vw,4rem);">
   <div style="max-width:960px;margin:0 auto 2rem;">
     <div style="display:flex;flex-wrap:wrap;gap:.5rem;">
-      <button class="cat-btn active" data-cat="all" onclick="filterBlog(this)">All Posts</button>
+      <button class="cat-btn active" data-cat="vietnamese" onclick="filterBlog(this)">Bài viết tiếng Việt</button>
+      <button class="cat-btn" data-cat="all" onclick="filterBlog(this)">Tất cả bài viết (tiếng Anh)</button>
       <button class="cat-btn" data-cat="adhd" onclick="filterBlog(this)">ADHD</button>
       <button class="cat-btn" data-cat="anxiety" onclick="filterBlog(this)">Anxiety</button>
       <button class="cat-btn" data-cat="depression" onclick="filterBlog(this)">Depression</button>
@@ -161,7 +162,6 @@
       <button class="cat-btn" data-cat="postpartum" onclick="filterBlog(this)">Postpartum</button>
       <button class="cat-btn" data-cat="trauma" onclick="filterBlog(this)">Trauma &amp; PTSD</button>
       <button class="cat-btn" data-cat="culture" onclick="filterBlog(this)">Culture &amp; Identity</button>
-      <button class="cat-btn" data-cat="vietnamese" onclick="filterBlog(this)">Vietnamese</button>
       <button class="cat-btn" data-cat="care" onclick="filterBlog(this)">Getting Care</button>
       <button class="cat-btn" data-cat="stimulants" onclick="filterBlog(this)">Controlled Substances</button>
       <button class="cat-btn" data-cat="medication" onclick="filterBlog(this)">Medication</button>
@@ -1104,7 +1104,7 @@ function toggleMenu(){
 
 <script>
 var PER_PAGE = 15;
-var currentCat = 'all';
+var currentCat = 'vietnamese';
 var currentPage = 1;
 var currentSearch = '';
 
