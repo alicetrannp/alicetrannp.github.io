@@ -322,8 +322,8 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   margin: 0 auto 2.2rem;
 }
 .hero__actions { display: flex; gap: .8rem; flex-wrap: wrap; margin-bottom: 1.8rem; justify-content: center; }
-.hero__ghost { color: rgba(255,255,255,0.9); border-color: rgba(255,255,255,0.4); }
-.hero__ghost:hover { background: rgba(255,255,255,0.12); }
+.hero__ghost { color: rgba(255,255,255,0.95); border-color: rgba(255,255,255,0.5); background: rgba(20,30,22,0.45); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.hero__ghost:hover { background: rgba(20,30,22,0.62); }
 .hero__pills {
   font-size: .88rem;
   color: rgba(255,255,255,0.8);
