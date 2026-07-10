@@ -148,7 +148,7 @@
     ].join('');
     document.head.appendChild(style);
 
-    var imgSrc = base + 'img/alice-portrait.jpg';
+    var imgSrc = base + 'img/alice-portrait.webp';
 
     var btn = document.createElement('button');
     btn.id = 'atpc-btn';
