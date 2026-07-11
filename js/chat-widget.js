@@ -16,6 +16,11 @@
       answer: 'No referral needed. You can book directly online without a doctor\'s note or prior diagnosis required.'
     },
     {
+      keywords: ['pmhnp', 'nurse practitioner', 'what is a np', 'what is an np', 'are you a doctor', 'are you a psychiatrist', 'vs psychiatrist', 'psychiatrist vs', 'vs a psychiatrist', 'qualified', 'qualification', 'credential', 'certification', 'board certified', 'board-certified', 'who is alice', 'about alice', 'segall', 'training', 'license', 'licensed'],
+      answer: 'Alice is a dual board-certified Psychiatric Mental Health Nurse Practitioner (PMHNP-BC) and Family Nurse Practitioner (FNP-BC), licensed in Virginia. A PMHNP is an advanced practice provider who can diagnose mental health conditions, prescribe medication, and provide therapy — for most outpatient psychiatric care, the visit is very similar to seeing a psychiatrist. Alice also completed advanced clinical training under the supervision of Dr. Errol Segall, MD, a psychiatrist with over 50 years of experience.',
+      action: { label: 'What is a PMHNP? →', href: base + 'pages/blog/what-is-a-pmhnp.html' }
+    },
+    {
       keywords: ['insurance', 'aetna', 'medicaid', 'medicare', 'anthem', 'bcbs', 'blue cross', 'carelon', 'humana', 'tricare', 'in-network', 'in network', 'cover', 'covered', 'accept insurance', 'take insurance'],
       answer: 'Alice is in-network with Aetna, Medicaid, Medicare, Carelon, Anthem BCBS Virginia, and Humana Military. Additional plans are being added. See the full updated list on the Rates page.',
       action: { label: 'View insurance & rates →', href: base + 'pages/rates.html' }
