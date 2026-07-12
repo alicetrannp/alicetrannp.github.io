@@ -250,9 +250,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 .hero__bg {
   position: absolute; inset: 0; z-index: -1;
-  background:
-    linear-gradient(rgba(15, 30, 20, 0.38), rgba(15, 30, 20, 0.38)),
-    url('../img/hero.png') center/cover no-repeat;
+  background: url('../img/hero.png') center/cover no-repeat;
 }
 .hero__blob {
   position: absolute;
@@ -291,10 +289,10 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   text-align: center;
 }
 .hero__eyebrow {
-  color: rgba(255,255,255,0.75) !important;
+  color: rgba(46,74,60,0.85) !important;
 }
 .hero__eyebrow::before {
-  background: rgba(255,255,255,0.55) !important;
+  background: rgba(46,74,60,0.6) !important;
 }
 .hero__title {
   font-size: clamp(2.8rem, 7vw, 6rem);
@@ -302,21 +300,21 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   margin: 2rem 0 2.2rem;
   letter-spacing: -0.02em;
   font-weight: 600;
-  color: #fff;
+  color: #2E4A3C;
   max-width: none;
 }
 .hero__lede {
   font-size: clamp(1.1rem, 1.8vw, 1.4rem);
-  color: rgba(255,255,255,0.92);
+  color: rgba(46,74,60,0.92);
   max-width: 60ch;
   margin: 0 auto 2.2rem;
 }
 .hero__actions { display: flex; gap: .8rem; flex-wrap: wrap; margin-bottom: 1.8rem; justify-content: center; }
-.hero__ghost { color: rgba(255,255,255,0.95); border-color: rgba(255,255,255,0.5); background: rgba(20,30,22,0.45); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
-.hero__ghost:hover { background: rgba(20,30,22,0.62); }
+.hero__ghost { color: #2E4A3C; border-color: rgba(46,74,60,0.5); background: rgba(255,255,255,0.7); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.hero__ghost:hover { background: rgba(255,255,255,0.9); }
 .hero__pills {
   font-size: .88rem;
-  color: rgba(255,255,255,0.8);
+  color: rgba(46,74,60,0.8);
   letter-spacing: .04em;
   margin: 0;
 }
