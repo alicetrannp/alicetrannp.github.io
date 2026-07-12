@@ -376,30 +376,30 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 @media (max-width: 640px) {
   .hero-features__item {
-    padding: 0 .65rem;
+    padding: 0 .4rem;
     gap: .4rem;
   }
   .hero-features__icon {
-    width: 17px;
-    height: 17px;
+    width: 19px;
+    height: 19px;
   }
   .hero-features__label {
-    font-size: .72rem;
+    font-size: .78rem;
     line-height: 1.2;
   }
   .hero-features__sub {
-    font-size: .62rem;
+    font-size: .67rem;
     margin-top: .1rem;
   }
   .hero-features__divider {
-    height: 32px;
+    height: 34px;
   }
 }
 @media (max-width: 380px) {
-  .hero-features__item { padding: 0 .3rem; gap: .3rem; }
-  .hero-features__icon { width: 15px; height: 15px; }
-  .hero-features__label { font-size: .6rem; }
-  .hero-features__sub { font-size: .52rem; }
+  .hero-features__item { padding: 0 .18rem; gap: .32rem; }
+  .hero-features__icon { width: 17px; height: 17px; }
+  .hero-features__label { font-size: .68rem; }
+  .hero-features__sub { font-size: .58rem; }
   .hero-features__divider { height: 26px; }
 }
 
