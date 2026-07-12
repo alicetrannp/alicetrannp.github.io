@@ -257,8 +257,8 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 .hero__bg {
   position: absolute; inset: 0; z-index: -1;
   background:
-    radial-gradient(circle at 100% 0%, rgba(196,205,181,.65) 0%, rgba(196,205,181,0) 55%),
-    radial-gradient(circle at 0% 100%, rgba(232,207,192,.6) 0%, rgba(232,207,192,0) 55%),
+    radial-gradient(circle at 100% 0%, rgba(138,154,130,.85) 0%, rgba(138,154,130,.15) 60%, rgba(138,154,130,0) 78%),
+    radial-gradient(circle at 0% 100%, rgba(201,138,107,.5) 0%, rgba(201,138,107,0) 65%),
     var(--ivory-soft, #FBF7F0);
 }
 .hero__blob {
