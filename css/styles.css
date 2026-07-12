@@ -327,11 +327,6 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   flex-wrap: wrap;
   gap: 0;
   margin: 0 auto 1.75rem;
-  padding: 1.25rem 2rem;
-  background: rgba(255,255,255,.7);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: 20px;
   width: fit-content;
   max-width: 100%;
 }
