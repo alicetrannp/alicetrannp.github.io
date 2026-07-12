@@ -345,7 +345,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   }
 }
 .hero__lede {
-  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  font-size: 17px;
   color: rgba(46,74,60,0.92);
   max-width: 60ch;
   margin: 0 auto 2.2rem;
