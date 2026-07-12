@@ -248,6 +248,12 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   overflow: hidden;
   isolation: isolate;
 }
+@media (max-width: 640px) {
+  .hero {
+    min-height: auto;
+    padding: 8.5rem clamp(1.25rem, 4vw, 3rem) 2.5rem;
+  }
+}
 .hero__bg {
   position: absolute; inset: 0; z-index: -1;
   filter: saturate(.85) brightness(.99);
