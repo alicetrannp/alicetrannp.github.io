@@ -315,9 +315,33 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 .hero__title-nowrap {
   white-space: nowrap;
 }
+.hero__title-line--mobile {
+  display: none;
+}
 @media (max-width: 640px) {
   .hero__title {
-    font-size: clamp(1.65rem, 7.1vw, 2.6rem);
+    font-size: clamp(2.4rem, 11vw, 3.4rem);
+  }
+  .hero__title-line--desktop {
+    display: none;
+  }
+  .hero__title-line--mobile {
+    display: block;
+  }
+}
+@media (max-width: 360px) {
+  .hero__title {
+    font-size: clamp(1.8rem, 9.5vw, 3.4rem);
+  }
+}
+@media (max-width: 640px) {
+  html[lang="vi"] .hero__title {
+    font-size: clamp(1.8rem, 8vw, 2.8rem);
+  }
+}
+@media (max-width: 360px) {
+  html[lang="vi"] .hero__title {
+    font-size: clamp(1.4rem, 7vw, 2.8rem);
   }
 }
 .hero__lede {
