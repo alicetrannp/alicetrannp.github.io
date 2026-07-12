@@ -257,7 +257,9 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 @media (max-width: 640px) {
   .hero__bg {
-    background-position: left bottom, left bottom;
+    background:
+      linear-gradient(180deg, rgba(46,74,60,.14), rgba(46,74,60,.14)),
+      url('../img/hero-mobile.png') left bottom / cover no-repeat;
   }
 }
 .hero__blob {
