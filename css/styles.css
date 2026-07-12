@@ -302,11 +302,13 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   font-weight: 600;
   color: #2E4A3C;
   max-width: none;
-  text-wrap: balance;
+}
+.hero__title-nowrap {
+  white-space: nowrap;
 }
 @media (max-width: 640px) {
   .hero__title {
-    font-size: clamp(1.65rem, 7.5vw, 2.6rem);
+    font-size: clamp(1.65rem, 7.1vw, 2.6rem);
   }
 }
 .hero__lede {
