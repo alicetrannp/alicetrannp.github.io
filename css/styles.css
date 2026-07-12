@@ -365,8 +365,8 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   display: block;
   font-family: var(--sans);
   font-size: .78rem;
-  font-weight: 400;
-  color: #8A847A;
+  font-weight: 600;
+  color: #355247;
   letter-spacing: .02em;
   margin-top: .15rem;
 }
