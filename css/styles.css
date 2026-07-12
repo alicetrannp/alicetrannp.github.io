@@ -250,7 +250,10 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 .hero__bg {
   position: absolute; inset: 0; z-index: -1;
-  background: url('../img/hero.png') center/cover no-repeat;
+  filter: saturate(.85) brightness(.99);
+  background:
+    linear-gradient(180deg, rgba(46,74,60,.14), rgba(46,74,60,.14)),
+    url('../img/hero.png') center/cover no-repeat;
 }
 .hero__blob {
   position: absolute;
