@@ -370,6 +370,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 .hero-features__label {
   display: block;
+  width: fit-content;
   font-family: var(--sans);
   font-size: .95rem;
   font-weight: 600;
@@ -387,26 +388,27 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 @media (max-width: 640px) {
   .hero-features__item {
-    padding: 0 .85rem;
-    gap: .5rem;
+    padding: 0 .5rem;
+    gap: .4rem;
   }
   .hero-features__icon {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
   .hero-features__label {
-    font-size: .74rem;
+    font-size: .68rem;
     line-height: 1.3;
+    max-width: 7em;
   }
   .hero-features__divider {
-    height: 40px;
+    height: 36px;
   }
 }
 @media (max-width: 380px) {
-  .hero-features__item { padding: 0 .6rem; gap: .4rem; }
-  .hero-features__icon { width: 18px; height: 18px; }
-  .hero-features__label { font-size: .68rem; max-width: 8em; }
-  .hero-features__divider { height: 36px; }
+  .hero-features__item { padding: 0 .35rem; gap: .3rem; }
+  .hero-features__icon { width: 16px; height: 16px; }
+  .hero-features__label { font-size: .62rem; max-width: 6.5em; }
+  .hero-features__divider { height: 32px; }
 }
 @media (max-width: 340px) {
   .hero-features { row-gap: 1.25rem; }
