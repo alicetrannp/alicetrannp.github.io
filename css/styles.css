@@ -254,7 +254,6 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 .hero__bg {
   position: absolute; inset: 0; z-index: -1;
-  filter: saturate(.8) brightness(.99);
   background:
     linear-gradient(180deg, rgba(46,74,60,.22), rgba(46,74,60,.22)),
     url('../img/hero-room.png') center/cover no-repeat,
