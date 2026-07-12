@@ -140,14 +140,12 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   position: fixed;
   top: 36px; left: 0; right: 0;
   z-index: 50;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  background: rgba(247, 242, 234, 0.72);
+  background: var(--cream, #EFE7D8);
   border-bottom: 1px solid transparent;
   transition: background .3s var(--ease), border-color .3s var(--ease);
 }
 .nav.is-scrolled {
-  background: rgba(247, 242, 234, 0.94);
+  background: var(--cream, #EFE7D8);
   border-bottom-color: var(--line);
 }
 .nav__inner {
