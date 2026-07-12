@@ -256,17 +256,10 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 .hero__bg {
   position: absolute; inset: 0; z-index: -1;
-  filter: saturate(.85) brightness(.99);
   background:
-    linear-gradient(180deg, rgba(46,74,60,.14), rgba(46,74,60,.14)),
-    url('../img/hero.png') center/cover no-repeat;
-}
-@media (max-width: 640px) {
-  .hero__bg {
-    background:
-      linear-gradient(180deg, rgba(46,74,60,.14), rgba(46,74,60,.14)),
-      url('../img/hero-mobile.png') left bottom / cover no-repeat;
-  }
+    radial-gradient(circle at 100% 0%, rgba(196,205,181,.65) 0%, rgba(196,205,181,0) 55%),
+    radial-gradient(circle at 0% 100%, rgba(232,207,192,.6) 0%, rgba(232,207,192,0) 55%),
+    var(--ivory-soft, #FBF7F0);
 }
 .hero__blob {
   position: absolute;
