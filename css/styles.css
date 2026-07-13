@@ -8,6 +8,7 @@
   --ivory:        #F7F2EA;
   --ivory-soft:   #FBF7F0;
   --cream:        #EFE7D8;
+  --sage-pale:    #EDF0E9;
   --sage:         #C4CDB5;
   --sage-deep:    #8A9A82;
   --forest:       #2E4A3C;
@@ -140,12 +141,12 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   position: fixed;
   top: 36px; left: 0; right: 0;
   z-index: 50;
-  background: var(--cream, #EFE7D8);
+  background: var(--sage-pale, #EDF0E9);
   border-bottom: 1px solid transparent;
   transition: background .3s var(--ease), border-color .3s var(--ease);
 }
 .nav.is-scrolled {
-  background: var(--cream, #EFE7D8);
+  background: var(--sage-pale, #EDF0E9);
   border-bottom-color: var(--line);
 }
 .nav__inner {

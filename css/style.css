@@ -34,12 +34,12 @@ img { max-width: 100%; display: block; }
   position: fixed;
   top: 36px; left: 0; right: 0;
   z-index: 100;
-  background: #EFE7D8;
+  background: var(--sage-lt, #EDF0E8);
   border-bottom: 1px solid transparent;
   transition: background .3s, border-color .3s;
 }
 .nav.is-scrolled {
-  background: #EFE7D8;
+  background: var(--sage-lt, #EDF0E8);
   border-bottom-color: rgba(34, 39, 31, 0.12);
 }
 .nav__inner {
