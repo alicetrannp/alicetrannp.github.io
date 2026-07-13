@@ -358,6 +358,23 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   margin: 0 auto 2.2rem;
 }
 .hero__actions { display: flex; gap: .8rem; flex-wrap: wrap; margin-bottom: 1.8rem; justify-content: center; }
+.hero__availability-pill {
+  display: inline-block;
+  margin: 0 auto;
+  padding: .7rem 1.75rem;
+  background: var(--sage-pale, #EDF0E9);
+  border-radius: 10px;
+  color: var(--forest, #2E4A3C);
+  font-size: .92rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+@media (max-width: 640px) {
+  .hero__availability-pill {
+    padding: .6rem 1.1rem;
+    font-size: .78rem;
+  }
+}
 .hero__ghost { color: #2E4A3C; border-color: rgba(46,74,60,0.5); background: rgba(255,255,255,0.7); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
 .hero__ghost:hover { background: rgba(255,255,255,0.9); }
 .hero__pills {
