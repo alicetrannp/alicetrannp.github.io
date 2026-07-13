@@ -259,7 +259,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 @media (max-width: 640px) {
   .hero__bg {
-    background: url('../img/hero-warm.png') center/cover no-repeat, var(--ivory, #F7F2EA);
+    background: url('../img/hero-warmmobile.png') center/cover no-repeat, var(--ivory, #F7F2EA);
   }
 }
 .hero__blob {
