@@ -363,6 +363,9 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   font-weight: 600;
   letter-spacing: .02em;
 }
+.hero__pill-nowrap {
+  white-space: nowrap;
+}
 @media (max-width: 640px) {
   .hero__availability-pill {
     padding: .6rem 1.1rem;
