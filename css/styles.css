@@ -259,7 +259,11 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 @media (max-width: 640px) {
   .hero__bg {
-    background: url('../img/hero-warmmobile.png') right center/cover no-repeat, var(--ivory, #F7F2EA);
+    filter: saturate(.85);
+    background:
+      linear-gradient(rgba(196,205,181,.15), rgba(196,205,181,.15)),
+      url('../img/hero-warmmobile.png') right center/cover no-repeat,
+      var(--ivory, #F7F2EA);
   }
 }
 .hero__blob {
