@@ -260,10 +260,18 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     url('../img/livingroomhero.webp') left center/cover no-repeat,
     var(--ivory, #F7F2EA);
 }
+@media (max-width: 960px) {
+  .hero__bg {
+    background:
+      linear-gradient(rgba(244,241,237,.55), rgba(244,241,237,.55)),
+      url('../img/livingroomhero.webp') 75% center/cover no-repeat,
+      var(--ivory, #F7F2EA);
+  }
+}
 @media (max-width: 640px) {
   .hero__bg {
     background:
-      linear-gradient(rgba(255,255,255,.24), rgba(255,255,255,.24)),
+      linear-gradient(rgba(244,241,237,.35), rgba(244,241,237,.35)),
       url('../img/livingroomhero.webp') 68% center/cover no-repeat,
       var(--ivory, #F7F2EA);
   }
