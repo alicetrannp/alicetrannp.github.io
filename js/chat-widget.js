@@ -124,8 +124,14 @@
   function buildWidget() {
     var style = document.createElement('style');
     style.textContent = [
-      '#atpc-btn{position:fixed;bottom:24px;right:24px;z-index:99999;display:flex;align-items:center;gap:10px;background:#fff;color:#2E4A3C;border:none;border-radius:999px;padding:13px 20px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:.9rem;font-weight:600;cursor:pointer;box-shadow:0 4px 24px rgba(0,0,0,.18),0 0 0 1px rgba(0,0,0,.06);transition:transform .2s,box-shadow .2s;letter-spacing:.01em;}',
-      '#atpc-btn:hover{transform:translateY(-2px);box-shadow:0 10px 36px rgba(0,0,0,.22),0 0 0 1px rgba(0,0,0,.06);}',
+      '#atpc-btn{position:fixed;bottom:24px;right:24px;z-index:99999;display:flex;align-items:center;gap:10px;background:#fff;color:#2E4A3C;border:none;border-radius:999px;padding:13px 20px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:.9rem;font-weight:600;cursor:pointer;box-shadow:0 4px 24px rgba(0,0,0,.18),0 0 0 1px rgba(0,0,0,.06);letter-spacing:.01em;opacity:0;transform:scale(.7) translateY(16px);pointer-events:none;transition:transform .35s cubic-bezier(.2,.9,.3,1.3),box-shadow .2s,opacity .3s,width .25s,padding .25s;}',
+      '#atpc-btn.atpc-visible{opacity:1;transform:scale(1) translateY(0);pointer-events:all;}',
+      '#atpc-btn:hover{box-shadow:0 10px 36px rgba(0,0,0,.22),0 0 0 1px rgba(0,0,0,.06);}',
+      '#atpc-btn.atpc-visible:hover{transform:translateY(-2px);}',
+      '#atpc-btn .atpc-mini{display:none;font-size:20px;line-height:1;font-weight:700;}',
+      '#atpc-btn.atpc-collapsed{padding:0;width:52px;height:52px;justify-content:center;}',
+      '#atpc-btn.atpc-collapsed .atpc-full{display:none;}',
+      '#atpc-btn.atpc-collapsed .atpc-mini{display:inline-flex;}',
       '#atpc-win{position:fixed;bottom:82px;right:24px;z-index:99999;width:350px;max-height:500px;background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.18);display:flex;flex-direction:column;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;transform:scale(.95) translateY(10px);opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;}',
       '#atpc-win.open{opacity:1;pointer-events:all;transform:scale(1) translateY(0);}',
       '#atpc-hdr{background:#2E4A3C;color:#fff;padding:14px 16px;display:flex;align-items:center;gap:11px;flex-shrink:0;}',
@@ -158,8 +164,28 @@
     var btn = document.createElement('button');
     btn.id = 'atpc-btn';
     btn.setAttribute('aria-label', 'Chat with us');
-    btn.innerHTML = '<svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg> Have a question?';
+    btn.innerHTML = '<span class="atpc-full"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg> Have a question?</span><span class="atpc-mini">?</span>';
     document.body.appendChild(btn);
+
+    var isMobile = window.matchMedia('(max-width: 640px)').matches;
+    var revealed = false;
+    function revealBtn() {
+      if (revealed) return;
+      revealed = true;
+      btn.classList.add('atpc-visible');
+      if (isMobile) {
+        setTimeout(function () { btn.classList.add('atpc-collapsed'); }, 2600);
+      }
+      window.removeEventListener('scroll', onScroll);
+    }
+    function onScroll() {
+      if (window.scrollY > 250) revealBtn();
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    setTimeout(function () { if (window.scrollY > 250) revealBtn(); }, 400);
+    btn.addEventListener('click', function () {
+      if (btn.classList.contains('atpc-collapsed')) btn.classList.remove('atpc-collapsed');
+    }, true);
 
     var win = document.createElement('div');
     win.id = 'atpc-win';
