@@ -277,3 +277,21 @@
     buildWidget();
   }
 })();
+
+/* GA4 conversion click tracking: booking, phone, telehealth-join clicks anywhere on the page */
+(function () {
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a || typeof window.gtag !== 'function') return;
+    var h = a.getAttribute('href') || '';
+    if (h.indexOf('intakeq.com/booking') !== -1) {
+      gtag('event', 'book_appointment_click', { link_url: h, page_path: location.pathname });
+    } else if (h.indexOf('tel:') === 0) {
+      gtag('event', 'phone_click', { link_url: h, page_path: location.pathname });
+    } else if (h.indexOf('doxy.me') !== -1) {
+      gtag('event', 'telehealth_join_click', { link_url: h, page_path: location.pathname });
+    } else if (h.indexOf('g.page') !== -1 || h.indexOf('maps.app.goo.gl') !== -1 || (h.indexOf('google.com') !== -1 && h.indexOf('review') !== -1)) {
+      gtag('event', 'google_profile_click', { link_url: h, page_path: location.pathname });
+    }
+  }, true);
+})();

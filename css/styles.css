@@ -257,14 +257,14 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   position: absolute; inset: 0; z-index: -1;
   background:
     linear-gradient(rgba(255,255,255,.32), rgba(255,255,255,.32)),
-    url('../img/hero-warm.png') center/cover no-repeat,
+    url('../img/hero-warm.webp') center/cover no-repeat,
     var(--ivory, #F7F2EA);
 }
 @media (max-width: 640px) {
   .hero__bg {
     background:
       linear-gradient(rgba(255,255,255,.32), rgba(255,255,255,.32)),
-      url('../img/hero-warmmobile.png') right center/cover no-repeat,
+      url('../img/hero-warmmobile.webp') right center/cover no-repeat,
       var(--ivory, #F7F2EA);
   }
 }
