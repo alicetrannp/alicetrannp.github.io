@@ -521,12 +521,15 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   flex-shrink: 0;
 }
 @media (max-width: 640px) {
+  .hero__inner { text-align: left; }
+  .hero__title { margin-left: 0; margin-right: 0; }
+  .hero__inner .hero__lede { margin-left: 0; margin-right: 0; }
   .hero-features {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
     max-width: 340px;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
   }
   .hero-features__item {
@@ -553,7 +556,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     flex-direction: column;
     width: 100%;
     max-width: 340px;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
   }
   .hero__actions .btn {
