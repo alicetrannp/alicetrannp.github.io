@@ -310,6 +310,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     margin: 0 auto 0 33%;
     text-align: left;
   }
+  .hero__lede { font-size: clamp(17px, 1.05vw, 20px); max-width: 54ch; }
   .hero__title { font-size: clamp(2.4rem, 5.2vw, 4.6rem); margin-left: 0; margin-right: 0; }
   .hero__inner .hero__lede { margin-left: 0; margin-right: 0; }
   .hero__inner .hero-features { margin-left: 0; justify-content: flex-start; }
@@ -317,6 +318,17 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   .hero__inner .hero-features__item { text-align: left; align-items: flex-start; }
   .hero__inner .hero__actions { justify-content: flex-start; }
 }
+@media (min-width: 1500px) {
+  .hero__inner {
+    max-width: 800px;
+    margin-left: 35%;
+  }
+  .hero__title { font-size: clamp(4.6rem, 4.4vw, 6rem); }
+  .hero__eyebrow { font-size: 1rem; }
+  .hero-features__label { font-size: 1.05rem; }
+  .hero__booking-note { font-size: .95rem; }
+}
+
 .hero__eyebrow {
   color: #5A554A !important;
   font-size: .875rem;
