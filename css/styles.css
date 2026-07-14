@@ -512,6 +512,9 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   white-space: normal;
   max-width: 9em;
 }
+.hero-features__label-nowrap {
+  white-space: nowrap;
+}
 .hero-features__divider {
   width: 1px;
   height: 44px;
