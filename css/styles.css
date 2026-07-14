@@ -1401,8 +1401,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
    CTA band
    ========================================================= */
 .cta-band {
-  background: #1e3329;
-  background-image: radial-gradient(ellipse at 60% 50%, rgba(74,112,96,0.35) 0%, transparent 70%);
+  background: var(--forest-deep, #1F332A);
   color: var(--ivory-soft);
   text-align: center;
   padding: 96px clamp(2rem, 8vw, 6rem);
