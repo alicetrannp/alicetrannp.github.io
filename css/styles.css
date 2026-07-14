@@ -383,7 +383,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 .hero__patients-title {
   font-family: var(--serif);
-  font-weight: 500;
+  font-weight: 700;
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   color: var(--forest, #2E4A3C);
   margin: 0;
