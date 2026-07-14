@@ -305,13 +305,13 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   text-align: center;
 }
 .hero__eyebrow {
-  color: #8C8676 !important;
+  color: #5A554A !important;
   font-size: .875rem;
   letter-spacing: .2em;
   margin-bottom: 26px;
 }
 .hero__eyebrow::before {
-  background: #8C8676 !important;
+  display: none;
 }
 .hero__title {
   font-family: 'Newsreader', var(--serif);
