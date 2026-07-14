@@ -359,24 +359,111 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   margin: 0 auto 2.8rem;
 }
 .hero__actions { display: flex; gap: .8rem; flex-wrap: wrap; margin-bottom: 2.5rem; justify-content: center; }
-.hero__availability-pill {
-  display: inline-block;
+.hero__patients-card {
+  background: #fff;
+  border-radius: var(--radius-lg, 28px);
+  box-shadow: 0 16px 48px rgba(31,51,42,.14);
+  padding: 2rem clamp(1.5rem, 4vw, 3rem);
+  max-width: 780px;
   margin: 0 auto;
-  padding: .7rem 1.75rem;
-  background: var(--cream, #EFE7D8);
-  border-radius: 10px;
-  color: var(--forest, #2E4A3C);
-  font-size: .92rem;
-  font-weight: 600;
-  letter-spacing: .02em;
+  text-align: center;
 }
-.hero__pill-nowrap {
-  white-space: nowrap;
+.hero__patients-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .9rem;
+  margin-bottom: 1.1rem;
+}
+.hero__patients-icon {
+  width: 34px;
+  height: 34px;
+  color: var(--forest, #2E4A3C);
+  flex-shrink: 0;
+}
+.hero__patients-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--forest, #2E4A3C);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+.hero__patients-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .9rem;
+  margin-bottom: 1.5rem;
+}
+.hero__patients-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--ink-soft, #4A5048);
+  font-size: .95rem;
+  font-weight: 500;
+}
+.hero__patients-meta-item svg {
+  width: 18px;
+  height: 18px;
+  color: var(--muted, #7A8078);
+  flex-shrink: 0;
+}
+.hero__patients-meta-divider {
+  width: 1px;
+  height: 18px;
+  background: var(--line, rgba(34,39,31,.12));
+}
+.hero__patients-divider {
+  height: 1px;
+  background: var(--line, rgba(34,39,31,.12));
+  margin: 0 0 1.5rem;
+}
+.hero__patients-insurance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--ink-soft, #4A5048);
+}
+.hero__patients-ins-divider {
+  width: 1px;
+  height: 16px;
+  background: var(--line, rgba(34,39,31,.12));
+}
+.hero__patients-ins-link {
+  font-weight: 600;
+  color: var(--forest, #2E4A3C);
+  text-decoration: none;
+}
+.hero__patients-ins-link:hover {
+  text-decoration: underline;
 }
 @media (max-width: 640px) {
-  .hero__availability-pill {
-    padding: .6rem 1.1rem;
-    font-size: .78rem;
+  .hero__patients-card {
+    padding: 1.5rem 1.25rem;
+  }
+  .hero__patients-icon {
+    width: 26px;
+    height: 26px;
+  }
+  .hero__patients-title {
+    font-size: 1.25rem;
+  }
+  .hero__patients-meta {
+    gap: .6rem;
+  }
+  .hero__patients-meta-item {
+    font-size: .8rem;
+  }
+  .hero__patients-insurance {
+    font-size: .8rem;
+    gap: .6rem;
   }
 }
 .hero__ghost { color: #2E4A3C; border-color: rgba(46,74,60,0.5); background: rgba(255,255,255,0.7); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
