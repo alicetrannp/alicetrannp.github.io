@@ -256,23 +256,15 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 .hero__bg {
   position: absolute; inset: 0; z-index: -1;
   background:
-    linear-gradient(rgba(255,255,255,.16), rgba(255,255,255,.16)),
-    url('../img/livingroomhero.webp') left center/cover no-repeat,
+    linear-gradient(rgba(255,255,255,.12), rgba(255,255,255,.12)),
+    url('../img/herofinal-desktop.webp') left center/cover no-repeat,
     var(--ivory, #F7F2EA);
 }
 @media (max-width: 960px) {
   .hero__bg {
     background:
-      linear-gradient(rgba(244,241,237,.55), rgba(244,241,237,.55)),
-      url('../img/livingroomhero.webp') 75% center/cover no-repeat,
-      var(--ivory, #F7F2EA);
-  }
-}
-@media (max-width: 640px) {
-  .hero__bg {
-    background:
-      linear-gradient(rgba(244,241,237,.35), rgba(244,241,237,.35)),
-      url('../img/livingroomhero.webp') 68% center/cover no-repeat,
+      linear-gradient(rgba(244,241,237,.18), rgba(244,241,237,.18)),
+      url('../img/herofinal-mobile.webp') center top/cover no-repeat,
       var(--ivory, #F7F2EA);
   }
 }
