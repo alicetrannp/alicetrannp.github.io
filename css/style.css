@@ -57,7 +57,7 @@ img { max-width: 100%; display: block; }
   color: #1F332A;
 }
 .nav__name { display: grid; line-height: 1.05; }
-.nav__first { font-family: var(--serif); font-size: 1.1rem; color: #1F332A; }
+.nav__first { font-family: var(--serif); font-size: clamp(1.25rem, 2.2vw, 1.5rem); font-weight: 600; letter-spacing: .01em; color: #1F332A; }
 .nav__links {
   display: flex;
   flex: 1;
@@ -139,7 +139,7 @@ img { max-width: 100%; display: block; }
   .nav__visit { display: none; }
   .nav__cta { display: inline-flex; }
   .nav__toggle { display: inline-flex; }
-  .nav__first { max-width: 140px; }
+  .nav__first { font-size: 1.15rem; max-width: 180px; }
   .nav.is-open .nav__links {
     display: flex;
     flex-direction: column;
@@ -578,7 +578,7 @@ footer a:hover { color: var(--sage-lt); }
 [data-reveal].is-in { opacity: 1; transform: none; }
 
 /* ── EYEBROW ── */
-.eyebrow { font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--green-lt); font-weight: 500; margin-bottom: 0.75rem; display: block; }
+.eyebrow { font-family: var(--sans); font-size: 0.8rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--green-lt); font-weight: 500; margin-bottom: 0.75rem; display: block; }
 
 /* ── SERIF ITALIC ── */
 .serif-i { font-style: italic; font-family: var(--serif); font-weight: 300; }

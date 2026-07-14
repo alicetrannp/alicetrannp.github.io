@@ -173,7 +173,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   color: var(--forest);
 }
 .nav__name { display: grid; line-height: 1.05; }
-.nav__first { font-family: var(--serif); font-size: 1.1rem; color: var(--forest-deep); }
+.nav__first { font-family: var(--serif); font-size: clamp(1.25rem, 2.2vw, 1.5rem); font-weight: 600; letter-spacing: .01em; color: var(--forest-deep); }
 .nav__cred {
   font-size: .68rem;
   letter-spacing: .18em;
@@ -339,6 +339,12 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   margin: 0 auto 2.8rem;
 }
 .hero__actions { display: flex; gap: .8rem; flex-wrap: wrap; margin-bottom: 2.5rem; justify-content: center; }
+.hero__booking-note {
+  font-size: .88rem;
+  color: #5A554A;
+  margin: -1.4rem 0 2.5rem;
+  letter-spacing: .01em;
+}
 .hero__patients-card {
   background: #fff;
   border-radius: var(--radius-lg, 28px);
@@ -1574,6 +1580,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
    Responsive
    ========================================================= */
 @media (max-width: 960px) {
+  .nav__first { font-size: 1.15rem; max-width: 180px; }
   .nav__links { display: none; }
   .nav__visit { display: none; }
   .nav__cta { display: inline-flex; }
