@@ -221,24 +221,107 @@
     <p class="eyebrow">Bệnh nhân nói gì</p>
     <h2 class="h2">Lời nói thật từ người thật.</h2>
   </div>
-  <div class="reviews__grid">
-    <div class="review" data-reveal>
-      <div class="review__stars">★★★★★</div>
-      <blockquote>"Alice Tran là một thạc sĩ điều dưỡng chuyên khoa thực sự xuất sắc. Cô ấy tốt bụng, ấm áp, kiên nhẫn, thấu hiểu, và luôn tận tâm hướng đến kết quả tốt nhất cho bệnh nhân."</blockquote>
-      <div class="review__who">Jake L., Virginia</div>
+  <div class="reviews__carousel-wrap">
+    <button class="carousel__btn carousel__btn--prev" onclick="moveCarousel(-1)" aria-label="Đánh giá trước">&#8592;</button>
+    <div class="reviews__overflow" id="reviewsOverflow">
+      <div class="carousel__track" id="carouselTrack">
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"Alice Tran là một thạc sĩ điều dưỡng chuyên khoa thực sự xuất sắc. Cô ấy tốt bụng, ấm áp, kiên nhẫn, thấu hiểu, và luôn tận tâm hướng đến kết quả tốt nhất cho bệnh nhân."</blockquote>
+          <div class="review__who">Jake L., Virginia</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"Alice rất tuyệt. Cô ấy dễ nói chuyện, rất thấu hiểu, và làm bạn cảm thấy mình thực sự được lắng nghe. Buổi hẹn thoải mái và không hề vội vã. Tôi chắc chắn sẽ giới thiệu cô cho bất kỳ ai đang tìm dịch vụ chăm sóc tâm thần. Hơn nữa, cô nói tiếng Việt, một điểm cộng lớn đối với tôi."</blockquote>
+          <div class="review__who">Annie N., Virginia</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"Alice là một thạc sĩ điều dưỡng chuyên khoa vô cùng nhân từ, chu đáo và tỉ mỉ. Chuyên môn của cô kết hợp với sự am hiểu văn hóa và những sắc thái tinh tế. Tôi không biết dùng lời nào để giới thiệu cô ấy cho xứng."</blockquote>
+          <div class="review__who">Jules P., Virginia</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"Rất khuyến khích NP Tran! Cách tiếp cận của cô vừa nhân ái vừa sâu sắc, cân bằng hoàn hảo giữa sự chuyên nghiệp và ấm áp. Cảm ơn cô đã giúp tôi trở thành phiên bản tốt hơn của chính mình."</blockquote>
+          <div class="review__who">Jamie H., Virginia</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"Cô ấy tỏa ra sự tử tế và thiện chí. Tôi cảm thấy an toàn khi nói với cô rằng điều gì đó chưa hiệu quả, vì cô luôn có ý tưởng để tối ưu việc điều trị. Tôi đã chật vật nhiều năm trời, và cô ấy đã giúp tôi thay đổi cả cuộc đời."</blockquote>
+          <div class="review__who">Helix M., Virginia</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"Vô cùng may mắn khi có NP Tran đồng hành trong quá trình hồi phục. Cô thực sự lắng nghe những khó khăn của tôi và đưa ra kế hoạch tốt nhất. Một môi trường cởi mở, thoải mái, không phán xét."</blockquote>
+          <div class="review__who">Brandon D., Virginia</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"NP Tran là một điều dưỡng chuyên khoa biết lắng nghe. Một buổi trò chuyện với cô như nhấp một tách trà ấm - êm dịu, thư thái và dễ chịu. Nếu bạn tìm một người nhìn bạn như một con người trọn vẹn, nuôi dưỡng sự trưởng thành và tôn trọng câu chuyện của bạn, hãy đến gặp NP Tran."</blockquote>
+          <div class="review__who">R.P., Virginia</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>"Alice đã giúp tôi rất nhiều trong hành trình vượt qua trầm cảm và lo âu, cùng những trăn trở về bản sắc văn hóa. Là người đồng hành người Mỹ gốc Á, cô ấy thấu hiểu sâu sắc. Cô ấy lắng nghe và cho những lời khuyên thực sự có giá trị."</blockquote>
+          <div class="review__who">Cassidy T., Virginia</div>
+        </div>
+      </div>
     </div>
-    <div class="review" data-reveal style="--delay:100ms">
-      <div class="review__stars">★★★★★</div>
-      <blockquote>"Alice là một thạc sĩ điều dưỡng chuyên khoa vô cùng nhân từ, chu đáo và tỉ mỉ. Chuyên môn của cô kết hợp với sự am hiểu văn hóa và những sắc thái tinh tế. Tôi không biết dùng lời nào để giới thiệu cô ấy cho xứng."</blockquote>
-      <div class="review__who">Jules P., Virginia</div>
-    </div>
-    <div class="review" data-reveal style="--delay:200ms">
-      <div class="review__stars">★★★★★</div>
-      <blockquote>"Alice đã giúp tôi rất nhiều trong hành trình vượt qua trầm cảm và lo âu, cùng những trăn trở về bản sắc văn hóa. Là người đồng hành người Mỹ gốc Á, cô ấy thấu hiểu sâu sắc. Cô ấy lắng nghe và cho những lời khuyên thực sự có giá trị."</blockquote>
-      <div class="review__who">Cassidy T., Virginia</div>
-    </div>
+    <button class="carousel__btn carousel__btn--next" onclick="moveCarousel(1)" aria-label="Đánh giá tiếp theo">&#8594;</button>
   </div>
+  <div class="carousel__dots" id="carouselDots"></div>
 </section>
+<script>
+(function(){
+  var N = 8;
+  var GAP = 20;
+  var overflow = document.getElementById('reviewsOverflow');
+  var track = document.getElementById('carouselTrack');
+  var cards = track.querySelectorAll('.review');
+  var idx = 0, perView, maxIdx, cardW;
+  function getPerView(){ return window.innerWidth >= 900 ? 3 : 1; }
+  function layout(){
+    perView = getPerView();
+    maxIdx = N - perView;
+    if(idx > maxIdx) idx = maxIdx;
+    cardW = (overflow.offsetWidth - GAP * (perView - 1)) / perView;
+    track.style.width = (cardW * N + GAP * N) + 'px';
+    cards.forEach(function(c){
+      c.style.flex = '0 0 ' + cardW + 'px';
+      c.style.marginRight = GAP + 'px';
+    });
+    buildDots();
+    render();
+  }
+  function render(){
+    track.style.transform = 'translateX(-' + (idx * (cardW + GAP)) + 'px)';
+    document.querySelectorAll('.carousel__dot').forEach(function(d,i){
+      d.classList.toggle('is-active', i===idx);
+      d.setAttribute('aria-current', i===idx ? 'true' : 'false');
+    });
+  }
+  var dotsEl = document.getElementById('carouselDots');
+  function buildDots(){
+    dotsEl.innerHTML = '';
+    for(var i = 0; i <= maxIdx; i++){
+      var d = document.createElement('button');
+      d.className = 'carousel__dot' + (i===0?' is-active':'');
+      d.dataset.i = i;
+      d.setAttribute('aria-label', 'Xem đánh giá ' + (i+1));
+      d.addEventListener('click', function(){ goTo(+this.dataset.i); });
+      dotsEl.appendChild(d);
+    }
+  }
+  function goTo(n){
+    idx = Math.max(0, Math.min(n, maxIdx));
+    render();
+  }
+  window.moveCarousel = function(dir){ goTo(idx + dir); };
+  layout();
+  window.addEventListener('resize', layout);
+  setInterval(function(){ goTo(idx + 1 > maxIdx ? 0 : idx + 1); }, 5500);
+})();
+</script>
 
 <!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
@@ -410,6 +493,39 @@
 </section>
 
 <!-- QUOTE -->
+<section style="background:var(--forest);padding:72px clamp(1.5rem,6vw,4rem);">
+  <div id="bilingual-grid" style="max-width:860px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;">
+    <div>
+      <p class="eyebrow" style="color:var(--sage);">Tiếng Anh &amp; Tiếng Việt</p>
+      <h2 style="font-family:var(--serif);font-size:clamp(2rem,4vw,2.8rem);font-weight:700;color:#fff;line-height:1.2;margin:0.75rem 0 1.25rem;">Chăm sóc tâm thần bằng<br><em>tiếng Anh và tiếng Việt</em></h2>
+      <p style="color:rgba(255,255,255,0.75);font-size:1rem;line-height:1.85;margin-bottom:1.75rem;">Alice nói tiếng Việt thành thạo và thấu hiểu sức nặng văn hóa đằng sau cách các gia đình nói, và đôi khi không nói, về sức khỏe tâm thần. Cô cung cấp khám đánh giá tâm thần, quản lý thuốc, và tái khám hoàn toàn bằng tiếng Việt cho người lớn trên toàn Virginia, không cần thông dịch viên. Khi cần thiết, cha mẹ và người thân cũng có thể cùng tham gia buổi khám, để việc chăm sóc trở nên rõ ràng, thoải mái, và gần gũi với ngôn ngữ và văn hóa thân thuộc nhất.</p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="https://alicetran.intakeq.com/booking" target="_blank" class="btn" style="background:#fff;color:var(--forest);border:none;">Đặt lịch hẹn &rarr;</a>
+        <a href="pages/vietnamese-psychiatric-care-vi.html" class="btn" style="background:transparent;color:rgba(255,255,255,0.85);border:1px solid rgba(255,255,255,0.3);">Tìm hiểu thêm &rarr;</a>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <a href="pages/psychiatric-evaluation-virginia.html" style="background:rgba(255,255,255,0.07);border-radius:12px;padding:1.25rem 1.5rem;text-decoration:none;display:block;transition:background .2s;" onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.07)'">
+        <p style="color:#fff;font-weight:600;margin-bottom:0.25rem;font-size:0.95rem;">Khám đánh giá tâm thần</p>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.875rem;margin:0;line-height:1.6;">Psychiatric evaluation</p>
+      </a>
+      <a href="pages/blog/what-is-medication-management.html" style="background:rgba(255,255,255,0.07);border-radius:12px;padding:1.25rem 1.5rem;text-decoration:none;display:block;transition:background .2s;" onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.07)'">
+        <p style="color:#fff;font-weight:600;margin-bottom:0.25rem;font-size:0.95rem;">Quản lý thuốc tâm thần</p>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.875rem;margin:0;line-height:1.6;">Medication management</p>
+      </a>
+      <a href="pages/conditions-vi.html" style="background:rgba(255,255,255,0.07);border-radius:12px;padding:1.25rem 1.5rem;text-decoration:none;display:block;transition:background .2s;" onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.07)'">
+        <p style="color:#fff;font-weight:600;margin-bottom:0.25rem;font-size:0.95rem;">Lo âu, trầm cảm, ADHD &amp; nhiều bệnh khác</p>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.875rem;margin:0;line-height:1.6;">Anxiety, depression, ADHD &amp; more</p>
+      </a>
+    </div>
+  </div>
+  <style>
+    @media(max-width:640px){
+      #bilingual-grid { grid-template-columns:1fr !important; }
+    }
+  </style>
+</section>
+
 <section style="background:var(--sage-lt);padding:96px clamp(2rem,8vw,6rem);text-align:center;">
   <div style="max-width:680px;margin:0 auto;">
     <span style="font-family:var(--serif);font-size:5.5rem;line-height:0;color:var(--sage-md);display:block;margin-bottom:1.25rem;">&ldquo;</span>
