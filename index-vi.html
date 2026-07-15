@@ -161,7 +161,7 @@
   <div class="hero__bg"></div>
   <div class="hero__inner">
     <p class="eyebrow hero__eyebrow">Chăm Sóc Sức Khỏe Tâm Thần &middot; Virginia<span class="hero__eyebrow-ages"> &middot; 18&ndash;65 Tuổi</span></p>
-    <h1 class="hero__title"><span class="hero__title-inner"><span class="hero__phrase">Tìm lại <em>con người thật</em> của mình</span></span></h1>
+    <h1 class="hero__title" id="heroTitle"><span class="hero__title-inner"><span class="hero__phrase">Tìm lại <em>con người thật</em> của mình</span></span></h1>
     <p class="hero__lede">Cung cấp dịch vụ điều trị bằng thuốc và kết hợp với các liệu pháp tâm lý cho bệnh trầm cảm, lo âu, ADHD, OCD, rối loạn lưỡng cực, sang chấn tâm lý, kiệt sức (burnout) và các giai đoạn chuyển tiếp trong cuộc sống</p>
     <div class="hero-features">
       <div class="hero-features__item">
@@ -692,6 +692,119 @@ reveals.forEach(el => observer.observe(el));
 window.addEventListener('scroll', () => {
   document.getElementById('nav').classList.toggle('is-scrolled', window.scrollY > 40);
 });
+</script>
+<script>
+(function(){
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var h1 = document.getElementById('heroTitle');
+  if (!h1) return;
+  var inner = h1.querySelector('.hero__title-inner');
+  var PHRASES = [
+    'Tìm lại <em>con người thật</em> <br>của mình',
+    'Chữa lành là <br>điều <em>có thể</em>.',
+    'Bạn không hề <br><em>đơn độc</em> đâu.',
+    'Mỗi ngày một chút, <br>rồi sẽ <em>ổn thôi</em>.',
+    'Bạn xứng đáng <br>được <em>hạnh phúc</em>.',
+    'Bạn mạnh mẽ hơn <br>bạn <em>nghĩ</em> đó.',
+    'Bình yên bắt đầu <br>từ <em>hôm nay</em>.',
+    'Hy vọng vẫn <br>luôn ở <em>đây</em>.',
+    'Hít thở nào, <br>rồi tiếp tục <em>nhé</em>.',
+    'Vẫn còn rất nhiều <br>điều <em>đẹp</em> phía trước.',
+    'Chọn <em>hy vọng</em>, <br>mỗi ngày bạn nhé.'
+  ];
+  var idx = 0;
+
+  function wrapWords(root){
+    Array.prototype.slice.call(root.childNodes).forEach(function(child){
+      if (child.nodeType === 3) {
+        var frag = document.createDocumentFragment();
+        child.textContent.split(' ').forEach(function(word, i, arr){
+          if (word.length) {
+            var w = document.createElement('span');
+            w.className = 'rword';
+            word.split('').forEach(function(ch){
+              var c = document.createElement('span');
+              c.className = 'rchar';
+              c.textContent = ch;
+              w.appendChild(c);
+            });
+            frag.appendChild(w);
+          }
+          if (i < arr.length - 1) frag.appendChild(document.createTextNode(' '));
+        });
+        root.replaceChild(frag, child);
+      } else if (child.nodeType === 1 && child.tagName !== 'BR') {
+        wrapWords(child);
+      }
+    });
+  }
+
+  function buildLayer(html, hidden){
+    var layer = document.createElement('span');
+    layer.className = 'hero__phrase';
+    layer.innerHTML = html;
+    wrapWords(layer);
+    if (hidden) {
+      layer.querySelectorAll('.rchar').forEach(function(sp){
+        sp.style.transition = 'none';
+        sp.style.opacity = '0';
+        sp.style.filter = 'blur(6px)';
+      });
+    }
+    return layer;
+  }
+
+  function measure(){
+    var probe = h1.cloneNode(false);
+    probe.removeAttribute('id');
+    probe.style.position = 'absolute';
+    probe.style.visibility = 'hidden';
+    probe.style.minHeight = '0';
+    probe.style.width = h1.clientWidth + 'px';
+    h1.parentNode.appendChild(probe);
+    var max = 0;
+    PHRASES.forEach(function(p){
+      probe.innerHTML = '<span class="hero__title-inner"><span class="hero__phrase">' + p + '</span></span>';
+      max = Math.max(max, probe.offsetHeight);
+    });
+    probe.parentNode.removeChild(probe);
+    h1.style.minHeight = max + 'px';
+    inner.style.height = max + 'px';
+  }
+
+  function start(){
+    measure();
+    var rT;
+    window.addEventListener('resize', function(){ clearTimeout(rT); rT = setTimeout(measure, 250); });
+    inner.innerHTML = '';
+    var current = buildLayer(PHRASES[0], false);
+    inner.appendChild(current);
+    var tick = function(){
+      idx = (idx + 1) % PHRASES.length;
+      var next = buildLayer(PHRASES[idx], true);
+      inner.appendChild(next);
+      void inner.offsetWidth;
+      current.querySelectorAll('.rchar').forEach(function(sp){
+        sp.style.transitionDelay = (Math.random() * 0.5).toFixed(2) + 's';
+        sp.style.opacity = '0';
+        sp.style.filter = 'blur(6px)';
+      });
+      next.querySelectorAll('.rchar').forEach(function(sp){
+        sp.style.transition = '';
+        sp.style.transitionDelay = (0.5 + Math.random() * 0.7).toFixed(2) + 's';
+        sp.style.opacity = '1';
+        sp.style.filter = 'blur(0)';
+      });
+      var old = current;
+      current = next;
+      setTimeout(function(){ if (old.parentNode) old.parentNode.removeChild(old); }, 3600);
+    };
+    setTimeout(function(){ tick(); setInterval(tick, 8000); }, 6000);
+  }
+
+  if (document.readyState === 'complete') { start(); }
+  else { window.addEventListener('load', start); }
+})();
 </script>
 <script src="js/chat-widget.js" data-base=""></script>
 </body>
