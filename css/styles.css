@@ -260,14 +260,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     url('../img/herofinal-desktop3.webp') 62% bottom/cover no-repeat,
     var(--ivory, #F7F2EA);
 }
-@media (min-width: 1400px) {
-  .hero__bg {
-    background:
-      linear-gradient(rgba(255,255,255,.12), rgba(255,255,255,.12)),
-      url('../img/herofinal-desktop3.webp') right bottom/112% auto no-repeat,
-      var(--ivory, #F7F2EA);
-  }
-}
+
 @media (max-width: 960px) {
   .hero__bg {
     background:
