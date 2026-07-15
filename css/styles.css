@@ -747,30 +747,23 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 .portrait__caption {
   position: absolute;
   bottom: -1.2rem; right: -.5rem;
-  background: linear-gradient(90deg,
-    rgb(255,182,193) 0%,
-    rgb(255,210,160) 15%,
-    rgb(255,245,160) 30%,
-    rgb(180,235,185) 45%,
-    rgb(155,210,255) 60%,
-    rgb(210,180,240) 75%,
-    rgb(255,182,193) 100%);
-  background-size: 200% 200%;
-  padding: .6rem 1rem;
-  border-radius: 999px;
+  background: var(--ivory-soft, #F9F6F2);
+  padding: .6rem 1.1rem;
+  border-radius: 16px;
   font-size: .8rem;
-  color: #111;
-  font-weight: 600;
-  letter-spacing: .05em;
-  box-shadow: 0 10px 30px -10px rgba(0,0,0,.15);
+  color: var(--forest-deep);
+  font-weight: 700;
+  letter-spacing: .03em;
+  line-height: 1.45;
+  text-align: left;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,.18);
   border: 1px solid rgba(0,0,0,.06);
   text-decoration: none;
   display: inline-block;
   transition: transform .2s ease;
 }
 .portrait__caption:hover {
-  animation: caption-shimmer 1.2s ease infinite;
-  transform: scale(1.04);
+  transform: scale(1.03);
   cursor: pointer;
 }
 
