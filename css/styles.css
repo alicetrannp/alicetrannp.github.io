@@ -318,6 +318,10 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   .hero__inner .hero-features__item { text-align: left; align-items: flex-start; }
   .hero__inner .hero__actions { justify-content: flex-start; }
 }
+@media (min-width: 641px) and (max-width: 960px) {
+  .hero__title br { display: none; }
+  .hero__title { font-size: clamp(2.4rem, 5.6vw, 3.4rem); white-space: nowrap; }
+}
 @media (min-width: 1500px) {
   .hero__inner {
     max-width: 860px;
