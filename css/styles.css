@@ -1723,9 +1723,52 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   font-weight: 400;
   margin: 0 .55rem;
 }
+.hero-tags__item {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+.hero-tags__icon {
+  width: 18px;
+  height: 18px;
+  color: #355247;
+  flex-shrink: 0;
+}
+@media (min-width: 961px) {
+  .hero-tags__icon { display: none; }
+}
 @media (max-width: 960px) {
-  .hero-tags__item { display: block; }
   .hero-tags__sep { display: none; }
+  .hero-tags {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-tags__item {
+    display: flex;
+    justify-content: center;
+    padding: .7rem .3rem;
+  }
+  .hero-tags__item ~ .hero-tags__item {
+    border-top: 1px solid rgba(138, 132, 122, .35);
+  }
+}
+@media (max-width: 640px) {
+  .hero-tags {
+    width: 100%;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .hero-tags__item {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    text-align: right;
+  }
+  .hero-tags__item ~ .hero-tags__item {
+    border-top-width: 1px;
+  }
 }
 .hero-status-card {
   display: inline-flex;
