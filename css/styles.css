@@ -330,7 +330,9 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   .hero__title { font-size: 5.125rem; white-space: nowrap; }
   .hero__eyebrow { font-size: 1rem; }
   .hero-features__label { font-size: 1.05rem; }
-  .hero__booking-note { font-size: .95rem; }
+  
+
+.hero__booking-note { font-size: .95rem; }
 }
 
 .hero__eyebrow {
@@ -1709,4 +1711,55 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     transition-duration: 0.001ms !important;
   }
   [data-reveal] { opacity: 1; transform: none; }
+}
+
+/* ---------- Hero tag line + status card ---------- */
+.hero-tags {
+  font-family: var(--sans);
+  font-size: .95rem;
+  font-weight: 600;
+  color: #355247;
+  letter-spacing: .01em;
+  line-height: 1.9;
+  margin: 0 0 2.2rem;
+}
+.hero-tags__sep {
+  color: rgba(138, 132, 122, .65);
+  font-weight: 400;
+  margin: 0 .55rem;
+}
+.hero-status-card {
+  display: inline-flex;
+  align-items: center;
+  gap: .9rem;
+  background: rgba(255, 255, 255, .92);
+  border-radius: 16px;
+  padding: .95rem 1.5rem;
+  box-shadow: 0 10px 30px -12px rgba(31, 51, 42, .25);
+  text-align: left;
+}
+.hero-status-card__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--sage-deep, #8A9A82);
+  flex-shrink: 0;
+}
+.hero-status-card__title {
+  margin: 0;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: .98rem;
+  color: var(--forest-deep);
+}
+.hero-status-card__sub {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: .86rem;
+  color: #5A554A;
+}
+@media (max-width: 640px) {
+  .hero-tags { font-size: .9rem; margin-bottom: 1.8rem; }
+  .hero-status-card { padding: .85rem 1.15rem; }
+  .hero-status-card__sub .hero__note-extra { display: none; }
 }
