@@ -922,7 +922,7 @@ window.addEventListener('scroll', () => {
     inner.innerHTML = '';
     var current = buildLayer(PHRASES[0], false);
     inner.appendChild(current);
-    setInterval(function(){
+    var tick = function(){
       idx = (idx + 1) % PHRASES.length;
       var next = buildLayer(PHRASES[idx], true);
       inner.appendChild(next);
@@ -941,7 +941,8 @@ window.addEventListener('scroll', () => {
       var old = current;
       current = next;
       setTimeout(function(){ if (old.parentNode) old.parentNode.removeChild(old); }, 3600);
-    }, 8000);
+    };
+    setTimeout(function(){ tick(); setInterval(tick, 8000); }, 6000);
   }
 
   if (document.readyState === 'complete') { start(); }
