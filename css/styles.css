@@ -315,7 +315,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     max-width: 620px;
     margin: 0 auto;
     text-align: left;
-    transform: translateX(clamp(16px, 2.5vw, 56px));
+    transform: translateX(clamp(32px, 4vw, 88px));
   }
   .hero__lede { font-size: clamp(17px, 1.05vw, 20px); max-width: 54ch; }
   .hero__title { font-size: clamp(2.4rem, 5.2vw, 4.6rem); }
