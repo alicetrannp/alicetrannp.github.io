@@ -581,7 +581,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     max-width: none;
   }
   .hero-features__divider {
-    width: 62%;
+    width: 210px;
     height: 1px;
     margin-left: auto;
   }
