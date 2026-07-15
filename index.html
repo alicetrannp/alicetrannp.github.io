@@ -18,7 +18,7 @@
   <link rel="preload" as="image" href="img/herofinal-desktop3.webp" fetchpriority="high" media="(min-width: 961px)" />
   <link rel="preload" as="image" href="img/herofinal-mobile.webp" fetchpriority="high" media="(max-width: 960px)" />
   <link rel="preload" as="image" href="img/alice-portrait.webp" type="image/webp" />
-  <link rel="stylesheet" href="css/styles.css?v=20260715g" />
+  <link rel="stylesheet" href="css/styles.css?v=20260715h" />
   <link rel="preload" href="css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="css/fonts.css"></noscript>
   <link rel="canonical" href="https://alicetrannp.com/" />
@@ -306,7 +306,7 @@
   <div class="hero__bg"></div>
   <div class="hero__inner">
     <p class="eyebrow hero__eyebrow">Adult Psychiatry &middot; Virginia<span class="hero__eyebrow-ages"> &middot; Ages 18&ndash;65</span></p>
-    <h1 class="hero__title">Feel like <br><em>yourself</em> again.</h1>
+    <h1 class="hero__title" id="heroTitle"><span class="hero__title-inner">Feel like <br><em>yourself</em> again.</span></h1>
     <p class="hero__lede">Thoughtful medication management and supportive therapy for depression, anxiety, ADHD, burnout, and other mental health conditions</p>
     <div class="hero-features">
       <div class="hero-features__item">
@@ -834,6 +834,120 @@ reveals.forEach(el => observer.observe(el));
 window.addEventListener('scroll', () => {
   document.getElementById('nav').classList.toggle('is-scrolled', window.scrollY > 40);
 });
+</script>
+
+<script>
+(function(){
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var h1 = document.getElementById('heroTitle');
+  if (!h1) return;
+  var inner = h1.querySelector('.hero__title-inner');
+  var PHRASES = [
+    'Feel like <br><em>yourself</em> again.',
+    'Brighter days <em>begin</em> here.',
+    'Healing is not linear, but it <em>is</em> possible.',
+    'Cheers to a happier, <em>healthier</em> you.',
+    'More joy. More balance. More <em>you</em>.',
+    'Helping you build a life you <em>love</em>.',
+    'You deserve to feel your <em>best</em>.',
+    'Grow <em>through</em> what you\u2019re going through.'
+  ];
+  var idx = 0;
+
+  function wrapWords(root){
+    Array.prototype.slice.call(root.childNodes).forEach(function(child){
+      if (child.nodeType === 3) {
+        var frag = document.createDocumentFragment();
+        child.textContent.split(' ').forEach(function(word, i, arr){
+          if (word.length) {
+            var w = document.createElement('span');
+            w.className = 'rword';
+            word.split('').forEach(function(ch){
+              var c = document.createElement('span');
+              c.className = 'rchar';
+              c.textContent = ch;
+              w.appendChild(c);
+            });
+            frag.appendChild(w);
+          }
+          if (i < arr.length - 1) frag.appendChild(document.createTextNode(' '));
+        });
+        root.replaceChild(frag, child);
+      } else if (child.nodeType === 1 && child.tagName !== 'BR') {
+        wrapWords(child);
+      }
+    });
+  }
+
+  function setPhrase(html){
+    inner.innerHTML = html;
+    wrapWords(inner);
+  }
+
+  function chars(){ return inner.querySelectorAll('.rchar'); }
+
+  function dustOut(done){
+    chars().forEach(function(sp){
+      sp.style.transitionDelay = (Math.random() * 0.3).toFixed(2) + 's';
+      sp.style.transform = 'translate(' + (Math.random() * 26 - 13).toFixed(0) + 'px,' + (-(10 + Math.random() * 26)).toFixed(0) + 'px)';
+      sp.style.filter = 'blur(7px)';
+      sp.style.opacity = '0';
+    });
+    setTimeout(done, 950);
+  }
+
+  function dustIn(){
+    chars().forEach(function(sp){
+      sp.style.transition = 'none';
+      sp.style.transitionDelay = '0s';
+      sp.style.opacity = '0';
+      sp.style.transform = 'translateY(16px)';
+      sp.style.filter = 'blur(7px)';
+    });
+    void inner.offsetWidth;
+    chars().forEach(function(sp){
+      sp.style.transition = '';
+      sp.style.transitionDelay = (Math.random() * 0.3).toFixed(2) + 's';
+      sp.style.opacity = '1';
+      sp.style.transform = 'translate(0,0)';
+      sp.style.filter = 'blur(0)';
+    });
+  }
+
+  function measure(){
+    var probe = h1.cloneNode(false);
+    probe.removeAttribute('id');
+    probe.style.position = 'absolute';
+    probe.style.visibility = 'hidden';
+    probe.style.minHeight = '0';
+    probe.style.width = h1.clientWidth + 'px';
+    h1.parentNode.appendChild(probe);
+    var max = 0;
+    PHRASES.forEach(function(p){
+      probe.innerHTML = '<span class="hero__title-inner">' + p + '</span>';
+      max = Math.max(max, probe.offsetHeight);
+    });
+    probe.parentNode.removeChild(probe);
+    h1.style.minHeight = max + 'px';
+  }
+
+  function start(){
+    measure();
+    var rT;
+    window.addEventListener('resize', function(){ clearTimeout(rT); rT = setTimeout(measure, 250); });
+    setPhrase(PHRASES[0]);
+    setInterval(function(){
+      dustOut(function(){
+        idx = (idx + 1) % PHRASES.length;
+        setPhrase(PHRASES[idx]);
+        dustIn();
+      });
+    }, 4500);
+  }
+
+  if (document.readyState === 'complete') { start(); }
+  else { window.addEventListener('load', start); }
+})();
 </script>
 <script src="js/chat-widget.js" data-base=""></script>
 </body>
