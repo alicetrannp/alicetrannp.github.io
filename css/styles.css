@@ -326,7 +326,6 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   }
   .hero__title { font-size: clamp(4.2rem, 4vw, 5.4rem); }
   .hero__eyebrow { font-size: 1rem; }
-  .hero-features__label { font-size: 1.05rem; }
   .hero__booking-note { font-size: .95rem; }
 }
 
@@ -1710,7 +1709,9 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 
 @media (min-width: 961px) {
   .hero__inner .hero__lede { margin-left: 0; margin-right: 0; }
-  .hero__booking-note { text-align: center; }
+  .hero__inner .hero-features { margin-left: 0; margin-right: auto; justify-content: flex-start; }
+  .hero__inner .hero__actions { justify-content: flex-start; }
+  .hero__booking-note { text-align: left; }
 }
 
 /* ---------- Hero headline sizes (must come after base .hero__title) ---------- */
