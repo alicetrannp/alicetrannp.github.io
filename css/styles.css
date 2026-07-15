@@ -543,8 +543,20 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   .hero__eyebrow-ages { display: none; }
   .hero__inner { text-align: right; }
   .hero-features__label br { display: none; }
+
+  .hero__note-extra { display: none; }
+  .hero__booking-note {
+    display: inline-block;
+    margin-left: auto;
+    background: rgba(249, 246, 242, .82);
+    color: #4A5048;
+    padding: .5rem .95rem;
+    border-radius: 14px;
+    font-size: .82rem;
+    line-height: 1.5;
+  }
   .hero__title { margin-left: 0; margin-right: 0; }
-  .hero__inner .hero__lede { margin-left: 0; margin-right: 0; }
+  .hero__inner .hero__lede { max-width: 24ch; margin-left: auto; margin-right: 0; }
   .hero-features {
     flex-direction: column;
     align-items: stretch;
