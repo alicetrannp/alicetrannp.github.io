@@ -1723,6 +1723,10 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   font-weight: 400;
   margin: 0 .55rem;
 }
+@media (max-width: 960px) {
+  .hero-tags__item { display: block; }
+  .hero-tags__sep { display: none; }
+}
 .hero-status-card {
   display: inline-flex;
   align-items: center;
