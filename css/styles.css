@@ -316,6 +316,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     margin-right: auto;
     text-align: center;
   }
+  .hero__title { font-size: clamp(3.4rem, 8.5vw, 4.6rem); }
 }
 @media (min-width: 961px) {
   .hero__inner {
@@ -1715,4 +1716,15 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     transition-duration: 0.001ms !important;
   }
   [data-reveal] { opacity: 1; transform: none; }
+}
+
+/* ---------- Hero headline sizes (must come after base .hero__title) ---------- */
+@media (min-width: 641px) and (max-width: 960px) {
+  .hero__title { font-size: clamp(3.4rem, 8.5vw, 4.6rem); }
+}
+@media (min-width: 961px) {
+  .hero__title { font-size: clamp(2.4rem, 5.2vw, 4.6rem); }
+}
+@media (min-width: 1500px) {
+  .hero__title { font-size: clamp(4.2rem, 4vw, 5.4rem); }
 }
