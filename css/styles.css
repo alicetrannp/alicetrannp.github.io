@@ -316,18 +316,13 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   .hero__inner .hero-features { margin-left: 0; justify-content: flex-start; }
   .hero__inner .hero__actions { justify-content: flex-start; }
 }
-@media (min-width: 641px) and (max-width: 960px) {
-  .hero__title br { display: none; }
-  .hero__title { font-size: clamp(2.4rem, 5.6vw, 3.4rem); white-space: nowrap; }
-}
 @media (min-width: 1500px) {
   .hero__inner {
     max-width: 860px;
     margin-left: auto;
     margin-right: 6vw;
   }
-  .hero__title br { display: none; }
-  .hero__title { font-size: 5.125rem; white-space: nowrap; }
+  .hero__title { font-size: clamp(4.2rem, 4vw, 5.4rem); }
   .hero__eyebrow { font-size: 1rem; }
   .hero-features__label { font-size: 1.05rem; }
   
