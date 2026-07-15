@@ -903,7 +903,7 @@ window.addEventListener('scroll', () => {
     h1.parentNode.appendChild(probe);
     var max = 0;
     PHRASES.forEach(function(p){
-      probe.innerHTML = '<span class="hero__title-inner">' + p + '</span>';
+      probe.innerHTML = '<span class="hero__title-inner"><span class="hero__phrase">' + p + '</span></span>';
       max = Math.max(max, probe.offsetHeight);
     });
     probe.parentNode.removeChild(probe);
