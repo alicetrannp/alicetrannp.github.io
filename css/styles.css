@@ -1719,7 +1719,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 
 /* ---------- Hero headline rotator ---------- */
 .hero__title { display: flex; align-items: center; }
-.hero__title-inner { display: grid; width: 100%; }
+.hero__title-inner { display: grid; width: 100%; align-items: center; }
 .hero__phrase { grid-area: 1 / 1; display: block; }
 .hero__title .rword { display: inline-block; white-space: nowrap; }
 .hero__title .rchar {
