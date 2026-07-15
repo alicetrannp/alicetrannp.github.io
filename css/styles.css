@@ -257,8 +257,16 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   position: absolute; inset: 0; z-index: -1;
   background:
     linear-gradient(rgba(255,255,255,.12), rgba(255,255,255,.12)),
-    url('../img/herofinal-desktop3.webp') left center/cover no-repeat,
+    url('../img/herofinal-desktop3.webp') 62% center/cover no-repeat,
     var(--ivory, #F7F2EA);
+}
+@media (min-width: 1400px) {
+  .hero__bg {
+    background:
+      linear-gradient(rgba(255,255,255,.12), rgba(255,255,255,.12)),
+      url('../img/herofinal-desktop3.webp') right center/112% auto no-repeat,
+      var(--ivory, #F7F2EA);
+  }
 }
 @media (max-width: 960px) {
   .hero__bg {
