@@ -24,6 +24,14 @@
   <noscript><link rel="stylesheet" href="css/fonts.css"></noscript>
   <style>
   :root{--sans:"Be Vietnam Pro",system-ui,sans-serif;}
+  /* VN copy runs longer than EN: cap the largest headline tier and slim the feature row */
+  @media (min-width: 1500px) {
+    .hero__title { font-size: 5rem !important; }
+  }
+  @media (min-width: 961px) {
+    .hero-features__label { font-size: .88rem !important; }
+    .hero-features__item { padding: 0 .8rem !important; }
+  }
   .nav__dropdown-wrap { position:relative; display:inline-flex; align-items:center; }
   .nav__dropdown-wrap > a { display:flex; align-items:center; gap:.25rem; }
   .nav__dropdown {
@@ -774,6 +782,7 @@ window.addEventListener('scroll', () => {
 
   function start(){
     measure();
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(measure); }
     var rT;
     window.addEventListener('resize', function(){ clearTimeout(rT); rT = setTimeout(measure, 250); });
     inner.innerHTML = '';

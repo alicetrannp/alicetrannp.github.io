@@ -917,6 +917,7 @@ window.addEventListener('scroll', () => {
 
   function start(){
     measure();
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(measure); }
     var rT;
     window.addEventListener('resize', function(){ clearTimeout(rT); rT = setTimeout(measure, 250); });
     inner.innerHTML = '';
