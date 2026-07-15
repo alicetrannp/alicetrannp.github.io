@@ -305,7 +305,6 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   text-align: center;
 }
 @media (min-width: 641px) {
-  .hero__title, .hero__inner .hero__lede { text-align: left; }
   .hero-features__item { padding: 0 1.1rem; }
   .hero-features__item:first-child { padding-left: 0; }
   .hero-features__item:last-child { padding-right: 0; }
@@ -325,8 +324,8 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     text-align: center;
   }
   .hero__lede { font-size: clamp(17px, 1.05vw, 20px); max-width: 54ch; }
-  .hero__title { font-size: clamp(2.4rem, 5.2vw, 4.6rem); margin-left: 0; margin-right: 0; }
-  .hero__inner .hero__lede { margin-left: 0; margin-right: 0; }
+  .hero__title { font-size: clamp(2.4rem, 5.2vw, 4.6rem); }
+  .hero__inner .hero__lede { margin-left: auto; margin-right: auto; }
 }
 @media (min-width: 1500px) {
   .hero__inner {
