@@ -356,7 +356,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 @media (max-width: 960px) {
   .hero__title {
-    font-size: clamp(2.2rem, 8vw, 4rem);
+    font-size: clamp(2.7rem, 9.6vw, 4.2rem);
   }
 }
 .hero__lede {
@@ -546,10 +546,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   .hero__inner { text-align: right; }
   .hero-features__label br { display: none; }
 
-  .hero__booking-note {
-    font-size: .85rem;
-    line-height: 1.7;
-  }
+  .hero__booking-note { display: none; }
   .hero__title { margin-left: 0; margin-right: 0; }
   .hero__inner .hero__lede { max-width: 46ch; margin-left: auto; margin-right: 0; }
   .hero-features {
