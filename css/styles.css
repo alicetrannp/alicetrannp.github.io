@@ -306,6 +306,17 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 }
 @media (min-width: 641px) {
   .hero__title, .hero__inner .hero__lede { text-align: left; }
+  .hero-features__item { padding: 0 1.1rem; }
+  .hero-features__item:first-child { padding-left: 0; }
+  .hero-features__item:last-child { padding-right: 0; }
+}
+@media (min-width: 641px) and (max-width: 960px) {
+  .hero__inner {
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 @media (min-width: 961px) {
   .hero__inner {
