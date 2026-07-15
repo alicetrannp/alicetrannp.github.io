@@ -534,7 +534,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   flex-shrink: 0;
 }
 @media (max-width: 640px) {
-  .hero__inner { text-align: left; }
+  .hero__inner { text-align: right; }
   .hero__title { margin-left: 0; margin-right: 0; }
   .hero__inner .hero__lede { margin-left: 0; margin-right: 0; }
   .hero-features {
@@ -542,13 +542,13 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     align-items: stretch;
     width: 100%;
     max-width: 340px;
-    margin-left: 0;
-    margin-right: auto;
+    margin-left: auto;
+    margin-right: 0;
   }
   .hero-features__item {
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: flex-start;
-    text-align: left;
+    text-align: right;
     gap: .85rem;
     padding: .85rem .35rem;
   }
@@ -569,8 +569,8 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     flex-direction: column;
     width: 100%;
     max-width: 340px;
-    margin-left: 0;
-    margin-right: auto;
+    margin-left: auto;
+    margin-right: 0;
   }
   .hero__actions .btn {
     width: 100%;
