@@ -304,17 +304,18 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   margin: 0 auto;
   text-align: center;
 }
+@media (min-width: 641px) {
+  .hero__title, .hero__inner .hero__lede { text-align: left; }
+}
 @media (min-width: 961px) {
   .hero__inner {
     max-width: 620px;
     margin: 0 clamp(2rem, 6vw, 7rem) 0 auto;
-    text-align: left;
+    text-align: center;
   }
   .hero__lede { font-size: clamp(17px, 1.05vw, 20px); max-width: 54ch; }
   .hero__title { font-size: clamp(2.4rem, 5.2vw, 4.6rem); margin-left: 0; margin-right: 0; }
   .hero__inner .hero__lede { margin-left: 0; margin-right: 0; }
-  .hero__inner .hero-features { margin-left: 0; justify-content: flex-start; }
-  .hero__inner .hero__actions { justify-content: flex-start; }
 }
 @media (min-width: 1500px) {
   .hero__inner {
