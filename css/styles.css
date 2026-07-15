@@ -560,7 +560,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     line-height: 1.5;
   }
   .hero__title { margin-left: 0; margin-right: 0; }
-  .hero__inner .hero__lede { max-width: none; margin-left: 1rem; margin-right: 0; }
+  .hero__inner .hero__lede { max-width: none; margin-left: 2rem; margin-right: 0; }
   .hero-features {
     flex-direction: column;
     align-items: stretch;
