@@ -539,7 +539,10 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   flex-shrink: 0;
 }
 @media (max-width: 640px) {
+  .hero { padding-left: 2rem; padding-right: 2rem; }
+  .hero__eyebrow-ages { display: none; }
   .hero__inner { text-align: right; }
+  .hero-features__label br { display: none; }
   .hero__title { margin-left: 0; margin-right: 0; }
   .hero__inner .hero__lede { margin-left: 0; margin-right: 0; }
   .hero-features {
@@ -567,8 +570,9 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     max-width: none;
   }
   .hero-features__divider {
-    width: 100%;
+    width: 62%;
     height: 1px;
+    margin-left: auto;
   }
   .hero__actions {
     flex-direction: column;
