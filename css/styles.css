@@ -312,26 +312,25 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 @media (min-width: 641px) and (max-width: 960px) {
   .hero__inner {
     max-width: 620px;
-    margin-left: clamp(1rem, 4vw, 3rem);
+    margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: left;
   }
   .hero__title { font-size: clamp(3.4rem, 8.5vw, 4.6rem); }
 }
 @media (min-width: 961px) {
   .hero__inner {
     max-width: 620px;
-    margin: 0 auto 0 clamp(1rem, 4vw, 3rem);
-    text-align: center;
+    margin: 0 auto;
+    text-align: left;
   }
   .hero__lede { font-size: clamp(17px, 1.05vw, 20px); max-width: 54ch; }
   .hero__title { font-size: clamp(2.4rem, 5.2vw, 4.6rem); }
-  .hero__inner .hero__lede { margin-left: auto; margin-right: auto; }
 }
 @media (min-width: 1500px) {
   .hero__inner {
     max-width: 860px;
-    margin-left: clamp(1rem, 4vw, 3rem);
+    margin-left: auto;
     margin-right: auto;
   }
   .hero__title { font-size: clamp(4.2rem, 4vw, 5.4rem); }
@@ -1716,6 +1715,11 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
     transition-duration: 0.001ms !important;
   }
   [data-reveal] { opacity: 1; transform: none; }
+}
+
+@media (min-width: 641px) {
+  .hero__inner .hero__lede { margin-left: 0; margin-right: 0; }
+  .hero__booking-note { text-align: center; }
 }
 
 /* ---------- Hero headline sizes (must come after base .hero__title) ---------- */
