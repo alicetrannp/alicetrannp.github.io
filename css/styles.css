@@ -321,7 +321,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 @media (min-width: 961px) {
   .hero__inner {
     max-width: 620px;
-    margin: 0 auto;
+    margin: 0 auto 0 clamp(1rem, 4vw, 3rem);
     text-align: center;
   }
   .hero__lede { font-size: clamp(17px, 1.05vw, 20px); max-width: 54ch; }
@@ -331,7 +331,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 @media (min-width: 1500px) {
   .hero__inner {
     max-width: 860px;
-    margin-left: auto;
+    margin-left: clamp(1rem, 4vw, 3rem);
     margin-right: auto;
   }
   .hero__title { font-size: clamp(4.2rem, 4vw, 5.4rem); }
