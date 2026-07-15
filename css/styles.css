@@ -247,7 +247,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   overflow: hidden;
   isolation: isolate;
 }
-@media (max-width: 640px) {
+@media (max-width: 960px) {
   .hero {
     min-height: auto;
     padding: 8.5rem clamp(1.25rem, 4vw, 3rem) 2.5rem;
@@ -304,19 +304,10 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   margin: 0 auto;
   text-align: center;
 }
-@media (min-width: 641px) {
+@media (min-width: 961px) {
   .hero-features__item { padding: 0 1.1rem; }
   .hero-features__item:first-child { padding-left: 0; }
   .hero-features__item:last-child { padding-right: 0; }
-}
-@media (min-width: 641px) and (max-width: 960px) {
-  .hero__inner {
-    max-width: 620px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-  }
-  .hero__title { font-size: clamp(3.4rem, 8.5vw, 4.6rem); }
 }
 @media (min-width: 961px) {
   .hero__inner {
@@ -362,9 +353,9 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   font-style: italic;
   color: #55684F;
 }
-@media (max-width: 640px) {
+@media (max-width: 960px) {
   .hero__title {
-    font-size: clamp(2.2rem, 11vw, 3.4rem);
+    font-size: clamp(2.2rem, 8vw, 4rem);
   }
 }
 .hero__lede {
@@ -548,7 +539,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   background: rgba(138,132,122,.35);
   flex-shrink: 0;
 }
-@media (max-width: 640px) {
+@media (max-width: 960px) {
   .hero { padding-left: 2rem; padding-right: 2rem; }
   .hero__eyebrow-ages { display: none; }
   .hero__inner { text-align: right; }
@@ -1717,15 +1708,12 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   [data-reveal] { opacity: 1; transform: none; }
 }
 
-@media (min-width: 641px) {
+@media (min-width: 961px) {
   .hero__inner .hero__lede { margin-left: 0; margin-right: 0; }
   .hero__booking-note { text-align: center; }
 }
 
 /* ---------- Hero headline sizes (must come after base .hero__title) ---------- */
-@media (min-width: 641px) and (max-width: 960px) {
-  .hero__title { font-size: clamp(3.4rem, 8.5vw, 4.6rem); }
-}
 @media (min-width: 961px) {
   .hero__title { font-size: clamp(2.4rem, 5.2vw, 4.6rem); }
 }
