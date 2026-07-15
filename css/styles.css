@@ -312,7 +312,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 @media (min-width: 641px) and (max-width: 960px) {
   .hero__inner {
     max-width: 620px;
-    margin-left: auto;
+    margin-left: clamp(1rem, 4vw, 3rem);
     margin-right: auto;
     text-align: center;
   }
