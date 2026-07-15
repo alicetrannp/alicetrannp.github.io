@@ -18,7 +18,7 @@
   <link rel="preload" as="image" href="img/herofinal-desktop3.webp" fetchpriority="high" media="(min-width: 961px)" />
   <link rel="preload" as="image" href="img/herofinal-mobile.webp" fetchpriority="high" media="(max-width: 960px)" />
   <link rel="preload" as="image" href="img/alice-portrait.webp" type="image/webp" />
-  <link rel="stylesheet" href="css/styles.css?v=20260715j" />
+  <link rel="stylesheet" href="css/styles.css?v=20260715k" />
   <link rel="preload" href="css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="css/fonts.css"></noscript>
   <link rel="canonical" href="https://alicetrannp.com/" />
@@ -883,36 +883,19 @@ window.addEventListener('scroll', () => {
     });
   }
 
-  function setPhrase(html){
-    inner.innerHTML = html;
-    wrapWords(inner);
-  }
-
-  function chars(){ return inner.querySelectorAll('.rchar'); }
-
-  function dustOut(done){
-    chars().forEach(function(sp){
-      sp.style.transitionDelay = (Math.random() * 0.35).toFixed(2) + 's';
-      sp.style.filter = 'blur(6px)';
-      sp.style.opacity = '0';
-    });
-    setTimeout(done, 1500);
-  }
-
-  function dustIn(){
-    chars().forEach(function(sp){
-      sp.style.transition = 'none';
-      sp.style.transitionDelay = '0s';
-      sp.style.opacity = '0';
-      sp.style.filter = 'blur(6px)';
-    });
-    void inner.offsetWidth;
-    chars().forEach(function(sp){
-      sp.style.transition = '';
-      sp.style.transitionDelay = (Math.random() * 0.3).toFixed(2) + 's';
-      sp.style.opacity = '1';
-      sp.style.filter = 'blur(0)';
-    });
+  function buildLayer(html, hidden){
+    var layer = document.createElement('span');
+    layer.className = 'hero__phrase';
+    layer.innerHTML = html;
+    wrapWords(layer);
+    if (hidden) {
+      layer.querySelectorAll('.rchar').forEach(function(sp){
+        sp.style.transition = 'none';
+        sp.style.opacity = '0';
+        sp.style.filter = 'blur(6px)';
+      });
+    }
+    return layer;
   }
 
   function measure(){
@@ -936,13 +919,28 @@ window.addEventListener('scroll', () => {
     measure();
     var rT;
     window.addEventListener('resize', function(){ clearTimeout(rT); rT = setTimeout(measure, 250); });
-    setPhrase(PHRASES[0]);
+    inner.innerHTML = '';
+    var current = buildLayer(PHRASES[0], false);
+    inner.appendChild(current);
     setInterval(function(){
-      dustOut(function(){
-        idx = (idx + 1) % PHRASES.length;
-        setPhrase(PHRASES[idx]);
-        dustIn();
+      idx = (idx + 1) % PHRASES.length;
+      var next = buildLayer(PHRASES[idx], true);
+      inner.appendChild(next);
+      void inner.offsetWidth;
+      current.querySelectorAll('.rchar').forEach(function(sp){
+        sp.style.transitionDelay = (Math.random() * 0.35).toFixed(2) + 's';
+        sp.style.opacity = '0';
+        sp.style.filter = 'blur(6px)';
       });
+      next.querySelectorAll('.rchar').forEach(function(sp){
+        sp.style.transition = '';
+        sp.style.transitionDelay = (0.25 + Math.random() * 0.5).toFixed(2) + 's';
+        sp.style.opacity = '1';
+        sp.style.filter = 'blur(0)';
+      });
+      var old = current;
+      current = next;
+      setTimeout(function(){ if (old.parentNode) old.parentNode.removeChild(old); }, 2200);
     }, 5200);
   }
 
