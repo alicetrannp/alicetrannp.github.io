@@ -1724,6 +1724,6 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 .hero__title .rword { display: inline-block; white-space: nowrap; }
 .hero__title .rchar {
   display: inline-block;
-  transition: opacity 1.2s ease, filter 1.2s ease;
+  transition: opacity 1.9s ease, filter 1.9s ease;
   will-change: opacity, filter;
 }

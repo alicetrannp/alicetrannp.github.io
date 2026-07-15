@@ -18,7 +18,7 @@
   <link rel="preload" as="image" href="img/herofinal-desktop3.webp" fetchpriority="high" media="(min-width: 961px)" />
   <link rel="preload" as="image" href="img/herofinal-mobile.webp" fetchpriority="high" media="(max-width: 960px)" />
   <link rel="preload" as="image" href="img/alice-portrait.webp" type="image/webp" />
-  <link rel="stylesheet" href="css/styles.css?v=20260715k" />
+  <link rel="stylesheet" href="css/styles.css?v=20260715l" />
   <link rel="preload" href="css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="css/fonts.css"></noscript>
   <link rel="canonical" href="https://alicetrannp.com/" />
@@ -928,20 +928,20 @@ window.addEventListener('scroll', () => {
       inner.appendChild(next);
       void inner.offsetWidth;
       current.querySelectorAll('.rchar').forEach(function(sp){
-        sp.style.transitionDelay = (Math.random() * 0.35).toFixed(2) + 's';
+        sp.style.transitionDelay = (Math.random() * 0.5).toFixed(2) + 's';
         sp.style.opacity = '0';
         sp.style.filter = 'blur(6px)';
       });
       next.querySelectorAll('.rchar').forEach(function(sp){
         sp.style.transition = '';
-        sp.style.transitionDelay = (0.25 + Math.random() * 0.5).toFixed(2) + 's';
+        sp.style.transitionDelay = (0.5 + Math.random() * 0.7).toFixed(2) + 's';
         sp.style.opacity = '1';
         sp.style.filter = 'blur(0)';
       });
       var old = current;
       current = next;
-      setTimeout(function(){ if (old.parentNode) old.parentNode.removeChild(old); }, 2200);
-    }, 5200);
+      setTimeout(function(){ if (old.parentNode) old.parentNode.removeChild(old); }, 3600);
+    }, 8000);
   }
 
   if (document.readyState === 'complete') { start(); }
