@@ -662,3 +662,14 @@ footer a:hover { color: var(--sage-lt); }
 @media (min-width: 641px) {
   .nav { top: 42px; }
 }
+
+/* Mobile nav: keep brand + CTA + hamburger on one comfortable row */
+@media (max-width: 960px) {
+  .nav__cta { padding: .55rem .95rem; font-size: .82rem; white-space: nowrap; }
+  .nav__first { font-size: clamp(.92rem, 4.4vw, 1.15rem); }
+}
+@media (max-width: 430px) {
+  .nav__inner { padding-left: 1rem; padding-right: 1rem; gap: .5rem; }
+  .nav__first { font-size: .88rem; }
+  .nav__cta { font-size: .78rem; padding: .5rem .8rem; }
+}
