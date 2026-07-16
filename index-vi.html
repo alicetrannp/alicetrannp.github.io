@@ -36,11 +36,11 @@
   .nav__dropdown-wrap > a { display:flex; align-items:center; gap:.25rem; }
   .nav__dropdown {
     display:none; position:absolute; top:100%; left:50%; transform:translateX(-50%);
-    padding-top:12px; min-width:220px; z-index:9000;
+    padding-top:12px; min-width:580px; z-index:9000;
   }
   .nav__dropdown-inner {
     background:#fff; border-radius:16px; box-shadow:0 12px 40px rgba(0,0,0,.13);
-    padding:1.5rem; display:grid; gap:0 1.5rem;
+    padding:1.5rem; display:grid; grid-template-columns:repeat(3,1fr); gap:0 1.5rem;
     border:1px solid rgba(0,0,0,.06); position:relative;
   }
   .nav__dropdown-inner::before {
@@ -51,6 +51,18 @@
   .nav__dropdown-wrap:hover .nav__dropdown,
   .nav__dropdown-wrap.is-open .nav__dropdown { display:grid; }
   .nav__dropdown-col { display:flex; flex-direction:column; gap:.1rem; }
+  .nav__dropdown-see-all {
+    grid-column:1/-1; border-top:1px solid rgba(0,0,0,.07);
+    margin-top:.75rem; padding-top:.75rem;
+  }
+  .nav__dropdown-see-all a {
+    font-size:.8rem; color:#7A9E7E; font-weight:600;
+  }
+  .nav__dropdown-label {
+    font-size:.68rem; letter-spacing:.16em; text-transform:uppercase;
+    color:#7A9E7E; font-weight:700; margin:0 0 .5rem; padding-bottom:.4rem;
+    border-bottom:1px solid rgba(0,0,0,.07);
+  }
   .nav__dropdown a {
     font-size:.875rem; color:#2E4A3C; text-decoration:none; padding:.3rem .5rem;
     border-radius:6px; transition:background .15s;
@@ -79,6 +91,21 @@
     .nav__dropdown-inner::before { display:none; }
     .nav__dropdown-col { gap:.4rem; margin-bottom:.75rem; }
     .nav__dropdown a { font-size:.92rem; color:#1F332A; padding:.25rem 0; }
+    .nav__dropdown-label { color:rgba(31,51,42,.6); }
+    .nav__dropdown-see-all { border-top:1px solid rgba(0,0,0,.08); }
+
+    /* Only expand the About dropdown on mobile; Rates and Conditions
+       collapse back to a single tappable link (too many items to list) */
+    .nav__links > .nav__dropdown-wrap:nth-of-type(2),
+    .nav__links > .nav__dropdown-wrap:nth-of-type(3) {
+      display: inline-flex;
+      flex-direction: row;
+      width: auto;
+    }
+    .nav__links > .nav__dropdown-wrap:nth-of-type(2) .nav__dropdown,
+    .nav__links > .nav__dropdown-wrap:nth-of-type(3) .nav__dropdown {
+      display: none !important;
+    }
   }
   </style>
   <script type="application/ld+json">
@@ -136,14 +163,62 @@
         </div>
       </div>
       <a href="pages/services-vi.html">Dịch vụ</a>
-      <a href="pages/rates-vi.html">Gói khám</a>
-      <a href="pages/conditions-vi.html">Bệnh tâm thần</a>
+      <div class="nav__dropdown-wrap">
+        <a href="pages/rates-vi.html">Gói khám</a>
+        <div class="nav__dropdown">
+          <div class="nav__dropdown-inner" style="grid-template-columns:1fr;min-width:220px;">
+            <div class="nav__dropdown-col">
+              <a href="pages/rates-vi.html#insurance">Bảo hiểm chúng tôi chấp nhận</a>
+              <a href="pages/rates-vi.html#self-pay">Giá tự chi trả</a>
+              <a href="pages/rates-vi.html#cancellation">Chính sách hủy lịch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav__dropdown-wrap">
+        <a href="pages/conditions-vi.html">Bệnh tâm thần</a>
+        <div class="nav__dropdown">
+          <div class="nav__dropdown-inner">
+            <div class="nav__dropdown-col">
+              <p class="nav__dropdown-label">Tâm trạng</p>
+              <a href="pages/condition-depression-vi.html">Trầm cảm</a>
+              <a href="pages/condition-bipolar-vi.html">Rối loạn lưỡng cực</a>
+              <a href="pages/condition-postpartum-vi.html">Trầm cảm sau sinh</a>
+              <a href="pages/condition-perinatal-vi.html">Tâm trạng chu sinh</a>
+              <a href="pages/condition-grief-vi.html">Đau buồn &amp; Mất mát</a>
+            </div>
+            <div class="nav__dropdown-col">
+              <p class="nav__dropdown-label">Lo âu &amp; Căng thẳng</p>
+              <a href="pages/condition-anxiety-vi.html">Lo âu</a>
+              <a href="pages/condition-panic-vi.html">Rối loạn hoảng sợ</a>
+              <a href="pages/condition-ocd-vi.html">OCD</a>
+              <a href="pages/condition-trauma-ptsd-vi.html">Sang chấn &amp; PTSD</a>
+              <a href="pages/condition-burnout-vi.html">Kiệt sức</a>
+            </div>
+            <div class="nav__dropdown-col">
+              <p class="nav__dropdown-label">Tập trung &amp; Chú ý</p>
+              <a href="pages/condition-adhd-vi.html">ADHD</a>
+              <a href="pages/condition-insomnia-vi.html">Mất ngủ</a>
+              <p class="nav__dropdown-label" style="margin-top:1rem;">Bản sắc &amp; Cuộc sống</p>
+              <a href="pages/condition-identity-vi.html">Bản sắc &amp; Cảm giác thuộc về</a>
+              <a href="pages/condition-self-esteem-vi.html">Lòng tự trọng</a>
+              <a href="pages/condition-anger-vi.html">Cơn giận</a>
+              <a href="pages/condition-life-transitions-vi.html">Giai đoạn chuyển tiếp</a>
+              <a href="pages/condition-cultural-vi.html">Áp lực văn hóa</a>
+              <a href="pages/condition-international-vi.html">Du học sinh</a>
+            </div>
+            <div class="nav__dropdown-see-all">
+              <a href="pages/conditions-vi.html">Xem tất cả bệnh &#8594;</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <a href="pages/blog/index-vi.html">Blog</a>
       <a href="pages/faq-vi.html">FAQ</a>
       <a href="pages/contact-vi.html">Liên hệ</a>
     </div>
     <div style="display:flex;align-items:center;gap:0.5rem;flex-shrink:0;">
-      
+      <a href="https://doxy.me/alicetran" target="_blank" class="nav__visit">Tham gia hẹn</a>
       <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav__cta">Đặt lịch ngay</a>
     </div>
     <button class="nav__toggle" onclick="toggleNav()" aria-label="Menu">
@@ -637,8 +712,17 @@
         <a href="tel:7037919099" style="display:block;font-size:.92rem;color:rgba(251,247,240,.8);margin:0 0 .35rem;">Điện thoại: (703) 791-9099 (Gọi hoặc nhắn tin)</a>
         <span style="display:block;font-size:.82rem;color:rgba(251,247,240,.4);margin:0 0 .35rem;">Fax: (804) 807-9399</span>
         <a href="mailto:info@alicetrannp.com" style="display:block;font-size:.92rem;color:rgba(251,247,240,.8);margin:0 0 .35rem;">Email: info@alicetrannp.com</a>
-        <a href="mailto:support@alicetrannp.com" style="display:block;font-size:.92rem;color:rgba(251,247,240,.8);margin:0 0 .35rem;">Thanh toán: support@alicetrannp.com</a>
+        <a href="mailto:support@alicetrannp.com" style="display:block;font-size:.92rem;color:rgba(251,247,240,.8);margin:0 0 .35rem;">Bảo hiểm và thanh toán: support@alicetrannp.com</a>
         <span style="display:block;font-size:.88rem;color:rgba(251,247,240,.5);line-height:1.6;">Địa chỉ: 3060 Williams Drive, Suite 300<br>Fairfax, VA 22031</span>
+        <div style="margin-top:1rem;border-radius:8px;overflow:hidden;opacity:.8;">
+          <a href="https://maps.app.goo.gl/rF1MSzEi8nVFWMTZ7" target="_blank" rel="noopener" style="display:block;">
+            <iframe
+              title="Bản đồ Alice Tran Psychiatric Care"
+              src="https://maps.google.com/maps?q=3060+Williams+Drive+Suite+300+Fairfax+VA+22031&z=14&output=embed"
+              width="100%" height="110" style="border:0;display:block;pointer-events:none;" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </a>
+        </div>
       </div>
     </div>
     <div class="footer__col">
@@ -653,21 +737,23 @@
       <a href="pages/conditions-vi.html">Bệnh tâm thần</a>
       <a href="pages/faq-vi.html">Câu hỏi thường gặp</a>
       <a href="pages/contact-vi.html">Liên hệ</a>
+      <a href="pages/referring-providers.html">Dành cho bác sĩ giới thiệu</a>
     </div>
     <div class="footer__col">
       <p class="footer__label">Khu vực phục vụ</p>
       <span style="font-size:.85rem;color:rgba(251,247,240,.55);line-height:2;">
-        Falls Church · Vienna · McLean<br>
-        Tysons · Arlington · Alexandria<br>
-        Fairfax · Reston · Herndon<br>
-        Ashburn · Leesburg · Woodbridge<br>
-        Richmond · Virginia Beach<br>
-        Charlottesville · Roanoke<br>
+        <a href="pages/psychiatric-care-falls-church-va.html" style="display:inline;color:inherit;text-decoration:none;">Falls Church</a> · <a href="pages/psychiatric-care-vienna-va.html" style="display:inline;color:inherit;text-decoration:none;">Vienna</a> · <a href="pages/psychiatric-care-mclean-va.html" style="display:inline;color:inherit;text-decoration:none;">McLean</a><br>
+        <a href="pages/psychiatric-care-tysons-va.html" style="display:inline;color:inherit;text-decoration:none;">Tysons</a> · <a href="pages/psychiatric-care-arlington-va.html" style="display:inline;color:inherit;text-decoration:none;">Arlington</a> · <a href="pages/psychiatric-care-alexandria-va.html" style="display:inline;color:inherit;text-decoration:none;">Alexandria</a><br>
+        <a href="pages/psychiatric-care-fairfax-va.html" style="display:inline;color:inherit;text-decoration:none;">Fairfax</a> · <a href="pages/psychiatric-care-reston-va.html" style="display:inline;color:inherit;text-decoration:none;">Reston</a> · <a href="pages/psychiatric-care-herndon-va.html" style="display:inline;color:inherit;text-decoration:none;">Herndon</a><br>
+        <a href="pages/psychiatric-care-loudoun-county-va.html" style="display:inline;color:inherit;text-decoration:none;">Ashburn</a> · <a href="pages/psychiatric-care-loudoun-county-va.html" style="display:inline;color:inherit;text-decoration:none;">Leesburg</a> · <a href="pages/telehealth-psychiatry-prince-william-va.html" style="display:inline;color:inherit;text-decoration:none;">Woodbridge</a><br>
+        <a href="pages/psychiatric-care-annandale-va.html" style="display:inline;color:inherit;text-decoration:none;">Annandale</a> &middot; <a href="pages/psychiatric-care-springfield-va.html" style="display:inline;color:inherit;text-decoration:none;">Springfield</a><br>
+        <a href="pages/psychiatric-care-richmond-va.html" style="display:inline;color:inherit;text-decoration:none;">Richmond</a> · <a href="pages/mental-health-care-hampton-roads-va.html" style="display:inline;color:inherit;text-decoration:none;">Virginia Beach</a><br>
+        <a href="pages/psychiatric-visits-charlottesville-va.html" style="display:inline;color:inherit;text-decoration:none;">Charlottesville</a> · <a href="pages/mental-health-roanoke-lynchburg-va.html" style="display:inline;color:inherit;text-decoration:none;">Roanoke</a><br>
         <em style="font-style:normal;color:rgba(251,247,240,.35);">&amp; toàn Virginia qua telehealth</em>
       </span>
     </div>
     <div class="footer__col">
-      <h4>Giờ làm việc</h4>
+      <p class="footer__label">Giờ làm việc</p>
       <ul class="footer__hours">
         <li><span><b>Thứ Hai</b> <span>9am – 4pm</span></span></li>
         <li><span><b>Thứ Ba</b> <span>9am – 4pm</span></span></li>
@@ -679,7 +765,7 @@
       </ul>
     </div>
     <div class="footer__fine">
-      © 2026 Alice Tran Nurse Practitioner LLC. Tất cả quyền được bảo lưu.
+      © 2026 Alice Tran Nurse Practitioner LLC. Tất cả quyền được bảo lưu. &nbsp;·&nbsp; <a href="pages/privacy.html">Quyền riêng tư</a> · <a href="pages/terms.html">Điều khoản</a> · <a href="pages/disclaimer.html">Miễn trừ trách nhiệm</a> · <a href="pages/accessibility.html">Trợ năng</a>
     </div>
   </div>
 </footer>
