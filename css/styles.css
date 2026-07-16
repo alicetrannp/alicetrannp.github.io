@@ -748,9 +748,9 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   position: absolute;
   bottom: -1.2rem; right: -.5rem;
   background: var(--ivory-soft, #F9F6F2);
-  padding: .6rem 1.1rem;
+  padding: .75rem 1.25rem;
   border-radius: 16px;
-  font-size: .8rem;
+  font-size: .95rem;
   color: var(--forest-deep);
   font-weight: 700;
   letter-spacing: .03em;
