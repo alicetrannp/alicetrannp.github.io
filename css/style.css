@@ -662,3 +662,67 @@ footer a:hover { color: var(--sage-lt); }
 @media (min-width: 641px) {
   .nav { top: 42px; }
 }
+
+
+/* =========================================================
+   Site-wide footer (matches homepage)
+   ========================================================= */
+.footer {
+  background: #2E4A3C;
+  color: rgba(251, 247, 240, .8);
+  padding: 2.5rem clamp(1.25rem, 4vw, 3rem) 2rem;
+}
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 0.85fr 1.1fr 0.85fr;
+  gap: 2rem;
+  align-items: start;
+}
+.footer__brand { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
+.footer__brand div { display: grid; gap: .4rem; }
+.footer__brand strong { font-family: var(--serif); font-weight: 400; font-size: 1.2rem; color: #F9F6F2; }
+.footer__brand span { font-size: .85rem; line-height: 1.5; }
+.footer .footer__label {
+  font-family: var(--sans);
+  font-size: .72rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: rgba(251, 247, 240, .55);
+  margin: 0 0 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.footer .footer__col a,
+.footer .footer__col p {
+  display: block;
+  font-size: .92rem;
+  color: rgba(251, 247, 240, .8);
+  margin: 0 0 .5rem;
+  line-height: 1.6;
+  transition: color .2s;
+}
+.footer .footer__col a:hover { color: #E8CFC0; }
+.footer .footer__col p { color: rgba(251, 247, 240, .6); }
+.footer__hours { display: flex; flex-direction: column; gap: .25rem; margin: 0; padding: 0; list-style: none; }
+.footer__hours span { display: flex; justify-content: flex-start; gap: .75rem; font-size: .88rem; }
+.footer__hours b { color: rgba(251, 247, 240, .75); font-weight: 500; }
+.footer__fine {
+  grid-column: 1 / -1;
+  border-top: 1px solid rgba(255,255,255,.1);
+  padding-top: 1.5rem;
+  margin: 2rem 0 0;
+  font-size: .82rem;
+  color: rgba(251, 247, 240, .5);
+}
+.footer__fine a { color: rgba(251,247,240,.5); text-decoration: none; display: inline; transition: color 0.2s; }
+.footer__fine a:hover { color: rgba(251,247,240,.8); }
+@media (max-width: 960px) {
+  .footer__inner { grid-template-columns: 1fr 1fr; }
+  .footer__brand { grid-column: 1 / -1; }
+  .footer__inner > .footer__col:last-of-type { grid-column: 1 / -1; }
+}
+@media (max-width: 520px) {
+  .footer__inner { grid-template-columns: 1fr; }
+}
