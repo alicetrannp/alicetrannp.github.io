@@ -1673,7 +1673,6 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 
   .footer__inner { grid-template-columns: 1fr 1fr; }
   .footer__brand { grid-column: 1 / -1; }
-  .footer__inner > .footer__col:last-of-type { grid-column: 1 / -1; }
 
   .hero__meta { grid-template-columns: 1fr 1fr; }
 
@@ -1684,7 +1683,7 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 @media (max-width: 520px) {
   .hero__meta { grid-template-columns: 1fr; }
   .credentials { grid-template-columns: 1fr; }
-  .footer__inner { grid-template-columns: 1fr; }
+  .footer__inner { grid-template-columns: 1fr 1fr; column-gap: 1.25rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
