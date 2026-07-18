@@ -689,9 +689,9 @@ footer a:hover { color: var(--sage-lt); }
   font-size: .72rem;
   letter-spacing: .22em;
   text-transform: uppercase;
-  color: rgba(251, 247, 240, .55);
+  color: rgba(251, 247, 240, .85);
   margin: 0 0 1rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.4;
 }
 .footer .footer__col a,

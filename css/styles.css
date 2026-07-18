@@ -1579,9 +1579,9 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   font-size: .72rem;
   letter-spacing: .22em;
   text-transform: uppercase;
-  color: rgba(251, 247, 240, .55);
+  color: rgba(251, 247, 240, .85);
   margin: 0 0 1rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 .footer__col a,
 .footer__col p {
