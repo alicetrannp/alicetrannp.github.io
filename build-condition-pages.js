@@ -25,7 +25,7 @@ const NAV = `<nav>
 </div>`;
 
 const FOOTER = `<section class="cta-band"><h2 class="section-title">The first step is usually the hardest.</h2><a href="https://alicetran.intakeq.com/booking" target="_blank" class="btn btn-light">Book an Appointment</a><p>No referral needed. Accepting new patients across Virginia.</p></section>
-<footer><div class="footer-grid"><div><div class="footer-brand">Alice Tran Psychiatric Care</div><p class="footer-tagline">Telehealth psychiatric care across Virginia.<br>English &amp; Ti&#7871;ng Vi&#7879;t welcome.</p><br><h4>Contact</h4><a href="tel:7038295227">Phone: (703) 829-5227</a><a href="mailto:info@alicetrannp.com">Email: info@alicetrannp.com</a></div><div><h4>Pages</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="rates.html">Rates &amp; Insurance</a><a href="conditions.html">Conditions</a><a href="blog/index.html">Blog</a><a href="contact.html">Contact</a></div><div><h4>Hours</h4><p style="line-height:2.2;"><b>Mon &ndash; Thu</b> 9am &ndash; 4pm<br><b>Fri &ndash; Sun</b> Closed</p></div></div><div class="footer-copy">&copy; 2026 Alice Tran Psychiatric Care LLC. All rights reserved. &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="disclaimer.html">Disclaimer</a></div></footer>
+<footer><div class="footer-grid"><div><div class="footer-brand">Alice Tran Psychiatric Care</div><p class="footer-tagline">Telehealth psychiatric care across Virginia.<br>English &amp; Ti&#7871;ng Vi&#7879;t welcome.</p><br><h4>Contact</h4><a href="tel:7037919099">Phone: (703) 791-9099</a><a href="mailto:info@alicetrannp.com">Email: info@alicetrannp.com</a></div><div><h4>Pages</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="rates.html">Rates &amp; Insurance</a><a href="conditions.html">Conditions</a><a href="blog/index.html">Blog</a><a href="contact.html">Contact</a></div><div><h4>Hours</h4><p style="line-height:2.2;"><b>Mon &ndash; Thu</b> 9am &ndash; 4pm<br><b>Fri &ndash; Sun</b> Closed</p></div></div><div class="footer-copy">&copy; 2026 Alice Tran Psychiatric Care LLC. All rights reserved. &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="disclaimer.html">Disclaimer</a></div></footer>
 <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>`;
 
 function head(slug, title, desc) {
@@ -46,7 +46,7 @@ function head(slug, title, desc) {
 }
 
 const CTA = (msg) => `<div style="background:var(--sage-lt);border-left:4px solid var(--sage-dk);border-radius:0 16px 16px 0;padding:1.5rem 2rem;margin:2rem 0;">
-      <p style="margin:0;font-size:.95rem;color:var(--forest);">${msg} <a href="https://alicetran.intakeq.com/booking" target="_blank" style="color:var(--green);font-weight:600;">Book now</a> or call (703) 829-5227.</p>
+      <p style="margin:0;font-size:.95rem;color:var(--forest);">${msg} <a href="https://alicetran.intakeq.com/booking" target="_blank" style="color:var(--green);font-weight:600;">Book now</a> or call (703) 791-9099.</p>
     </div>`;
 
 const SEE = (links) => `<p style="font-size:.85rem;color:var(--green-lt);border-top:1px solid var(--border);padding-top:1rem;margin-top:2rem;">See also: ${links}</p>`;

@@ -33,7 +33,7 @@ const FOOTER = `<footer>
       <p class="footer-tagline">Telehealth psychiatric care across Virginia.<br>English &amp; Ti&#7871;ng Vi&#7879;t welcome.</p>
       <br>
       <h4>Contact</h4>
-      <a href="tel:7038295227">Phone: (703) 829-5227 (Call or Text)</a>
+      <a href="tel:7037919099">Phone: (703) 791-9099 (Call or Text)</a>
       <span style="font-size:12px;color:#4a5e44;display:block;line-height:2;">Fax: (804) 807-9399</span>
       <a href="mailto:info@alicetrannp.com">Email: info@alicetrannp.com</a>
     </div>
@@ -121,7 +121,7 @@ const pages = [
   desc: 'Telehealth psychiatric care for adults in Richmond, Henrico, Chesterfield, and Central Virginia. Alice Tran, PMHNP-BC offers psychiatric evaluations, medication management, and therapy. Accepting new patients.',
   keywords: 'psychiatrist Richmond VA, psychiatric care Richmond Virginia, telehealth psychiatry Richmond, mental health provider Richmond VA, PMHNP Richmond Virginia, anxiety depression ADHD Richmond, Henrico Chesterfield psychiatrist',
   canonical: 'https://alicetrannp.com/pages/psychiatric-care-richmond-va.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"City","name":"Richmond"},{"@type":"City","name":"Henrico"},{"@type":"City","name":"Chesterfield"}],"availableLanguage":["English","Vietnamese"]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"City","name":"Richmond"},{"@type":"City","name":"Henrico"},{"@type":"City","name":"Chesterfield"}],"availableLanguage":["English","Vietnamese"]}`,
   body: `
 <div class="loc-hero">
   <span class="section-tag">Richmond &amp; Central Virginia</span>
@@ -224,7 +224,7 @@ const pages = [
   <h2>Accepting new patients across Central Virginia.</h2>
   <p>Telehealth. Board-certified PMHNP. English &amp; Vietnamese.</p>
   <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav-cta" style="font-size:1rem;padding:.8rem 2rem;display:inline-block;">Book Now &rarr;</a>
-  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.45);">Or call or text: <a href="tel:7038295227" style="color:rgba(255,255,255,.7);">(703) 829-5227</a></p>
+  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.45);">Or call or text: <a href="tel:7037919099" style="color:rgba(255,255,255,.7);">(703) 791-9099</a></p>
 </div>`
 },
 
@@ -235,7 +235,7 @@ const pages = [
   desc: 'Telehealth mental health and psychiatric care for adults in Virginia Beach, Norfolk, Chesapeake, Newport News, Hampton, and Portsmouth. Alice Tran, PMHNP-BC. Serving military families, veterans, and civilians.',
   keywords: 'mental health care Hampton Roads VA, psychiatrist Virginia Beach, telehealth psychiatry Norfolk Virginia, mental health provider Chesapeake VA, PMHNP Hampton Roads, military mental health Virginia Beach, anxiety depression Newport News VA',
   canonical: 'https://alicetrannp.com/pages/mental-health-care-hampton-roads-va.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"City","name":"Virginia Beach"},{"@type":"City","name":"Norfolk"},{"@type":"City","name":"Chesapeake"},{"@type":"City","name":"Newport News"}],"availableLanguage":["English","Vietnamese"]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"City","name":"Virginia Beach"},{"@type":"City","name":"Norfolk"},{"@type":"City","name":"Chesapeake"},{"@type":"City","name":"Newport News"}],"availableLanguage":["English","Vietnamese"]}`,
   body: `
 <div class="loc-hero">
   <span class="section-tag">Hampton Roads, Virginia</span>
@@ -332,7 +332,7 @@ const pages = [
   <h2>Mental health care for Hampton Roads adults.</h2>
   <p>Telehealth. Accepting new patients. English &amp; Vietnamese.</p>
   <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav-cta" style="font-size:1rem;padding:.8rem 2rem;display:inline-block;">Book Now &rarr;</a>
-  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.45);">Or call or text: <a href="tel:7038295227" style="color:rgba(255,255,255,.7);">(703) 829-5227</a></p>
+  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.45);">Or call or text: <a href="tel:7037919099" style="color:rgba(255,255,255,.7);">(703) 791-9099</a></p>
 </div>`
 },
 
@@ -343,7 +343,7 @@ const pages = [
   desc: 'Telehealth psychiatric visits for adults in Charlottesville, Albemarle County, and surrounding Virginia. Alice Tran, PMHNP-BC serves UVA community members, academics, students, and Charlottesville residents.',
   keywords: 'psychiatrist Charlottesville VA, psychiatric care Charlottesville Virginia, telehealth mental health Charlottesville, UVA psychiatrist, PMHNP Charlottesville, anxiety depression Charlottesville VA, Albemarle County mental health',
   canonical: 'https://alicetrannp.com/pages/psychiatric-visits-charlottesville-va.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"City","name":"Charlottesville"},{"@type":"AdministrativeArea","name":"Albemarle County"}],"availableLanguage":["English","Vietnamese"]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"City","name":"Charlottesville"},{"@type":"AdministrativeArea","name":"Albemarle County"}],"availableLanguage":["English","Vietnamese"]}`,
   body: `
 <div class="loc-hero">
   <span class="section-tag">Charlottesville &amp; Surrounding Virginia</span>
@@ -433,7 +433,7 @@ const pages = [
   <h2>Psychiatric visits for Charlottesville adults.</h2>
   <p>Telehealth. No waitlist — check availability online. Accepting new patients.</p>
   <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav-cta" style="font-size:1rem;padding:.8rem 2rem;display:inline-block;">Book Now &rarr;</a>
-  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.45);">Or call or text: <a href="tel:7038295227" style="color:rgba(255,255,255,.7);">(703) 829-5227</a></p>
+  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.45);">Or call or text: <a href="tel:7037919099" style="color:rgba(255,255,255,.7);">(703) 791-9099</a></p>
 </div>`
 },
 
@@ -444,7 +444,7 @@ const pages = [
   desc: 'Telehealth mental health and psychiatric care for adults in Roanoke, Lynchburg, Blacksburg, Bedford, and South Central Virginia. Alice Tran, PMHNP-BC. Bridging the mental health provider gap in rural Virginia.',
   keywords: 'mental health Roanoke VA, psychiatrist Roanoke Virginia, telehealth mental health Lynchburg VA, psychiatric care Blacksburg Virginia, PMHNP Roanoke, anxiety depression Roanoke Lynchburg, mental health provider Southwest Virginia',
   canonical: 'https://alicetrannp.com/pages/mental-health-roanoke-lynchburg-va.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"City","name":"Roanoke"},{"@type":"City","name":"Lynchburg"},{"@type":"City","name":"Blacksburg"}],"availableLanguage":["English","Vietnamese"]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"City","name":"Roanoke"},{"@type":"City","name":"Lynchburg"},{"@type":"City","name":"Blacksburg"}],"availableLanguage":["English","Vietnamese"]}`,
   body: `
 <div class="loc-hero">
   <span class="section-tag">Roanoke, Lynchburg &amp; South Central Virginia</span>
@@ -538,7 +538,7 @@ const pages = [
   <h2>Mental health care for Roanoke, Lynchburg, and beyond.</h2>
   <p>Telehealth across all of Virginia. Accepting new patients.</p>
   <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav-cta" style="font-size:1rem;padding:.8rem 2rem;display:inline-block;">Book Now &rarr;</a>
-  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.45);">Or call or text: <a href="tel:7038295227" style="color:rgba(255,255,255,.7);">(703) 829-5227</a></p>
+  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.45);">Or call or text: <a href="tel:7037919099" style="color:rgba(255,255,255,.7);">(703) 791-9099</a></p>
 </div>`
 },
 
@@ -549,7 +549,7 @@ const pages = [
   desc: 'Telehealth psychiatric and mental health care for adults in Harrisonburg, Staunton, Winchester, Front Royal, Waynesboro, and the Shenandoah Valley. Alice Tran, PMHNP-BC. Accepting new patients statewide.',
   keywords: 'telehealth mental health Shenandoah Valley VA, psychiatrist Harrisonburg Virginia, mental health provider Winchester VA, PMHNP Shenandoah Valley, psychiatric care Staunton VA, anxiety depression Harrisonburg, telehealth psychiatry Front Royal VA',
   canonical: 'https://alicetrannp.com/pages/telehealth-mental-health-shenandoah-valley-va.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"City","name":"Harrisonburg"},{"@type":"City","name":"Winchester"},{"@type":"City","name":"Staunton"}],"availableLanguage":["English","Vietnamese"]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"City","name":"Harrisonburg"},{"@type":"City","name":"Winchester"},{"@type":"City","name":"Staunton"}],"availableLanguage":["English","Vietnamese"]}`,
   body: `
 <div class="loc-hero">
   <span class="section-tag">Shenandoah Valley &amp; Western Virginia</span>
@@ -638,7 +638,7 @@ const pages = [
   <h2>Mental health care across the Shenandoah Valley.</h2>
   <p>Telehealth. No mountain to cross. Accepting new patients.</p>
   <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav-cta" style="font-size:1rem;padding:.8rem 2rem;display:inline-block;">Book Now &rarr;</a>
-  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.45);">Or call or text: <a href="tel:7038295227" style="color:rgba(255,255,255,.7);">(703) 829-5227</a></p>
+  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.45);">Or call or text: <a href="tel:7037919099" style="color:rgba(255,255,255,.7);">(703) 791-9099</a></p>
 </div>`
 },
 
@@ -649,7 +649,7 @@ const pages = [
   desc: 'Telehealth psychiatric care for adults in Loudoun County, VA — Ashburn, Leesburg, Sterling, Purcellville, and surrounding areas. Alice Tran, PMHNP-BC. Treating anxiety, burnout, ADHD, and more.',
   keywords: 'psychiatrist Loudoun County VA, psychiatric care Ashburn Virginia, mental health provider Leesburg VA, PMHNP Loudoun County, telehealth psychiatry Sterling VA, anxiety burnout ADHD Ashburn, Purcellville mental health provider',
   canonical: 'https://alicetrannp.com/pages/psychiatric-care-loudoun-county-va.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"AdministrativeArea","name":"Loudoun County"},{"@type":"City","name":"Ashburn"},{"@type":"City","name":"Leesburg"}],"availableLanguage":["English","Vietnamese"]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"AdministrativeArea","name":"Loudoun County"},{"@type":"City","name":"Ashburn"},{"@type":"City","name":"Leesburg"}],"availableLanguage":["English","Vietnamese"]}`,
   body: `
 <div class="loc-hero">
   <span class="section-tag">Loudoun County, Virginia</span>
@@ -730,7 +730,7 @@ const pages = [
   <h2>Psychiatric care for Loudoun County adults.</h2>
   <p>Telehealth. Board-certified PMHNP. Accepting new patients.</p>
   <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav-cta" style="font-size:1rem;padding:.8rem 2rem;display:inline-block;">Book Now &rarr;</a>
-  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.45);">Or call or text: <a href="tel:7038295227" style="color:rgba(255,255,255,.7);">(703) 829-5227</a></p>
+  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.45);">Or call or text: <a href="tel:7037919099" style="color:rgba(255,255,255,.7);">(703) 791-9099</a></p>
 </div>`
 },
 
@@ -741,7 +741,7 @@ const pages = [
   desc: 'Telehealth psychiatric care for adults in Prince William County — Woodbridge, Manassas, Dale City, Gainesville, Dumfries, and Quantico. Alice Tran, PMHNP-BC. Serving a diverse, working community.',
   keywords: 'psychiatrist Prince William County VA, telehealth psychiatry Woodbridge Virginia, mental health Manassas VA, PMHNP Prince William County, psychiatric care Dale City Virginia, anxiety depression Woodbridge VA, Gainesville mental health provider',
   canonical: 'https://alicetrannp.com/pages/telehealth-psychiatry-prince-william-va.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"AdministrativeArea","name":"Prince William County"},{"@type":"City","name":"Woodbridge"},{"@type":"City","name":"Manassas"}],"availableLanguage":["English","Vietnamese"]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"AdministrativeArea","name":"Prince William County"},{"@type":"City","name":"Woodbridge"},{"@type":"City","name":"Manassas"}],"availableLanguage":["English","Vietnamese"]}`,
   body: `
 <div class="loc-hero">
   <span class="section-tag">Prince William County, Virginia</span>
@@ -829,7 +829,7 @@ const pages = [
       </div>
       <div class="loc-faq">
         <h3>Can I be seen quickly if I am struggling right now?</h3>
-        <p>Check the <a href="https://alicetran.intakeq.com/booking" target="_blank" style="color:var(--forest);font-weight:600;">online booking calendar</a> for the earliest available slot. If it is urgent, call or text (703) 829-5227 directly — Alice's team will do their best to find something sooner. For a mental health crisis, please contact the 988 Suicide and Crisis Lifeline by calling or texting 988.</p>
+        <p>Check the <a href="https://alicetran.intakeq.com/booking" target="_blank" style="color:var(--forest);font-weight:600;">online booking calendar</a> for the earliest available slot. If it is urgent, call or text (703) 791-9099 directly — Alice's team will do their best to find something sooner. For a mental health crisis, please contact the 988 Suicide and Crisis Lifeline by calling or texting 988.</p>
       </div>
     </div>
   </div>
@@ -839,7 +839,7 @@ const pages = [
   <h2>Telehealth psychiatry for Prince William County.</h2>
   <p>Accepting new patients. English &amp; Vietnamese. No I-95 required.</p>
   <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav-cta" style="font-size:1rem;padding:.8rem 2rem;display:inline-block;">Book Now &rarr;</a>
-  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.45);">Or call or text: <a href="tel:7038295227" style="color:rgba(255,255,255,.7);">(703) 829-5227</a></p>
+  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.45);">Or call or text: <a href="tel:7037919099" style="color:rgba(255,255,255,.7);">(703) 791-9099</a></p>
 </div>`
 }
 

@@ -33,7 +33,7 @@ const FOOTER = `<footer>
       <p class="footer-tagline">Telehealth psychiatric care across Virginia.<br>English &amp; Ti&#7871;ng Vi&#7879;t welcome.</p>
       <br>
       <h4>Contact</h4>
-      <a href="tel:7038295227">Phone: (703) 829-5227 (Call or Text)</a>
+      <a href="tel:7037919099">Phone: (703) 791-9099 (Call or Text)</a>
       <span style="font-size:12px;color:#4a5e44;display:block;line-height:2;">Fax: (804) 807-9399</span>
       <a href="mailto:info@alicetrannp.com">Email: info@alicetrannp.com</a>
     </div>
@@ -121,7 +121,7 @@ const pages = [
   desc: 'Alice Tran, PMHNP-BC provides psychiatric evaluations, medication management, and therapy for adults in Fairfax, VA via telehealth. Board-certified. English & Vietnamese. New patients welcome.',
   keywords: 'psychiatric nurse practitioner Fairfax VA, psychiatrist Fairfax Virginia, PMHNP Fairfax, mental health provider Fairfax VA, psychiatric evaluation Fairfax, anxiety depression ADHD Fairfax VA',
   canonical: 'https://alicetrannp.com/pages/psychiatric-care-fairfax-va.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","address":{"@type":"PostalAddress","streetAddress":"3060 Williams Drive, Suite 300","addressLocality":"Fairfax","addressRegion":"VA","postalCode":"22031","addressCountry":"US"},"areaServed":{"@type":"City","name":"Fairfax"},"availableLanguage":["English","Vietnamese"]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","address":{"@type":"PostalAddress","streetAddress":"3060 Williams Drive, Suite 300","addressLocality":"Fairfax","addressRegion":"VA","postalCode":"22031","addressCountry":"US"},"areaServed":{"@type":"City","name":"Fairfax"},"availableLanguage":["English","Vietnamese"]}`,
   body: `
 <div class="loc-hero">
   <span class="section-tag">Fairfax County, Virginia</span>
@@ -219,7 +219,7 @@ const pages = [
   desc: 'Psychiatric medication management in Fairfax, VA via telehealth. Alice Tran, PMHNP-BC explains what medication management actually is, what to expect, and how it works for anxiety, depression, ADHD, and more.',
   keywords: 'medication management Fairfax VA, psychiatric medication Fairfax Virginia, psychiatrist prescribe medication Fairfax, anxiety medication management NoVA, depression medication Fairfax, ADHD medication Virginia telehealth',
   canonical: 'https://alicetrannp.com/pages/medication-management-fairfax-va.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","address":{"@type":"PostalAddress","streetAddress":"3060 Williams Drive, Suite 300","addressLocality":"Fairfax","addressRegion":"VA","postalCode":"22031","addressCountry":"US"},"availableLanguage":["English","Vietnamese"]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","address":{"@type":"PostalAddress","streetAddress":"3060 Williams Drive, Suite 300","addressLocality":"Fairfax","addressRegion":"VA","postalCode":"22031","addressCountry":"US"},"availableLanguage":["English","Vietnamese"]}`,
   body: `
 <div class="loc-hero">
   <span class="section-tag">Fairfax County, Virginia</span>
@@ -297,7 +297,7 @@ const pages = [
   desc: 'Telehealth psychiatric care for adults across Northern Virginia — Fairfax, Arlington, Alexandria, Reston, McLean, and beyond. Alice Tran, PMHNP-BC. No commute, no waiting room. Accepting new patients.',
   keywords: 'telehealth psychiatry Northern Virginia, online psychiatrist NoVA, telehealth mental health Northern Virginia, virtual psychiatric care Virginia, online PMHNP Northern Virginia, telehealth anxiety depression ADHD NoVA',
   canonical: 'https://alicetrannp.com/pages/telehealth-psychiatry-northern-virginia.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","areaServed":{"@type":"State","name":"Virginia"},"availableLanguage":["English","Vietnamese"]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","areaServed":{"@type":"State","name":"Virginia"},"availableLanguage":["English","Vietnamese"]}`,
   body: `
 <div class="loc-hero">
   <span class="section-tag">Northern Virginia &amp; Beyond</span>
@@ -398,7 +398,7 @@ const pages = [
   desc: 'Telehealth psychiatric care for adults in Arlington, VA. Alice Tran, PMHNP-BC treats anxiety, depression, ADHD, burnout, and life transitions for young professionals, transplants, and Arlington residents.',
   keywords: 'psychiatrist Arlington VA, psychiatric care Arlington Virginia, mental health provider Arlington VA, telehealth psychiatry Arlington, anxiety depression Arlington, ADHD Arlington Virginia, PMHNP Arlington VA',
   canonical: 'https://alicetrannp.com/pages/psychiatric-care-arlington-va.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","areaServed":{"@type":"City","name":"Arlington"},"availableLanguage":["English","Vietnamese"]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","areaServed":{"@type":"City","name":"Arlington"},"availableLanguage":["English","Vietnamese"]}`,
   body: `
 <div class="loc-hero">
   <span class="section-tag">Arlington, Virginia</span>
@@ -490,7 +490,7 @@ const pages = [
   desc: 'Telehealth psychiatric care for adults in Alexandria, VA. Alice Tran, PMHNP-BC serves Alexandria residents including military families, federal employees, and adults navigating life transitions. New patients welcome.',
   keywords: 'psychiatrist Alexandria VA, psychiatric care Alexandria Virginia, mental health provider Alexandria VA, telehealth psychiatry Alexandria, military mental health Alexandria Virginia, PMHNP Alexandria VA, anxiety depression Alexandria',
   canonical: 'https://alicetrannp.com/pages/psychiatric-care-alexandria-va.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","areaServed":{"@type":"City","name":"Alexandria"},"availableLanguage":["English","Vietnamese"]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","areaServed":{"@type":"City","name":"Alexandria"},"availableLanguage":["English","Vietnamese"]}`,
   body: `
 <div class="loc-hero">
   <span class="section-tag">Alexandria, Virginia</span>
@@ -581,7 +581,7 @@ const pages = [
   desc: 'Vietnamese-speaking psychiatric care in Fairfax, Annandale, and Northern Virginia. Alice Tran, PMHNP-BC provides psychiatric evaluations and medication management in English and Vietnamese for the Vietnamese community in Fairfax County.',
   keywords: 'Vietnamese psychiatrist Fairfax VA, bác sĩ tâm thần Fairfax Virginia, Vietnamese mental health provider Annandale VA, Vietnamese speaking PMHNP Fairfax, chăm sóc sức khỏe tâm thần tiếng Việt Fairfax, Vietnamese psychiatric care Northern Virginia',
   canonical: 'https://alicetrannp.com/pages/vietnamese-psychiatric-care-fairfax-va.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"City","name":"Fairfax"},{"@type":"City","name":"Annandale"},{"@type":"City","name":"Falls Church"}],"availableLanguage":["English","Vietnamese"]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","areaServed":[{"@type":"City","name":"Fairfax"},{"@type":"City","name":"Annandale"},{"@type":"City","name":"Falls Church"}],"availableLanguage":["English","Vietnamese"]}`,
   body: `
 <div class="loc-hero">
   <span class="section-tag">Chăm sóc sức khỏe tâm thần bằng tiếng Việt · Fairfax, VA</span>
@@ -677,7 +677,7 @@ const pages = [
   <h2>Ch&#259;m s&#243;c s&#7913;c kh&#7887;e t&#226;m th&#7847;n b&#7857;ng ti&#7871;ng Vi&#7879;t t&#7841;i Fairfax, VA.</h2>
   <p>Psychiatric care in English and Vietnamese. Telehealth. New patients welcome.</p>
   <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav-cta" style="font-size:1rem;padding:.8rem 2rem;display:inline-block;">Book an Appointment &rarr;</a>
-  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.4);">Or call/text: <a href="tel:7038295227" style="color:rgba(255,255,255,.65);">(703) 829-5227</a></p>
+  <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(255,255,255,.4);">Or call/text: <a href="tel:7037919099" style="color:rgba(255,255,255,.65);">(703) 791-9099</a></p>
 </div>`
 }
 

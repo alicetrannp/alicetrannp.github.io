@@ -33,7 +33,7 @@ const FOOTER = `<footer>
       <p class="footer-tagline">Telehealth psychiatric care across Virginia.<br>English &amp; Ti&#7871;ng Vi&#7879;t welcome.</p>
       <br>
       <h4>Contact</h4>
-      <a href="tel:7038295227">Phone: (703) 829-5227 (Call or Text)</a>
+      <a href="tel:7037919099">Phone: (703) 791-9099 (Call or Text)</a>
       <span style="font-size:12px;color:#4a5e44;display:block;line-height:2;">Fax: (804) 807-9399</span>
       <a href="mailto:info@alicetrannp.com">Email: info@alicetrannp.com</a>
     </div>
@@ -103,7 +103,7 @@ const pages = [
   desc: 'Telehealth psychiatric care for adults in Falls Church, VA. Alice Tran, PMHNP-BC offers psychiatric evaluations, medication management, and therapy for anxiety, depression, ADHD, and more. Accepting new patients.',
   keywords: 'psychiatrist Falls Church VA, psychiatric care Falls Church Virginia, mental health provider Falls Church VA, telehealth psychiatry Falls Church, anxiety depression Falls Church, ADHD Falls Church Virginia, PMHNP Falls Church VA',
   canonical: 'https://alicetrannp.com/pages/psychiatric-care-falls-church-va.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","areaServed":{"@type":"City","name":"Falls Church"},"availableLanguage":["English","Vietnamese"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"10:00","closes":"16:00"}]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","areaServed":{"@type":"City","name":"Falls Church"},"availableLanguage":["English","Vietnamese"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"10:00","closes":"16:00"}]}`,
   body: `
 <div class="sm-hero">
   <span class="section-tag">Falls Church, Virginia</span>
@@ -180,7 +180,7 @@ const pages = [
     </div>
     <div class="sm-faq">
       <h3>How quickly can I be seen?</h3>
-      <p>Check the <a href="https://alicetran.intakeq.com/booking" target="_blank" style="color:var(--forest);font-weight:600;">online booking calendar</a> for real-time availability. If you do not see a slot that works, call or text (703) 829-5227.</p>
+      <p>Check the <a href="https://alicetran.intakeq.com/booking" target="_blank" style="color:var(--forest);font-weight:600;">online booking calendar</a> for real-time availability. If you do not see a slot that works, call or text (703) 791-9099.</p>
     </div>
   </div>
 </section>
@@ -189,7 +189,7 @@ const pages = [
   <h2>Accepting new patients in Falls Church, VA.</h2>
   <p>Telehealth. Board-certified. English &amp; Vietnamese.</p>
   <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav-cta" style="font-size:1rem;padding:.75rem 1.85rem;display:inline-block;">Book Now &rarr;</a>
-  <p style="margin-top:1rem;font-size:.88rem;color:rgba(255,255,255,.45);">Or call/text: <a href="tel:7038295227" style="color:rgba(255,255,255,.7);">(703) 829-5227</a></p>
+  <p style="margin-top:1rem;font-size:.88rem;color:rgba(255,255,255,.45);">Or call/text: <a href="tel:7037919099" style="color:rgba(255,255,255,.7);">(703) 791-9099</a></p>
 </div>`
 },
 
@@ -200,7 +200,7 @@ const pages = [
   desc: 'Telehealth psychiatric care for adults in Tysons, VA. Alice Tran, PMHNP-BC serves the Tysons corporate corridor — anxiety, burnout, ADHD, and depression treatment for working adults. No commute needed.',
   keywords: 'psychiatrist Tysons VA, psychiatric care Tysons Corner Virginia, mental health provider Tysons VA, telehealth psychiatry Tysons, anxiety burnout Tysons Corner, ADHD Tysons Virginia, PMHNP Tysons VA, mental health Tysons Corner',
   canonical: 'https://alicetrannp.com/pages/psychiatric-care-tysons-va.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","areaServed":{"@type":"City","name":"Tysons"},"availableLanguage":["English","Vietnamese"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"10:00","closes":"16:00"}]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","areaServed":{"@type":"City","name":"Tysons"},"availableLanguage":["English","Vietnamese"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"10:00","closes":"16:00"}]}`,
   body: `
 <div class="sm-hero">
   <span class="section-tag">Tysons, Virginia</span>
@@ -265,7 +265,7 @@ const pages = [
   <h2>Psychiatric care for Tysons adults.</h2>
   <p>Telehealth. No waiting room. Board-certified PMHNP.</p>
   <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav-cta" style="font-size:1rem;padding:.75rem 1.85rem;display:inline-block;">Book Now &rarr;</a>
-  <p style="margin-top:1rem;font-size:.88rem;color:rgba(255,255,255,.45);">Or call/text: <a href="tel:7038295227" style="color:rgba(255,255,255,.7);">(703) 829-5227</a></p>
+  <p style="margin-top:1rem;font-size:.88rem;color:rgba(255,255,255,.45);">Or call/text: <a href="tel:7037919099" style="color:rgba(255,255,255,.7);">(703) 791-9099</a></p>
 </div>`
 },
 
@@ -276,7 +276,7 @@ const pages = [
   desc: 'Telehealth psychiatric care for adults in Vienna, VA. Alice Tran, PMHNP-BC treats anxiety, depression, ADHD, burnout, and life transitions for Vienna residents and families. Accepting new patients.',
   keywords: 'psychiatrist Vienna VA, psychiatric care Vienna Virginia, mental health provider Vienna VA, telehealth psychiatry Vienna, anxiety depression Vienna Virginia, ADHD Vienna VA, PMHNP Vienna Virginia, mental health Vienna Fairfax County',
   canonical: 'https://alicetrannp.com/pages/psychiatric-care-vienna-va.html',
-  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 829-5227","medicalSpecialty":"Psychiatry","areaServed":{"@type":"City","name":"Vienna"},"availableLanguage":["English","Vietnamese"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"10:00","closes":"16:00"}]}`,
+  schema: `{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Alice Tran Psychiatric Care","url":"https://alicetrannp.com","telephone":"(703) 791-9099","medicalSpecialty":"Psychiatry","areaServed":{"@type":"City","name":"Vienna"},"availableLanguage":["English","Vietnamese"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"10:00","closes":"16:00"}]}`,
   body: `
 <div class="sm-hero">
   <span class="section-tag">Vienna, Virginia</span>
@@ -341,7 +341,7 @@ const pages = [
   <h2>Accepting new patients in Vienna, VA.</h2>
   <p>Telehealth. Thoughtful. Board-certified PMHNP. English &amp; Vietnamese.</p>
   <a href="https://alicetran.intakeq.com/booking" target="_blank" class="nav-cta" style="font-size:1rem;padding:.75rem 1.85rem;display:inline-block;">Book Now &rarr;</a>
-  <p style="margin-top:1rem;font-size:.88rem;color:rgba(255,255,255,.45);">Or call/text: <a href="tel:7038295227" style="color:rgba(255,255,255,.7);">(703) 829-5227</a></p>
+  <p style="margin-top:1rem;font-size:.88rem;color:rgba(255,255,255,.45);">Or call/text: <a href="tel:7037919099" style="color:rgba(255,255,255,.7);">(703) 791-9099</a></p>
 </div>`
 }
 
