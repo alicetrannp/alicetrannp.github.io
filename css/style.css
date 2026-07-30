@@ -646,7 +646,7 @@ footer a:hover { color: var(--sage-lt); }
 .blog-meta { font-size: .82rem; color: var(--green-lt); letter-spacing: .06em; margin-top: .75rem; }
 .blog-body h2 { font-family: var(--serif); font-size: clamp(1.6rem, 2.6vw, 1.9rem); color: var(--forest); margin: 2.5rem 0 .75rem; font-weight: 700; }
 .blog-body h3 { font-size: 1.05rem; color: var(--forest); margin: 1.5rem 0 .5rem; font-weight: 600; }
-.blog-body p { color: var(--green-md); font-size: 1rem; line-height: 1.85; margin-bottom: 1.1rem; }
+.blog-body p { color: var(--green-md); font-size: 1rem; line-height: 1.85; margin-bottom: 1.4rem; }
 .blog-body ul, .blog-body ol { color: var(--green-md); font-size: 1rem; line-height: 1.85; padding-left: 1.5rem; margin-bottom: 1.25rem; }
 .blog-body li { margin-bottom: .4rem; }
 .blog-cta-box { background: var(--sage-lt); border-left: 4px solid var(--sage-dk); border-radius: 0 16px 16px 0; padding: 1.5rem 1.75rem; margin: 2.5rem 0; }
