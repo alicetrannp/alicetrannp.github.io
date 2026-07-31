@@ -239,40 +239,61 @@
 </section>
 
 <!-- BY THE NUMBERS -->
-<section style="background:var(--forest);padding:56px clamp(1.5rem,5vw,4rem);">
-  <div style="max-width:960px;margin:0 auto;text-align:center;">
-    <span style="font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sage-dk);font-weight:600;">Alice qua những con số</span>
-    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1.25rem;margin-top:2rem;">
-      <div style="flex:1 1 200px;max-width:220px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1.5rem 1rem;">
-        <div style="font-family:var(--serif);font-size:2.6rem;font-weight:400;color:#fff;line-height:1;">10+</div>
-        <p style="color:rgba(255,255,255,.72);font-size:.88rem;line-height:1.5;margin:.6rem 0 0;">năm trong ngành y tế</p>
+<section style="background:var(--ivory,#F8F6F1);padding:64px clamp(1.5rem,5vw,4rem);border-top:1px solid rgba(30,51,40,.08);border-bottom:1px solid rgba(30,51,40,.08);">
+  <style>
+    .ain-title{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.1rem);font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);text-align:center;margin:0 0 2.5rem;}
+    .ain-row{display:flex;justify-content:center;max-width:1000px;margin:0 auto;}
+    .ain-row + .ain-row{border-top:1px solid rgba(30,51,40,.12);margin-top:2.25rem;padding-top:2.25rem;}
+    .ain-item{flex:1 1 0;text-align:center;padding:0 1.25rem;}
+    .ain-item + .ain-item{border-left:1px solid rgba(30,51,40,.12);}
+    .ain-num{font-family:var(--serif);font-size:clamp(2.2rem,4vw,3rem);color:var(--forest);line-height:1;margin-top:.9rem;}
+    .ain-label{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green-md);line-height:1.7;margin:.7rem 0 0;}
+    @media(max-width:700px){
+      .ain-row{flex-wrap:wrap;gap:1.75rem 0;}
+      .ain-item{flex:1 1 45%;padding:0 .5rem;}
+      .ain-item + .ain-item{border-left:none;}
+    }
+  </style>
+  <h2 class="ain-title">Alice Qua Những Con Số</h2>
+    <div class="ain-row">
+      <div class="ain-item">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v5a5 5 0 0 0 10 0V3"/><path d="M11 13v3a4 4 0 0 0 8 0v-2"/><circle cx="19" cy="12" r="2"/></svg>
+        <div class="ain-num">10+</div>
+        <p class="ain-label">Năm trong<br>ngành y tế</p>
       </div>
-      <div style="flex:1 1 200px;max-width:220px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1.5rem 1rem;">
-        <div style="font-family:var(--serif);font-size:2.6rem;font-weight:400;color:#fff;line-height:1;">5+</div>
-        <p style="color:rgba(255,255,255,.72);font-size:.88rem;line-height:1.5;margin:.6rem 0 0;">năm là điều dưỡng chuyên khoa</p>
+      <div class="ain-item">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7.5" r="3.5"/><path d="M5 21a7 7 0 0 1 14 0"/><path d="M12 13.5v3M10.5 15h3"/></svg>
+        <div class="ain-num">5+</div>
+        <p class="ain-label">Năm là điều dưỡng<br>chuyên khoa</p>
       </div>
-      <div style="flex:1 1 200px;max-width:220px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1.5rem 1rem;">
-        <div style="font-family:var(--serif);font-size:2.6rem;font-weight:400;color:#fff;line-height:1;">2</div>
-        <p style="color:rgba(255,255,255,.72);font-size:.88rem;line-height:1.5;margin:.6rem 0 0;">bằng cử nhân: Sinh học &amp; Điều dưỡng</p>
+      <div class="ain-item">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9.5l10-4.5 10 4.5-10 4.5z"/><path d="M6.5 11.5v4c0 1.6 2.6 3 5.5 3s5.5-1.4 5.5-3v-4"/><path d="M22 9.5v5"/></svg>
+        <div class="ain-num">2</div>
+        <p class="ain-label">Bằng cử nhân<br>Sinh học &amp; Điều dưỡng</p>
       </div>
-      <div style="flex:1 1 200px;max-width:220px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1.5rem 1rem;">
-        <div style="font-family:var(--serif);font-size:2.6rem;font-weight:400;color:#fff;line-height:1;">2</div>
-        <p style="color:rgba(255,255,255,.72);font-size:.88rem;line-height:1.5;margin:.6rem 0 0;">bằng thạc sĩ: Gia đình &amp; Tâm thần</p>
-      </div>
-      <div style="flex:1 1 200px;max-width:220px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1.5rem 1rem;">
-        <div style="font-family:var(--serif);font-size:2.6rem;font-weight:400;color:#fff;line-height:1;">2</div>
-        <p style="color:rgba(255,255,255,.72);font-size:.88rem;line-height:1.5;margin:.6rem 0 0;">chứng nhận hội đồng quốc gia</p>
-      </div>
-      <div style="flex:1 1 200px;max-width:220px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1.5rem 1rem;">
-        <div style="font-family:var(--serif);font-size:2.6rem;font-weight:400;color:#fff;line-height:1;">2</div>
-        <p style="color:rgba(255,255,255,.72);font-size:.88rem;line-height:1.5;margin:.6rem 0 0;">ngôn ngữ: Tiếng Việt &amp; Tiếng Anh</p>
-      </div>
-      <div style="flex:1 1 200px;max-width:220px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1.5rem 1rem;">
-        <div style="font-family:var(--serif);font-size:2.6rem;font-weight:400;color:#fff;line-height:1;">100%</div>
-        <p style="color:rgba(255,255,255,.72);font-size:.88rem;line-height:1.5;margin:.6rem 0 0;">kế hoạch điều trị cá nhân hóa</p>
+      <div class="ain-item">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.5c-2-1.6-4.8-2-8-2v13.5c3.2 0 6 .4 8 2 2-1.6 4.8-2 8-2V4.5c-3.2 0-6 .4-8 2z"/><path d="M12 6.5V20"/></svg>
+        <div class="ain-num">2</div>
+        <p class="ain-label">Bằng thạc sĩ<br>Gia đình &amp; Tâm thần</p>
       </div>
     </div>
-  </div>
+    <div class="ain-row">
+      <div class="ain-item">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9.2 13.3L7.5 21l4.5-2.7L16.5 21l-1.7-7.7"/></svg>
+        <div class="ain-num">2</div>
+        <p class="ain-label">Chứng nhận hội đồng<br>quốc gia</p>
+      </div>
+      <div class="ain-item">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a13.5 13.5 0 0 1 0 18 13.5 13.5 0 0 1 0-18z"/></svg>
+        <div class="ain-num">2</div>
+        <p class="ain-label">Ngôn ngữ<br>Tiếng Việt &amp; Tiếng Anh</p>
+      </div>
+      <div class="ain-item">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5C7.2 16.2 3.5 13.2 3.5 9.6A4.4 4.4 0 0 1 12 7.3a4.4 4.4 0 0 1 8.5 2.3c0 3.6-3.7 6.6-8.5 10.9z"/></svg>
+        <div class="ain-num">100%</div>
+        <p class="ain-label">Chăm sóc<br>cá nhân hóa</p>
+      </div>
+    </div>
 </section>
 
 <style>
