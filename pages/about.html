@@ -239,19 +239,24 @@
 </section>
 
 <!-- BY THE NUMBERS -->
-<section style="background:var(--forest);padding:64px clamp(1.5rem,5vw,4rem);">
+<section style="background:var(--forest);padding:44px clamp(1.5rem,5vw,4rem);">
   <style>
-    .ain-title{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.1rem);font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:#fff;text-align:center;margin:0 0 2.5rem;}
+    .ain-title{font-family:var(--serif);font-size:clamp(1.3rem,2.6vw,1.8rem);font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:#fff;text-align:center;margin:0 0 1.75rem;}
     .ain-row{display:flex;justify-content:center;max-width:1000px;margin:0 auto;}
-    .ain-row + .ain-row{border-top:1px solid rgba(251,247,240,.18);margin-top:2.25rem;padding-top:2.25rem;}
-    .ain-item{flex:1 1 0;text-align:center;padding:0 1.25rem;}
+    .ain-row + .ain-row{border-top:1px solid rgba(251,247,240,.18);margin-top:1.5rem;padding-top:1.5rem;}
+    .ain-item{flex:1 1 0;text-align:center;padding:0 1rem;}
     .ain-item + .ain-item{border-left:1px solid rgba(251,247,240,.18);}
-    .ain-num{font-family:var(--serif);font-size:clamp(2.2rem,4vw,3rem);color:#fff;line-height:1;margin-top:.9rem;}
-    .ain-label{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(251,247,240,.7);line-height:1.7;margin:.7rem 0 0;}
+    .ain-item svg{width:40px;height:40px;}
+    .ain-num{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.3rem);color:#fff;line-height:1;margin-top:.5rem;}
+    .ain-label{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(251,247,240,.7);line-height:1.6;margin:.45rem 0 0;}
     @media(max-width:700px){
-      .ain-row{flex-wrap:wrap;gap:1.75rem 0;}
-      .ain-item{flex:1 1 45%;padding:0 .5rem;}
+      .ain-row{flex-wrap:wrap;gap:1.4rem 0;}
+      .ain-row + .ain-row{margin-top:1.4rem;padding-top:1.4rem;}
+      .ain-item{flex:1 1 30%;max-width:33%;padding:0 .35rem;}
       .ain-item + .ain-item{border-left:none;}
+      .ain-item svg{width:26px;height:26px;}
+      .ain-num{font-size:1.45rem;}
+      .ain-label{font-size:.56rem;letter-spacing:.08em;line-height:1.5;}
     }
   </style>
   <h2 class="ain-title">Alice in Numbers</h2>
