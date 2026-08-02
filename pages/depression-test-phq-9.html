@@ -227,6 +227,7 @@
         + '<p style="color:var(--green-md);line-height:1.8;margin:0;">' + band[3] + '</p>';
       if (CRISIS !== null && vals[CRISIS] > 0) { document.getElementById('crisisBox').style.display = 'block'; }
     }
+    html += '<p style="color:var(--green-md);line-height:1.8;margin:1rem 0 0;font-size:.92rem;">No screener can diagnose anything. An elevated result means further assessment is warranted: to confirm what is going on, gauge how severe it is, and check for conditions that travel together. The concrete next step is right below: book an evaluation online, or call/text (703) 791-9099. If you are in crisis right now, call or text 988 instead of waiting for an appointment.</p>';
     box.style.display = 'block';
     box.innerHTML = html;
     document.getElementById('afterResult').style.display = 'block';
