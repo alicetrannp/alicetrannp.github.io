@@ -46,6 +46,24 @@
     .sm-cta h2{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.2rem);font-weight:400;color:#fff;margin:0 0 .75rem;}
     .sm-cta p{color:rgba(255,255,255,.65);margin:0 0 1.5rem;font-size:.95rem;}
     @media(max-width:600px){.sm-grid{grid-template-columns:1fr;}}
+    /* essentials cards */
+    .pf-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:1120px;margin:1.9rem auto 0;align-items:stretch;}
+    .pf-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:1.6rem 1.3rem;display:flex;flex-direction:column;}
+    .pf-ico{width:54px;height:54px;border-radius:50%;background:var(--forest);display:flex;align-items:center;justify-content:center;margin:0 auto .95rem;flex-shrink:0;}
+    .pf-ico svg{width:25px;height:25px;stroke:#fff;fill:none;stroke-width:1.7;}
+    .pf-card h3{font-family:var(--sans);font-size:.76rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:var(--forest);margin:0 0 .9rem;text-align:center;}
+    .pf-lead{font-size:.92rem;font-weight:700;color:var(--forest);line-height:1.55;margin:0;text-align:center;}
+    .pf-sub{font-size:.88rem;color:var(--green-md);line-height:1.6;margin:.3rem 0 0;text-align:center;}
+    .pf-rule{width:36px;height:1px;background:var(--sage-md);margin:.9rem auto;border:0;}
+    .pf-card ul{list-style:none;padding:0;margin:0;}
+    .pf-card li{font-size:.875rem;color:var(--green-md);line-height:1.6;padding-left:.95rem;position:relative;margin:0 0 .45rem;}
+    .pf-card li:last-child{margin-bottom:0;}
+    .pf-card li::before{content:"";position:absolute;left:0;top:.62em;width:4px;height:4px;border-radius:50%;background:var(--green);}
+    .pf-or{display:flex;align-items:center;gap:.6rem;margin:.95rem 0;color:var(--green);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;}
+    .pf-or::before,.pf-or::after{content:"";flex:1;height:1px;background:var(--sage-md);}
+    .pf-note{max-width:1120px;margin:1rem auto 0;background:var(--sage-lt);border-radius:10px;padding:.9rem 1.35rem;text-align:center;font-size:.87rem;color:var(--green-md);line-height:1.65;}
+    @media(max-width:920px){.pf-cards{grid-template-columns:1fr 1fr;}}
+    @media(max-width:560px){.pf-cards{grid-template-columns:1fr;}}
   </style>
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Thông Tin Nhanh Về Phòng Khám | Alice Tran Psychiatric Care | Fairfax, VA &amp; Telehealth" />
@@ -116,31 +134,133 @@
 </div>
 
 <section class="sm-s">
-  <div class="sm-inner">
+  <div class="sm-inner" style="text-align:center;">
     <span class="sm-tag">Những điều cốt lõi</span>
     <h2 class="sm-h2">Ai, dịch vụ gì, ở đâu, và giá bao nhiêu.</h2>
-    <p class="sm-p">Alice Tran Psychiatric Care là phòng khám của Anh "Alice" Tran, điều dưỡng chuyên khoa tâm thần được chứng nhận kép: Psychiatric Mental Health Nurse Practitioner (PMHNP-BC) và Family Nurse Practitioner (FNP-BC), có giấy phép hành nghề tại Virginia. Cô được đào tạo dưới sự hướng dẫn của bác sĩ tâm thần Errol Segall, MD, người mang hơn năm mươi năm kinh nghiệm tâm thần học đến phòng khám. Cô điều trị người lớn từ 18 đến 65 tuổi và cung cấp dịch vụ đánh giá tâm thần, quản lý thuốc và trị liệu hỗ trợ.</p>
-    <p class="sm-p">Các tình trạng được điều trị bao gồm lo âu, trầm cảm, ADHD, rối loạn lưỡng cực, PTSD và sang chấn, OCD, rối loạn hoảng sợ, mất ngủ, kiệt sức, các vấn đề khí sắc sau sinh và chu sinh, đau buồn mất mát, và các tình trạng liên quan. Dịch vụ chăm sóc hoàn toàn bằng tiếng Anh hoặc tiếng Việt: các buổi đánh giá, trao đổi về thuốc và tái khám được thực hiện bằng Tiếng Việt, không cần thông dịch viên, điều mà rất ít phòng khám trong khu vực làm được.</p>
-    <p class="sm-p">Buổi hẹn diễn ra theo hai cách: trực tiếp tại 3060 Williams Drive, Suite 300, Fairfax, VA 22031 (khu vực Merrifield, có bãi đậu xe miễn phí), hoặc qua telehealth bảo mật từ bất kỳ đâu trong Virginia. Giờ làm việc từ Thứ Hai đến Thứ Năm, 9:00 sáng đến 4:00 chiều giờ miền Đông. Bệnh nhân mới thường được khám trong vòng một đến hai tuần, và không cần giấy giới thiệu. Phòng khám không cung cấp dịch vụ khủng hoảng hay cấp cứu; nếu gặp tình huống khẩn cấp về sức khỏe tâm thần, hãy gọi hoặc nhắn tin 988.</p>
+    <p class="sm-p" style="margin-bottom:0;">Chăm sóc tâm thần tận tâm, phù hợp với từng người, dành cho người lớn từ 18 đến 65 tuổi, bằng tiếng Anh hoặc hoàn toàn bằng Tiếng Việt.</p>
+  </div>
 
-    <div class="sm-grid" style="margin-top:1.5rem;">
-      <div class="sm-item">
-        <h3>Giá cả, công khai rõ ràng</h3>
-        <p>Đánh giá tâm thần ban đầu: $400. Tái khám: $200 cho 30 phút hoặc $250 cho 45 phút. Không phí thành viên, không phí ẩn. <a href="rates-vi.html" style="color:var(--forest);font-weight:600;">Chi tiết đầy đủ &rarr;</a></p>
-      </div>
-      <div class="sm-item">
-        <h3>Bảo hiểm được nhận</h3>
-        <p>Hầu hết các gói bảo hiểm lớn, bao gồm Aetna, Anthem, Cigna, Medicare và Medicaid. Quyền lợi bảo hiểm được xác minh trước buổi khám đầu tiên.</p>
-      </div>
-      <div class="sm-item">
-        <h3>Cách đặt lịch</h3>
-        <p>Online tại <a href="https://alicetran.intakeq.com/booking" target="_blank" style="color:var(--forest);font-weight:600;">alicetran.intakeq.com/booking</a>, hoặc gọi/nhắn tin (703) 791-9099. Email: info@alicetrannp.com.</p>
-      </div>
-      <div class="sm-item">
-        <h3>Hai ngôn ngữ, một người khám</h3>
-        <p>Tiếng Anh và Tiếng Việt, từ một người lớn lên với cả hai ngôn ngữ. <a href="vietnamese-psychiatric-care-vi.html" style="color:var(--forest);font-weight:600;">Chi tiết chăm sóc bằng tiếng Việt &rarr;</a></p>
-      </div>
+  <div class="pf-cards">
+
+    <div class="pf-card">
+      <div class="pf-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.3"/><path d="M5.4 20c0-3.6 2.95-6.6 6.6-6.6s6.6 3 6.6 6.6" stroke-linecap="round"/></svg></div>
+      <h3>Tôi Là Ai</h3>
+      <p class="pf-lead">Anh &ldquo;Alice&rdquo; Tran<br>PMHNP-BC, FNP-BC</p>
+      <hr class="pf-rule">
+      <ul>
+        <li>Chứng nhận kép: tâm thần và gia đình</li>
+        <li>Có giấy phép hành nghề tại Virginia</li>
+        <li>Người lớn từ 18 đến 65 tuổi</li>
+        <li>Tiếng Anh &amp; Tiếng Việt, không cần thông dịch</li>
+        <li>Đánh giá tâm thần, quản lý thuốc, trị liệu hỗ trợ</li>
+        <li>Được đào tạo dưới sự hướng dẫn của bác sĩ tâm thần Errol Segall, MD, với hơn 50 năm kinh nghiệm lâm sàng</li>
+      </ul>
     </div>
+
+    <div class="pf-card">
+      <div class="pf-ico"><svg viewBox="0 0 24 24"><path d="M12 6.2v12.4" stroke-linecap="round"/><path d="M12 7.4A2.7 2.7 0 0 0 9.3 4.7 2.7 2.7 0 0 0 6.6 7.4a2.5 2.5 0 0 0-1.5 4.3 2.7 2.7 0 0 0 .8 4.3 2.6 2.6 0 0 0 2.6 2.9A2.5 2.5 0 0 0 12 17.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 7.4a2.7 2.7 0 0 1 2.7-2.7 2.7 2.7 0 0 1 2.7 2.7 2.5 2.5 0 0 1 1.5 4.3 2.7 2.7 0 0 1-.8 4.3 2.6 2.6 0 0 1-2.6 2.9A2.5 2.5 0 0 1 12 17.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h3>Tôi Điều Trị Gì</h3>
+      <ul>
+        <li>Lo âu</li>
+        <li>Trầm cảm</li>
+        <li>ADHD</li>
+        <li>Rối loạn lưỡng cực</li>
+        <li>PTSD &amp; sang chấn</li>
+        <li>OCD</li>
+        <li>Rối loạn hoảng sợ</li>
+        <li>Mất ngủ</li>
+        <li>Kiệt sức</li>
+        <li>Khí sắc sau sinh &amp; chu sinh</li>
+        <li>Đau buồn mất mát &amp; các tình trạng liên quan</li>
+      </ul>
+    </div>
+
+    <div class="pf-card">
+      <div class="pf-ico"><svg viewBox="0 0 24 24"><path d="M12 21.2s7-5.7 7-11.2a7 7 0 1 0-14 0c0 5.5 7 11.2 7 11.2z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6"/></svg></div>
+      <h3>Ở Đâu</h3>
+      <p class="pf-lead">Khám trực tiếp</p>
+      <p class="pf-sub">3060 Williams Drive, Suite 300<br>Fairfax, VA 22031<br>(khu vực Merrifield)<br>Bãi đậu xe miễn phí</p>
+      <div class="pf-or">hoặc</div>
+      <p class="pf-lead">Telehealth bảo mật</p>
+      <p class="pf-sub">Bất kỳ đâu trong Virginia</p>
+      <p class="pf-sub" style="margin-top:.55rem;">Để vào buổi khám online:<br><a href="https://doxy.me/alicetran" target="_blank" rel="noopener" style="color:var(--forest);font-weight:600;text-decoration:none;border-bottom:1px solid var(--sage-md);">doxy.me/alicetran</a></p>
+    </div>
+
+    <div class="pf-card">
+      <div class="pf-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.3V12l3 1.8" stroke-linecap="round"/></svg></div>
+      <h3>Giờ Làm Việc</h3>
+      <p class="pf-lead">Thứ Hai đến Thứ Năm<br>9:00 sáng đến 4:00 chiều giờ miền Đông</p>
+      <hr class="pf-rule">
+      <ul>
+        <li>Buổi tối và cuối tuần có thể sắp xếp được, vui lòng hỏi thêm</li>
+        <li>Bệnh nhân mới thường được khám trong vòng một đến hai tuần</li>
+        <li>Không cần giấy giới thiệu</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <p class="pf-note">Phòng khám không cung cấp dịch vụ khủng hoảng hay cấp cứu. Nếu gặp tình huống khẩn cấp về sức khỏe tâm thần, hãy gọi hoặc nhắn tin <strong>988</strong>.</p>
+
+  <div class="pf-cards" style="margin-top:1rem;">
+
+    <div class="pf-card">
+      <div class="pf-ico"><svg viewBox="0 0 24 24"><path d="M12 3.2v17.6" stroke-linecap="round"/><path d="M15.8 7.4c0-1.6-1.7-2.6-3.8-2.6s-3.8 1-3.8 2.7c0 4 7.6 2.3 7.6 6.4 0 1.8-1.7 2.9-3.8 2.9s-3.8-1.1-3.8-3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h3>Giá Cả</h3>
+      <p class="pf-lead">Công khai rõ ràng</p>
+      <hr class="pf-rule">
+      <ul>
+        <li>Đánh giá tâm thần ban đầu: <strong>$400</strong></li>
+        <li>Tái khám 30 phút: <strong>$200</strong></li>
+        <li>Tái khám 45 phút: <strong>$250</strong></li>
+        <li>Không phí thành viên, không phí ẩn</li>
+      </ul>
+      <p class="pf-sub" style="margin-top:.75rem;"><a href="rates-vi.html" style="color:var(--forest);font-weight:600;text-decoration:none;border-bottom:1px solid var(--sage-md);">Chi tiết đầy đủ &rarr;</a></p>
+    </div>
+
+    <div class="pf-card">
+      <div class="pf-ico"><svg viewBox="0 0 24 24"><path d="M12 3.4l6.6 2.6v5.3c0 4-2.8 7.6-6.6 8.9-3.8-1.3-6.6-4.9-6.6-8.9V6z" stroke-linejoin="round"/><path d="M9.3 11.9l1.9 1.9 3.6-3.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h3>Bảo Hiểm</h3>
+      <p class="pf-lead">Nhận hầu hết các gói bảo hiểm lớn</p>
+      <hr class="pf-rule">
+      <ul>
+        <li>Aetna</li>
+        <li>Anthem</li>
+        <li>Cigna</li>
+        <li>Medicare</li>
+        <li>Medicaid</li>
+      </ul>
+      <p class="pf-sub" style="margin-top:.75rem;">Quyền lợi bảo hiểm được xác minh trước buổi khám đầu tiên.</p>
+    </div>
+
+    <div class="pf-card">
+      <div class="pf-ico"><svg viewBox="0 0 24 24"><rect x="4" y="5.4" width="16" height="14.2" rx="2.2"/><path d="M4 9.6h16M8.6 3.4v4M15.4 3.4v4" stroke-linecap="round"/><path d="M9.4 14.4l1.8 1.8 3.4-3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h3>Cách Đặt Lịch</h3>
+      <p class="pf-lead">Ba cách, không cần giấy giới thiệu</p>
+      <hr class="pf-rule">
+      <ul>
+        <li>Online: <a href="https://alicetran.intakeq.com/booking" target="_blank" rel="noopener" style="color:var(--forest);font-weight:600;text-decoration:none;border-bottom:1px solid var(--sage-md);">alicetran.intakeq.com/booking</a></li>
+        <li>Gọi hoặc nhắn tin: <a href="tel:7037919099" style="color:var(--forest);font-weight:600;text-decoration:none;">(703) 791-9099</a></li>
+        <li>Email: <a href="mailto:info@alicetrannp.com" style="color:var(--forest);font-weight:600;text-decoration:none;">info@alicetrannp.com</a></li>
+      </ul>
+    </div>
+
+    <div class="pf-card">
+      <div class="pf-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4"/><path d="M3.7 12h16.6" stroke-linecap="round"/><path d="M12 3.6c2.1 2.3 3.3 5.3 3.3 8.4s-1.2 6.1-3.3 8.4c-2.1-2.3-3.3-5.3-3.3-8.4S9.9 5.9 12 3.6z" stroke-linejoin="round"/></svg></div>
+      <h3>Hai Ngôn Ngữ</h3>
+      <p class="pf-lead">Một người khám, không cần thông dịch</p>
+      <hr class="pf-rule">
+      <ul>
+        <li>Tiếng Anh và Tiếng Việt, từ một người lớn lên với cả hai ngôn ngữ</li>
+        <li>Các buổi đánh giá, trao đổi về thuốc và tái khám được thực hiện hoàn toàn bằng tiếng Việt</li>
+        <li>Điều mà rất ít phòng khám trong khu vực làm được</li>
+      </ul>
+      <p class="pf-sub" style="margin-top:.75rem;"><a href="vietnamese-psychiatric-care-vi.html" style="color:var(--forest);font-weight:600;text-decoration:none;border-bottom:1px solid var(--sage-md);">Chi tiết chăm sóc bằng tiếng Việt &rarr;</a></p>
+    </div>
+
+  </div>
+
+  <div class="sm-inner">
 <p style="color:var(--green-md);font-size:.92rem;line-height:1.8;margin-top:1.5rem;">Khám phá: <a href="services-vi.html" style="color:var(--forest);font-weight:600;">Dịch vụ</a> &middot; <a href="conditions-vi.html" style="color:var(--forest);font-weight:600;">Các tình trạng điều trị</a> &middot; <a href="about-vi.html" style="color:var(--forest);font-weight:600;">Giới thiệu Alice</a> &middot; <a href="faq-vi.html" style="color:var(--forest);font-weight:600;">FAQ</a> &middot; <a href="contact-vi.html" style="color:var(--forest);font-weight:600;">Liên hệ</a> &middot; <a href="first-psychiatric-appointment-checklist-vi.html" style="color:var(--forest);font-weight:600;">Danh sách chuẩn bị cho buổi hẹn đầu</a> &middot; <a href="telehealth-psychiatry-laws-virginia-vi.html" style="color:var(--forest);font-weight:600;">Quy định telehealth tại Virginia</a></p>
   </div>
 </section>
