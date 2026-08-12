@@ -357,7 +357,6 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
 .hero__title em {
   font-style: italic;
   color: #55684F;
-  font-weight: 700;
 }
 @media (max-width: 960px) {
   .hero__title {
