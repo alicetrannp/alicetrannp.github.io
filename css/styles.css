@@ -1734,7 +1734,8 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
    because the rotating headline blurs each .rchar and that breaks background-clip:text. */
 .hero__title em {
   font-style: italic;
-  color: #4a6741;                 /* fallback before the tint is applied */
+  font-weight: 600;               /* heavier than the surrounding headline */
+  color: #4d7f52;                 /* fallback before the tint is applied */
 }
 .hero__title em .rchar {
   transition: opacity .5s ease, filter .5s ease, color .8s ease;
