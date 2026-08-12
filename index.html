@@ -21,7 +21,7 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/newsreader-400-italic-2.woff2" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/inter-400-normal-31.woff2" />
   <link rel="preload" as="image" href="img/alicetranmainphoto.webp" type="image/webp" />
-  <link rel="stylesheet" href="css/styles.css?v=20260716b" />
+  <link rel="stylesheet" href="css/styles.css?v=20260810a" />
   <link rel="preload" href="css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="css/fonts.css"></noscript>
   <link rel="canonical" href="https://alicetrannp.com/" />
@@ -861,6 +861,30 @@ window.addEventListener('scroll', () => {
   ];
   var idx = 0;
 
+  var HERO_TINT = ['#2d3d2a', '#4a6741', '#4f7d5c', '#487c73', '#3d6480'];
+  function heroHex(h){
+    return [parseInt(h.slice(1,3),16), parseInt(h.slice(3,5),16), parseInt(h.slice(5,7),16)];
+  }
+  function heroTintAt(t){
+    var n = HERO_TINT.length - 1;
+    var i = Math.min(Math.floor(t * n), n - 1);
+    var f = t * n - i;
+    var a = heroHex(HERO_TINT[i]), b = heroHex(HERO_TINT[i + 1]);
+    return 'rgb(' + Math.round(a[0] + (b[0] - a[0]) * f) + ',' +
+                    Math.round(a[1] + (b[1] - a[1]) * f) + ',' +
+                    Math.round(a[2] + (b[2] - a[2]) * f) + ')';
+  }
+  function heroTint(layer){
+    Array.prototype.forEach.call(layer.querySelectorAll('em'), function(em){
+      var chars = em.querySelectorAll('.rchar');
+      var n = chars.length;
+      Array.prototype.forEach.call(chars, function(c, i){
+        c.style.color = heroTintAt(n < 2 ? 0.5 : i / (n - 1));
+      });
+    });
+  }
+
+
   function wrapWords(root){
     Array.prototype.slice.call(root.childNodes).forEach(function(child){
       if (child.nodeType === 3) {
@@ -891,6 +915,7 @@ window.addEventListener('scroll', () => {
     layer.className = 'hero__phrase';
     layer.innerHTML = html;
     wrapWords(layer);
+    heroTint(layer);
     if (hidden) {
       layer.querySelectorAll('.rchar').forEach(function(sp){
         sp.style.transition = 'none';
