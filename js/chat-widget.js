@@ -48,7 +48,7 @@
     },
     {
       keywords: ['benzo', 'benzodiazepine', 'xanax', 'valium', 'klonopin', 'ativan', 'alprazolam', 'diazepam', 'clonazepam', 'controlled substance'],
-      answer: 'Short-term benzodiazepines may be prescribed when clinically appropriate. However, Alice does not prescribe long-term or ongoing benzodiazepine therapy. If you\'re currently on a long-term prescription, please reach out to discuss whether this practice is a good fit.'
+      answer: 'Alice does not provide long-term daily benzodiazepine management or benzodiazepine tapering, and cannot accept new patients currently taking a benzodiazepine on a daily or long-term basis. Occasional, as-needed prescriptions may be considered on an individual basis.'
     },
     {
       keywords: ['adhd', 'adderall', 'stimulant', 'ritalin', 'vyvanse', 'attention', 'focus', 'concentration'],
