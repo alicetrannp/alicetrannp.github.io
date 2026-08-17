@@ -996,7 +996,7 @@ function toggleMenu(){
   window.addEventListener('scroll',function(){
     nav.classList.toggle('is-scrolled', window.scrollY > 10);
   },{passive:true});
-})()
+})();
 (function(){
   var nav=document.querySelector('.nav-wrapper');
   if(!nav) return;
