@@ -196,6 +196,7 @@
     .faq-cta p { color: rgba(255,255,255,.65); margin: 0 0 1.75rem; }
   
 mark.faq-hl { background:#ffe680; color:inherit; padding:0 .12em; border-radius:2px; font-weight:inherit; }
+.faq-q-text { flex:1 1 auto; min-width:0; }
 </style>
   <script type="application/ld+json">
   {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://alicetrannp.com/"}, {"@type": "ListItem", "position": 2, "name": "FAQ"}]}
@@ -1015,6 +1016,19 @@ function faqClearHighlights(root) {
     parent.normalize();
   });
 }
+function faqWrapQuestionText(q) {
+  if (!q) return null;
+  var existing = q.querySelector('.faq-q-text');
+  if (existing) return existing;
+  var icon = q.querySelector('.faq-icon');
+  var span = document.createElement('span');
+  span.className = 'faq-q-text';
+  var moving = [];
+  q.childNodes.forEach(function (n) { if (n !== icon) moving.push(n); });
+  moving.forEach(function (n) { span.appendChild(n); });
+  q.insertBefore(span, icon);
+  return span;
+}
 function faqHighlight(root, query) {
   if (!root || !query) return;
   var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
@@ -1043,6 +1057,8 @@ function faqHighlight(root, query) {
 }
 
 // FAQ search
+document.querySelectorAll('.faq-q').forEach(function (q) { faqWrapQuestionText(q); });
+
 document.getElementById('faq-search').addEventListener('input', function () {
   const query = this.value.trim().toLowerCase();
   const items = document.querySelectorAll('.faq-item');
@@ -1081,7 +1097,7 @@ document.getElementById('faq-search').addEventListener('input', function () {
   if (query.length >= 2) {
     items.forEach(function (item) {
       if (item.style.display === 'none') return;
-      faqHighlight(item.querySelector('.faq-q'), query);
+      faqHighlight(faqWrapQuestionText(item.querySelector('.faq-q')), query);
       faqHighlight(item.querySelector('.faq-a-inner'), query);
     });
   }
