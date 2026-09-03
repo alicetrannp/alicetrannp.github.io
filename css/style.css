@@ -725,3 +725,55 @@ footer a:hover { color: var(--sage-lt); }
 @media (max-width: 520px) {
   .footer__inner { grid-template-columns: 1fr 1fr; column-gap: 1.25rem; }
 }
+
+/* -- POST CALLOUT KIT ---------------------------------------------------
+   Reusable blocks for blog posts. Use classes, never inline styles, so the
+   look can be changed in one place later.
+     .post-key    neutral green   key takeaway / "the short answer"
+     .post-warn   amber           caution, policy, do-not-do guidance
+     .post-alarm  solid red       hard risk numbers, danger, emergency signs
+     .post-good   soft green      reassurance, good news, recovery
+     .post-checks checkmark list  scannable skills / steps
+     .post-stat   big number pull-quote
+   ---------------------------------------------------------------------- */
+.post-callout { border-radius: 0 12px 12px 0; padding: 1.25rem 1.5rem; margin: 1.75rem 0; }
+.post-callout__label { margin: 0 0 .5rem; font-size: .72rem; letter-spacing: .16em;
+  text-transform: uppercase; font-weight: 800; }
+.post-callout p:last-child { margin: 0; font-size: 1rem; line-height: 1.8; font-weight: 600; }
+
+.post-key   { background: var(--sage-lt); border: 1px solid var(--border); border-left: 5px solid var(--forest); }
+.post-key   .post-callout__label { color: var(--green); }
+.post-key   p:last-child { color: var(--forest); }
+
+.post-warn  { background: #fffaf0; border: 1px solid #e8d9bd; border-left: 5px solid #c9962a; }
+.post-warn  .post-callout__label { color: #a87b1e; }
+.post-warn  p:last-child { color: var(--forest); }
+
+.post-alarm { background: #b4483c; border-radius: 14px; padding: 1.6rem 1.85rem; margin: 2rem 0; }
+.post-alarm .post-callout__label { color: rgba(255,255,255,.75); letter-spacing: .18em; }
+.post-alarm p:last-child { color: #fff; font-size: 1.05rem; }
+
+.post-danger { background: #fdf2f1; border: 1px solid #e8c9c4; border-left: 5px solid #b4483c; }
+.post-danger .post-callout__label { color: #b4483c; }
+.post-danger p:last-child { color: var(--forest); }
+
+.post-good  { background: #f2f7f2; border: 1px solid var(--border); border-left: 5px solid #2d6a3f; }
+.post-good  .post-callout__label { color: #2d6a3f; }
+.post-good  p:last-child { color: var(--forest); }
+
+.post-checks { list-style: none; padding-left: 0; margin: 1.25rem 0; }
+.post-checks li { display: flex; gap: .7rem; align-items: flex-start; padding: .6rem 0;
+  border-bottom: 1px solid rgba(0,0,0,.06); margin-bottom: 0; }
+.post-checks li::before { content: '¹3'; color: var(--forest); font-weight: 700;
+  flex-shrink: 0; line-height: 1.7; }
+
+.post-stat { background: var(--cream); border-radius: 14px; padding: 1.5rem 1.75rem;
+  margin: 1.75rem 0; text-align: center; }
+.post-stat__n { font-family: var(--serif); font-size: clamp(2rem,5vw,2.8rem); font-weight: 600;
+  color: var(--forest); line-height: 1; margin: 0 0 .4rem; display: block; }
+.post-stat__t { margin: 0; font-size: .95rem; line-height: 1.7; color: var(--green-md); }
+
+@media (max-width: 640px) {
+  .post-callout { padding: 1.1rem 1.15rem; }
+  .post-alarm { padding: 1.3rem 1.25rem; }
+}
