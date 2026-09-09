@@ -764,7 +764,7 @@ footer a:hover { color: var(--sage-lt); }
 .post-checks { list-style: none; padding-left: 0; margin: 1.25rem 0; }
 .post-checks li { display: flex; gap: .7rem; align-items: flex-start; padding: .6rem 0;
   border-bottom: 1px solid rgba(0,0,0,.06); margin-bottom: 0; }
-.post-checks li::before { content: '¹3'; color: var(--forest); font-weight: 700;
+.post-checks li::before { content: '\2713'; color: var(--forest); font-weight: 700;
   flex-shrink: 0; line-height: 1.7; }
 
 .post-stat { background: var(--cream); border-radius: 14px; padding: 1.5rem 1.75rem;
