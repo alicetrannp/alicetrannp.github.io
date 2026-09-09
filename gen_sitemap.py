@@ -53,8 +53,9 @@ today = datetime.date.today().isoformat()
 # files edited but not yet committed count as changed today
 dirty = {l[3:].strip().strip('"') for l in subprocess.check_output(
     ['git', 'status', '--porcelain'], encoding='utf-8', errors='ignore').splitlines() if l.strip()}
-for d in dirty:
-    small[d] = today
+if len(dirty) < BULK:
+    for d in dirty:
+        small[d] = today
 out, changed, missing = [], 0, []
 for loc, old, freq, pri in entries:
     f = to_file(loc)
