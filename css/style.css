@@ -761,11 +761,12 @@ footer a:hover { color: var(--sage-lt); }
 .post-good  .post-callout__label { color: #2d6a3f; }
 .post-good  p:last-child { color: var(--forest); }
 
-.post-checks { list-style: none; padding-left: 0; margin: 1.25rem 0; }
-.post-checks li { display: flex; gap: .7rem; align-items: flex-start; padding: .6rem 0;
-  border-bottom: 1px solid rgba(0,0,0,.06); margin-bottom: 0; }
-.post-checks li::before { content: '\2713'; color: var(--forest); font-weight: 700;
-  flex-shrink: 0; line-height: 1.7; }
+.post-checks { list-style: none; padding-left: 0; margin: 1.25rem 0; display: grid; gap: .6rem; }
+.post-checks li { display: block; position: relative; padding: .85rem 1.1rem .85rem 2.6rem; margin: 0;
+  background: #fff; border: 1px solid var(--border); border-radius: 10px; line-height: 1.75; }
+.post-checks li::before { content: '\2713'; position: absolute; left: 1rem; top: .85rem; color: var(--forest);
+  font-weight: 700; line-height: 1.75; }
+.post-checks li > span { display: inline; }
 
 .post-stat { background: var(--cream); border-radius: 14px; padding: 1.5rem 1.75rem;
   margin: 1.75rem 0; text-align: center; }
