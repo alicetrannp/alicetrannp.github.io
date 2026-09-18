@@ -4,11 +4,11 @@
   var KB = [
     {
       keywords: ['i need help', 'need help', 'help me', 'i\'m sad', 'im sad', 'feeling sad', 'i\'m anxious', 'im anxious', 'feeling anxious', 'i\'m depressed', 'im depressed', 'feeling depressed', 'i\'m struggling', 'im struggling', 'struggling', 'i\'m not okay', 'not okay', 'not doing well', 'i\'m overwhelmed', 'overwhelmed', 'i\'m scared', 'i\'m stressed', 'im stressed', 'so stressed', 'stressed out', 'i\'m lost', 'feeling lost', 'hard time', 'having a hard time', 'don\'t know where to start', 'where do i start', 'i don\'t know', 'not feeling well', 'not feeling good', 'feeling low', 'i\'m not well'],
-      answer: 'You\'re not alone — and reaching out, even here, takes courage. 💚<br><br>Alice\'s practice is built for exactly this moment. Whether you\'re struggling with something you can name or something you\'re still trying to find words for, you are welcome here. Alice would be honored to listen.'
+      answer: 'You\'re not alone, and reaching out, even here, takes courage. 💚<br><br>Alice\'s practice is built for exactly this moment. Whether you\'re struggling with something you can name or something you\'re still trying to find words for, you are welcome here. Alice would be honored to listen.'
     },
     {
       keywords: ['new patient', 'accepting', 'taking new', 'take new', 'are you taking', 'are you accepting'],
-      answer: 'Yes! Alice is currently accepting new patients. No referral needed — you can book directly online.',
+      answer: 'Yes! Alice is currently accepting new patients. No referral needed. You can book directly online.',
       action: { label: 'Book a consultation →', href: 'https://alicetran.intakeq.com/booking' }
     },
     {
@@ -17,7 +17,7 @@
     },
     {
       keywords: ['pmhnp', 'nurse practitioner', 'what is a np', 'what is an np', 'are you a doctor', 'are you a psychiatrist', 'vs psychiatrist', 'psychiatrist vs', 'vs a psychiatrist', 'qualified', 'qualification', 'credential', 'certification', 'board certified', 'board-certified', 'who is alice', 'about alice', 'segall', 'training', 'license', 'licensed'],
-      answer: 'Alice is a dual board-certified Psychiatric Mental Health Nurse Practitioner (PMHNP-BC) and Family Nurse Practitioner (FNP-BC), licensed in Virginia. A PMHNP is an advanced practice provider who can diagnose mental health conditions, prescribe medication, and provide therapy — for most outpatient psychiatric care, the visit is very similar to seeing a psychiatrist. Alice also completed advanced clinical training under the supervision of Dr. Errol Segall, MD, a psychiatrist with over 50 years of experience.',
+      answer: 'Alice is a dual board-certified Psychiatric Mental Health Nurse Practitioner (PMHNP-BC) and Family Nurse Practitioner (FNP-BC), licensed in Virginia. A PMHNP is an advanced practice provider who can diagnose mental health conditions, prescribe medication, and provide therapy. For most outpatient psychiatric care, the visit is very similar to seeing a psychiatrist. Alice also completed advanced clinical training under the supervision of Dr. Errol Segall, MD, a psychiatrist with over 50 years of experience.',
       action: { label: 'What is a PMHNP? →', href: base + 'pages/blog/what-is-a-pmhnp.html' }
     },
     {
@@ -70,7 +70,7 @@
     },
     {
       keywords: ['book', 'booking', 'schedule appointment', 'make appointment', 'sign up', 'get started', 'how do i start', 'how to start'],
-      answer: 'You can book directly online — no referral needed!',
+      answer: 'You can book directly online. No referral needed!',
       action: { label: 'Book a consultation →', href: 'https://alicetran.intakeq.com/booking' }
     },
     {
@@ -84,11 +84,11 @@
     },
     {
       keywords: ['crisis', 'emergency', 'urgent', 'suicidal', 'harm', 'danger', '911', '988'],
-      answer: '🚨 If you are in crisis, please do not wait for an appointment. Call or text <strong>988</strong> (Suicide & Crisis Lifeline) — free, confidential, 24/7. For emergencies, call <strong>911</strong>.'
+      answer: '🚨 If you are in crisis, please do not wait for an appointment. Call or text <strong>988</strong> (Suicide & Crisis Lifeline): free, confidential, 24/7. For emergencies, call <strong>911</strong>.'
     },
     {
       keywords: ['respond', 'response', 'reply', 'message', 'email', 'voicemail', 'how long to hear', 'get back'],
-      answer: 'Emails, voicemails, and portal messages are typically responded to within 24–72 business hours. For fastest response, call or text <a href="tel:7037919099" style="color:#2E4A3C;font-weight:600;">(703) 791-9099</a>.'
+      answer: 'Emails, voicemails, and portal messages are typically responded to within 24–72 business hours. For fastest response, call <a href="tel:7037919099" style="color:#2E4A3C;font-weight:600;">(703) 791-9099</a> or text <a href="sms:+17037919031" style="color:#2E4A3C;font-weight:600;">(703) 791-9031</a>.'
     },
     {
       keywords: ['service', 'what do you offer', 'what do you do', 'therapy', 'psychotherapy', 'medication'],
@@ -101,7 +101,7 @@
     }
   ];
 
-  var FALLBACK = 'I\'m not sure about that one. For a direct answer, please call or text Alice at <a href="tel:7037919099" style="color:#2E4A3C;font-weight:600;">(703) 791-9099</a> — she typically responds within 24 business hours.';
+  var FALLBACK = 'I\'m not sure about that one. For a direct answer, please call <a href="tel:7037919099" style="color:#2E4A3C;font-weight:600;">(703) 791-9099</a> or text <a href="sms:+17037919031" style="color:#2E4A3C;font-weight:600;">(703) 791-9031</a>. Messages are typically answered within 24 business hours.';
 
   var QUICK_REPLIES = [
     { label: 'Do you accept my insurance?', query: 'insurance' },

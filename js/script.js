@@ -51,7 +51,7 @@
     const btn = form.querySelector('button[type="submit"]');
     if (!btn) return;
     const original = btn.textContent;
-    btn.textContent = 'Thank you — talk soon.';
+    btn.textContent = 'Thank you, talk soon.';
     btn.disabled = true;
     form.reset();
     setTimeout(() => {
