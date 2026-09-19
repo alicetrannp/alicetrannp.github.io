@@ -767,6 +767,8 @@ footer a:hover { color: var(--sage-lt); }
 .post-checks li::before { content: '\2713'; position: absolute; left: 1rem; top: .85rem; color: var(--forest);
   font-weight: 700; line-height: 1.75; }
 .post-checks li > span { display: inline; }
+.post-checks li.is-warn { background: #fffaf0; border-color: #e8d9bd; }
+.post-checks li.is-warn::before { content: '!'; color: #a87b1e; font-weight: 800; left: 1.15rem; }
 
 .post-stat { background: var(--cream); border-radius: 14px; padding: 1.5rem 1.75rem;
   margin: 1.75rem 0; text-align: center; }
