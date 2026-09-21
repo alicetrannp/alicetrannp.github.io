@@ -125,6 +125,12 @@ section { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 4vw, 3rem); }
   background: transparent;
 }
 .btn--ghost:hover { background: var(--cream); }
+.btn--pride {
+  color: var(--forest);
+  border: 1px solid rgba(0, 0, 0, .08);
+  background: linear-gradient(135deg, rgba(255,182,193,.6) 0%, rgba(255,210,160,.6) 20%, rgba(255,245,160,.55) 40%, rgba(180,235,185,.55) 60%, rgba(155,210,255,.6) 80%, rgba(185,165,230,.6) 100%);
+}
+.btn--pride:hover { transform: translateY(-2px); box-shadow: 0 10px 24px -14px rgba(46, 74, 60, .45); }
 .btn--full { width: 100%; justify-content: center; }
 
 /* ── Topbar (fixed, always pinned above nav) ── */
