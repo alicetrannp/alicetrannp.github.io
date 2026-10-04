@@ -136,6 +136,13 @@
     <a href="blog/vyvanse-lisdexamfetamine.html">Read the full guide</a>
     <a href="patient-resources.html">All patient resources</a>
   </div>
+  <form class="handout__send no-print" onsubmit="return atpcSend(this)">
+    <label for="atpc-to">Send to a patient</label>
+    <input id="atpc-to" type="email" name="to" placeholder="patient@email.com" autocomplete="off" required>
+    <button type="submit">Send by email</button>
+    <button type="button" onclick="atpcCopy(this)" data-copied="Copied">Copy link</button>
+    <span class="handout__send-note">Opens your own email program with the message and link filled in.</span>
+  </form>
 
 <h2>What it is</h2>
 <p>Vyvanse is a once-daily stimulant for ADHD. It is inactive until the body converts it, which gives a smooth start, a long effect of about ten to fourteen hours, and a lower potential for misuse than other stimulants. It is a controlled substance.</p>
@@ -184,6 +191,21 @@
   <div class="handout__printfoot">Alice Tran Psychiatric Care &middot; Alice Tran, PMHNP-BC, FNP-BC &middot; (703) 791-9099 &middot; info@alicetrannp.com &middot; alicetrannp.com</div>
 </article>
 </main>
+<script>
+function atpcSend(f){
+  var to=f.to.value.trim(); if(!to) return false;
+  var url=location.href.split('#')[0].split('?')[0];
+  var subject="Your handout from Alice Tran Psychiatric Care: Vyvanse (lisdexamfetamine)";
+  var body="Hello,\n\nAs we discussed at your visit, here is the handout on Vyvanse (lisdexamfetamine):\n"+url+"\n\nPlease read it, follow the instructions on your prescription label, and bring any questions to your next visit. If anything feels urgent, call the office.\n\nAlice Tran, PMHNP-BC, FNP-BC\nAlice Tran Psychiatric Care\nCall: (703) 791-9099 | Text: (703) 791-9031\ninfo@alicetrannp.com | alicetrannp.com";
+  location.href='mailto:'+encodeURIComponent(to)+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  return false;
+}
+function atpcCopy(b){
+  var url=location.href.split('#')[0].split('?')[0];
+  var done=function(){var t=b.textContent;b.textContent=b.getAttribute('data-copied');setTimeout(function(){b.textContent=t;},1800);};
+  if(navigator.clipboard){navigator.clipboard.writeText(url).then(done);}else{prompt('',url);}
+}
+</script>
 
 <footer class="footer">
   <div class="footer__inner">

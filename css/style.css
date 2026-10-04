@@ -777,6 +777,12 @@ footer a:hover { color: var(--sage-lt); }
 .handout__tools { display: flex; flex-wrap: wrap; gap: .6rem; margin: 0 0 1.75rem; }
 .handout__tools button, .handout__tools a { display: inline-flex; align-items: center; gap: .4rem; padding: .6rem 1.1rem; border-radius: 999px; font-size: .88rem; font-weight: 600; text-decoration: none; cursor: pointer; border: 1px solid var(--forest); background: var(--forest); color: #fff; font-family: var(--sans); }
 .handout__tools a { background: #fff; color: var(--forest); }
+.handout__send { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .6rem; background: var(--sage-lt); border: 1px dashed var(--forest); border-radius: 12px; padding: .9rem 1rem; margin: 0 0 1.75rem; }
+.handout__send label { font-family: var(--sans); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--forest); flex: 0 0 100%; }
+.handout__send input { flex: 1 1 220px; min-width: 0; padding: .6rem .9rem; border: 1px solid var(--border); border-radius: 999px; font-family: var(--sans); font-size: .92rem; color: var(--forest); background: #fff; }
+.handout__send button { display: inline-flex; align-items: center; padding: .6rem 1.1rem; border-radius: 999px; font-family: var(--sans); font-size: .88rem; font-weight: 600; cursor: pointer; border: 1px solid var(--forest); background: var(--forest); color: #fff; }
+.handout__send button[type="button"] { background: #fff; color: var(--forest); }
+.handout__send-note { flex: 0 0 100%; font-size: .78rem; color: var(--green-md); }
 .handout h2 { font-family: var(--sans); font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; color: var(--forest); font-weight: 800; margin: 1.6rem 0 .5rem; padding-top: 1rem; border-top: 1px solid var(--border); }
 .handout p { font-size: .98rem; line-height: 1.75; color: #2b2b28; margin: 0 0 .7rem; }
 .handout ul { margin: 0 0 .7rem 1.2rem; padding: 0; }

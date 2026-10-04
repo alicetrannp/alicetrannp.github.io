@@ -136,6 +136,13 @@
     <a href="blog/zoloft-sertraline-vi.html">Đọc hướng dẫn đầy đủ</a>
     <a href="patient-resources-vi.html">Tất cả tài liệu</a>
   </div>
+  <form class="handout__send no-print" onsubmit="return atpcSend(this)">
+    <label for="atpc-to">Gửi cho bệnh nhân</label>
+    <input id="atpc-to" type="email" name="to" placeholder="patient@email.com" autocomplete="off" required>
+    <button type="submit">Gửi qua email</button>
+    <button type="button" onclick="atpcCopy(this)" data-copied="Đã sao chép">Sao chép đường dẫn</button>
+    <span class="handout__send-note">Mở chương trình email của bạn với nội dung và đường dẫn đã điền sẵn.</span>
+  </form>
 
 <h2>Thuốc là gì</h2>
 <p>Sertraline là một SSRI, một loại thuốc chống trầm cảm. Thuốc được dùng cho trầm cảm, lo âu lan tỏa, rối loạn hoảng sợ, lo âu xã hội, OCD và PTSD. Thuốc hoạt động bằng cách tăng serotonin, một chất giúp điều hòa tâm trạng và sự lo lắng. Thuốc không gây nghiện.</p>
@@ -184,6 +191,21 @@
   <div class="handout__printfoot">Alice Tran Psychiatric Care &middot; Alice Tran, PMHNP-BC, FNP-BC &middot; (703) 791-9099 &middot; info@alicetrannp.com &middot; alicetrannp.com</div>
 </article>
 </main>
+<script>
+function atpcSend(f){
+  var to=f.to.value.trim(); if(!to) return false;
+  var url=location.href.split('#')[0].split('?')[0];
+  var subject="Tài liệu từ Alice Tran Psychiatric Care: Sertraline (Zoloft)";
+  var body="Xin chào,\n\nNhư đã trao đổi tại buổi khám, đây là tài liệu về Sertraline (Zoloft):\n"+url+"\n\nHãy đọc tài liệu, làm theo hướng dẫn trên nhãn thuốc, và mang mọi câu hỏi đến buổi khám tiếp theo. Nếu có điều gì khẩn cấp, hãy gọi phòng khám.\n\nAlice Tran, PMHNP-BC, FNP-BC\nAlice Tran Psychiatric Care\nGọi: (703) 791-9099 | Nhắn tin: (703) 791-9031\ninfo@alicetrannp.com | alicetrannp.com";
+  location.href='mailto:'+encodeURIComponent(to)+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  return false;
+}
+function atpcCopy(b){
+  var url=location.href.split('#')[0].split('?')[0];
+  var done=function(){var t=b.textContent;b.textContent=b.getAttribute('data-copied');setTimeout(function(){b.textContent=t;},1800);};
+  if(navigator.clipboard){navigator.clipboard.writeText(url).then(done);}else{prompt('',url);}
+}
+</script>
 
 <footer class="footer">
   <div class="footer__inner">
