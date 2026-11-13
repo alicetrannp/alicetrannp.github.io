@@ -223,7 +223,6 @@ function nav(showMenu){var h='<div class="dr-nav">';
   if(showMenu)h+='<button type="button" class="dr-link" data-act="menu">'+T.menu+'</button>';
   return h+'<button type="button" class="dr-link" data-act="restart">'+T.restart+'</button></div>';}
 function top(p,i){var h='<span class="dr-chip"><span aria-hidden="true">'+p.icon+'</span> '+p.tile+'</span>';
-  if(i!=null){var n=p.steps.length;h+='<div class="dr-dots" role="img" aria-label="'+T.step.replace('{i}',i+1).replace('{n}',n)+'">';for(var k=0;k<n;k++)h+='<i'+(k<=i?' class="on"':'')+'></i>';h+='</div>';}
   return h;}
 function confetti(){var c=document.createElement('div');c.className='dr-conf';var cols=['#2f7f73','#c2516b','#4b5aa8','#cf6a2e','#7a56b3','#e0b23a'],h='';
   for(var k=0;k<22;k++)h+='<i style="left:'+(4+k*4.3)+'%;background:'+cols[k%cols.length]+';animation-delay:'+((k*37)%60)/100+'s"></i>';
