@@ -198,7 +198,7 @@
     <div class="dr-info">
       <h2>Would support from a prescriber help?</h2>
       <p>Alice Tran, PMHNP-BC, sees adults in person in Fairfax and by secure video across Virginia.</p>
-      <p style="display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.75rem;margin:1.5rem 0 0;"><a href="https://alicetran.intakeq.com/booking" target="_blank" rel="noopener" style="display:inline-block;padding:.85rem 1.9rem;border-radius:999px;background:var(--forest);color:#fff;font-weight:600;text-decoration:none;">Book an appointment &rarr;</a><a href="handout-daily-reset.html" style="font-weight:600;color:var(--forest);">Printable handout &rarr;</a><a href="patient-resources.html" style="font-weight:600;color:var(--forest);">Patient handouts &rarr;</a></p>
+      <p style="display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.75rem;margin:1.5rem 0 0;"><a href="https://alicetran.intakeq.com/booking" target="_blank" rel="noopener" style="display:inline-block;padding:.85rem 1.9rem;border-radius:999px;background:var(--forest);color:#fff;font-weight:600;text-decoration:none;">Book an appointment &rarr;</a><a href="/app/" style="font-weight:600;color:var(--forest);">Add to your phone &rarr;</a><a href="handout-daily-reset.html" style="font-weight:600;color:var(--forest);">Printable handout &rarr;</a><a href="patient-resources.html" style="font-weight:600;color:var(--forest);">Patient handouts &rarr;</a></p>
       <p class="dr-disc" style="margin-top:2.5rem;"><strong>Medical disclaimer:</strong> The Daily Reset is general self-care education. It is not medical advice, diagnosis, or treatment, and using it does not create a clinician-patient relationship. It does not replace care from your own clinician. Follow the directions on your prescription label. In an emergency call 911. If you are in crisis, call or text 988.</p>
     </div>
   </div>
@@ -248,12 +248,12 @@ app.addEventListener('click',function(ev){var b=ev.target.closest('[data-act]');
   else if(a==='menu')go({v:'menu'});
   else if(a==='crisis')go({v:'crisis'});
   else if(a==='back'){if(stack.length){cur=stack.pop();render();}}
-  else if(a==='restart'){stack=[];cur={v:'start'};render();}
+  else if(a==='restart'){stack=[];cur={v:window.DR_APP?'safety':'start'};render();}
   else if(a.indexOf('path:')===0){var id=a.slice(5),p=P[id];go(p.steps.length?{v:'step',p:id,i:0}:{v:'end',p:id});}
   else if(a==='need'){var st=P[cur.p].steps[cur.i];if(st.emergency)go({v:'medical'});else if(st.a)go({v:'action',p:cur.p,i:cur.i});else advance();}
   else if(a==='ok'){if(P[cur.p].steps[cur.i].okEnd)go({v:'end',p:cur.p});else advance();}
   else if(a==='next')advance();});
-cur={v:'start'};render();
+cur={v:window.DR_APP?'safety':'start'};render();
 })();
 </script>
 

@@ -156,7 +156,7 @@
     <div class="dr-info">
       <h2>Quý vị có cần sự hỗ trợ của người kê toa không?</h2>
       <p>Alice Tran, PMHNP-BC, khám cho người lớn trực tiếp tại Fairfax và qua video bảo mật trên toàn Virginia.</p>
-      <p style="display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.75rem;margin:1.5rem 0 0;"><a href="https://alicetran.intakeq.com/booking" target="_blank" rel="noopener" style="display:inline-block;padding:.85rem 1.9rem;border-radius:999px;background:var(--forest);color:#fff;font-weight:600;text-decoration:none;">Đặt lịch hẹn &rarr;</a><a href="handout-daily-reset-vi.html" style="font-weight:600;color:var(--forest);">Tài liệu để in &rarr;</a><a href="patient-resources-vi.html" style="font-weight:600;color:var(--forest);">Tài liệu cho bệnh nhân &rarr;</a></p>
+      <p style="display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.75rem;margin:1.5rem 0 0;"><a href="https://alicetran.intakeq.com/booking" target="_blank" rel="noopener" style="display:inline-block;padding:.85rem 1.9rem;border-radius:999px;background:var(--forest);color:#fff;font-weight:600;text-decoration:none;">Đặt lịch hẹn &rarr;</a><a href="/app/" style="font-weight:600;color:var(--forest);">Thêm vào điện thoại &rarr;</a><a href="handout-daily-reset-vi.html" style="font-weight:600;color:var(--forest);">Tài liệu để in &rarr;</a><a href="patient-resources-vi.html" style="font-weight:600;color:var(--forest);">Tài liệu cho bệnh nhân &rarr;</a></p>
       <p class="dr-disc" style="margin-top:2.5rem;"><strong>Miễn trừ trách nhiệm y khoa:</strong> Khởi Động Lại Mỗi Ngày là thông tin giáo dục chung về tự chăm sóc. Đây không phải lời khuyên y khoa, chẩn đoán, hay điều trị, và việc sử dụng không tạo ra mối quan hệ giữa người điều trị và bệnh nhân. Công cụ này không thay thế việc chăm sóc từ người điều trị của quý vị. Hãy làm theo hướng dẫn trên nhãn thuốc. Trong trường hợp khẩn cấp, gọi 911. Nếu quý vị đang khủng hoảng, gọi hoặc nhắn tin 988.</p>
     </div>
   </div>
@@ -206,12 +206,12 @@ app.addEventListener('click',function(ev){var b=ev.target.closest('[data-act]');
   else if(a==='menu')go({v:'menu'});
   else if(a==='crisis')go({v:'crisis'});
   else if(a==='back'){if(stack.length){cur=stack.pop();render();}}
-  else if(a==='restart'){stack=[];cur={v:'start'};render();}
+  else if(a==='restart'){stack=[];cur={v:window.DR_APP?'safety':'start'};render();}
   else if(a.indexOf('path:')===0){var id=a.slice(5),p=P[id];go(p.steps.length?{v:'step',p:id,i:0}:{v:'end',p:id});}
   else if(a==='need'){var st=P[cur.p].steps[cur.i];if(st.emergency)go({v:'medical'});else if(st.a)go({v:'action',p:cur.p,i:cur.i});else advance();}
   else if(a==='ok'){if(P[cur.p].steps[cur.i].okEnd)go({v:'end',p:cur.p});else advance();}
   else if(a==='next')advance();});
-cur={v:'start'};render();
+cur={v:window.DR_APP?'safety':'start'};render();
 })();
 </script>
 
