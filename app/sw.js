@@ -1,4 +1,4 @@
-const V = 'daily-reset-v6';
+const V = 'daily-reset-v7';
 const CORE = ['/app/', '/app/index.html', '/app/vi.html', '/app/manifest.webmanifest', '/app/icon-192.png', '/app/icon-512.png', '/css/fonts.css', '/css/style.css', '/img/herofinal-mobile.webp'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(V).then(c => Promise.all(CORE.map(u => c.add(u).catch(() => null)))).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== V).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
