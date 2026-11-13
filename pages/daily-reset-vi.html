@@ -75,6 +75,9 @@
 .dr-start .dr-go{flex:1;display:flex;align-items:center;justify-content:center;padding-bottom:2.5rem;}
 .dr-start .dr-btn{flex:0 0 auto;min-width:200px;font-size:1.25rem;padding:1.1rem 2.6rem;border-radius:999px;box-shadow:0 8px 20px rgba(45,74,62,.25);}
 .dr-start .dr-bot{display:none;}
+.dr-bot:empty{display:none;}
+.dr-qbtns{margin-top:1.5rem;}
+.dr-bot>.dr-nav:first-child{margin-top:0;}
 .dr-more{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem;}
 .dr-more a{display:inline-block;padding:.45rem .95rem;border:1px solid var(--ac);border-radius:999px;font-size:.86rem;font-weight:600;color:var(--ac);text-decoration:none;background:#fff;}
 .dr-det{margin:.3rem 0 .6rem;}
@@ -183,10 +186,10 @@ function confetti(){var c=document.createElement('div');c.className='dr-conf';va
   c.innerHTML=h;app.appendChild(c);setTimeout(function(){if(c.parentNode)c.parentNode.removeChild(c);},2800);}
 function render(){var s=cur,p=s.p?P[s.p]:null,t='',m='',b='',cls='';
   if(s.v==='start'){m='<div class="dr-center"><div class="dr-spark" aria-hidden="true">🌿</div><h2 class="dr-big" tabindex="-1">'+T.title+'</h2><p class="dr-by">'+T.by+'</p></div><div class="dr-go">'+btn(T.start,'begin')+'</div>';cls='dr-home dr-start';}
-  else if(s.v==='safety'){cls='dr-home';m='<p class="dr-step">'+T.first+'</p><h2 class="dr-q" tabindex="-1">'+T.safetyQ+'</h2>';b=btns(btn(T.safetyNo,'menu')+btn(T.safetyYes,'crisis','dr-ghost'));}
+  else if(s.v==='safety'){cls='dr-home';m='<p class="dr-step">'+T.first+'</p><h2 class="dr-q" tabindex="-1">'+T.safetyQ+'</h2><div class="dr-btns dr-qbtns">'+btn(T.safetyNo,'menu')+btn(T.safetyYes,'crisis','dr-ghost')+'</div>';}
   else if(s.v==='crisis'||s.v==='medical'){cls='dr-urgent';var c=s.v==='crisis';m='<h2 class="dr-q" tabindex="-1">'+(c?T.crisisT:T.medT)+'</h2>'+list(c?T.crisisL:T.medL);b=nav(false);}
   else if(s.v==='menu'){cls='dr-home';m='<h2 class="dr-q" tabindex="-1">'+T.menuQ+'</h2>'+T.groups.map(function(g){return '<p class="dr-group">'+g[1]+'</p><div class="dr-tiles">'+D.paths.filter(function(x){return x.g===g[0];}).map(function(x){return '<button type="button" class="dr-tile" style="--tb:'+x.bg+';--tc:'+x.c+'" data-act="path:'+x.id+'"><span class="dr-ico" aria-hidden="true">'+x.icon+'</span><strong>'+x.tile+'</strong></button>';}).join('')+'</div>';}).join('');b='<div class="dr-nav"><button type="button" class="dr-link" data-act="restart">'+T.restart+'</button></div>';}
-  else if(s.v==='step'){var st=p.steps[s.i];t=top(p,s.i);m='<h2 class="dr-q" tabindex="-1">'+st.q+'</h2>'+(st.hint?'<p class="dr-hint">'+st.hint+'</p>':'');b=btns(btn(st.need,'need')+btn(st.ok,'ok'))+nav(true);}
+  else if(s.v==='step'){var st=p.steps[s.i];t=top(p,s.i);m='<h2 class="dr-q" tabindex="-1">'+st.q+'</h2>'+(st.hint?'<p class="dr-hint">'+st.hint+'</p>':'')+'<div class="dr-btns dr-qbtns">'+btn(st.need,'need')+btn(st.ok,'ok')+'</div>';b=nav(true);}
   else if(s.v==='action'){var a=p.steps[s.i].a;t=top(p,s.i);m='<h2 class="dr-q" tabindex="-1">'+a.t+'</h2>'+block(a);b=btns(btn(T.next,'next'))+nav(true);}
   else if(s.v==='end'){var e=p.end;t=top(p,null);m='<div class="dr-center"><div class="dr-badge" aria-hidden="true">✓</div><p class="dr-step">'+T.done+'</p></div><h2 class="dr-q" tabindex="-1">'+e.t+'</h2>'+block(e);b=btns(btn(T.menu,'menu'))+nav(false);}
   app.className='dr-card '+cls;
